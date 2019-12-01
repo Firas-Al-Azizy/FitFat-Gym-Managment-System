@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
@@ -103,7 +96,9 @@ namespace FFGMS
 
         private void login_btn_Click(object sender, EventArgs e)
         {
-
+            Admin_Dashbord main = new Admin_Dashbord();
+            main.Show();
+            Visible = false;
         }
 
         private void progress_time_Tick(object sender, EventArgs e)

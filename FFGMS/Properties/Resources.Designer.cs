@@ -613,6 +613,46 @@ namespace FFGMS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_menu_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-menu-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_menu_50_2 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-menu-50-2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_menu_50_3 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-menu-50-3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_menu_50_4 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-menu-50-4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_mommy_fitness_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-mommy-fitness-100", resourceCulture);
@@ -1043,6 +1083,16 @@ namespace FFGMS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_squared_menu_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-squared-menu-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_squats_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-squats-100", resourceCulture);
@@ -1176,6 +1226,46 @@ namespace FFGMS.Properties {
         internal static System.Drawing.Bitmap icons8_time_out_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-time-out-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_top_menu_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-top-menu-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_top_menu_50_2 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-top-menu-50-2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_top_menu_50_3 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-top-menu-50-3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_top_menu_50_4 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-top-menu-50-4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1406,6 +1496,16 @@ namespace FFGMS.Properties {
         internal static System.Drawing.Bitmap icons8_workout_100_3 {
             get {
                 object obj = ResourceManager.GetObject("icons8-workout-100-3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_xbox_menu_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-xbox-menu-50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

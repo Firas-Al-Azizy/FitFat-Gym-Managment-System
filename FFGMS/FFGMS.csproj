@@ -56,6 +56,7 @@
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -68,22 +69,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Main.cs">
+    <Compile Include="Admin_Dashbord.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
+    <Compile Include="Admin_Dashbord.Designer.cs">
+      <DependentUpon>Admin_Dashbord.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reciption_Dashbord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reciption_Dashbord.Designer.cs">
+      <DependentUpon>Reciption_Dashbord.cs</DependentUpon>
+    </Compile>
     <Compile Include="splash_screen.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="splash_screen.Designer.cs">
       <DependentUpon>splash_screen.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Main.resx">
-      <DependentUpon>Main.cs</DependentUpon>
+    <Compile Include="Trainer_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trainer_Dashboard.Designer.cs">
+      <DependentUpon>Trainer_Dashboard.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin_Dashbord.resx">
+      <DependentUpon>Admin_Dashbord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -95,8 +108,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reciption_Dashbord.resx">
+      <DependentUpon>Reciption_Dashbord.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="splash_screen.resx">
       <DependentUpon>splash_screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trainer_Dashboard.resx">
+      <DependentUpon>Trainer_Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -527,6 +546,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-workout-100-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menu-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menu-50-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menu-50-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menu-50-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-squared-menu-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-top-menu-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-top-menu-50-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-top-menu-50-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-top-menu-50-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-xbox-menu-50.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

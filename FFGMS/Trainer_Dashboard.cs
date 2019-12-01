@@ -8,23 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace FFGMS
 {
-    public partial class Main : Form
+    public partial class Trainer_Dashboard : Form
     {
-        public Main()
+        public Trainer_Dashboard()
         {
-          
-        }
-        public void splashStart()
-        {
-            Application.Run(new splash_screen());
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
+            InitializeComponent();
         }
     }
 }

@@ -69,33 +69,117 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin_Dashbord.cs">
+    <Compile Include="Manage\Group-manage\add_group.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin_Dashbord.Designer.cs">
+    <Compile Include="Manage\Group-manage\add_group.Designer.cs">
+      <DependentUpon>add_group.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Group-manage\view_group.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\Group-manage\view_group.Designer.cs">
+      <DependentUpon>view_group.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Machinary-manage\machinary-view.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\Machinary-manage\machinary-view.Designer.cs">
+      <DependentUpon>machinary-view.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Machinary-manage\machinary_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\Machinary-manage\machinary_add.Designer.cs">
+      <DependentUpon>machinary_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\MemberShip-manage\add-membership.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\MemberShip-manage\add-membership.Designer.cs">
+      <DependentUpon>add-membership.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\MemberShip-manage\view_membership.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\MemberShip-manage\view_membership.Designer.cs">
+      <DependentUpon>view_membership.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Program-manage\add_program.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\Program-manage\add_program.Designer.cs">
+      <DependentUpon>add_program.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Trainees-manage\add_trainee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\Trainees-manage\add_trainee.Designer.cs">
+      <DependentUpon>add_trainee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Program-manage\view_program.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\Program-manage\view_program.Designer.cs">
+      <DependentUpon>view_program.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Staff-manage\add_staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\Staff-manage\add_staff.Designer.cs">
+      <DependentUpon>add_staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboards\Admin_Dashbord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboards\Admin_Dashbord.Designer.cs">
       <DependentUpon>Admin_Dashbord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Trainees-manage\view_trainee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\Trainees-manage\view_trainee.Designer.cs">
+      <DependentUpon>view_trainee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Workout-manage\add_workout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\Workout-manage\add_workout.Designer.cs">
+      <DependentUpon>add_workout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Workout-manage\view_workout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\Workout-manage\view_workout.Designer.cs">
+      <DependentUpon>view_workout.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Reciption_Dashbord.cs">
+    <Compile Include="Dashboards\Reciption_Dashbord.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reciption_Dashbord.Designer.cs">
+    <Compile Include="Dashboards\Reciption_Dashbord.Designer.cs">
       <DependentUpon>Reciption_Dashbord.cs</DependentUpon>
     </Compile>
-    <Compile Include="splash_screen.cs">
+    <Compile Include="Splash-login\splash_screen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="splash_screen.Designer.cs">
+    <Compile Include="Splash-login\splash_screen.Designer.cs">
       <DependentUpon>splash_screen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Trainer_Dashboard.cs">
+    <Compile Include="Dashboards\Trainer_Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Trainer_Dashboard.Designer.cs">
+    <Compile Include="Dashboards\Trainer_Dashboard.Designer.cs">
       <DependentUpon>Trainer_Dashboard.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Admin_Dashbord.resx">
+    <Compile Include="Manage\Staff-manage\view_staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\Staff-manage\view_staff.Designer.cs">
+      <DependentUpon>view_staff.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Dashboards\Admin_Dashbord.resx">
       <DependentUpon>Admin_Dashbord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -108,13 +192,13 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Reciption_Dashbord.resx">
+    <EmbeddedResource Include="Dashboards\Reciption_Dashbord.resx">
       <DependentUpon>Reciption_Dashbord.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="splash_screen.resx">
+    <EmbeddedResource Include="Splash-login\splash_screen.resx">
       <DependentUpon>splash_screen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Trainer_Dashboard.resx">
+    <EmbeddedResource Include="Dashboards\Trainer_Dashboard.resx">
       <DependentUpon>Trainer_Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -577,5 +661,6 @@
   <ItemGroup>
     <None Include="Resources\icons8-xbox-menu-50.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

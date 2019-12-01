@@ -219,6 +219,7 @@
             this.type_combo.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(53)))));
             this.type_combo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
             this.type_combo.BorderSize = 1;
+            this.type_combo.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.type_combo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.type_combo.DropDownHeight = 100;
             this.type_combo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -341,7 +342,7 @@
             this.panel3.Location = new System.Drawing.Point(27, 33);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(444, 502);
-            this.panel3.TabIndex = 23;
+            this.panel3.TabIndex = 25;
             // 
             // label13
             // 
@@ -530,6 +531,7 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "splash_screen";
+            this.Load += new System.EventHandler(this.splash_screen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

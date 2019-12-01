@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FFGMS
+namespace FFGMS.Manage.MemberShip_manage
 {
-    public partial class Reciption_Dashbord : Form
+    public partial class add_membership : Form
     {
-        public Reciption_Dashbord()
+        public add_membership()
         {
             InitializeComponent();
         }

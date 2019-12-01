@@ -11,7 +11,7 @@ namespace FFGMS
         {
             InitializeComponent();
         }
-
+        
         private void bunifuGradientPanel2_Paint(object sender, PaintEventArgs e)
         {
 
@@ -96,9 +96,24 @@ namespace FFGMS
 
         private void login_btn_Click(object sender, EventArgs e)
         {
-            Admin_Dashbord main = new Admin_Dashbord();
-            main.Show();
-            Visible = false;
+            
+            if (type_combo.SelectedIndex==0)
+            {
+                Admin_Dashbord main = new Admin_Dashbord();
+                main.Show();
+            }
+            else if (type_combo.SelectedIndex == 1)
+                {
+                Reciption_Dashbord main = new Reciption_Dashbord();
+                main.Show();
+            }
+            else if (type_combo.SelectedIndex == 2)
+            {
+                Trainer_Dashboard main = new Trainer_Dashboard();
+                main.Show();
+            }
+            this.Hide();
+
         }
 
         private void progress_time_Tick(object sender, EventArgs e)
@@ -110,6 +125,7 @@ namespace FFGMS
             else
             {
                 panel3.Visible = false;
+               
             }
         }
 
@@ -119,6 +135,16 @@ namespace FFGMS
         }
 
         private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void splash_screen_Load(object sender, EventArgs e)
         {
 
         }

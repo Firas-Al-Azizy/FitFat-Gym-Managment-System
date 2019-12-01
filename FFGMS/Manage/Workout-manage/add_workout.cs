@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FFGMS
+namespace FFGMS.Manage.Workout_manage
 {
-    public partial class Trainer_Dashboard : Form
+    public partial class add_workout : Form
     {
-        public Trainer_Dashboard()
+        public add_workout()
         {
             InitializeComponent();
         }

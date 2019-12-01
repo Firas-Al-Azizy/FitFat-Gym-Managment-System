@@ -448,17 +448,17 @@
             // 
             // title_trans
             // 
-            this.title_trans.AnimationType = BunifuAnimatorNS.AnimationType.Leaf;
+            this.title_trans.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide;
             this.title_trans.Cursor = null;
             animation2.AnimateOnlyDifferences = true;
             animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 1F;
+            animation2.LeafCoeff = 0F;
             animation2.MaxTime = 1F;
             animation2.MinTime = 0F;
             animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
             animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
             animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
             animation2.RotateCoeff = 0F;
             animation2.RotateLimit = 0F;
             animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));

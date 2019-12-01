@@ -96,11 +96,13 @@ namespace FFGMS
 
         private void login_btn_Click(object sender, EventArgs e)
         {
-            
+            Debug.WriteLine("outside dash");
             if (type_combo.SelectedIndex==0)
             {
+                Debug.WriteLine("inside dash");
                 Admin_Dashbord main = new Admin_Dashbord();
                 main.Show();
+
             }
             else if (type_combo.SelectedIndex == 1)
                 {

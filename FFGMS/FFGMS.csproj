@@ -46,12 +46,15 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'build|AnyCPU'">
+    <OutputPath>bin\build\</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>L:\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>..\..\design\UI Frameworks\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI, Version=1.8.0.0, Culture=neutral, PublicKeyToken=ad275b4be6718d4b, processorArchitecture=MSIL">
-      <HintPath>C:\Users\FIRAS AL-AZIZY\Desktop\Guna.UI.dll</HintPath>
+      <HintPath>..\..\design\UI Frameworks\Guna.UI.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />

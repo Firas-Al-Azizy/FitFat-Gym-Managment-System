@@ -30,7 +30,7 @@ namespace FFGMS
                 pictureBox1.Location = new Point(189, 3);
                 label3.Visible = false;
                 bunifuFlatButton2.IconZoom = 70;
-                bunifuFlatButton3.IconZoom = 70;
+                //bunifuFlatButton3.IconZoom = 70;
                 bunifuFlatButton4.IconZoom = 70;
                 bunifuFlatButton5.IconZoom = 70;
                 bunifuFlatButton6.IconZoom = 70;
@@ -44,12 +44,12 @@ namespace FFGMS
                 menu_trans.ShowSync(panel1);
                 pictureBox1.Location = new Point(9, 3);
                 bunifuFlatButton2.Width = 225;
-                bunifuFlatButton3.Width = 225;
+                //bunifuFlatButton3.Width = 225;
                 bunifuFlatButton4.Width = 225;
                 bunifuFlatButton5.Width = 225;
                 bunifuFlatButton6.Width = 225;
                 bunifuFlatButton2.IconZoom = 75;
-                bunifuFlatButton3.IconZoom = 75;
+                //bunifuFlatButton3.IconZoom = 75;
                 bunifuFlatButton4.IconZoom = 75;
                 bunifuFlatButton5.IconZoom = 75;
                 bunifuFlatButton6.IconZoom = 75;

@@ -126,6 +126,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(266, 569);
             this.panel1.TabIndex = 2;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // linkLabel2
             // 
@@ -178,6 +179,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(53)))));
+            this.label4.Cursor = System.Windows.Forms.Cursors.Default;
             this.label4.Font = new System.Drawing.Font("Baloo Bhaijaan", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
             this.label4.Location = new System.Drawing.Point(60, 174);
@@ -191,6 +193,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(53)))));
+            this.label5.Cursor = System.Windows.Forms.Cursors.Default;
             this.label5.Font = new System.Drawing.Font("Baloo Bhaijaan", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
             this.label5.Location = new System.Drawing.Point(69, 240);
@@ -202,6 +205,7 @@
             // 
             // login_btn
             // 
+            this.login_btn.Cursor = System.Windows.Forms.Cursors.Default;
             this.login_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.login_btn.Font = new System.Drawing.Font("Baloo Bhaijaan", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.login_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
@@ -219,7 +223,7 @@
             this.type_combo.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(53)))));
             this.type_combo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
             this.type_combo.BorderSize = 1;
-            this.type_combo.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.type_combo.Cursor = System.Windows.Forms.Cursors.Default;
             this.type_combo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.type_combo.DropDownHeight = 100;
             this.type_combo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -245,6 +249,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(53)))));
+            this.label6.Cursor = System.Windows.Forms.Cursors.Default;
             this.label6.Font = new System.Drawing.Font("Baloo Bhaijaan", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
             this.label6.Location = new System.Drawing.Point(111, 322);
@@ -274,7 +279,7 @@
             this.bunifuMetroTextbox2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
             this.bunifuMetroTextbox2.BorderColorMouseHover = System.Drawing.Color.White;
             this.bunifuMetroTextbox2.BorderThickness = 2;
-            this.bunifuMetroTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMetroTextbox2.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuMetroTextbox2.Font = new System.Drawing.Font("Baloo Bhaijaan", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuMetroTextbox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
             this.bunifuMetroTextbox2.isPassword = true;
@@ -292,7 +297,7 @@
             this.bunifuMetroTextbox1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
             this.bunifuMetroTextbox1.BorderColorMouseHover = System.Drawing.Color.White;
             this.bunifuMetroTextbox1.BorderThickness = 2;
-            this.bunifuMetroTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMetroTextbox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuMetroTextbox1.Font = new System.Drawing.Font("Baloo Bhaijaan", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuMetroTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
             this.bunifuMetroTextbox1.isPassword = false;
@@ -342,7 +347,7 @@
             this.panel3.Location = new System.Drawing.Point(27, 33);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(444, 502);
-            this.panel3.TabIndex = 26;
+            this.panel3.TabIndex = 27;
             // 
             // label13
             // 

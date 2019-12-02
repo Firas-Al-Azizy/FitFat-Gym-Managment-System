@@ -148,6 +148,12 @@ namespace FFGMS
 
         private void splash_screen_Load(object sender, EventArgs e)
         {
+            type_combo.SelectedIndex = 0;
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

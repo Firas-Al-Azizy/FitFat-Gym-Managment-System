@@ -21,15 +21,15 @@ namespace FFGMS
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
 
-            if (panel1.Width == 40)
+
+            if (panel1.Width <= 50)
             {
                 panel1.Visible = false;
-                panel1.Width = 225;
+                panel1.Width = 168;
                 menu_trans.ShowSync(panel1);
                 label3.Visible = false;
                 title_trans.ShowSync(label3);
-                pictureBox1.Location = new Point(189, 3);
-                label3.Visible = false;
+                pictureBox1.Location = new Point(142, 3);
                 bunifuFlatButton1.IconZoom = 60;
                 bunifuFlatButton7.IconZoom = 70;
                 bunifuFlatButton8.IconZoom = 70;
@@ -42,16 +42,14 @@ namespace FFGMS
                 panel1.Width = 40;
                 menu_trans.ShowSync(panel1);
                 pictureBox1.Location = new Point(9, 3);
-                bunifuFlatButton1.Width = 225;
-               
-                bunifuFlatButton7.Width = 225;
-                bunifuFlatButton8.Width = 225;
+                bunifuFlatButton1.Width = 200;
+                bunifuFlatButton7.Width = 200;
+                bunifuFlatButton8.Width = 200;
                 bunifuFlatButton1.IconZoom = 75;
-                bunifuFlatButton7.IconZoom = 75;
                 bunifuFlatButton8.IconZoom = 75;
 
 
-            }
+            } 
         }
 
         private void back_btn_Click(object sender, EventArgs e)
@@ -60,6 +58,16 @@ namespace FFGMS
             main.Show();
             this.Close();
            
+
+        }
+
+        private void exit_btn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Reciption_Dashbord_Load(object sender, EventArgs e)
+        {
 
         }
     }

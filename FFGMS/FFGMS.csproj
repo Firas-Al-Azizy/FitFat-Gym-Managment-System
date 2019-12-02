@@ -185,6 +185,9 @@
     <EmbeddedResource Include="Dashboards\Admin_Dashbord.resx">
       <DependentUpon>Admin_Dashbord.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Manage\Trainees-manage\add_trainee.resx">
+      <DependentUpon>add_trainee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

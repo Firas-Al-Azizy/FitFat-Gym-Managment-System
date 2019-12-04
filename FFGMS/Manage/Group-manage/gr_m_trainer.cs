@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FFGMS.Manage.Machinary_manage
+namespace FFGMS.Manage.Group_manage
 {
-    public partial class machinary_view : Form
+    public partial class gr_m_trainer : Form
     {
-        public machinary_view()
+        public gr_m_trainer()
         {
             InitializeComponent();
         }

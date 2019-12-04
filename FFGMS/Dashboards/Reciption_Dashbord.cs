@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FFGMS.Manage;
+using FFGMS.Manage.Group_manage;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,6 +26,12 @@ namespace FFGMS
 
             if (panel1.Width <= 50)
             {
+                form_list_tabs.Visible = false;
+                form_list_tabs.Hide();
+                this.Controls.Add(logo_panel);
+                logo_panel.Dock = DockStyle.Right;
+                logo_panel.Visible = true;
+                logo_panel.Show();
                 panel1.Visible = false;
                 panel1.Width = 168;
                 menu_trans.ShowSync(panel1);
@@ -37,6 +45,10 @@ namespace FFGMS
             }
             else
             {
+                logo_panel.Visible = false;
+                logo_panel.Hide();
+                form_list_tabs.Visible = true;
+                form_list_tabs.Show();
                 label3.Visible = false;
                 panel1.Visible = false;
                 panel1.Width = 40;
@@ -69,6 +81,30 @@ namespace FFGMS
         private void Reciption_Dashbord_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            if (panel1.Width <= 50)
+            {
+                form_list_tabs.Visible = false;
+                form_list_tabs.Controls.Clear();
+                gr_m_reciption f = new gr_m_reciption()
+                {
+                    TopLevel = false,
+                    TopMost = true,
+                    Dock = DockStyle.Fill,
+                    WindowState = FormWindowState.Maximized
+                };
+
+                form_list_tabs.Controls.Add(f);
+                form_list_tabs.Visible = true;
+                f.Show();
+            }
+            else
+            {
+                form_list_tabs.Visible = false;
+            }
         }
     }
 }

@@ -56,6 +56,15 @@
     <Reference Include="Guna.UI, Version=1.8.0.0, Culture=neutral, PublicKeyToken=ad275b4be6718d4b, processorArchitecture=MSIL">
       <HintPath>..\..\design\UI Frameworks\Guna.UI.dll</HintPath>
     </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -72,89 +81,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Manage\Group-manage\add_group.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Manage\Group-manage\add_group.Designer.cs">
-      <DependentUpon>add_group.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Manage\Group-manage\view_group.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Manage\Group-manage\view_group.Designer.cs">
-      <DependentUpon>view_group.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Manage\Machinary-manage\machinary-view.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Manage\Machinary-manage\machinary-view.Designer.cs">
-      <DependentUpon>machinary-view.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Manage\Machinary-manage\machinary_add.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Manage\Machinary-manage\machinary_add.Designer.cs">
-      <DependentUpon>machinary_add.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Manage\MemberShip-manage\add-membership.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Manage\MemberShip-manage\add-membership.Designer.cs">
-      <DependentUpon>add-membership.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Manage\MemberShip-manage\view_membership.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Manage\MemberShip-manage\view_membership.Designer.cs">
-      <DependentUpon>view_membership.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Manage\Program-manage\add_program.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Manage\Program-manage\add_program.Designer.cs">
-      <DependentUpon>add_program.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Manage\Trainees-manage\add_trainee.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Manage\Trainees-manage\add_trainee.Designer.cs">
-      <DependentUpon>add_trainee.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Manage\Program-manage\view_program.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Manage\Program-manage\view_program.Designer.cs">
-      <DependentUpon>view_program.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Manage\Staff-manage\add_staff.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Manage\Staff-manage\add_staff.Designer.cs">
-      <DependentUpon>add_staff.cs</DependentUpon>
-    </Compile>
     <Compile Include="Dashboards\Admin_Dashbord.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Dashboards\Admin_Dashbord.Designer.cs">
       <DependentUpon>Admin_Dashbord.cs</DependentUpon>
     </Compile>
-    <Compile Include="Manage\Trainees-manage\view_trainee.cs">
+    <Compile Include="Manage\Group-manage\gr_m_admin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Manage\Trainees-manage\view_trainee.Designer.cs">
-      <DependentUpon>view_trainee.cs</DependentUpon>
+    <Compile Include="Manage\Group-manage\gr_m_admin.Designer.cs">
+      <DependentUpon>gr_m_admin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Manage\Workout-manage\add_workout.cs">
+    <Compile Include="Manage\Group-manage\gr_m_reciption.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Manage\Workout-manage\add_workout.Designer.cs">
-      <DependentUpon>add_workout.cs</DependentUpon>
+    <Compile Include="Manage\Group-manage\gr_m_reciption.Designer.cs">
+      <DependentUpon>gr_m_reciption.cs</DependentUpon>
     </Compile>
-    <Compile Include="Manage\Workout-manage\view_workout.cs">
+    <Compile Include="Manage\Group-manage\gr_m_trainer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Manage\Workout-manage\view_workout.Designer.cs">
-      <DependentUpon>view_workout.cs</DependentUpon>
+    <Compile Include="Manage\Group-manage\gr_m_trainer.Designer.cs">
+      <DependentUpon>gr_m_trainer.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -176,17 +125,17 @@
     <Compile Include="Dashboards\Trainer_Dashboard.Designer.cs">
       <DependentUpon>Trainer_Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Manage\Staff-manage\view_staff.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Manage\Staff-manage\view_staff.Designer.cs">
-      <DependentUpon>view_staff.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Dashboards\Admin_Dashbord.resx">
       <DependentUpon>Admin_Dashbord.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Manage\Trainees-manage\add_trainee.resx">
-      <DependentUpon>add_trainee.cs</DependentUpon>
+    <EmbeddedResource Include="Manage\Group-manage\gr_m_admin.resx">
+      <DependentUpon>gr_m_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage\Group-manage\gr_m_reciption.resx">
+      <DependentUpon>gr_m_reciption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage\Group-manage\gr_m_trainer.resx">
+      <DependentUpon>gr_m_trainer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -207,6 +156,7 @@
     <EmbeddedResource Include="Dashboards\Trainer_Dashboard.resx">
       <DependentUpon>Trainer_Dashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -667,6 +617,13 @@
   <ItemGroup>
     <None Include="Resources\icons8-xbox-menu-50.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Manage\Machinary-manage\" />
+    <Folder Include="Manage\MemberShip-manage\" />
+    <Folder Include="Manage\Program-manage\" />
+    <Folder Include="Manage\Staff-manage\" />
+    <Folder Include="Manage\Trainees-manage\" />
+    <Folder Include="Manage\Workout-manage\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

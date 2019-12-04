@@ -1,5 +1,4 @@
-﻿using FFGMS.Manage;
-using FFGMS.Manage.Group_manage;
+﻿using FFGMS.Manage.Group_manage;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

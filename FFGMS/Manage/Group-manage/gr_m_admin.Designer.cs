@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.gr_tab_admin = new MetroFramework.Controls.MetroTabControl();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.gr_add_admin = new MetroFramework.Controls.MetroTabPage();
             this.gr_view_admin = new MetroFramework.Controls.MetroTabPage();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.gr_tab_admin.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,11 +54,6 @@
             this.gr_tab_admin.Theme = MetroFramework.MetroThemeStyle.Light;
             this.gr_tab_admin.UseSelectable = true;
             this.gr_tab_admin.UseStyleColors = true;
-            // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 5;
-            this.bunifuElipse1.TargetControl = this;
             // 
             // gr_add_admin
             // 
@@ -84,15 +79,20 @@
             this.gr_view_admin.HorizontalScrollbarBarColor = true;
             this.gr_view_admin.HorizontalScrollbarHighlightOnWheel = false;
             this.gr_view_admin.HorizontalScrollbarSize = 10;
-            this.gr_view_admin.Location = new System.Drawing.Point(4, 34);
+            this.gr_view_admin.Location = new System.Drawing.Point(4, 44);
             this.gr_view_admin.Name = "gr_view_admin";
-            this.gr_view_admin.Size = new System.Drawing.Size(563, 350);
+            this.gr_view_admin.Size = new System.Drawing.Size(563, 340);
             this.gr_view_admin.TabIndex = 1;
             this.gr_view_admin.Text = "View Group";
             this.gr_view_admin.UseStyleColors = true;
             this.gr_view_admin.VerticalScrollbarBarColor = true;
             this.gr_view_admin.VerticalScrollbarHighlightOnWheel = false;
             this.gr_view_admin.VerticalScrollbarSize = 10;
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.TargetControl = this;
             // 
             // gr_m_admin
             // 

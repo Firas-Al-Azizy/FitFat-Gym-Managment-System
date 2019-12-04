@@ -87,6 +87,12 @@
     <Compile Include="Dashboards\Admin_Dashbord.Designer.cs">
       <DependentUpon>Admin_Dashbord.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dashboards\Trainee_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboards\Trainee_Dashboard.Designer.cs">
+      <DependentUpon>Trainee_Dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Manage\Group-manage\gr_m_admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,6 +229,9 @@
     </Compile>
     <EmbeddedResource Include="Dashboards\Admin_Dashbord.resx">
       <DependentUpon>Admin_Dashbord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboards\Trainee_Dashboard.resx">
+      <DependentUpon>Trainee_Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manage\Group-manage\gr_m_admin.resx">
       <DependentUpon>gr_m_admin.cs</DependentUpon>

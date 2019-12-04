@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FFGMS.Dashboards;
+using System;
 using System.Diagnostics;
 using System.Windows.Forms;
 
@@ -112,6 +113,11 @@ namespace FFGMS
             else if (type_combo.SelectedIndex == 2)
             {
                 Trainer_Dashboard main = new Trainer_Dashboard();
+                main.Show();
+            }
+            else if (type_combo.SelectedIndex == 3)
+            {
+                Trainee_Dashboard main = new Trainee_Dashboard();
                 main.Show();
             }
             this.Hide();

@@ -105,6 +105,102 @@
     <Compile Include="Manage\Group-manage\gr_m_trainer.Designer.cs">
       <DependentUpon>gr_m_trainer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manage\Machinary-manage\mach_m_admincs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\Machinary-manage\mach_m_admincs.Designer.cs">
+      <DependentUpon>mach_m_admincs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Machinary-manage\mach_m_reciption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\Machinary-manage\mach_m_reciption.Designer.cs">
+      <DependentUpon>mach_m_reciption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Machinary-manage\mach_m_trainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\Machinary-manage\mach_m_trainer.Designer.cs">
+      <DependentUpon>mach_m_trainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\MemberShip-manage\memb_m_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\MemberShip-manage\memb_m_admin.Designer.cs">
+      <DependentUpon>memb_m_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Program-manage\pro_m_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\Program-manage\pro_m_admin.Designer.cs">
+      <DependentUpon>pro_m_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Program-manage\pro_m_trainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\Program-manage\pro_m_trainer.Designer.cs">
+      <DependentUpon>pro_m_trainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Staff-manage\stf_m_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\Staff-manage\stf_m_admin.Designer.cs">
+      <DependentUpon>stf_m_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Trainees-manage\trne_m_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\Trainees-manage\trne_m_admin.Designer.cs">
+      <DependentUpon>trne_m_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Trainees-manage\trne_m_reciption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\Trainees-manage\trne_m_reciption.Designer.cs">
+      <DependentUpon>trne_m_reciption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Trainees-manage\trne_m_trainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\Trainees-manage\trne_m_trainer.Designer.cs">
+      <DependentUpon>trne_m_trainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Workout-manage\wrkot_m_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\Workout-manage\wrkot_m_admin.Designer.cs">
+      <DependentUpon>wrkot_m_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Workout-manage\wrkot_m_trainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\Workout-manage\wrkot_m_trainer.Designer.cs">
+      <DependentUpon>wrkot_m_trainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="profiles\admin_profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="profiles\admin_profile.Designer.cs">
+      <DependentUpon>admin_profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="profiles\reciption_profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="profiles\reciption_profile.Designer.cs">
+      <DependentUpon>reciption_profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="profiles\trainee_profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="profiles\trainee_profile.Designer.cs">
+      <DependentUpon>trainee_profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="profiles\trainer_profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="profiles\trainer_profile.Designer.cs">
+      <DependentUpon>trainer_profile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Dashboards\Reciption_Dashbord.cs">
@@ -136,6 +232,54 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Manage\Group-manage\gr_m_trainer.resx">
       <DependentUpon>gr_m_trainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage\Machinary-manage\mach_m_admincs.resx">
+      <DependentUpon>mach_m_admincs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage\Machinary-manage\mach_m_reciption.resx">
+      <DependentUpon>mach_m_reciption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage\Machinary-manage\mach_m_trainer.resx">
+      <DependentUpon>mach_m_trainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage\MemberShip-manage\memb_m_admin.resx">
+      <DependentUpon>memb_m_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage\Program-manage\pro_m_admin.resx">
+      <DependentUpon>pro_m_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage\Program-manage\pro_m_trainer.resx">
+      <DependentUpon>pro_m_trainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage\Staff-manage\stf_m_admin.resx">
+      <DependentUpon>stf_m_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage\Trainees-manage\trne_m_admin.resx">
+      <DependentUpon>trne_m_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage\Trainees-manage\trne_m_reciption.resx">
+      <DependentUpon>trne_m_reciption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage\Trainees-manage\trne_m_trainer.resx">
+      <DependentUpon>trne_m_trainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage\Workout-manage\wrkot_m_admin.resx">
+      <DependentUpon>wrkot_m_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage\Workout-manage\wrkot_m_trainer.resx">
+      <DependentUpon>wrkot_m_trainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="profiles\admin_profile.resx">
+      <DependentUpon>admin_profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="profiles\reciption_profile.resx">
+      <DependentUpon>reciption_profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="profiles\trainee_profile.resx">
+      <DependentUpon>trainee_profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="profiles\trainer_profile.resx">
+      <DependentUpon>trainer_profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -617,13 +761,6 @@
   <ItemGroup>
     <None Include="Resources\icons8-xbox-menu-50.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Manage\Machinary-manage\" />
-    <Folder Include="Manage\MemberShip-manage\" />
-    <Folder Include="Manage\Program-manage\" />
-    <Folder Include="Manage\Staff-manage\" />
-    <Folder Include="Manage\Trainees-manage\" />
-    <Folder Include="Manage\Workout-manage\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

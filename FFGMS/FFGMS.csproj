@@ -770,6 +770,35 @@
   <ItemGroup>
     <None Include="Resources\icons8-xbox-menu-50.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\icons8-add-reminder-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-badge-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-bad-idea-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-copyright-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-hand-with-pen-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-manager-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-project-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-resume-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-transaction-list-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-groups-50.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

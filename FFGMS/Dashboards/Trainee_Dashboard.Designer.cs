@@ -264,7 +264,7 @@
             this.menu_trans.SetDecoration(this.bunifuFlatButton8, BunifuAnimatorNS.DecorationType.None);
             this.bunifuFlatButton8.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuFlatButton8.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton8.Iconimage = global::FFGMS.Properties.Resources.icons8_personal_trainer_100_2;
+            this.bunifuFlatButton8.Iconimage = global::FFGMS.Properties.Resources.icons8_resume_50;
             this.bunifuFlatButton8.Iconimage_right = null;
             this.bunifuFlatButton8.Iconimage_right_Selected = null;
             this.bunifuFlatButton8.Iconimage_Selected = null;

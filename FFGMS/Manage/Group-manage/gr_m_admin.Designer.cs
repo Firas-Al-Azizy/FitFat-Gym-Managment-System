@@ -33,7 +33,9 @@
             this.gr_add_admin = new MetroFramework.Controls.MetroTabPage();
             this.gr_view_admin = new MetroFramework.Controls.MetroTabPage();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
             this.gr_tab_admin.SuspendLayout();
+            this.gr_add_admin.SuspendLayout();
             this.SuspendLayout();
             // 
             // gr_tab_admin
@@ -44,9 +46,10 @@
             this.gr_tab_admin.FontWeight = MetroFramework.MetroTabControlWeight.Bold;
             this.gr_tab_admin.ItemSize = new System.Drawing.Size(266, 40);
             this.gr_tab_admin.Location = new System.Drawing.Point(0, 0);
+            this.gr_tab_admin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gr_tab_admin.Name = "gr_tab_admin";
             this.gr_tab_admin.SelectedIndex = 0;
-            this.gr_tab_admin.Size = new System.Drawing.Size(571, 388);
+            this.gr_tab_admin.Size = new System.Drawing.Size(428, 315);
             this.gr_tab_admin.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.gr_tab_admin.Style = MetroFramework.MetroColorStyle.Teal;
             this.gr_tab_admin.TabIndex = 0;
@@ -58,19 +61,21 @@
             // gr_add_admin
             // 
             this.gr_add_admin.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.gr_add_admin.Controls.Add(this.metroTextBox1);
             this.gr_add_admin.HorizontalScrollbarBarColor = true;
             this.gr_add_admin.HorizontalScrollbarHighlightOnWheel = false;
-            this.gr_add_admin.HorizontalScrollbarSize = 10;
+            this.gr_add_admin.HorizontalScrollbarSize = 8;
             this.gr_add_admin.Location = new System.Drawing.Point(4, 44);
+            this.gr_add_admin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gr_add_admin.Name = "gr_add_admin";
-            this.gr_add_admin.Size = new System.Drawing.Size(563, 340);
+            this.gr_add_admin.Size = new System.Drawing.Size(420, 267);
             this.gr_add_admin.Style = MetroFramework.MetroColorStyle.Black;
             this.gr_add_admin.TabIndex = 0;
             this.gr_add_admin.Text = "Add Group";
             this.gr_add_admin.UseStyleColors = true;
             this.gr_add_admin.VerticalScrollbarBarColor = true;
             this.gr_add_admin.VerticalScrollbarHighlightOnWheel = false;
-            this.gr_add_admin.VerticalScrollbarSize = 10;
+            this.gr_add_admin.VerticalScrollbarSize = 8;
             // 
             // gr_view_admin
             // 
@@ -78,32 +83,67 @@
             this.gr_view_admin.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.gr_view_admin.HorizontalScrollbarBarColor = true;
             this.gr_view_admin.HorizontalScrollbarHighlightOnWheel = false;
-            this.gr_view_admin.HorizontalScrollbarSize = 10;
+            this.gr_view_admin.HorizontalScrollbarSize = 8;
             this.gr_view_admin.Location = new System.Drawing.Point(4, 44);
+            this.gr_view_admin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gr_view_admin.Name = "gr_view_admin";
-            this.gr_view_admin.Size = new System.Drawing.Size(563, 340);
+            this.gr_view_admin.Size = new System.Drawing.Size(420, 267);
             this.gr_view_admin.TabIndex = 1;
             this.gr_view_admin.Text = "View Group";
             this.gr_view_admin.UseStyleColors = true;
             this.gr_view_admin.VerticalScrollbarBarColor = true;
             this.gr_view_admin.VerticalScrollbarHighlightOnWheel = false;
-            this.gr_view_admin.VerticalScrollbarSize = 10;
+            this.gr_view_admin.VerticalScrollbarSize = 8;
             // 
             // bunifuElipse1
             // 
             this.bunifuElipse1.ElipseRadius = 5;
             this.bunifuElipse1.TargetControl = this;
             // 
+            // metroTextBox1
+            // 
+            // 
+            // 
+            // 
+            this.metroTextBox1.CustomButton.Image = null;
+            this.metroTextBox1.CustomButton.Location = new System.Drawing.Point(53, 1);
+            this.metroTextBox1.CustomButton.Name = "";
+            this.metroTextBox1.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.metroTextBox1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroTextBox1.CustomButton.TabIndex = 1;
+            this.metroTextBox1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroTextBox1.CustomButton.UseSelectable = true;
+            this.metroTextBox1.CustomButton.Visible = false;
+            this.metroTextBox1.Lines = new string[] {
+        "metroTextBox1"};
+            this.metroTextBox1.Location = new System.Drawing.Point(206, 66);
+            this.metroTextBox1.MaxLength = 32767;
+            this.metroTextBox1.Name = "metroTextBox1";
+            this.metroTextBox1.PasswordChar = '\0';
+            this.metroTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.metroTextBox1.SelectedText = "";
+            this.metroTextBox1.SelectionLength = 0;
+            this.metroTextBox1.SelectionStart = 0;
+            this.metroTextBox1.ShortcutsEnabled = true;
+            this.metroTextBox1.Size = new System.Drawing.Size(75, 23);
+            this.metroTextBox1.TabIndex = 2;
+            this.metroTextBox1.Text = "metroTextBox1";
+            this.metroTextBox1.UseSelectable = true;
+            this.metroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.metroTextBox1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
             // gr_m_admin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(571, 388);
+            this.ClientSize = new System.Drawing.Size(428, 315);
             this.Controls.Add(this.gr_tab_admin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "gr_m_admin";
             this.Text = "gr_m_admin";
             this.gr_tab_admin.ResumeLayout(false);
+            this.gr_add_admin.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -113,5 +153,6 @@
         private MetroFramework.Controls.MetroTabPage gr_view_admin;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private MetroFramework.Controls.MetroTabControl gr_tab_admin;
+        private MetroFramework.Controls.MetroTextBox metroTextBox1;
     }
 }

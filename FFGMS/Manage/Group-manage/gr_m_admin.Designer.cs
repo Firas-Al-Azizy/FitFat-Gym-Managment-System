@@ -33,9 +33,7 @@
             this.gr_add_admin = new MetroFramework.Controls.MetroTabPage();
             this.gr_view_admin = new MetroFramework.Controls.MetroTabPage();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
             this.gr_tab_admin.SuspendLayout();
-            this.gr_add_admin.SuspendLayout();
             this.SuspendLayout();
             // 
             // gr_tab_admin
@@ -61,7 +59,6 @@
             // gr_add_admin
             // 
             this.gr_add_admin.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.gr_add_admin.Controls.Add(this.metroTextBox1);
             this.gr_add_admin.HorizontalScrollbarBarColor = true;
             this.gr_add_admin.HorizontalScrollbarHighlightOnWheel = false;
             this.gr_add_admin.HorizontalScrollbarSize = 8;
@@ -100,38 +97,6 @@
             this.bunifuElipse1.ElipseRadius = 5;
             this.bunifuElipse1.TargetControl = this;
             // 
-            // metroTextBox1
-            // 
-            // 
-            // 
-            // 
-            this.metroTextBox1.CustomButton.Image = null;
-            this.metroTextBox1.CustomButton.Location = new System.Drawing.Point(53, 1);
-            this.metroTextBox1.CustomButton.Name = "";
-            this.metroTextBox1.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox1.CustomButton.TabIndex = 1;
-            this.metroTextBox1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox1.CustomButton.UseSelectable = true;
-            this.metroTextBox1.CustomButton.Visible = false;
-            this.metroTextBox1.Lines = new string[] {
-        "metroTextBox1"};
-            this.metroTextBox1.Location = new System.Drawing.Point(206, 66);
-            this.metroTextBox1.MaxLength = 32767;
-            this.metroTextBox1.Name = "metroTextBox1";
-            this.metroTextBox1.PasswordChar = '\0';
-            this.metroTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox1.SelectedText = "";
-            this.metroTextBox1.SelectionLength = 0;
-            this.metroTextBox1.SelectionStart = 0;
-            this.metroTextBox1.ShortcutsEnabled = true;
-            this.metroTextBox1.Size = new System.Drawing.Size(75, 23);
-            this.metroTextBox1.TabIndex = 2;
-            this.metroTextBox1.Text = "metroTextBox1";
-            this.metroTextBox1.UseSelectable = true;
-            this.metroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
             // gr_m_admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -143,7 +108,6 @@
             this.Name = "gr_m_admin";
             this.Text = "gr_m_admin";
             this.gr_tab_admin.ResumeLayout(false);
-            this.gr_add_admin.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -153,6 +117,5 @@
         private MetroFramework.Controls.MetroTabPage gr_view_admin;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private MetroFramework.Controls.MetroTabControl gr_tab_admin;
-        private MetroFramework.Controls.MetroTextBox metroTextBox1;
     }
 }

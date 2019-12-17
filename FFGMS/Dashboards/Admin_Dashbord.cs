@@ -1,4 +1,5 @@
 ﻿using FFGMS.Manage;
+using FFGMS.Manage.Staff_manage;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -94,7 +95,26 @@ namespace FFGMS
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
+            if (panel1.Width <= 50)
+            {
+                form_list_tabs.Visible = false;
+                form_list_tabs.Controls.Clear();
+                stf_m_admin f = new stf_m_admin()
+                {
+                    TopLevel = false,
+                    TopMost = true,
+                    Dock = DockStyle.Fill,
+                    WindowState = FormWindowState.Maximized
+                };
 
+                form_list_tabs.Controls.Add(f);
+                form_list_tabs.Visible = true;
+                f.Show();
+            }
+            else
+            {
+                form_list_tabs.Visible = false;
+            }
         }
 
         private void bunifuFlatButton2_Click(object sender, EventArgs e)

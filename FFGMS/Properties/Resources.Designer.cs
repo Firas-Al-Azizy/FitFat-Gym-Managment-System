@@ -443,6 +443,26 @@ namespace FFGMS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_erase_16 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_erase_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_erase_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_erase_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_exercise_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-exercise-100", resourceCulture);
@@ -876,6 +896,26 @@ namespace FFGMS.Properties {
         internal static System.Drawing.Bitmap icons8_plank_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-plank-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_plus_16 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_plus_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_plus_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_plus_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

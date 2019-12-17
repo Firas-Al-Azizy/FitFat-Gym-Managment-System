@@ -800,5 +800,17 @@
   <ItemGroup>
     <None Include="Resources\icons8-user-groups-50.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_erase_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_erase_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_plus_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_plus_32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

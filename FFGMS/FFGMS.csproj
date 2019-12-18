@@ -93,6 +93,8 @@
     <Compile Include="Dashboards\Trainee_Dashboard.Designer.cs">
       <DependentUpon>Trainee_Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="db_con\cls_emp.cs" />
+    <Compile Include="db_con\cls_db.cs" />
     <Compile Include="Manage\Group-manage\gr_m_admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -812,8 +814,6 @@
   <ItemGroup>
     <None Include="Resources\icons8_plus_32.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="db_con\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

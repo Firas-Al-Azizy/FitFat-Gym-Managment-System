@@ -445,22 +445,22 @@
             // 
             // logo_panel
             // 
-            this.logo_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(53)))));
+            this.logo_panel.BackColor = System.Drawing.Color.Transparent;
             this.logo_panel.Controls.Add(this.label4);
             this.logo_panel.Controls.Add(this.pictureBox2);
             this.logo_panel.Controls.Add(this.label5);
             this.menu_trans.SetDecoration(this.logo_panel, BunifuAnimatorNS.DecorationType.None);
             this.title_trans.SetDecoration(this.logo_panel, BunifuAnimatorNS.DecorationType.None);
-            this.logo_panel.Location = new System.Drawing.Point(172, 0);
+            this.logo_panel.Location = new System.Drawing.Point(176, 0);
             this.logo_panel.Name = "logo_panel";
-            this.logo_panel.Size = new System.Drawing.Size(551, 568);
+            this.logo_panel.Size = new System.Drawing.Size(548, 568);
             this.logo_panel.TabIndex = 41;
             this.logo_panel.Visible = false;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(53)))));
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.title_trans.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
             this.menu_trans.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
             this.label4.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -473,7 +473,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(53)))));
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.title_trans.SetDecoration(this.pictureBox2, BunifuAnimatorNS.DecorationType.None);
             this.menu_trans.SetDecoration(this.pictureBox2, BunifuAnimatorNS.DecorationType.None);
@@ -487,7 +487,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(53)))));
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.title_trans.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
             this.menu_trans.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
             this.label5.Font = new System.Drawing.Font("Forte", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

@@ -29,22 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation13 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin_Dashbord));
-            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation14 = new BunifuAnimatorNS.Animation();
             this.exit_btn = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.back_btn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.menu_trans = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.logo_panel = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.form_list_tabs = new MetroFramework.Controls.MetroPanel();
-            this.title_trans = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton6 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton7 = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -54,12 +47,19 @@
             this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.menu_trans = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.logo_panel = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.form_list_tabs = new MetroFramework.Controls.MetroPanel();
+            this.title_trans = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.logo_panel.SuspendLayout();
-            this.form_list_tabs.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.logo_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.form_list_tabs.SuspendLayout();
             this.SuspendLayout();
             // 
             // exit_btn
@@ -155,121 +155,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(50, 528);
             this.panel1.TabIndex = 35;
-            // 
-            // menu_trans
-            // 
-            this.menu_trans.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
-            this.menu_trans.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.menu_trans.DefaultAnimation = animation1;
-            // 
-            // logo_panel
-            // 
-            this.logo_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(53)))));
-            this.logo_panel.Controls.Add(this.label4);
-            this.logo_panel.Controls.Add(this.pictureBox2);
-            this.logo_panel.Controls.Add(this.label5);
-            this.title_trans.SetDecoration(this.logo_panel, BunifuAnimatorNS.DecorationType.None);
-            this.menu_trans.SetDecoration(this.logo_panel, BunifuAnimatorNS.DecorationType.None);
-            this.logo_panel.Location = new System.Drawing.Point(172, 0);
-            this.logo_panel.Name = "logo_panel";
-            this.logo_panel.Size = new System.Drawing.Size(551, 568);
-            this.logo_panel.TabIndex = 40;
-            this.logo_panel.Visible = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(53)))));
-            this.menu_trans.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
-            this.title_trans.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
-            this.label4.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
-            this.label4.Location = new System.Drawing.Point(282, 256);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(150, 73);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "GMS";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(53)))));
-            this.menu_trans.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
-            this.title_trans.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
-            this.label5.Font = new System.Drawing.Font("Forte", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
-            this.label5.Location = new System.Drawing.Point(77, 193);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(184, 66);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "FitFat";
-            // 
-            // form_list_tabs
-            // 
-            this.form_list_tabs.Controls.Add(this.logo_panel);
-            this.menu_trans.SetDecoration(this.form_list_tabs, BunifuAnimatorNS.DecorationType.None);
-            this.title_trans.SetDecoration(this.form_list_tabs, BunifuAnimatorNS.DecorationType.None);
-            this.form_list_tabs.Dock = System.Windows.Forms.DockStyle.Right;
-            this.form_list_tabs.HorizontalScrollbarBarColor = true;
-            this.form_list_tabs.HorizontalScrollbarHighlightOnWheel = false;
-            this.form_list_tabs.HorizontalScrollbarSize = 10;
-            this.form_list_tabs.Location = new System.Drawing.Point(48, 33);
-            this.form_list_tabs.Name = "form_list_tabs";
-            this.form_list_tabs.Size = new System.Drawing.Size(723, 528);
-            this.form_list_tabs.TabIndex = 37;
-            this.form_list_tabs.VerticalScrollbarBarColor = true;
-            this.form_list_tabs.VerticalScrollbarHighlightOnWheel = false;
-            this.form_list_tabs.VerticalScrollbarSize = 10;
-            this.form_list_tabs.Visible = false;
-            // 
-            // title_trans
-            // 
-            this.title_trans.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide;
-            this.title_trans.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.title_trans.DefaultAnimation = animation2;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(53)))));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.menu_trans.SetDecoration(this.pictureBox2, BunifuAnimatorNS.DecorationType.None);
-            this.title_trans.SetDecoration(this.pictureBox2, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox2.Image = global::FFGMS.Properties.Resources.icons8_deadlift_100;
-            this.pictureBox2.Location = new System.Drawing.Point(297, 145);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(127, 119);
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
             // 
             // bunifuFlatButton3
             // 
@@ -590,6 +475,121 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // menu_trans
+            // 
+            this.menu_trans.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
+            this.menu_trans.Cursor = null;
+            animation13.AnimateOnlyDifferences = true;
+            animation13.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation13.BlindCoeff")));
+            animation13.LeafCoeff = 0F;
+            animation13.MaxTime = 1F;
+            animation13.MinTime = 0F;
+            animation13.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation13.MosaicCoeff")));
+            animation13.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation13.MosaicShift")));
+            animation13.MosaicSize = 0;
+            animation13.Padding = new System.Windows.Forms.Padding(0);
+            animation13.RotateCoeff = 0F;
+            animation13.RotateLimit = 0F;
+            animation13.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation13.ScaleCoeff")));
+            animation13.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation13.SlideCoeff")));
+            animation13.TimeCoeff = 0F;
+            animation13.TransparencyCoeff = 0F;
+            this.menu_trans.DefaultAnimation = animation13;
+            // 
+            // logo_panel
+            // 
+            this.logo_panel.BackColor = System.Drawing.Color.Transparent;
+            this.logo_panel.Controls.Add(this.label4);
+            this.logo_panel.Controls.Add(this.pictureBox2);
+            this.logo_panel.Controls.Add(this.label5);
+            this.title_trans.SetDecoration(this.logo_panel, BunifuAnimatorNS.DecorationType.None);
+            this.menu_trans.SetDecoration(this.logo_panel, BunifuAnimatorNS.DecorationType.None);
+            this.logo_panel.Location = new System.Drawing.Point(173, 0);
+            this.logo_panel.Name = "logo_panel";
+            this.logo_panel.Size = new System.Drawing.Size(549, 568);
+            this.logo_panel.TabIndex = 40;
+            this.logo_panel.Visible = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.menu_trans.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
+            this.title_trans.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
+            this.label4.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
+            this.label4.Location = new System.Drawing.Point(282, 256);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(150, 73);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "GMS";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.menu_trans.SetDecoration(this.pictureBox2, BunifuAnimatorNS.DecorationType.None);
+            this.title_trans.SetDecoration(this.pictureBox2, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBox2.Image = global::FFGMS.Properties.Resources.icons8_deadlift_100;
+            this.pictureBox2.Location = new System.Drawing.Point(297, 145);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(127, 119);
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.menu_trans.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
+            this.title_trans.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
+            this.label5.Font = new System.Drawing.Font("Forte", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
+            this.label5.Location = new System.Drawing.Point(77, 193);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(184, 66);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "FitFat";
+            // 
+            // form_list_tabs
+            // 
+            this.form_list_tabs.Controls.Add(this.logo_panel);
+            this.menu_trans.SetDecoration(this.form_list_tabs, BunifuAnimatorNS.DecorationType.None);
+            this.title_trans.SetDecoration(this.form_list_tabs, BunifuAnimatorNS.DecorationType.None);
+            this.form_list_tabs.Dock = System.Windows.Forms.DockStyle.Right;
+            this.form_list_tabs.HorizontalScrollbarBarColor = true;
+            this.form_list_tabs.HorizontalScrollbarHighlightOnWheel = false;
+            this.form_list_tabs.HorizontalScrollbarSize = 10;
+            this.form_list_tabs.Location = new System.Drawing.Point(48, 33);
+            this.form_list_tabs.Name = "form_list_tabs";
+            this.form_list_tabs.Size = new System.Drawing.Size(723, 528);
+            this.form_list_tabs.TabIndex = 37;
+            this.form_list_tabs.VerticalScrollbarBarColor = true;
+            this.form_list_tabs.VerticalScrollbarHighlightOnWheel = false;
+            this.form_list_tabs.VerticalScrollbarSize = 10;
+            this.form_list_tabs.Visible = false;
+            // 
+            // title_trans
+            // 
+            this.title_trans.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide;
+            this.title_trans.Cursor = null;
+            animation14.AnimateOnlyDifferences = true;
+            animation14.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation14.BlindCoeff")));
+            animation14.LeafCoeff = 0F;
+            animation14.MaxTime = 1F;
+            animation14.MinTime = 0F;
+            animation14.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation14.MosaicCoeff")));
+            animation14.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation14.MosaicShift")));
+            animation14.MosaicSize = 0;
+            animation14.Padding = new System.Windows.Forms.Padding(0);
+            animation14.RotateCoeff = 0F;
+            animation14.RotateLimit = 0F;
+            animation14.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation14.ScaleCoeff")));
+            animation14.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation14.SlideCoeff")));
+            animation14.TimeCoeff = 0F;
+            animation14.TransparencyCoeff = 0F;
+            this.title_trans.DefaultAnimation = animation14;
+            // 
             // Admin_Dashbord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -609,11 +609,11 @@
             this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.logo_panel.ResumeLayout(false);
             this.logo_panel.PerformLayout();
-            this.form_list_tabs.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.form_list_tabs.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

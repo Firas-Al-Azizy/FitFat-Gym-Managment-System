@@ -812,5 +812,8 @@
   <ItemGroup>
     <None Include="Resources\icons8_plus_32.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="db_con\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

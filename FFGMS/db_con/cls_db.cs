@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
 
+
 namespace FFGMS.db_con
 {
     class cls_db
@@ -16,8 +17,8 @@ namespace FFGMS.db_con
 
         public static void setConnection()
         {
-            SqlConnection con = new SqlConnection(@"server=.;
-        database=ffgms ; integrated security=true");
+            SqlConnection con = new SqlConnection(@"server=DESKTOP-HPA6H4U\SQLEXPRESS;
+        database=db_ffgms ; integrated security=true");
             // SqlConnection con = new SqlConnection(@"server=ALI-PC\SQLEXPRESS;
             //database=ali_db ; integrated security=true");
         }

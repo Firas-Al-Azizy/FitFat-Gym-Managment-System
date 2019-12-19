@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.st_add_admin = new MetroFramework.Controls.MetroTabPage();
             this.table_pnl = new System.Windows.Forms.TableLayoutPanel();
             this.gender_gbx = new Guna.UI.WinForms.GunaGroupBox();
@@ -58,20 +58,21 @@
             this.adr_txb = new MetroFramework.Controls.MetroTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.st_tab_admin = new MetroFramework.Controls.MetroTabControl();
-            this.gr_view_admin = new MetroFramework.Controls.MetroTabPage();
+            this.stf_view_admin = new MetroFramework.Controls.MetroTabPage();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.age_txb = new MetroFramework.Controls.MetroTextBox();
             this.type_cobx = new MetroFramework.Controls.MetroComboBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.view_menu = new System.Windows.Forms.TableLayoutPanel();
-            this.search_panel = new System.Windows.Forms.Panel();
-            this.search_txb = new MetroFramework.Controls.MetroTextBox();
-            this.data_view = new Guna.UI.WinForms.GunaDataGridView();
             this.sel_img_btn = new Guna.UI.WinForms.GunaButton();
             this.img_picb = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.erase_btn = new Guna.UI.WinForms.GunaButton();
             this.add_btn = new Guna.UI.WinForms.GunaButton();
+            this.view_pnl = new System.Windows.Forms.TableLayoutPanel();
+            this.data_view = new Guna.UI.WinForms.GunaDataGridView();
+            this.view_menu = new System.Windows.Forms.TableLayoutPanel();
+            this.search_panel = new System.Windows.Forms.Panel();
+            this.search_txb = new MetroFramework.Controls.MetroTextBox();
             this.search_picbx = new System.Windows.Forms.PictureBox();
             this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton4 = new Guna.UI.WinForms.GunaButton();
@@ -82,13 +83,14 @@
             this.gender_gbx.SuspendLayout();
             this.btn_grbx.SuspendLayout();
             this.st_tab_admin.SuspendLayout();
-            this.gr_view_admin.SuspendLayout();
+            this.stf_view_admin.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.img_picb)).BeginInit();
+            this.view_pnl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.data_view)).BeginInit();
             this.view_menu.SuspendLayout();
             this.search_panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.data_view)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img_picb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.search_picbx)).BeginInit();
             this.SuspendLayout();
             // 
@@ -625,12 +627,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.st_tab_admin.Controls.Add(this.st_add_admin);
-            this.st_tab_admin.Controls.Add(this.gr_view_admin);
+            this.st_tab_admin.Controls.Add(this.stf_view_admin);
             this.st_tab_admin.FontWeight = MetroFramework.MetroTabControlWeight.Bold;
             this.st_tab_admin.ItemSize = new System.Drawing.Size(266, 40);
             this.st_tab_admin.Location = new System.Drawing.Point(0, 3);
             this.st_tab_admin.Name = "st_tab_admin";
-            this.st_tab_admin.SelectedIndex = 0;
+            this.st_tab_admin.SelectedIndex = 1;
             this.st_tab_admin.Size = new System.Drawing.Size(737, 436);
             this.st_tab_admin.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.st_tab_admin.Style = MetroFramework.MetroColorStyle.Teal;
@@ -641,25 +643,24 @@
             this.st_tab_admin.UseStyleColors = true;
             this.st_tab_admin.SelectedIndexChanged += new System.EventHandler(this.st_tab_admin_SelectedIndexChanged);
             // 
-            // gr_view_admin
+            // stf_view_admin
             // 
-            this.gr_view_admin.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.gr_view_admin.Controls.Add(this.data_view);
-            this.gr_view_admin.Controls.Add(this.view_menu);
-            this.gr_view_admin.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.gr_view_admin.HorizontalScrollbarBarColor = true;
-            this.gr_view_admin.HorizontalScrollbarHighlightOnWheel = false;
-            this.gr_view_admin.HorizontalScrollbarSize = 10;
-            this.gr_view_admin.Location = new System.Drawing.Point(4, 44);
-            this.gr_view_admin.Name = "gr_view_admin";
-            this.gr_view_admin.Size = new System.Drawing.Size(729, 388);
-            this.gr_view_admin.TabIndex = 1;
-            this.gr_view_admin.Text = "View Staff";
-            this.gr_view_admin.UseStyleColors = true;
-            this.gr_view_admin.VerticalScrollbarBarColor = true;
-            this.gr_view_admin.VerticalScrollbarHighlightOnWheel = false;
-            this.gr_view_admin.VerticalScrollbarSize = 10;
-            this.gr_view_admin.Click += new System.EventHandler(this.gr_view_admin_Click);
+            this.stf_view_admin.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.stf_view_admin.Controls.Add(this.view_pnl);
+            this.stf_view_admin.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.stf_view_admin.HorizontalScrollbarBarColor = true;
+            this.stf_view_admin.HorizontalScrollbarHighlightOnWheel = false;
+            this.stf_view_admin.HorizontalScrollbarSize = 10;
+            this.stf_view_admin.Location = new System.Drawing.Point(4, 44);
+            this.stf_view_admin.Name = "stf_view_admin";
+            this.stf_view_admin.Size = new System.Drawing.Size(729, 388);
+            this.stf_view_admin.TabIndex = 1;
+            this.stf_view_admin.Text = "View Staff";
+            this.stf_view_admin.UseStyleColors = true;
+            this.stf_view_admin.VerticalScrollbarBarColor = true;
+            this.stf_view_admin.VerticalScrollbarHighlightOnWheel = false;
+            this.stf_view_admin.VerticalScrollbarSize = 10;
+            this.stf_view_admin.Click += new System.EventHandler(this.gr_view_admin_Click);
             // 
             // bunifuElipse1
             // 
@@ -732,129 +733,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(34, 143);
             this.panel4.TabIndex = 0;
-            // 
-            // view_menu
-            // 
-            this.view_menu.BackColor = System.Drawing.Color.Transparent;
-            this.view_menu.ColumnCount = 5;
-            this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.08333F));
-            this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.91667F));
-            this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
-            this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 116F));
-            this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 266F));
-            this.view_menu.Controls.Add(this.search_panel, 4, 0);
-            this.view_menu.Controls.Add(this.gunaButton3, 0, 0);
-            this.view_menu.Controls.Add(this.gunaButton4, 0, 0);
-            this.view_menu.Controls.Add(this.gunaButton1, 0, 0);
-            this.view_menu.Controls.Add(this.gunaButton2, 0, 0);
-            this.view_menu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.view_menu.Location = new System.Drawing.Point(0, 0);
-            this.view_menu.Name = "view_menu";
-            this.view_menu.RowCount = 1;
-            this.view_menu.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.view_menu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
-            this.view_menu.Size = new System.Drawing.Size(729, 36);
-            this.view_menu.TabIndex = 2;
-            // 
-            // search_panel
-            // 
-            this.search_panel.BackColor = System.Drawing.Color.Transparent;
-            this.search_panel.Controls.Add(this.search_txb);
-            this.search_panel.Controls.Add(this.search_picbx);
-            this.search_panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.search_panel.Location = new System.Drawing.Point(465, 3);
-            this.search_panel.Name = "search_panel";
-            this.search_panel.Size = new System.Drawing.Size(261, 33);
-            this.search_panel.TabIndex = 4;
-            // 
-            // search_txb
-            // 
-            // 
-            // 
-            // 
-            this.search_txb.CustomButton.Image = null;
-            this.search_txb.CustomButton.Location = new System.Drawing.Point(190, 1);
-            this.search_txb.CustomButton.Name = "";
-            this.search_txb.CustomButton.Size = new System.Drawing.Size(31, 31);
-            this.search_txb.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.search_txb.CustomButton.TabIndex = 1;
-            this.search_txb.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.search_txb.CustomButton.UseSelectable = true;
-            this.search_txb.CustomButton.Visible = false;
-            this.search_txb.Dock = System.Windows.Forms.DockStyle.Right;
-            this.search_txb.Lines = new string[0];
-            this.search_txb.Location = new System.Drawing.Point(39, 0);
-            this.search_txb.MaxLength = 32767;
-            this.search_txb.Name = "search_txb";
-            this.search_txb.PasswordChar = '\0';
-            this.search_txb.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.search_txb.SelectedText = "";
-            this.search_txb.SelectionLength = 0;
-            this.search_txb.SelectionStart = 0;
-            this.search_txb.ShortcutsEnabled = true;
-            this.search_txb.Size = new System.Drawing.Size(222, 33);
-            this.search_txb.TabIndex = 6;
-            this.search_txb.UseSelectable = true;
-            this.search_txb.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.search_txb.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // data_view
-            // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.data_view.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.data_view.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.data_view.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.data_view.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.data_view.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.data_view.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.data_view.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.data_view.DefaultCellStyle = dataGridViewCellStyle6;
-            this.data_view.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.data_view.EnableHeadersVisualStyles = false;
-            this.data_view.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.data_view.Location = new System.Drawing.Point(0, 36);
-            this.data_view.Name = "data_view";
-            this.data_view.RowHeadersVisible = false;
-            this.data_view.RowTemplate.Height = 24;
-            this.data_view.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.data_view.Size = new System.Drawing.Size(729, 352);
-            this.data_view.TabIndex = 3;
-            this.data_view.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
-            this.data_view.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.data_view.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.data_view.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.data_view.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.data_view.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.data_view.ThemeStyle.BackColor = System.Drawing.SystemColors.Control;
-            this.data_view.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.data_view.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.data_view.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.data_view.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.data_view.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.data_view.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.data_view.ThemeStyle.HeaderStyle.Height = 4;
-            this.data_view.ThemeStyle.ReadOnly = false;
-            this.data_view.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.data_view.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.data_view.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.data_view.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.data_view.ThemeStyle.RowsStyle.Height = 24;
-            this.data_view.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.data_view.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // sel_img_btn
             // 
@@ -945,6 +823,146 @@
             this.add_btn.TabIndex = 0;
             this.add_btn.Text = "Add";
             // 
+            // view_pnl
+            // 
+            this.view_pnl.BackColor = System.Drawing.Color.Transparent;
+            this.view_pnl.ColumnCount = 1;
+            this.view_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.view_pnl.Controls.Add(this.view_menu, 0, 0);
+            this.view_pnl.Controls.Add(this.data_view, 0, 1);
+            this.view_pnl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.view_pnl.Location = new System.Drawing.Point(0, 0);
+            this.view_pnl.Name = "view_pnl";
+            this.view_pnl.RowCount = 3;
+            this.view_pnl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.42857F));
+            this.view_pnl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 88.57143F));
+            this.view_pnl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.view_pnl.Size = new System.Drawing.Size(729, 388);
+            this.view_pnl.TabIndex = 2;
+            // 
+            // data_view
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.data_view.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.data_view.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.data_view.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.data_view.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.data_view.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.data_view.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.data_view.ColumnHeadersHeight = 4;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.data_view.DefaultCellStyle = dataGridViewCellStyle3;
+            this.data_view.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.data_view.EnableHeadersVisualStyles = false;
+            this.data_view.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.data_view.Location = new System.Drawing.Point(3, 45);
+            this.data_view.Name = "data_view";
+            this.data_view.RowHeadersVisible = false;
+            this.data_view.RowTemplate.Height = 24;
+            this.data_view.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.data_view.Size = new System.Drawing.Size(723, 319);
+            this.data_view.TabIndex = 5;
+            this.data_view.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
+            this.data_view.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.data_view.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.data_view.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.data_view.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.data_view.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.data_view.ThemeStyle.BackColor = System.Drawing.SystemColors.Control;
+            this.data_view.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.data_view.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.data_view.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.data_view.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.data_view.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.data_view.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.data_view.ThemeStyle.HeaderStyle.Height = 4;
+            this.data_view.ThemeStyle.ReadOnly = false;
+            this.data_view.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.data_view.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.data_view.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.data_view.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.data_view.ThemeStyle.RowsStyle.Height = 24;
+            this.data_view.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.data_view.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // view_menu
+            // 
+            this.view_menu.BackColor = System.Drawing.Color.Transparent;
+            this.view_menu.ColumnCount = 5;
+            this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.08333F));
+            this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.91667F));
+            this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
+            this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 116F));
+            this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 266F));
+            this.view_menu.Controls.Add(this.search_panel, 4, 0);
+            this.view_menu.Controls.Add(this.gunaButton3, 0, 0);
+            this.view_menu.Controls.Add(this.gunaButton4, 0, 0);
+            this.view_menu.Controls.Add(this.gunaButton1, 0, 0);
+            this.view_menu.Controls.Add(this.gunaButton2, 0, 0);
+            this.view_menu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.view_menu.Location = new System.Drawing.Point(3, 3);
+            this.view_menu.Name = "view_menu";
+            this.view_menu.RowCount = 1;
+            this.view_menu.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.view_menu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.view_menu.Size = new System.Drawing.Size(723, 36);
+            this.view_menu.TabIndex = 4;
+            // 
+            // search_panel
+            // 
+            this.search_panel.BackColor = System.Drawing.Color.Transparent;
+            this.search_panel.Controls.Add(this.search_txb);
+            this.search_panel.Controls.Add(this.search_picbx);
+            this.search_panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.search_panel.Location = new System.Drawing.Point(459, 3);
+            this.search_panel.Name = "search_panel";
+            this.search_panel.Size = new System.Drawing.Size(261, 33);
+            this.search_panel.TabIndex = 4;
+            // 
+            // search_txb
+            // 
+            // 
+            // 
+            // 
+            this.search_txb.CustomButton.Image = null;
+            this.search_txb.CustomButton.Location = new System.Drawing.Point(190, 1);
+            this.search_txb.CustomButton.Name = "";
+            this.search_txb.CustomButton.Size = new System.Drawing.Size(31, 31);
+            this.search_txb.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.search_txb.CustomButton.TabIndex = 1;
+            this.search_txb.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.search_txb.CustomButton.UseSelectable = true;
+            this.search_txb.CustomButton.Visible = false;
+            this.search_txb.Dock = System.Windows.Forms.DockStyle.Right;
+            this.search_txb.Lines = new string[0];
+            this.search_txb.Location = new System.Drawing.Point(39, 0);
+            this.search_txb.MaxLength = 32767;
+            this.search_txb.Name = "search_txb";
+            this.search_txb.PasswordChar = '\0';
+            this.search_txb.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.search_txb.SelectedText = "";
+            this.search_txb.SelectionLength = 0;
+            this.search_txb.SelectionStart = 0;
+            this.search_txb.ShortcutsEnabled = true;
+            this.search_txb.Size = new System.Drawing.Size(222, 33);
+            this.search_txb.TabIndex = 6;
+            this.search_txb.UseSelectable = true;
+            this.search_txb.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.search_txb.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
             // search_picbx
             // 
             this.search_picbx.BackColor = System.Drawing.Color.Transparent;
@@ -970,7 +988,7 @@
             this.gunaButton3.ForeColor = System.Drawing.Color.White;
             this.gunaButton3.Image = global::FFGMS.Properties.Resources.icons8_print_32;
             this.gunaButton3.ImageSize = new System.Drawing.Size(15, 15);
-            this.gunaButton3.Location = new System.Drawing.Point(349, 3);
+            this.gunaButton3.Location = new System.Drawing.Point(343, 3);
             this.gunaButton3.Name = "gunaButton3";
             this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton3.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -995,7 +1013,7 @@
             this.gunaButton4.ForeColor = System.Drawing.Color.White;
             this.gunaButton4.Image = global::FFGMS.Properties.Resources.icons8_delete_32;
             this.gunaButton4.ImageSize = new System.Drawing.Size(15, 15);
-            this.gunaButton4.Location = new System.Drawing.Point(229, 3);
+            this.gunaButton4.Location = new System.Drawing.Point(223, 3);
             this.gunaButton4.Name = "gunaButton4";
             this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton4.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -1020,14 +1038,14 @@
             this.gunaButton1.ForeColor = System.Drawing.Color.White;
             this.gunaButton1.Image = global::FFGMS.Properties.Resources.icons8_swap_32;
             this.gunaButton1.ImageSize = new System.Drawing.Size(15, 15);
-            this.gunaButton1.Location = new System.Drawing.Point(109, 3);
+            this.gunaButton1.Location = new System.Drawing.Point(107, 3);
             this.gunaButton1.Name = "gunaButton1";
             this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton1.OnHoverImage = null;
             this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton1.Size = new System.Drawing.Size(114, 33);
+            this.gunaButton1.Size = new System.Drawing.Size(110, 33);
             this.gunaButton1.TabIndex = 3;
             this.gunaButton1.Text = "Change";
             this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -1052,7 +1070,7 @@
             this.gunaButton2.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton2.OnHoverImage = null;
             this.gunaButton2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton2.Size = new System.Drawing.Size(100, 33);
+            this.gunaButton2.Size = new System.Drawing.Size(98, 33);
             this.gunaButton2.TabIndex = 2;
             this.gunaButton2.Text = "View";
             this.gunaButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -1074,13 +1092,14 @@
             this.gender_gbx.PerformLayout();
             this.btn_grbx.ResumeLayout(false);
             this.st_tab_admin.ResumeLayout(false);
-            this.gr_view_admin.ResumeLayout(false);
+            this.stf_view_admin.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.img_picb)).EndInit();
+            this.view_pnl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.data_view)).EndInit();
             this.view_menu.ResumeLayout(false);
             this.search_panel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.data_view)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img_picb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.search_picbx)).EndInit();
             this.ResumeLayout(false);
 
@@ -1090,7 +1109,7 @@
 
         private MetroFramework.Controls.MetroTabPage st_add_admin;
         private MetroFramework.Controls.MetroTabControl st_tab_admin;
-        private MetroFramework.Controls.MetroTabPage gr_view_admin;
+        private MetroFramework.Controls.MetroTabPage stf_view_admin;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.TableLayoutPanel table_pnl;
         private Guna.UI.WinForms.GunaGroupBox gender_gbx;
@@ -1124,14 +1143,15 @@
         private System.Windows.Forms.Panel panel4;
         private Guna.UI.WinForms.GunaButton sel_img_btn;
         private Guna.UI.WinForms.GunaCirclePictureBox img_picb;
+        private System.Windows.Forms.TableLayoutPanel view_pnl;
         private System.Windows.Forms.TableLayoutPanel view_menu;
+        private System.Windows.Forms.Panel search_panel;
+        private MetroFramework.Controls.MetroTextBox search_txb;
+        private System.Windows.Forms.PictureBox search_picbx;
         private Guna.UI.WinForms.GunaButton gunaButton3;
         private Guna.UI.WinForms.GunaButton gunaButton4;
         private Guna.UI.WinForms.GunaButton gunaButton1;
         private Guna.UI.WinForms.GunaButton gunaButton2;
-        private System.Windows.Forms.Panel search_panel;
-        private MetroFramework.Controls.MetroTextBox search_txb;
-        private System.Windows.Forms.PictureBox search_picbx;
         private Guna.UI.WinForms.GunaDataGridView data_view;
     }
 }

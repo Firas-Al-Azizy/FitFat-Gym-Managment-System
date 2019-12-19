@@ -814,6 +814,32 @@
   <ItemGroup>
     <None Include="Resources\icons8_plus_32.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\search_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_delete_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_delete_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_print_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_print_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_swap_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_swap_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_view_module_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_view_module_32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

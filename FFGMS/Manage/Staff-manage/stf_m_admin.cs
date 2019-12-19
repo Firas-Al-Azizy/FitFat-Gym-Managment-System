@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FFGMS.db_con;
 
 namespace FFGMS.Manage.Staff_manage
 {
@@ -168,6 +169,32 @@ namespace FFGMS.Manage.Staff_manage
         }
 
         private void erase_btn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void erase_btn_Click_1(object sender, EventArgs e)
+        {
+            adr_txb.Clear();
+            age_txb.Clear();
+            email_txb.Clear();
+            name_txb.Clear();
+            pho_txb.Clear();
+            pass_txb.Clear();
+            sal_txb.Clear();
+            uname_txb.Clear();
+            type_cobx.SelectedIndex = -1;
+            img_picb.Image = null;
+            
+
+        }
+
+        private void table_pnl_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void gunaButton1_Click(object sender, EventArgs e)
         {
 
         }

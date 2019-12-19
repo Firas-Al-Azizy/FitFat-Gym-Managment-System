@@ -16,8 +16,8 @@ namespace FFGMS.db_con
 
         public static void setConnection()
         {
-            SqlConnection con = new SqlConnection(@"server=.;
-        database=ffgms ; integrated security=true");
+        //    SqlConnection con = new SqlConnection(@"server=DESKTOP-46DG448\SQLEXPRESS;
+        //database=db_ffgms ; integrated security=true");
             // SqlConnection con = new SqlConnection(@"server=ALI-PC\SQLEXPRESS;
             //database=ali_db ; integrated security=true");
         }

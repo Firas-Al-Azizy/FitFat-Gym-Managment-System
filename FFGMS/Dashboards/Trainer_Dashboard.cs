@@ -1,4 +1,9 @@
 ﻿using FFGMS.Manage.Group_manage;
+using FFGMS.Manage.Machinary_manage;
+using FFGMS.Manage.Program_manage;
+using FFGMS.Manage.Trainees_manage;
+using FFGMS.Manage.Workout_manage;
+using FFGMS.profiles;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -100,6 +105,126 @@ namespace FFGMS
                 form_list_tabs.Visible = false;
                 form_list_tabs.Controls.Clear();
                 gr_m_trainer f = new gr_m_trainer()
+                {
+                    TopLevel = false,
+                    TopMost = true,
+                    Dock = DockStyle.Fill,
+                    WindowState = FormWindowState.Maximized
+                };
+
+                form_list_tabs.Controls.Add(f);
+                form_list_tabs.Visible = true;
+                f.Show();
+            }
+            else
+            {
+                form_list_tabs.Visible = false;
+            }
+        }
+
+        private void bunifuFlatButton2_Click(object sender, EventArgs e)
+        {
+            if (panel1.Width <= 50)
+            {
+                form_list_tabs.Visible = false;
+                form_list_tabs.Controls.Clear();
+                trne_m_trainer f = new trne_m_trainer()
+                {
+                    TopLevel = false,
+                    TopMost = true,
+                    Dock = DockStyle.Fill,
+                    WindowState = FormWindowState.Maximized
+                };
+
+                form_list_tabs.Controls.Add(f);
+                form_list_tabs.Visible = true;
+                f.Show();
+            }
+            else
+            {
+                form_list_tabs.Visible = false;
+            }
+        }
+
+        private void bunifuFlatButton4_Click(object sender, EventArgs e)
+        {
+            if (panel1.Width <= 50)
+            {
+                form_list_tabs.Visible = false;
+                form_list_tabs.Controls.Clear();
+                mach_m_trainer f = new mach_m_trainer()
+                {
+                    TopLevel = false,
+                    TopMost = true,
+                    Dock = DockStyle.Fill,
+                    WindowState = FormWindowState.Maximized
+                };
+
+                form_list_tabs.Controls.Add(f);
+                form_list_tabs.Visible = true;
+                f.Show();
+            }
+            else
+            {
+                form_list_tabs.Visible = false;
+            }
+        }
+
+        private void bunifuFlatButton5_Click(object sender, EventArgs e)
+        {
+            if (panel1.Width <= 50)
+            {
+                form_list_tabs.Visible = false;
+                form_list_tabs.Controls.Clear();
+                wrkot_m_trainer f = new wrkot_m_trainer()
+                {
+                    TopLevel = false,
+                    TopMost = true,
+                    Dock = DockStyle.Fill,
+                    WindowState = FormWindowState.Maximized
+                };
+
+                form_list_tabs.Controls.Add(f);
+                form_list_tabs.Visible = true;
+                f.Show();
+            }
+            else
+            {
+                form_list_tabs.Visible = false;
+            }
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            if (panel1.Width <= 50)
+            {
+                form_list_tabs.Visible = false;
+                form_list_tabs.Controls.Clear();
+                pro_m_trainer f = new pro_m_trainer()
+                {
+                    TopLevel = false,
+                    TopMost = true,
+                    Dock = DockStyle.Fill,
+                    WindowState = FormWindowState.Maximized
+                };
+
+                form_list_tabs.Controls.Add(f);
+                form_list_tabs.Visible = true;
+                f.Show();
+            }
+            else
+            {
+                form_list_tabs.Visible = false;
+            }
+        }
+
+        private void bunifuFlatButton3_Click(object sender, EventArgs e)
+        {
+            if (panel1.Width <= 50)
+            {
+                form_list_tabs.Visible = false;
+                form_list_tabs.Controls.Clear();
+                trainer_profile f = new trainer_profile()
                 {
                     TopLevel = false,
                     TopMost = true,

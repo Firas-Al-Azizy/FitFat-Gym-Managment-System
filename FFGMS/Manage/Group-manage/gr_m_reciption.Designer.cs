@@ -37,7 +37,6 @@
             this.view_pnl = new System.Windows.Forms.TableLayoutPanel();
             this.view_menu = new System.Windows.Forms.TableLayoutPanel();
             this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
             this.search_panel = new System.Windows.Forms.Panel();
             this.search_txb = new MetroFramework.Controls.MetroTextBox();
@@ -114,9 +113,8 @@
             this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.91667F));
             this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 113F));
             this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 123F));
-            this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 267F));
+            this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 268F));
             this.view_menu.Controls.Add(this.gunaButton3, 0, 0);
-            this.view_menu.Controls.Add(this.gunaButton1, 0, 0);
             this.view_menu.Controls.Add(this.gunaButton2, 0, 0);
             this.view_menu.Controls.Add(this.search_panel, 4, 0);
             this.view_menu.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -141,42 +139,17 @@
             this.gunaButton3.ForeColor = System.Drawing.Color.White;
             this.gunaButton3.Image = global::FFGMS.Properties.Resources.icons8_print_32;
             this.gunaButton3.ImageSize = new System.Drawing.Size(15, 15);
-            this.gunaButton3.Location = new System.Drawing.Point(222, 3);
+            this.gunaButton3.Location = new System.Drawing.Point(106, 3);
             this.gunaButton3.Name = "gunaButton3";
             this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton3.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaButton3.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton3.OnHoverImage = null;
             this.gunaButton3.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton3.Size = new System.Drawing.Size(107, 33);
+            this.gunaButton3.Size = new System.Drawing.Size(109, 33);
             this.gunaButton3.TabIndex = 10;
             this.gunaButton3.Text = "Print";
             this.gunaButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // gunaButton1
-            // 
-            this.gunaButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaButton1.AnimationSpeed = 0.03F;
-            this.gunaButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
-            this.gunaButton1.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton1.ForeColor = System.Drawing.Color.White;
-            this.gunaButton1.Image = global::FFGMS.Properties.Resources.icons8_swap_32;
-            this.gunaButton1.ImageSize = new System.Drawing.Size(15, 15);
-            this.gunaButton1.Location = new System.Drawing.Point(106, 3);
-            this.gunaButton1.Name = "gunaButton1";
-            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton1.OnHoverImage = null;
-            this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton1.Size = new System.Drawing.Size(110, 33);
-            this.gunaButton1.TabIndex = 9;
-            this.gunaButton1.Text = "Change";
-            this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // gunaButton2
             // 
@@ -209,9 +182,9 @@
             this.search_panel.Controls.Add(this.search_txb);
             this.search_panel.Controls.Add(this.search_picbx);
             this.search_panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.search_panel.Location = new System.Drawing.Point(458, 3);
+            this.search_panel.Location = new System.Drawing.Point(457, 3);
             this.search_panel.Name = "search_panel";
-            this.search_panel.Size = new System.Drawing.Size(262, 33);
+            this.search_panel.Size = new System.Drawing.Size(263, 33);
             this.search_panel.TabIndex = 4;
             // 
             // search_txb
@@ -230,7 +203,7 @@
             this.search_txb.CustomButton.Visible = false;
             this.search_txb.Dock = System.Windows.Forms.DockStyle.Right;
             this.search_txb.Lines = new string[0];
-            this.search_txb.Location = new System.Drawing.Point(40, 0);
+            this.search_txb.Location = new System.Drawing.Point(41, 0);
             this.search_txb.MaxLength = 32767;
             this.search_txb.Name = "search_txb";
             this.search_txb.PasswordChar = '\0';
@@ -352,7 +325,6 @@
         private System.Windows.Forms.PictureBox search_picbx;
         private Guna.UI.WinForms.GunaDataGridView data_view;
         private Guna.UI.WinForms.GunaButton gunaButton3;
-        private Guna.UI.WinForms.GunaButton gunaButton1;
         private Guna.UI.WinForms.GunaButton gunaButton2;
     }
 }

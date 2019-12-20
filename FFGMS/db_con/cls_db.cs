@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
+using System.IO;
 
 
 namespace FFGMS.db_con
@@ -13,14 +14,14 @@ namespace FFGMS.db_con
     {
         static SqlConnection con;
 
-        SqlCommand Scom;
-
         public static void setConnection()
         {
-            SqlConnection con = new SqlConnection(@"server=DESKTOP-HPA6H4U\SQLEXPRESS;
+             con = new SqlConnection(@"server=DESKTOP-HPA6H4U\SQLEXPRESS;
         database=db_ffgms ; integrated security=true");
-            // SqlConnection con = new SqlConnection(@"server=ALI-PC\SQLEXPRESS;
-            //database=ali_db ; integrated security=true");
+            //   con = new SqlConnection(@"Server=DESKTOP-HPA6H4U\SQLEXPRESS;
+            //User Id=ali_admin;Password=ali123;Database=stud_db;");
+            //
+            
         }
 
         public static object exe_pro(SqlCommand com, int type)

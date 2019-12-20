@@ -9,11 +9,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace FFGMS
 {
     public partial class Admin_Dashbord : Form
     {
+
+        SqlConnection con = new SqlConnection(@"server=DESKTOP-HPA6H4U\SQLEXPRESS;
+        database=db_ffgms ; integrated security=true");
+
         public Admin_Dashbord()
         {
             InitializeComponent();
@@ -149,7 +154,19 @@ namespace FFGMS
 
         private void Admin_Dashbord_Load(object sender, EventArgs e)
         {
+            try
+            {
+                con.Open();
+                MessageBox.Show("conncting is true");
+                con.Close();
 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error 005 :\n" + ex.Message);
+
+            }
+            con.Close();
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -179,6 +196,11 @@ namespace FFGMS
             {
                 form_list_tabs.Visible = false;
             }
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

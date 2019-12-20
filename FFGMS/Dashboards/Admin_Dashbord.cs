@@ -1,5 +1,11 @@
 ﻿using FFGMS.Manage;
+using FFGMS.Manage.Machinary_manage;
+using FFGMS.Manage.MemberShip_manage;
+using FFGMS.Manage.Program_manage;
 using FFGMS.Manage.Staff_manage;
+using FFGMS.Manage.Trainees_manage;
+using FFGMS.Manage.Workout_manage;
+using FFGMS.profiles;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,21 +15,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 
 namespace FFGMS
 {
     public partial class Admin_Dashbord : Form
     {
-
-        SqlConnection con = new SqlConnection(@"server=DESKTOP-HPA6H4U\SQLEXPRESS;
-        database=db_ffgms ; integrated security=true");
-
         public Admin_Dashbord()
         {
             InitializeComponent();
         }
-     
+
 
         private void exit_btn_Click(object sender, EventArgs e)
         {
@@ -40,7 +41,7 @@ namespace FFGMS
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            
+
 
             if (panel1.Width <= 50)
             {
@@ -124,12 +125,51 @@ namespace FFGMS
 
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
+            if (panel1.Width <= 50)
+            {
+                form_list_tabs.Visible = false;
+                form_list_tabs.Controls.Clear();
+                trne_m_admin f = new trne_m_admin()
+                {
+                    TopLevel = false,
+                    TopMost = true,
+                    Dock = DockStyle.Fill,
+                    WindowState = FormWindowState.Maximized
+                };
+
+                form_list_tabs.Controls.Add(f);
+                form_list_tabs.Visible = true;
+                f.Show();
+            }
+            else
+            {
+                form_list_tabs.Visible = false;
+            }
 
         }
 
         private void bunifuFlatButton4_Click(object sender, EventArgs e)
         {
+            if (panel1.Width <= 50)
+            {
+                form_list_tabs.Visible = false;
+                form_list_tabs.Controls.Clear();
+                mach_m_admincs f = new mach_m_admincs()
+                {
+                    TopLevel = false,
+                    TopMost = true,
+                    Dock = DockStyle.Fill,
+                    WindowState = FormWindowState.Maximized
+                };
 
+                form_list_tabs.Controls.Add(f);
+                form_list_tabs.Visible = true;
+                f.Show();
+            }
+            else
+            {
+                form_list_tabs.Visible = false;
+            }
         }
 
         private void bunifuFlatButton3_Click(object sender, EventArgs e)
@@ -139,34 +179,79 @@ namespace FFGMS
 
         private void bunifuFlatButton5_Click(object sender, EventArgs e)
         {
+            if (panel1.Width <= 50)
+            {
+                form_list_tabs.Visible = false;
+                form_list_tabs.Controls.Clear();
+                wrkot_m_admin f = new wrkot_m_admin()
+                {
+                    TopLevel = false,
+                    TopMost = true,
+                    Dock = DockStyle.Fill,
+                    WindowState = FormWindowState.Maximized
+                };
 
+                form_list_tabs.Controls.Add(f);
+                form_list_tabs.Visible = true;
+                f.Show();
+            }
+            else
+            {
+                form_list_tabs.Visible = false;
+            }
         }
 
         private void bunifuFlatButton8_Click(object sender, EventArgs e)
         {
+            if (panel1.Width <= 50)
+            {
+                form_list_tabs.Visible = false;
+                form_list_tabs.Controls.Clear();
+                memb_m_admin f = new memb_m_admin()
+                {
+                    TopLevel = false,
+                    TopMost = true,
+                    Dock = DockStyle.Fill,
+                    WindowState = FormWindowState.Maximized
+                };
 
+                form_list_tabs.Controls.Add(f);
+                form_list_tabs.Visible = true;
+                f.Show();
+            }
+            else
+            {
+                form_list_tabs.Visible = false;
+            }
         }
 
         private void bunifuFlatButton7_Click(object sender, EventArgs e)
         {
-          
+            if (panel1.Width <= 50)
+            {
+                form_list_tabs.Visible = false;
+                form_list_tabs.Controls.Clear();
+                pro_m_admin f = new pro_m_admin()
+                {
+                    TopLevel = false,
+                    TopMost = true,
+                    Dock = DockStyle.Fill,
+                    WindowState = FormWindowState.Maximized
+                };
+
+                form_list_tabs.Controls.Add(f);
+                form_list_tabs.Visible = true;
+                f.Show();
+            }
+            else
+            {
+                form_list_tabs.Visible = false;
+            }
         }
 
         private void Admin_Dashbord_Load(object sender, EventArgs e)
         {
-            try
-            {
-                con.Open();
-                MessageBox.Show("conncting is true");
-                con.Close();
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error 005 :\n" + ex.Message);
-
-            }
-            con.Close();
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -198,9 +283,28 @@ namespace FFGMS
             }
         }
 
-        private void panel3_Paint(object sender, PaintEventArgs e)
+        private void bunifuFlatButton3_Click_1(object sender, EventArgs e)
         {
+            if (panel1.Width <= 50)
+            {
+                form_list_tabs.Visible = false;
+                form_list_tabs.Controls.Clear();
+                admin_profile f = new admin_profile()
+                {
+                    TopLevel = false,
+                    TopMost = true,
+                    Dock = DockStyle.Fill,
+                    WindowState = FormWindowState.Maximized
+                };
 
+                form_list_tabs.Controls.Add(f);
+                form_list_tabs.Visible = true;
+                f.Show();
+            }
+            else
+            {
+                form_list_tabs.Visible = false;
+            }
         }
     }
 }

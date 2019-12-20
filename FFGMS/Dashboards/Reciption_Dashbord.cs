@@ -1,5 +1,8 @@
 ﻿using FFGMS.Manage;
 using FFGMS.Manage.Group_manage;
+using FFGMS.Manage.Machinary_manage;
+using FFGMS.Manage.Trainees_manage;
+using FFGMS.profiles;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -90,6 +93,78 @@ namespace FFGMS
                 form_list_tabs.Visible = false;
                 form_list_tabs.Controls.Clear();
                 gr_m_reciption f = new gr_m_reciption()
+                {
+                    TopLevel = false,
+                    TopMost = true,
+                    Dock = DockStyle.Fill,
+                    WindowState = FormWindowState.Maximized
+                };
+
+                form_list_tabs.Controls.Add(f);
+                form_list_tabs.Visible = true;
+                f.Show();
+            }
+            else
+            {
+                form_list_tabs.Visible = false;
+            }
+        }
+
+        private void bunifuFlatButton8_Click(object sender, EventArgs e)
+        {
+            if (panel1.Width <= 50)
+            {
+                form_list_tabs.Visible = false;
+                form_list_tabs.Controls.Clear();
+                trne_m_reciption f = new trne_m_reciption()
+                {
+                    TopLevel = false,
+                    TopMost = true,
+                    Dock = DockStyle.Fill,
+                    WindowState = FormWindowState.Maximized
+                };
+
+                form_list_tabs.Controls.Add(f);
+                form_list_tabs.Visible = true;
+                f.Show();
+            }
+            else
+            {
+                form_list_tabs.Visible = false;
+            }
+        }
+
+        private void bunifuFlatButton7_Click(object sender, EventArgs e)
+        {
+            if (panel1.Width <= 50)
+            {
+                form_list_tabs.Visible = false;
+                form_list_tabs.Controls.Clear();
+                mach_m_reciption f = new mach_m_reciption()
+                {
+                    TopLevel = false,
+                    TopMost = true,
+                    Dock = DockStyle.Fill,
+                    WindowState = FormWindowState.Maximized
+                };
+
+                form_list_tabs.Controls.Add(f);
+                form_list_tabs.Visible = true;
+                f.Show();
+            }
+            else
+            {
+                form_list_tabs.Visible = false;
+            }
+        }
+
+        private void bunifuFlatButton2_Click(object sender, EventArgs e)
+        {
+            if (panel1.Width <= 50)
+            {
+                form_list_tabs.Visible = false;
+                form_list_tabs.Controls.Clear();
+                reciption_profile f = new reciption_profile()
                 {
                     TopLevel = false,
                     TopMost = true,

@@ -306,5 +306,10 @@ namespace FFGMS
                 form_list_tabs.Visible = false;
             }
         }
+
+        private void panel3_Paint(object sender , PaintEventArgs e)
+        {
+
+        }
     }
 }

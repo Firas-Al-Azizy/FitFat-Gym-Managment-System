@@ -328,6 +328,11 @@ namespace FFGMS.Manage.Staff_manage
 
 
         }
+
+        private void gunaButton3_Click(object sender, EventArgs e)
+        {
+
         }
+    }
     }
 

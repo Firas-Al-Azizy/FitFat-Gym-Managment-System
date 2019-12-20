@@ -18,6 +18,7 @@ namespace FFGMS.Manage.Staff_manage
 
         SqlConnection con = new SqlConnection(@"server=DESKTOP-HPA6H4U\SQLEXPRESS;
         database=db_ffgms ; integrated security=true");
+        
         public stf_m_admin()
         {
             InitializeComponent();
@@ -207,6 +208,7 @@ namespace FFGMS.Manage.Staff_manage
         private void stf_m_admin_Load(object sender, EventArgs e)
         {
             MessageBox.Show("page is loaded");
+            gunaButton4.Enabled = false;
 
         }
 
@@ -311,6 +313,72 @@ namespace FFGMS.Manage.Staff_manage
 
 
 
+        }
+
+        private void gunaButton2_Click(object sender, EventArgs e)
+        {
+            DataTable dtt = new DataTable();
+            //con.Open();
+            //SqlCommand myCmd = new SqlCommand("[Pkgemp.SelectAll]", con);
+            //myCmd.CommandType = CommandType.StoredProcedure;
+            //SqlDataAdapter da = new SqlDataAdapter(myCmd);
+            //da.Fill(dt);
+            dtt = cls_emp.selectAll();
+            data_view.DataSource = dtt;
+            if (data_view.RowCount > 0)
+            {
+                gunaButton1.Enabled = true;
+                gunaButton4.Enabled = true;
+            }
+            else
+            {
+                MessageBox.Show("data that you are looking for does not exist");
+                gunaButton4.Enabled = false;
+            }
+
+        }
+
+        private void search_picbx_Click(object sender, EventArgs e)
+        {
+            DataTable dtt = new DataTable();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandText = "[Pkgemp.selectbyName]";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@Pemp_name", SqlDbType.NVarChar).Value = search_txb.Text;
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dtt);
+            data_view.DataSource = dtt;
+            if (data_view.RowCount > 0)
+            {
+                gunaButton1.Enabled = true;
+                gunaButton4.Enabled = true;
+            }
+            else
+            {
+                MessageBox.Show("data that you are looking for does not exist");
+                gunaButton1.Enabled = false;
+                gunaButton4.Enabled = false;
+            }
+
+
+
+
+            //cls_emp s = new cls_emp();
+            //s.emp_name = search_txb.Text;
+            //dtt = cls_emp.searchdata(s);
+            //data_view.DataSource = dtt;
+            //if (data_view.RowCount > 0)
+            //{
+            //    gunaButton1.Enabled = true;
+            //    gunaButton4.Enabled = true;
+            //}
+            //else
+            //{
+            //    MessageBox.Show("data that you are looking for does not exist");
+            //    gunaButton1.Enabled = false;
+            //    gunaButton4.Enabled = false;
+            //}
         }
 
         //SqlCommand cmd = con.CreateCommand();

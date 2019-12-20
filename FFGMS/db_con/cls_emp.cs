@@ -11,7 +11,7 @@ namespace FFGMS.db_con
 {
     class cls_emp
     {
-        
+
         public string emp_name { get; set; }
         public string emp_age { get; set; }
         public string emp_gender { get; set; }
@@ -23,13 +23,14 @@ namespace FFGMS.db_con
         public string emp_pass { get; set; }
         public byte[] emp_img { get; set; }
         public string emp_pos { get; set; }
+        //public  DataTable dt { get; set; }
 
 
 
         public static int InsertData(cls_emp o)
         {
             var EffectedRows = 0;
-            
+
             SqlParameter p;
             try
             {
@@ -109,5 +110,69 @@ namespace FFGMS.db_con
             return EffectedRows;
 
         }
+
+        public static DataTable selectAll()
+        {
+            DataTable dt = new DataTable();
+
+            SqlParameter p;
+            try
+            {
+                using (SqlCommand SqlCmd = new SqlCommand())
+                {
+                    {
+                        var withBlock = SqlCmd;
+                        withBlock.CommandText = "[Pkgemp.SelectAll]";
+                        withBlock.CommandType = CommandType.StoredProcedure;
+                    }
+
+                    dt = (DataTable)cls_db.exe_pro(SqlCmd, 2);
+                }
+            }
+
+            catch (Exception)
+            {
+                dt = new DataTable();
+
+
+            }
+            return dt;
+
+        }
+
+        public static DataTable searchdata(cls_emp o)
+        {
+            DataTable dt = new DataTable();
+
+            SqlParameter p;
+            try
+            {
+                using (SqlCommand SqlCmd = new SqlCommand())
+                {
+                    {
+                        var withBlock = SqlCmd;
+                        withBlock.CommandText = "[Pkgemp.selectbyName]";
+                        withBlock.CommandType = CommandType.StoredProcedure;
+                    }
+                    p = new SqlParameter("@Pemp_name", SqlDbType.NVarChar)
+                    {
+                        Value = o.emp_name
+                    };
+
+
+                    dt = (DataTable)cls_db.exe_pro(SqlCmd, 2);
+                }
+            }
+
+            catch (Exception)
+            {
+                dt = new DataTable();
+
+
+            }
+            return dt;
+
+        }
     }
+    
 }

@@ -192,7 +192,7 @@ namespace FFGMS.Manage.Staff_manage
 
         private void gunaButton1_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "png|*.png|jpeg|*.jpg|bmp|*.bmp|all files|*.*";
+            openFileDialog1.Filter = "All Files|*.*|png |*.png|jpeg|*.jpg|bmp|*.bmp";
 
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
@@ -211,6 +211,70 @@ namespace FFGMS.Manage.Staff_manage
         }
 
         private void add_btn_Click_1(object sender, EventArgs e)
+        {
+   
+         }
+        byte[] conv_picture()
+        {
+            try
+            {
+                //converting photo to binary data
+                if (img_picb.Image != null)
+                {
+                    Image imageToBeResized =
+                        Image.FromFile(openFileDialog1.FileName);
+                    int imageHeight = imageToBeResized.Height;
+                    int imageWidth = imageToBeResized.Width;
+                    int maxHeight = 150;
+                    int maxWidth = 100;
+                    imageHeight = (imageHeight * maxWidth) / imageWidth;
+                    imageWidth = maxWidth;
+                    if (imageHeight > maxHeight)
+                    {
+                        imageWidth = (imageWidth * maxHeight) / imageHeight;
+                        imageHeight = maxHeight;
+                    }
+                    Bitmap bitmap = new Bitmap(imageToBeResized, imageWidth, imageHeight);
+                    MemoryStream stream = new MemoryStream();
+                    bitmap.Save(stream, System.Drawing.Imaging.ImageFormat.Jpeg);
+                    stream.Position = 0;
+                    byte[] image = new byte[stream.Length + 1];
+                    stream.Read(image, 0, image.Length);
+
+                    return image;
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error code 0001 img\n");
+            }
+            return null;
+        }
+
+        void clearinfo()
+        {
+            adr_txb.Clear();
+            age_txb.Clear();
+            email_txb.Clear();
+            name_txb.Clear();
+            pho_txb.Clear();
+            pass_txb.Clear();
+            sal_txb.Clear();
+            uname_txb.Clear();
+            type_cobx.SelectedIndex = -1;
+            img_picb.Image = null;
+            radio_male.Checked = false;
+            radio_female.Checked = false;
+
+
+        }
+
+        private void gunaButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void add_btn_Click_2(object sender, EventArgs e)
         {
             byte[] picture;
             int inserted;
@@ -244,7 +308,7 @@ namespace FFGMS.Manage.Staff_manage
             }
             else
                 MessageBox.Show("Has NOT  completed the process");
-            
+
 
 
         }
@@ -273,66 +337,7 @@ namespace FFGMS.Manage.Staff_manage
         //con.Open();
         //cmd.ExecuteNonQuery();
         //con.Close();
-   // }
-            byte[] conv_picture()
-            {
-                try
-                {
-                    //converting photo to binary data
-                    if (img_picb.Image != null)
-                    {
-                        Image imageToBeResized =
-                            Image.FromFile(openFileDialog1.FileName);
-                        int imageHeight = imageToBeResized.Height;
-                        int imageWidth = imageToBeResized.Width;
-                        int maxHeight = 150;
-                        int maxWidth = 100;
-                        imageHeight = (imageHeight * maxWidth) / imageWidth;
-                        imageWidth = maxWidth;
-                        if (imageHeight > maxHeight)
-                        {
-                            imageWidth = (imageWidth * maxHeight) / imageHeight;
-                            imageHeight = maxHeight;
-                        }
-                        Bitmap bitmap = new Bitmap(imageToBeResized, imageWidth, imageHeight);
-                        MemoryStream stream = new MemoryStream();
-                        bitmap.Save(stream, System.Drawing.Imaging.ImageFormat.Jpeg);
-                        stream.Position = 0;
-                        byte[] image = new byte[stream.Length + 1];
-                        stream.Read(image, 0, image.Length);
-
-                        return image;
-                    }
-                }
-                catch (Exception)
-                {
-                    MessageBox.Show("Error code 0001 img\n");
-                }
-                return null;
-            }
-
-        void clearinfo()
-        {
-            adr_txb.Clear();
-            age_txb.Clear();
-            email_txb.Clear();
-            name_txb.Clear();
-            pho_txb.Clear();
-            pass_txb.Clear();
-            sal_txb.Clear();
-            uname_txb.Clear();
-            type_cobx.SelectedIndex = -1;
-            img_picb.Image = null;
-            radio_male.Checked = false;
-            radio_female.Checked = false;
-
-
-        }
-
-        private void gunaButton3_Click(object sender, EventArgs e)
-        {
-
-        }
+        // }
     }
-    }
+}
 

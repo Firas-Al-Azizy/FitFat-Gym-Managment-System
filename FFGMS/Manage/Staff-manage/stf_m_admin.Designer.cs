@@ -108,7 +108,7 @@
             this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.98844F));
             this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 76.01156F));
             this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 81F));
-            this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 209F));
+            this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 210F));
             this.table_pnl.Controls.Add(this.panel3, 1, 2);
             this.table_pnl.Controls.Add(this.gender_gbx, 1, 5);
             this.table_pnl.Controls.Add(this.gender_lbl, 0, 5);
@@ -152,7 +152,7 @@
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.img_picb);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(63, 60);
+            this.panel3.Location = new System.Drawing.Point(62, 60);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(189, 117);
@@ -219,7 +219,7 @@
             this.gender_gbx.Controls.Add(this.radio_female);
             this.gender_gbx.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gender_gbx.LineColor = System.Drawing.Color.Transparent;
-            this.gender_gbx.Location = new System.Drawing.Point(63, 242);
+            this.gender_gbx.Location = new System.Drawing.Point(62, 242);
             this.gender_gbx.Margin = new System.Windows.Forms.Padding(2);
             this.gender_gbx.Name = "gender_gbx";
             this.gender_gbx.Size = new System.Drawing.Size(189, 24);
@@ -268,7 +268,7 @@
             this.gender_lbl.Location = new System.Drawing.Point(2, 240);
             this.gender_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gender_lbl.Name = "gender_lbl";
-            this.gender_lbl.Size = new System.Drawing.Size(57, 28);
+            this.gender_lbl.Size = new System.Drawing.Size(56, 28);
             this.gender_lbl.TabIndex = 9;
             this.gender_lbl.Text = "Gender:";
             // 
@@ -284,7 +284,7 @@
             this.name_lbl.Location = new System.Drawing.Point(2, 0);
             this.name_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.name_lbl.Name = "name_lbl";
-            this.name_lbl.Size = new System.Drawing.Size(57, 29);
+            this.name_lbl.Size = new System.Drawing.Size(56, 29);
             this.name_lbl.TabIndex = 43;
             this.name_lbl.Text = "Name:";
             // 
@@ -305,7 +305,7 @@
             this.name_txb.CustomButton.Visible = false;
             this.name_txb.Dock = System.Windows.Forms.DockStyle.Fill;
             this.name_txb.Lines = new string[0];
-            this.name_txb.Location = new System.Drawing.Point(63, 2);
+            this.name_txb.Location = new System.Drawing.Point(62, 2);
             this.name_txb.Margin = new System.Windows.Forms.Padding(2);
             this.name_txb.MaxLength = 32767;
             this.name_txb.Name = "name_txb";
@@ -339,7 +339,7 @@
             this.sal_txb.CustomButton.Visible = false;
             this.sal_txb.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sal_txb.Lines = new string[0];
-            this.sal_txb.Location = new System.Drawing.Point(63, 213);
+            this.sal_txb.Location = new System.Drawing.Point(62, 213);
             this.sal_txb.Margin = new System.Windows.Forms.Padding(2);
             this.sal_txb.MaxLength = 32767;
             this.sal_txb.Name = "sal_txb";
@@ -367,7 +367,7 @@
             this.age_lbl.Location = new System.Drawing.Point(2, 29);
             this.age_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.age_lbl.Name = "age_lbl";
-            this.age_lbl.Size = new System.Drawing.Size(57, 29);
+            this.age_lbl.Size = new System.Drawing.Size(56, 29);
             this.age_lbl.TabIndex = 45;
             this.age_lbl.Text = "Age:";
             // 
@@ -383,7 +383,7 @@
             this.sal_lbl.Location = new System.Drawing.Point(2, 211);
             this.sal_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.sal_lbl.Name = "sal_lbl";
-            this.sal_lbl.Size = new System.Drawing.Size(57, 29);
+            this.sal_lbl.Size = new System.Drawing.Size(56, 29);
             this.sal_lbl.TabIndex = 58;
             this.sal_lbl.Text = "Salary:";
             // 
@@ -399,7 +399,7 @@
             this.label3.Location = new System.Drawing.Point(2, 179);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 32);
+            this.label3.Size = new System.Drawing.Size(56, 32);
             this.label3.TabIndex = 62;
             this.label3.Text = "Type:";
             // 
@@ -412,7 +412,7 @@
             this.email_lbl.BackColor = System.Drawing.Color.Transparent;
             this.email_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.email_lbl.ForeColor = System.Drawing.Color.DarkCyan;
-            this.email_lbl.Location = new System.Drawing.Point(256, 0);
+            this.email_lbl.Location = new System.Drawing.Point(255, 0);
             this.email_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.email_lbl.Name = "email_lbl";
             this.email_lbl.Size = new System.Drawing.Size(77, 29);
@@ -428,7 +428,7 @@
             // 
             // 
             this.uname_txb.CustomButton.Image = null;
-            this.uname_txb.CustomButton.Location = new System.Drawing.Point(180, 2);
+            this.uname_txb.CustomButton.Location = new System.Drawing.Point(181, 2);
             this.uname_txb.CustomButton.Margin = new System.Windows.Forms.Padding(2);
             this.uname_txb.CustomButton.Name = "";
             this.uname_txb.CustomButton.Size = new System.Drawing.Size(23, 23);
@@ -438,7 +438,7 @@
             this.uname_txb.CustomButton.UseSelectable = true;
             this.uname_txb.CustomButton.Visible = false;
             this.uname_txb.Lines = new string[0];
-            this.uname_txb.Location = new System.Drawing.Point(337, 181);
+            this.uname_txb.Location = new System.Drawing.Point(336, 181);
             this.uname_txb.Margin = new System.Windows.Forms.Padding(2);
             this.uname_txb.MaxLength = 32767;
             this.uname_txb.Name = "uname_txb";
@@ -448,7 +448,7 @@
             this.uname_txb.SelectionLength = 0;
             this.uname_txb.SelectionStart = 0;
             this.uname_txb.ShortcutsEnabled = true;
-            this.uname_txb.Size = new System.Drawing.Size(206, 28);
+            this.uname_txb.Size = new System.Drawing.Size(207, 28);
             this.uname_txb.TabIndex = 52;
             this.uname_txb.UseSelectable = true;
             this.uname_txb.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -463,7 +463,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label2.Location = new System.Drawing.Point(256, 211);
+            this.label2.Location = new System.Drawing.Point(255, 211);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 29);
@@ -479,7 +479,7 @@
             // 
             // 
             this.email_txb.CustomButton.Image = null;
-            this.email_txb.CustomButton.Location = new System.Drawing.Point(182, 1);
+            this.email_txb.CustomButton.Location = new System.Drawing.Point(183, 1);
             this.email_txb.CustomButton.Margin = new System.Windows.Forms.Padding(2);
             this.email_txb.CustomButton.Name = "";
             this.email_txb.CustomButton.Size = new System.Drawing.Size(23, 23);
@@ -489,7 +489,7 @@
             this.email_txb.CustomButton.UseSelectable = true;
             this.email_txb.CustomButton.Visible = false;
             this.email_txb.Lines = new string[0];
-            this.email_txb.Location = new System.Drawing.Point(337, 2);
+            this.email_txb.Location = new System.Drawing.Point(336, 2);
             this.email_txb.Margin = new System.Windows.Forms.Padding(2);
             this.email_txb.MaxLength = 32767;
             this.email_txb.Name = "email_txb";
@@ -499,7 +499,7 @@
             this.email_txb.SelectionLength = 0;
             this.email_txb.SelectionStart = 0;
             this.email_txb.ShortcutsEnabled = true;
-            this.email_txb.Size = new System.Drawing.Size(206, 25);
+            this.email_txb.Size = new System.Drawing.Size(207, 25);
             this.email_txb.TabIndex = 48;
             this.email_txb.UseSelectable = true;
             this.email_txb.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -514,7 +514,7 @@
             this.uname_lbl.BackColor = System.Drawing.Color.Transparent;
             this.uname_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uname_lbl.ForeColor = System.Drawing.Color.DarkCyan;
-            this.uname_lbl.Location = new System.Drawing.Point(256, 179);
+            this.uname_lbl.Location = new System.Drawing.Point(255, 179);
             this.uname_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.uname_lbl.Name = "uname_lbl";
             this.uname_lbl.Size = new System.Drawing.Size(77, 32);
@@ -530,7 +530,7 @@
             // 
             // 
             this.pho_txb.CustomButton.Image = null;
-            this.pho_txb.CustomButton.Location = new System.Drawing.Point(182, 1);
+            this.pho_txb.CustomButton.Location = new System.Drawing.Point(183, 1);
             this.pho_txb.CustomButton.Margin = new System.Windows.Forms.Padding(2);
             this.pho_txb.CustomButton.Name = "";
             this.pho_txb.CustomButton.Size = new System.Drawing.Size(23, 23);
@@ -540,7 +540,7 @@
             this.pho_txb.CustomButton.UseSelectable = true;
             this.pho_txb.CustomButton.Visible = false;
             this.pho_txb.Lines = new string[0];
-            this.pho_txb.Location = new System.Drawing.Point(337, 31);
+            this.pho_txb.Location = new System.Drawing.Point(336, 31);
             this.pho_txb.Margin = new System.Windows.Forms.Padding(2);
             this.pho_txb.MaxLength = 32767;
             this.pho_txb.Name = "pho_txb";
@@ -550,7 +550,7 @@
             this.pho_txb.SelectionLength = 0;
             this.pho_txb.SelectionStart = 0;
             this.pho_txb.ShortcutsEnabled = true;
-            this.pho_txb.Size = new System.Drawing.Size(206, 25);
+            this.pho_txb.Size = new System.Drawing.Size(207, 25);
             this.pho_txb.TabIndex = 57;
             this.pho_txb.UseSelectable = true;
             this.pho_txb.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -565,7 +565,7 @@
             this.adr_lbl.BackColor = System.Drawing.Color.Transparent;
             this.adr_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.adr_lbl.ForeColor = System.Drawing.Color.DarkCyan;
-            this.adr_lbl.Location = new System.Drawing.Point(256, 58);
+            this.adr_lbl.Location = new System.Drawing.Point(255, 58);
             this.adr_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.adr_lbl.Name = "adr_lbl";
             this.adr_lbl.Size = new System.Drawing.Size(77, 121);
@@ -581,7 +581,7 @@
             this.pho_lbl.BackColor = System.Drawing.Color.Transparent;
             this.pho_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pho_lbl.ForeColor = System.Drawing.Color.DarkCyan;
-            this.pho_lbl.Location = new System.Drawing.Point(256, 29);
+            this.pho_lbl.Location = new System.Drawing.Point(255, 29);
             this.pho_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.pho_lbl.Name = "pho_lbl";
             this.pho_lbl.Size = new System.Drawing.Size(77, 29);
@@ -600,7 +600,7 @@
             this.img_lbl.Location = new System.Drawing.Point(2, 58);
             this.img_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.img_lbl.Name = "img_lbl";
-            this.img_lbl.Size = new System.Drawing.Size(57, 121);
+            this.img_lbl.Size = new System.Drawing.Size(56, 121);
             this.img_lbl.TabIndex = 60;
             this.img_lbl.Text = "Image:";
             // 
@@ -613,10 +613,10 @@
             this.btn_grbx.Controls.Add(this.add_btn);
             this.btn_grbx.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_grbx.LineColor = System.Drawing.Color.Transparent;
-            this.btn_grbx.Location = new System.Drawing.Point(337, 242);
+            this.btn_grbx.Location = new System.Drawing.Point(336, 242);
             this.btn_grbx.Margin = new System.Windows.Forms.Padding(2);
             this.btn_grbx.Name = "btn_grbx";
-            this.btn_grbx.Size = new System.Drawing.Size(206, 24);
+            this.btn_grbx.Size = new System.Drawing.Size(207, 24);
             this.btn_grbx.TabIndex = 64;
             this.btn_grbx.TextLocation = new System.Drawing.Point(10, 8);
             // 
@@ -659,7 +659,7 @@
             this.add_btn.ForeColor = System.Drawing.Color.White;
             this.add_btn.Image = global::FFGMS.Properties.Resources.icons8_plus_32;
             this.add_btn.ImageSize = new System.Drawing.Size(15, 15);
-            this.add_btn.Location = new System.Drawing.Point(121, 0);
+            this.add_btn.Location = new System.Drawing.Point(122, 0);
             this.add_btn.Margin = new System.Windows.Forms.Padding(2);
             this.add_btn.Name = "add_btn";
             this.add_btn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -681,7 +681,7 @@
             // 
             // 
             this.pass_txb.CustomButton.Image = null;
-            this.pass_txb.CustomButton.Location = new System.Drawing.Point(182, 1);
+            this.pass_txb.CustomButton.Location = new System.Drawing.Point(183, 1);
             this.pass_txb.CustomButton.Margin = new System.Windows.Forms.Padding(2);
             this.pass_txb.CustomButton.Name = "";
             this.pass_txb.CustomButton.Size = new System.Drawing.Size(23, 23);
@@ -691,7 +691,7 @@
             this.pass_txb.CustomButton.UseSelectable = true;
             this.pass_txb.CustomButton.Visible = false;
             this.pass_txb.Lines = new string[0];
-            this.pass_txb.Location = new System.Drawing.Point(337, 213);
+            this.pass_txb.Location = new System.Drawing.Point(336, 213);
             this.pass_txb.Margin = new System.Windows.Forms.Padding(2);
             this.pass_txb.MaxLength = 32767;
             this.pass_txb.Name = "pass_txb";
@@ -701,7 +701,7 @@
             this.pass_txb.SelectionLength = 0;
             this.pass_txb.SelectionStart = 0;
             this.pass_txb.ShortcutsEnabled = true;
-            this.pass_txb.Size = new System.Drawing.Size(206, 25);
+            this.pass_txb.Size = new System.Drawing.Size(207, 25);
             this.pass_txb.TabIndex = 54;
             this.pass_txb.UseSelectable = true;
             this.pass_txb.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -716,7 +716,7 @@
             // 
             // 
             this.adr_txb.CustomButton.Image = null;
-            this.adr_txb.CustomButton.Location = new System.Drawing.Point(90, 1);
+            this.adr_txb.CustomButton.Location = new System.Drawing.Point(91, 1);
             this.adr_txb.CustomButton.Margin = new System.Windows.Forms.Padding(2);
             this.adr_txb.CustomButton.Name = "";
             this.adr_txb.CustomButton.Size = new System.Drawing.Size(115, 115);
@@ -726,7 +726,7 @@
             this.adr_txb.CustomButton.UseSelectable = true;
             this.adr_txb.CustomButton.Visible = false;
             this.adr_txb.Lines = new string[0];
-            this.adr_txb.Location = new System.Drawing.Point(337, 60);
+            this.adr_txb.Location = new System.Drawing.Point(336, 60);
             this.adr_txb.Margin = new System.Windows.Forms.Padding(2);
             this.adr_txb.MaxLength = 32767;
             this.adr_txb.Multiline = true;
@@ -737,7 +737,7 @@
             this.adr_txb.SelectionLength = 0;
             this.adr_txb.SelectionStart = 0;
             this.adr_txb.ShortcutsEnabled = true;
-            this.adr_txb.Size = new System.Drawing.Size(206, 117);
+            this.adr_txb.Size = new System.Drawing.Size(207, 117);
             this.adr_txb.TabIndex = 50;
             this.adr_txb.UseSelectable = true;
             this.adr_txb.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -760,7 +760,7 @@
             this.age_txb.CustomButton.Visible = false;
             this.age_txb.Dock = System.Windows.Forms.DockStyle.Fill;
             this.age_txb.Lines = new string[0];
-            this.age_txb.Location = new System.Drawing.Point(63, 31);
+            this.age_txb.Location = new System.Drawing.Point(62, 31);
             this.age_txb.Margin = new System.Windows.Forms.Padding(2);
             this.age_txb.MaxLength = 32767;
             this.age_txb.Name = "age_txb";
@@ -787,7 +787,7 @@
             "Admin",
             "Reciptioniest",
             "Trainer"});
-            this.type_cobx.Location = new System.Drawing.Point(63, 181);
+            this.type_cobx.Location = new System.Drawing.Point(62, 181);
             this.type_cobx.Margin = new System.Windows.Forms.Padding(2);
             this.type_cobx.Name = "type_cobx";
             this.type_cobx.Size = new System.Drawing.Size(189, 29);

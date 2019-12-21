@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using FFGMS.db_con;
 using System.Data.SqlClient;
 using System.IO;
-using FFGMS.Reports.Staff;
+//using FFGMS.Reports.Staff;
 
 namespace FFGMS.Manage.Staff_manage
 {
@@ -18,8 +18,8 @@ namespace FFGMS.Manage.Staff_manage
     {
 
         SqlConnection con = new SqlConnection(@"server=DESKTOP-HPA6H4U\SQLEXPRESS;
-        database=db_ffgms ; integrated security=true");
-        
+        database=db_ffgms_new ; integrated security=true");
+
         public stf_m_admin()
         {
             InitializeComponent();

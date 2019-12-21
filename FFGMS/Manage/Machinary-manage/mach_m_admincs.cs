@@ -21,5 +21,10 @@ namespace FFGMS.Manage.Machinary_manage
         {
 
         }
+
+        private void table_pnl_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

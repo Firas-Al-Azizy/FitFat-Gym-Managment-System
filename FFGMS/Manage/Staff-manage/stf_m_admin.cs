@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using FFGMS.db_con;
 using System.Data.SqlClient;
 using System.IO;
+using FFGMS.Reports.Staff;
 
 namespace FFGMS.Manage.Staff_manage
 {
@@ -381,6 +382,12 @@ namespace FFGMS.Manage.Staff_manage
         private void search_txb_KeyPress(object sender, KeyPressEventArgs e)
         {
             timer1.Enabled = false;
+        }
+
+        private void gunaButton3_Click(object sender, EventArgs e)
+        {
+            staff_report main = new staff_report();
+            main.ShowDialog();
         }
 
 

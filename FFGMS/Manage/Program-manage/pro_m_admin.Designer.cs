@@ -35,9 +35,6 @@
             this.pro_add_admin = new MetroFramework.Controls.MetroTabPage();
             this.add_pnl = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.btn_grbx = new Guna.UI.WinForms.GunaGroupBox();
-            this.erase_btn = new Guna.UI.WinForms.GunaButton();
-            this.add_btn = new Guna.UI.WinForms.GunaButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
             this.next_btn = new Guna.UI.WinForms.GunaButton();
@@ -188,11 +185,16 @@
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
             this.data_view = new Guna.UI.WinForms.GunaDataGridView();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.btn_grbx = new Guna.UI.WinForms.GunaGroupBox();
+            this.erase_btn = new Guna.UI.WinForms.GunaButton();
+            this.add_btn = new Guna.UI.WinForms.GunaButton();
+            this.update_btn = new Guna.UI.WinForms.GunaButton();
             this.pro_tab_admin.SuspendLayout();
             this.pro_add_admin.SuspendLayout();
             this.add_pnl.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.btn_grbx.SuspendLayout();
             this.panel3.SuspendLayout();
             this.gunaGroupBox1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -214,6 +216,9 @@
             this.search_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.search_picbx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.data_view)).BeginInit();
+            this.panel6.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.btn_grbx.SuspendLayout();
             this.SuspendLayout();
             // 
             // pro_tab_admin
@@ -270,79 +275,13 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Transparent;
-            this.panel5.Controls.Add(this.btn_grbx);
+            this.panel5.Controls.Add(this.panel6);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 338);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(729, 36);
             this.panel5.TabIndex = 73;
-            // 
-            // btn_grbx
-            // 
-            this.btn_grbx.BackColor = System.Drawing.Color.Transparent;
-            this.btn_grbx.BaseColor = System.Drawing.Color.White;
-            this.btn_grbx.BorderColor = System.Drawing.Color.Transparent;
-            this.btn_grbx.Controls.Add(this.erase_btn);
-            this.btn_grbx.Controls.Add(this.add_btn);
-            this.btn_grbx.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btn_grbx.LineColor = System.Drawing.Color.Transparent;
-            this.btn_grbx.Location = new System.Drawing.Point(435, 0);
-            this.btn_grbx.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_grbx.Name = "btn_grbx";
-            this.btn_grbx.Size = new System.Drawing.Size(294, 36);
-            this.btn_grbx.TabIndex = 69;
-            this.btn_grbx.TextLocation = new System.Drawing.Point(10, 8);
-            // 
-            // erase_btn
-            // 
-            this.erase_btn.AnimationHoverSpeed = 0.07F;
-            this.erase_btn.AnimationSpeed = 0.03F;
-            this.erase_btn.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
-            this.erase_btn.BorderColor = System.Drawing.Color.Black;
-            this.erase_btn.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.erase_btn.Dock = System.Windows.Forms.DockStyle.Left;
-            this.erase_btn.FocusedColor = System.Drawing.Color.Empty;
-            this.erase_btn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.erase_btn.ForeColor = System.Drawing.Color.White;
-            this.erase_btn.Image = global::FFGMS.Properties.Resources.icons8_erase_32;
-            this.erase_btn.ImageSize = new System.Drawing.Size(15, 15);
-            this.erase_btn.Location = new System.Drawing.Point(0, 0);
-            this.erase_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.erase_btn.Name = "erase_btn";
-            this.erase_btn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.erase_btn.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.erase_btn.OnHoverForeColor = System.Drawing.Color.White;
-            this.erase_btn.OnHoverImage = null;
-            this.erase_btn.OnPressedColor = System.Drawing.Color.Black;
-            this.erase_btn.Size = new System.Drawing.Size(115, 36);
-            this.erase_btn.TabIndex = 1;
-            this.erase_btn.Text = "Erase";
-            // 
-            // add_btn
-            // 
-            this.add_btn.AnimationHoverSpeed = 0.07F;
-            this.add_btn.AnimationSpeed = 0.03F;
-            this.add_btn.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
-            this.add_btn.BorderColor = System.Drawing.Color.Black;
-            this.add_btn.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.add_btn.Dock = System.Windows.Forms.DockStyle.Right;
-            this.add_btn.FocusedColor = System.Drawing.Color.Empty;
-            this.add_btn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.add_btn.ForeColor = System.Drawing.Color.White;
-            this.add_btn.Image = global::FFGMS.Properties.Resources.icons8_plus_32;
-            this.add_btn.ImageSize = new System.Drawing.Size(15, 15);
-            this.add_btn.Location = new System.Drawing.Point(181, 0);
-            this.add_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.add_btn.Name = "add_btn";
-            this.add_btn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.add_btn.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.add_btn.OnHoverForeColor = System.Drawing.Color.White;
-            this.add_btn.OnHoverImage = null;
-            this.add_btn.OnPressedColor = System.Drawing.Color.Black;
-            this.add_btn.Size = new System.Drawing.Size(113, 36);
-            this.add_btn.TabIndex = 0;
-            this.add_btn.Text = "Add";
             // 
             // panel3
             // 
@@ -497,7 +436,7 @@
             this.table_pnl4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 56.89149F));
             this.table_pnl4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 63F));
             this.table_pnl4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 225F));
-            this.table_pnl4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57F));
+            this.table_pnl4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 58F));
             this.table_pnl4.Controls.Add(this.label39, 0, 0);
             this.table_pnl4.Controls.Add(this.metroTextBox20, 3, 0);
             this.table_pnl4.Controls.Add(this.label40, 2, 0);
@@ -564,7 +503,7 @@
             this.metroTextBox20.CustomButton.Visible = false;
             this.metroTextBox20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTextBox20.Lines = new string[0];
-            this.metroTextBox20.Location = new System.Drawing.Point(449, 2);
+            this.metroTextBox20.Location = new System.Drawing.Point(448, 2);
             this.metroTextBox20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox20.MaxLength = 32767;
             this.metroTextBox20.Name = "metroTextBox20";
@@ -587,7 +526,7 @@
             this.label40.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label40.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label40.Location = new System.Drawing.Point(386, 0);
+            this.label40.Location = new System.Drawing.Point(385, 0);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(57, 46);
             this.label40.TabIndex = 68;
@@ -611,7 +550,7 @@
             this.metroTextBox21.CustomButton.Visible = false;
             this.metroTextBox21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTextBox21.Lines = new string[0];
-            this.metroTextBox21.Location = new System.Drawing.Point(449, 48);
+            this.metroTextBox21.Location = new System.Drawing.Point(448, 48);
             this.metroTextBox21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox21.MaxLength = 32767;
             this.metroTextBox21.Name = "metroTextBox21";
@@ -648,7 +587,7 @@
             this.label42.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label42.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label42.Location = new System.Drawing.Point(386, 46);
+            this.label42.Location = new System.Drawing.Point(385, 46);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(57, 42);
             this.label42.TabIndex = 72;
@@ -714,7 +653,7 @@
             this.metroTextBox22.CustomButton.Visible = false;
             this.metroTextBox22.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTextBox22.Lines = new string[0];
-            this.metroTextBox22.Location = new System.Drawing.Point(449, 90);
+            this.metroTextBox22.Location = new System.Drawing.Point(448, 90);
             this.metroTextBox22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox22.MaxLength = 32767;
             this.metroTextBox22.Name = "metroTextBox22";
@@ -747,7 +686,7 @@
             this.metroTextBox23.CustomButton.Visible = false;
             this.metroTextBox23.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTextBox23.Lines = new string[0];
-            this.metroTextBox23.Location = new System.Drawing.Point(449, 132);
+            this.metroTextBox23.Location = new System.Drawing.Point(448, 132);
             this.metroTextBox23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox23.MaxLength = 32767;
             this.metroTextBox23.Name = "metroTextBox23";
@@ -780,7 +719,7 @@
             this.metroTextBox24.CustomButton.Visible = false;
             this.metroTextBox24.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTextBox24.Lines = new string[0];
-            this.metroTextBox24.Location = new System.Drawing.Point(449, 173);
+            this.metroTextBox24.Location = new System.Drawing.Point(448, 173);
             this.metroTextBox24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox24.MaxLength = 32767;
             this.metroTextBox24.Name = "metroTextBox24";
@@ -803,7 +742,7 @@
             this.label46.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label46.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label46.Location = new System.Drawing.Point(386, 88);
+            this.label46.Location = new System.Drawing.Point(385, 88);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(57, 42);
             this.label46.TabIndex = 92;
@@ -817,7 +756,7 @@
             this.label47.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label47.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label47.Location = new System.Drawing.Point(386, 130);
+            this.label47.Location = new System.Drawing.Point(385, 130);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(57, 41);
             this.label47.TabIndex = 93;
@@ -831,7 +770,7 @@
             this.label48.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label48.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label48.Location = new System.Drawing.Point(386, 171);
+            this.label48.Location = new System.Drawing.Point(385, 171);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(57, 40);
             this.label48.TabIndex = 94;
@@ -852,7 +791,7 @@
             this.metroComboBox20.Location = new System.Drawing.Point(168, 2);
             this.metroComboBox20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroComboBox20.Name = "metroComboBox20";
-            this.metroComboBox20.Size = new System.Drawing.Size(212, 30);
+            this.metroComboBox20.Size = new System.Drawing.Size(211, 30);
             this.metroComboBox20.TabIndex = 102;
             this.metroComboBox20.UseSelectable = true;
             // 
@@ -870,7 +809,7 @@
             this.metroComboBox21.Location = new System.Drawing.Point(168, 48);
             this.metroComboBox21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroComboBox21.Name = "metroComboBox21";
-            this.metroComboBox21.Size = new System.Drawing.Size(212, 30);
+            this.metroComboBox21.Size = new System.Drawing.Size(211, 30);
             this.metroComboBox21.TabIndex = 103;
             this.metroComboBox21.UseSelectable = true;
             // 
@@ -888,7 +827,7 @@
             this.metroComboBox22.Location = new System.Drawing.Point(168, 90);
             this.metroComboBox22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroComboBox22.Name = "metroComboBox22";
-            this.metroComboBox22.Size = new System.Drawing.Size(212, 30);
+            this.metroComboBox22.Size = new System.Drawing.Size(211, 30);
             this.metroComboBox22.TabIndex = 104;
             this.metroComboBox22.UseSelectable = true;
             // 
@@ -906,7 +845,7 @@
             this.metroComboBox23.Location = new System.Drawing.Point(168, 132);
             this.metroComboBox23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroComboBox23.Name = "metroComboBox23";
-            this.metroComboBox23.Size = new System.Drawing.Size(212, 30);
+            this.metroComboBox23.Size = new System.Drawing.Size(211, 30);
             this.metroComboBox23.TabIndex = 105;
             this.metroComboBox23.UseSelectable = true;
             // 
@@ -924,7 +863,7 @@
             this.metroComboBox24.Location = new System.Drawing.Point(168, 173);
             this.metroComboBox24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroComboBox24.Name = "metroComboBox24";
-            this.metroComboBox24.Size = new System.Drawing.Size(212, 30);
+            this.metroComboBox24.Size = new System.Drawing.Size(211, 30);
             this.metroComboBox24.TabIndex = 106;
             this.metroComboBox24.UseSelectable = true;
             // 
@@ -938,7 +877,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 56.89149F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 63F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 225F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 58F));
             this.tableLayoutPanel3.Controls.Add(this.label49, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.metroTextBox25, 3, 0);
             this.tableLayoutPanel3.Controls.Add(this.label50, 2, 0);
@@ -1005,7 +944,7 @@
             this.metroTextBox25.CustomButton.Visible = false;
             this.metroTextBox25.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTextBox25.Lines = new string[0];
-            this.metroTextBox25.Location = new System.Drawing.Point(449, 2);
+            this.metroTextBox25.Location = new System.Drawing.Point(448, 2);
             this.metroTextBox25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox25.MaxLength = 32767;
             this.metroTextBox25.Name = "metroTextBox25";
@@ -1028,7 +967,7 @@
             this.label50.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label50.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label50.Location = new System.Drawing.Point(386, 0);
+            this.label50.Location = new System.Drawing.Point(385, 0);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(57, 46);
             this.label50.TabIndex = 68;
@@ -1052,7 +991,7 @@
             this.metroTextBox26.CustomButton.Visible = false;
             this.metroTextBox26.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTextBox26.Lines = new string[0];
-            this.metroTextBox26.Location = new System.Drawing.Point(449, 48);
+            this.metroTextBox26.Location = new System.Drawing.Point(448, 48);
             this.metroTextBox26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox26.MaxLength = 32767;
             this.metroTextBox26.Name = "metroTextBox26";
@@ -1089,7 +1028,7 @@
             this.label52.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label52.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label52.Location = new System.Drawing.Point(386, 46);
+            this.label52.Location = new System.Drawing.Point(385, 46);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(57, 42);
             this.label52.TabIndex = 72;
@@ -1155,7 +1094,7 @@
             this.metroTextBox27.CustomButton.Visible = false;
             this.metroTextBox27.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTextBox27.Lines = new string[0];
-            this.metroTextBox27.Location = new System.Drawing.Point(449, 90);
+            this.metroTextBox27.Location = new System.Drawing.Point(448, 90);
             this.metroTextBox27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox27.MaxLength = 32767;
             this.metroTextBox27.Name = "metroTextBox27";
@@ -1188,7 +1127,7 @@
             this.metroTextBox28.CustomButton.Visible = false;
             this.metroTextBox28.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTextBox28.Lines = new string[0];
-            this.metroTextBox28.Location = new System.Drawing.Point(449, 132);
+            this.metroTextBox28.Location = new System.Drawing.Point(448, 132);
             this.metroTextBox28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox28.MaxLength = 32767;
             this.metroTextBox28.Name = "metroTextBox28";
@@ -1221,7 +1160,7 @@
             this.metroTextBox29.CustomButton.Visible = false;
             this.metroTextBox29.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTextBox29.Lines = new string[0];
-            this.metroTextBox29.Location = new System.Drawing.Point(449, 173);
+            this.metroTextBox29.Location = new System.Drawing.Point(448, 173);
             this.metroTextBox29.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox29.MaxLength = 32767;
             this.metroTextBox29.Name = "metroTextBox29";
@@ -1244,7 +1183,7 @@
             this.label56.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label56.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label56.Location = new System.Drawing.Point(386, 88);
+            this.label56.Location = new System.Drawing.Point(385, 88);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(57, 42);
             this.label56.TabIndex = 92;
@@ -1258,7 +1197,7 @@
             this.label57.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label57.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label57.Location = new System.Drawing.Point(386, 130);
+            this.label57.Location = new System.Drawing.Point(385, 130);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(57, 41);
             this.label57.TabIndex = 93;
@@ -1272,7 +1211,7 @@
             this.label58.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label58.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label58.Location = new System.Drawing.Point(386, 171);
+            this.label58.Location = new System.Drawing.Point(385, 171);
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(57, 40);
             this.label58.TabIndex = 94;
@@ -1293,7 +1232,7 @@
             this.metroComboBox25.Location = new System.Drawing.Point(168, 2);
             this.metroComboBox25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroComboBox25.Name = "metroComboBox25";
-            this.metroComboBox25.Size = new System.Drawing.Size(212, 30);
+            this.metroComboBox25.Size = new System.Drawing.Size(211, 30);
             this.metroComboBox25.TabIndex = 102;
             this.metroComboBox25.UseSelectable = true;
             // 
@@ -1311,7 +1250,7 @@
             this.metroComboBox26.Location = new System.Drawing.Point(168, 48);
             this.metroComboBox26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroComboBox26.Name = "metroComboBox26";
-            this.metroComboBox26.Size = new System.Drawing.Size(212, 30);
+            this.metroComboBox26.Size = new System.Drawing.Size(211, 30);
             this.metroComboBox26.TabIndex = 103;
             this.metroComboBox26.UseSelectable = true;
             // 
@@ -1329,7 +1268,7 @@
             this.metroComboBox27.Location = new System.Drawing.Point(168, 90);
             this.metroComboBox27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroComboBox27.Name = "metroComboBox27";
-            this.metroComboBox27.Size = new System.Drawing.Size(212, 30);
+            this.metroComboBox27.Size = new System.Drawing.Size(211, 30);
             this.metroComboBox27.TabIndex = 104;
             this.metroComboBox27.UseSelectable = true;
             // 
@@ -1347,7 +1286,7 @@
             this.metroComboBox28.Location = new System.Drawing.Point(168, 132);
             this.metroComboBox28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroComboBox28.Name = "metroComboBox28";
-            this.metroComboBox28.Size = new System.Drawing.Size(212, 30);
+            this.metroComboBox28.Size = new System.Drawing.Size(211, 30);
             this.metroComboBox28.TabIndex = 105;
             this.metroComboBox28.UseSelectable = true;
             // 
@@ -1365,7 +1304,7 @@
             this.metroComboBox29.Location = new System.Drawing.Point(168, 173);
             this.metroComboBox29.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroComboBox29.Name = "metroComboBox29";
-            this.metroComboBox29.Size = new System.Drawing.Size(212, 30);
+            this.metroComboBox29.Size = new System.Drawing.Size(211, 30);
             this.metroComboBox29.TabIndex = 106;
             this.metroComboBox29.UseSelectable = true;
             // 
@@ -1388,7 +1327,7 @@
             this.table_pnl3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 56.89149F));
             this.table_pnl3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 63F));
             this.table_pnl3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 225F));
-            this.table_pnl3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57F));
+            this.table_pnl3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 58F));
             this.table_pnl3.Controls.Add(this.label19, 0, 0);
             this.table_pnl3.Controls.Add(this.metroTextBox10, 3, 0);
             this.table_pnl3.Controls.Add(this.label20, 2, 0);
@@ -1455,7 +1394,7 @@
             this.metroTextBox10.CustomButton.Visible = false;
             this.metroTextBox10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTextBox10.Lines = new string[0];
-            this.metroTextBox10.Location = new System.Drawing.Point(449, 2);
+            this.metroTextBox10.Location = new System.Drawing.Point(448, 2);
             this.metroTextBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox10.MaxLength = 32767;
             this.metroTextBox10.Name = "metroTextBox10";
@@ -1478,7 +1417,7 @@
             this.label20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label20.Location = new System.Drawing.Point(386, 0);
+            this.label20.Location = new System.Drawing.Point(385, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(57, 46);
             this.label20.TabIndex = 68;
@@ -1502,7 +1441,7 @@
             this.metroTextBox11.CustomButton.Visible = false;
             this.metroTextBox11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTextBox11.Lines = new string[0];
-            this.metroTextBox11.Location = new System.Drawing.Point(449, 48);
+            this.metroTextBox11.Location = new System.Drawing.Point(448, 48);
             this.metroTextBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox11.MaxLength = 32767;
             this.metroTextBox11.Name = "metroTextBox11";
@@ -1539,7 +1478,7 @@
             this.label22.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label22.Location = new System.Drawing.Point(386, 46);
+            this.label22.Location = new System.Drawing.Point(385, 46);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(57, 42);
             this.label22.TabIndex = 72;
@@ -1605,7 +1544,7 @@
             this.metroTextBox12.CustomButton.Visible = false;
             this.metroTextBox12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTextBox12.Lines = new string[0];
-            this.metroTextBox12.Location = new System.Drawing.Point(449, 90);
+            this.metroTextBox12.Location = new System.Drawing.Point(448, 90);
             this.metroTextBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox12.MaxLength = 32767;
             this.metroTextBox12.Name = "metroTextBox12";
@@ -1638,7 +1577,7 @@
             this.metroTextBox13.CustomButton.Visible = false;
             this.metroTextBox13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTextBox13.Lines = new string[0];
-            this.metroTextBox13.Location = new System.Drawing.Point(449, 132);
+            this.metroTextBox13.Location = new System.Drawing.Point(448, 132);
             this.metroTextBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox13.MaxLength = 32767;
             this.metroTextBox13.Name = "metroTextBox13";
@@ -1671,7 +1610,7 @@
             this.metroTextBox14.CustomButton.Visible = false;
             this.metroTextBox14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTextBox14.Lines = new string[0];
-            this.metroTextBox14.Location = new System.Drawing.Point(449, 173);
+            this.metroTextBox14.Location = new System.Drawing.Point(448, 173);
             this.metroTextBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox14.MaxLength = 32767;
             this.metroTextBox14.Name = "metroTextBox14";
@@ -1694,7 +1633,7 @@
             this.label26.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label26.Location = new System.Drawing.Point(386, 88);
+            this.label26.Location = new System.Drawing.Point(385, 88);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(57, 42);
             this.label26.TabIndex = 92;
@@ -1708,7 +1647,7 @@
             this.label27.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label27.Location = new System.Drawing.Point(386, 130);
+            this.label27.Location = new System.Drawing.Point(385, 130);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(57, 41);
             this.label27.TabIndex = 93;
@@ -1722,7 +1661,7 @@
             this.label28.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label28.Location = new System.Drawing.Point(386, 171);
+            this.label28.Location = new System.Drawing.Point(385, 171);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(57, 40);
             this.label28.TabIndex = 94;
@@ -1743,7 +1682,7 @@
             this.metroComboBox10.Location = new System.Drawing.Point(168, 2);
             this.metroComboBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroComboBox10.Name = "metroComboBox10";
-            this.metroComboBox10.Size = new System.Drawing.Size(212, 30);
+            this.metroComboBox10.Size = new System.Drawing.Size(211, 30);
             this.metroComboBox10.TabIndex = 102;
             this.metroComboBox10.UseSelectable = true;
             // 
@@ -1761,7 +1700,7 @@
             this.metroComboBox11.Location = new System.Drawing.Point(168, 48);
             this.metroComboBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroComboBox11.Name = "metroComboBox11";
-            this.metroComboBox11.Size = new System.Drawing.Size(212, 30);
+            this.metroComboBox11.Size = new System.Drawing.Size(211, 30);
             this.metroComboBox11.TabIndex = 103;
             this.metroComboBox11.UseSelectable = true;
             // 
@@ -1779,7 +1718,7 @@
             this.metroComboBox12.Location = new System.Drawing.Point(168, 90);
             this.metroComboBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroComboBox12.Name = "metroComboBox12";
-            this.metroComboBox12.Size = new System.Drawing.Size(212, 30);
+            this.metroComboBox12.Size = new System.Drawing.Size(211, 30);
             this.metroComboBox12.TabIndex = 104;
             this.metroComboBox12.UseSelectable = true;
             // 
@@ -1797,7 +1736,7 @@
             this.metroComboBox13.Location = new System.Drawing.Point(168, 132);
             this.metroComboBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroComboBox13.Name = "metroComboBox13";
-            this.metroComboBox13.Size = new System.Drawing.Size(212, 30);
+            this.metroComboBox13.Size = new System.Drawing.Size(211, 30);
             this.metroComboBox13.TabIndex = 105;
             this.metroComboBox13.UseSelectable = true;
             // 
@@ -1815,7 +1754,7 @@
             this.metroComboBox14.Location = new System.Drawing.Point(168, 173);
             this.metroComboBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroComboBox14.Name = "metroComboBox14";
-            this.metroComboBox14.Size = new System.Drawing.Size(212, 30);
+            this.metroComboBox14.Size = new System.Drawing.Size(211, 30);
             this.metroComboBox14.TabIndex = 106;
             this.metroComboBox14.UseSelectable = true;
             // 
@@ -1829,7 +1768,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 56.89149F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 63F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 225F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 58F));
             this.tableLayoutPanel2.Controls.Add(this.label29, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.metroTextBox15, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.label30, 2, 0);
@@ -1896,7 +1835,7 @@
             this.metroTextBox15.CustomButton.Visible = false;
             this.metroTextBox15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTextBox15.Lines = new string[0];
-            this.metroTextBox15.Location = new System.Drawing.Point(449, 2);
+            this.metroTextBox15.Location = new System.Drawing.Point(448, 2);
             this.metroTextBox15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox15.MaxLength = 32767;
             this.metroTextBox15.Name = "metroTextBox15";
@@ -1919,7 +1858,7 @@
             this.label30.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label30.Location = new System.Drawing.Point(386, 0);
+            this.label30.Location = new System.Drawing.Point(385, 0);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(57, 46);
             this.label30.TabIndex = 68;
@@ -1943,7 +1882,7 @@
             this.metroTextBox16.CustomButton.Visible = false;
             this.metroTextBox16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTextBox16.Lines = new string[0];
-            this.metroTextBox16.Location = new System.Drawing.Point(449, 48);
+            this.metroTextBox16.Location = new System.Drawing.Point(448, 48);
             this.metroTextBox16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox16.MaxLength = 32767;
             this.metroTextBox16.Name = "metroTextBox16";
@@ -1980,7 +1919,7 @@
             this.label32.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label32.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label32.Location = new System.Drawing.Point(386, 46);
+            this.label32.Location = new System.Drawing.Point(385, 46);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(57, 42);
             this.label32.TabIndex = 72;
@@ -2046,7 +1985,7 @@
             this.metroTextBox17.CustomButton.Visible = false;
             this.metroTextBox17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTextBox17.Lines = new string[0];
-            this.metroTextBox17.Location = new System.Drawing.Point(449, 90);
+            this.metroTextBox17.Location = new System.Drawing.Point(448, 90);
             this.metroTextBox17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox17.MaxLength = 32767;
             this.metroTextBox17.Name = "metroTextBox17";
@@ -2079,7 +2018,7 @@
             this.metroTextBox18.CustomButton.Visible = false;
             this.metroTextBox18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTextBox18.Lines = new string[0];
-            this.metroTextBox18.Location = new System.Drawing.Point(449, 132);
+            this.metroTextBox18.Location = new System.Drawing.Point(448, 132);
             this.metroTextBox18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox18.MaxLength = 32767;
             this.metroTextBox18.Name = "metroTextBox18";
@@ -2112,7 +2051,7 @@
             this.metroTextBox19.CustomButton.Visible = false;
             this.metroTextBox19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTextBox19.Lines = new string[0];
-            this.metroTextBox19.Location = new System.Drawing.Point(449, 173);
+            this.metroTextBox19.Location = new System.Drawing.Point(448, 173);
             this.metroTextBox19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox19.MaxLength = 32767;
             this.metroTextBox19.Name = "metroTextBox19";
@@ -2135,7 +2074,7 @@
             this.label36.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label36.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label36.Location = new System.Drawing.Point(386, 88);
+            this.label36.Location = new System.Drawing.Point(385, 88);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(57, 42);
             this.label36.TabIndex = 92;
@@ -2149,7 +2088,7 @@
             this.label37.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label37.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label37.Location = new System.Drawing.Point(386, 130);
+            this.label37.Location = new System.Drawing.Point(385, 130);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(57, 41);
             this.label37.TabIndex = 93;
@@ -2163,7 +2102,7 @@
             this.label38.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label38.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label38.Location = new System.Drawing.Point(386, 171);
+            this.label38.Location = new System.Drawing.Point(385, 171);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(57, 40);
             this.label38.TabIndex = 94;
@@ -2184,7 +2123,7 @@
             this.metroComboBox15.Location = new System.Drawing.Point(168, 2);
             this.metroComboBox15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroComboBox15.Name = "metroComboBox15";
-            this.metroComboBox15.Size = new System.Drawing.Size(212, 30);
+            this.metroComboBox15.Size = new System.Drawing.Size(211, 30);
             this.metroComboBox15.TabIndex = 102;
             this.metroComboBox15.UseSelectable = true;
             // 
@@ -2202,7 +2141,7 @@
             this.metroComboBox16.Location = new System.Drawing.Point(168, 48);
             this.metroComboBox16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroComboBox16.Name = "metroComboBox16";
-            this.metroComboBox16.Size = new System.Drawing.Size(212, 30);
+            this.metroComboBox16.Size = new System.Drawing.Size(211, 30);
             this.metroComboBox16.TabIndex = 103;
             this.metroComboBox16.UseSelectable = true;
             // 
@@ -2220,7 +2159,7 @@
             this.metroComboBox17.Location = new System.Drawing.Point(168, 90);
             this.metroComboBox17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroComboBox17.Name = "metroComboBox17";
-            this.metroComboBox17.Size = new System.Drawing.Size(212, 30);
+            this.metroComboBox17.Size = new System.Drawing.Size(211, 30);
             this.metroComboBox17.TabIndex = 104;
             this.metroComboBox17.UseSelectable = true;
             // 
@@ -2238,7 +2177,7 @@
             this.metroComboBox18.Location = new System.Drawing.Point(168, 132);
             this.metroComboBox18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroComboBox18.Name = "metroComboBox18";
-            this.metroComboBox18.Size = new System.Drawing.Size(212, 30);
+            this.metroComboBox18.Size = new System.Drawing.Size(211, 30);
             this.metroComboBox18.TabIndex = 105;
             this.metroComboBox18.UseSelectable = true;
             // 
@@ -2256,7 +2195,7 @@
             this.metroComboBox19.Location = new System.Drawing.Point(168, 173);
             this.metroComboBox19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroComboBox19.Name = "metroComboBox19";
-            this.metroComboBox19.Size = new System.Drawing.Size(212, 30);
+            this.metroComboBox19.Size = new System.Drawing.Size(211, 30);
             this.metroComboBox19.TabIndex = 106;
             this.metroComboBox19.UseSelectable = true;
             // 
@@ -2270,7 +2209,7 @@
             this.table_pnl2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 56.89149F));
             this.table_pnl2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 63F));
             this.table_pnl2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 225F));
-            this.table_pnl2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57F));
+            this.table_pnl2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 58F));
             this.table_pnl2.Controls.Add(this.label6, 0, 0);
             this.table_pnl2.Controls.Add(this.metroTextBox1, 3, 0);
             this.table_pnl2.Controls.Add(this.label7, 2, 0);
@@ -2337,7 +2276,7 @@
             this.metroTextBox1.CustomButton.Visible = false;
             this.metroTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTextBox1.Lines = new string[0];
-            this.metroTextBox1.Location = new System.Drawing.Point(449, 2);
+            this.metroTextBox1.Location = new System.Drawing.Point(448, 2);
             this.metroTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox1.MaxLength = 32767;
             this.metroTextBox1.Name = "metroTextBox1";
@@ -2360,7 +2299,7 @@
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label7.Location = new System.Drawing.Point(386, 0);
+            this.label7.Location = new System.Drawing.Point(385, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(57, 46);
             this.label7.TabIndex = 68;
@@ -2384,7 +2323,7 @@
             this.metroTextBox3.CustomButton.Visible = false;
             this.metroTextBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTextBox3.Lines = new string[0];
-            this.metroTextBox3.Location = new System.Drawing.Point(449, 48);
+            this.metroTextBox3.Location = new System.Drawing.Point(448, 48);
             this.metroTextBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox3.MaxLength = 32767;
             this.metroTextBox3.Name = "metroTextBox3";
@@ -2421,7 +2360,7 @@
             this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label9.Location = new System.Drawing.Point(386, 46);
+            this.label9.Location = new System.Drawing.Point(385, 46);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(57, 42);
             this.label9.TabIndex = 72;
@@ -2487,7 +2426,7 @@
             this.metroTextBox5.CustomButton.Visible = false;
             this.metroTextBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTextBox5.Lines = new string[0];
-            this.metroTextBox5.Location = new System.Drawing.Point(449, 90);
+            this.metroTextBox5.Location = new System.Drawing.Point(448, 90);
             this.metroTextBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox5.MaxLength = 32767;
             this.metroTextBox5.Name = "metroTextBox5";
@@ -2520,7 +2459,7 @@
             this.metroTextBox8.CustomButton.Visible = false;
             this.metroTextBox8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTextBox8.Lines = new string[0];
-            this.metroTextBox8.Location = new System.Drawing.Point(449, 132);
+            this.metroTextBox8.Location = new System.Drawing.Point(448, 132);
             this.metroTextBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox8.MaxLength = 32767;
             this.metroTextBox8.Name = "metroTextBox8";
@@ -2553,7 +2492,7 @@
             this.metroTextBox9.CustomButton.Visible = false;
             this.metroTextBox9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTextBox9.Lines = new string[0];
-            this.metroTextBox9.Location = new System.Drawing.Point(449, 173);
+            this.metroTextBox9.Location = new System.Drawing.Point(448, 173);
             this.metroTextBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox9.MaxLength = 32767;
             this.metroTextBox9.Name = "metroTextBox9";
@@ -2576,7 +2515,7 @@
             this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label16.Location = new System.Drawing.Point(386, 88);
+            this.label16.Location = new System.Drawing.Point(385, 88);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(57, 42);
             this.label16.TabIndex = 92;
@@ -2590,7 +2529,7 @@
             this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label17.Location = new System.Drawing.Point(386, 130);
+            this.label17.Location = new System.Drawing.Point(385, 130);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(57, 41);
             this.label17.TabIndex = 93;
@@ -2604,7 +2543,7 @@
             this.label18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label18.Location = new System.Drawing.Point(386, 171);
+            this.label18.Location = new System.Drawing.Point(385, 171);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(57, 40);
             this.label18.TabIndex = 94;
@@ -2625,7 +2564,7 @@
             this.metroComboBox5.Location = new System.Drawing.Point(168, 2);
             this.metroComboBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroComboBox5.Name = "metroComboBox5";
-            this.metroComboBox5.Size = new System.Drawing.Size(212, 30);
+            this.metroComboBox5.Size = new System.Drawing.Size(211, 30);
             this.metroComboBox5.TabIndex = 102;
             this.metroComboBox5.UseSelectable = true;
             // 
@@ -2643,7 +2582,7 @@
             this.metroComboBox6.Location = new System.Drawing.Point(168, 48);
             this.metroComboBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroComboBox6.Name = "metroComboBox6";
-            this.metroComboBox6.Size = new System.Drawing.Size(212, 30);
+            this.metroComboBox6.Size = new System.Drawing.Size(211, 30);
             this.metroComboBox6.TabIndex = 103;
             this.metroComboBox6.UseSelectable = true;
             // 
@@ -2661,7 +2600,7 @@
             this.metroComboBox7.Location = new System.Drawing.Point(168, 90);
             this.metroComboBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroComboBox7.Name = "metroComboBox7";
-            this.metroComboBox7.Size = new System.Drawing.Size(212, 30);
+            this.metroComboBox7.Size = new System.Drawing.Size(211, 30);
             this.metroComboBox7.TabIndex = 104;
             this.metroComboBox7.UseSelectable = true;
             // 
@@ -2679,7 +2618,7 @@
             this.metroComboBox8.Location = new System.Drawing.Point(168, 132);
             this.metroComboBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroComboBox8.Name = "metroComboBox8";
-            this.metroComboBox8.Size = new System.Drawing.Size(212, 30);
+            this.metroComboBox8.Size = new System.Drawing.Size(211, 30);
             this.metroComboBox8.TabIndex = 105;
             this.metroComboBox8.UseSelectable = true;
             // 
@@ -2697,7 +2636,7 @@
             this.metroComboBox9.Location = new System.Drawing.Point(168, 173);
             this.metroComboBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroComboBox9.Name = "metroComboBox9";
-            this.metroComboBox9.Size = new System.Drawing.Size(212, 30);
+            this.metroComboBox9.Size = new System.Drawing.Size(211, 30);
             this.metroComboBox9.TabIndex = 106;
             this.metroComboBox9.UseSelectable = true;
             // 
@@ -2711,7 +2650,7 @@
             this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 56.89149F));
             this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 63F));
             this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 225F));
-            this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57F));
+            this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 58F));
             this.table_pnl.Controls.Add(this.wrk_lbl, 0, 0);
             this.table_pnl.Controls.Add(this.day_txb, 3, 0);
             this.table_pnl.Controls.Add(this.day_lbl, 2, 0);
@@ -2778,7 +2717,7 @@
             this.day_txb.CustomButton.Visible = false;
             this.day_txb.Dock = System.Windows.Forms.DockStyle.Fill;
             this.day_txb.Lines = new string[0];
-            this.day_txb.Location = new System.Drawing.Point(449, 2);
+            this.day_txb.Location = new System.Drawing.Point(448, 2);
             this.day_txb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.day_txb.MaxLength = 32767;
             this.day_txb.Name = "day_txb";
@@ -2801,7 +2740,7 @@
             this.day_lbl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.day_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.day_lbl.ForeColor = System.Drawing.Color.DarkCyan;
-            this.day_lbl.Location = new System.Drawing.Point(386, 0);
+            this.day_lbl.Location = new System.Drawing.Point(385, 0);
             this.day_lbl.Name = "day_lbl";
             this.day_lbl.Size = new System.Drawing.Size(57, 46);
             this.day_lbl.TabIndex = 68;
@@ -2825,7 +2764,7 @@
             this.metroTextBox2.CustomButton.Visible = false;
             this.metroTextBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTextBox2.Lines = new string[0];
-            this.metroTextBox2.Location = new System.Drawing.Point(449, 48);
+            this.metroTextBox2.Location = new System.Drawing.Point(448, 48);
             this.metroTextBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox2.MaxLength = 32767;
             this.metroTextBox2.Name = "metroTextBox2";
@@ -2862,7 +2801,7 @@
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label2.Location = new System.Drawing.Point(386, 46);
+            this.label2.Location = new System.Drawing.Point(385, 46);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 42);
             this.label2.TabIndex = 72;
@@ -2928,7 +2867,7 @@
             this.metroTextBox7.CustomButton.Visible = false;
             this.metroTextBox7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTextBox7.Lines = new string[0];
-            this.metroTextBox7.Location = new System.Drawing.Point(449, 90);
+            this.metroTextBox7.Location = new System.Drawing.Point(448, 90);
             this.metroTextBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox7.MaxLength = 32767;
             this.metroTextBox7.Name = "metroTextBox7";
@@ -2961,7 +2900,7 @@
             this.metroTextBox6.CustomButton.Visible = false;
             this.metroTextBox6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTextBox6.Lines = new string[0];
-            this.metroTextBox6.Location = new System.Drawing.Point(449, 132);
+            this.metroTextBox6.Location = new System.Drawing.Point(448, 132);
             this.metroTextBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox6.MaxLength = 32767;
             this.metroTextBox6.Name = "metroTextBox6";
@@ -2994,7 +2933,7 @@
             this.metroTextBox4.CustomButton.Visible = false;
             this.metroTextBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTextBox4.Lines = new string[0];
-            this.metroTextBox4.Location = new System.Drawing.Point(449, 173);
+            this.metroTextBox4.Location = new System.Drawing.Point(448, 173);
             this.metroTextBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox4.MaxLength = 32767;
             this.metroTextBox4.Name = "metroTextBox4";
@@ -3017,7 +2956,7 @@
             this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label13.Location = new System.Drawing.Point(386, 88);
+            this.label13.Location = new System.Drawing.Point(385, 88);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(57, 42);
             this.label13.TabIndex = 92;
@@ -3031,7 +2970,7 @@
             this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label14.Location = new System.Drawing.Point(386, 130);
+            this.label14.Location = new System.Drawing.Point(385, 130);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(57, 41);
             this.label14.TabIndex = 93;
@@ -3045,7 +2984,7 @@
             this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label15.Location = new System.Drawing.Point(386, 171);
+            this.label15.Location = new System.Drawing.Point(385, 171);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(57, 40);
             this.label15.TabIndex = 94;
@@ -3066,7 +3005,7 @@
             this.type_cobx.Location = new System.Drawing.Point(168, 2);
             this.type_cobx.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.type_cobx.Name = "type_cobx";
-            this.type_cobx.Size = new System.Drawing.Size(212, 30);
+            this.type_cobx.Size = new System.Drawing.Size(211, 30);
             this.type_cobx.TabIndex = 102;
             this.type_cobx.UseSelectable = true;
             // 
@@ -3084,7 +3023,7 @@
             this.metroComboBox1.Location = new System.Drawing.Point(168, 48);
             this.metroComboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroComboBox1.Name = "metroComboBox1";
-            this.metroComboBox1.Size = new System.Drawing.Size(212, 30);
+            this.metroComboBox1.Size = new System.Drawing.Size(211, 30);
             this.metroComboBox1.TabIndex = 103;
             this.metroComboBox1.UseSelectable = true;
             // 
@@ -3102,7 +3041,7 @@
             this.metroComboBox2.Location = new System.Drawing.Point(168, 90);
             this.metroComboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroComboBox2.Name = "metroComboBox2";
-            this.metroComboBox2.Size = new System.Drawing.Size(212, 30);
+            this.metroComboBox2.Size = new System.Drawing.Size(211, 30);
             this.metroComboBox2.TabIndex = 104;
             this.metroComboBox2.UseSelectable = true;
             // 
@@ -3120,7 +3059,7 @@
             this.metroComboBox3.Location = new System.Drawing.Point(168, 132);
             this.metroComboBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroComboBox3.Name = "metroComboBox3";
-            this.metroComboBox3.Size = new System.Drawing.Size(212, 30);
+            this.metroComboBox3.Size = new System.Drawing.Size(211, 30);
             this.metroComboBox3.TabIndex = 105;
             this.metroComboBox3.UseSelectable = true;
             // 
@@ -3138,7 +3077,7 @@
             this.metroComboBox4.Location = new System.Drawing.Point(168, 173);
             this.metroComboBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroComboBox4.Name = "metroComboBox4";
-            this.metroComboBox4.Size = new System.Drawing.Size(212, 30);
+            this.metroComboBox4.Size = new System.Drawing.Size(211, 30);
             this.metroComboBox4.TabIndex = 106;
             this.metroComboBox4.UseSelectable = true;
             // 
@@ -3203,7 +3142,7 @@
             this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.91667F));
             this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
             this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 116F));
-            this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 270F));
+            this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 271F));
             this.view_menu.Controls.Add(this.search_panel, 4, 0);
             this.view_menu.Controls.Add(this.gunaButton3, 0, 0);
             this.view_menu.Controls.Add(this.gunaButton4, 0, 0);
@@ -3224,9 +3163,9 @@
             this.search_panel.Controls.Add(this.search_txb);
             this.search_panel.Controls.Add(this.search_picbx);
             this.search_panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.search_panel.Location = new System.Drawing.Point(455, 3);
+            this.search_panel.Location = new System.Drawing.Point(454, 3);
             this.search_panel.Name = "search_panel";
-            this.search_panel.Size = new System.Drawing.Size(265, 33);
+            this.search_panel.Size = new System.Drawing.Size(266, 33);
             this.search_panel.TabIndex = 4;
             // 
             // search_txb
@@ -3245,7 +3184,7 @@
             this.search_txb.CustomButton.Visible = false;
             this.search_txb.Dock = System.Windows.Forms.DockStyle.Right;
             this.search_txb.Lines = new string[0];
-            this.search_txb.Location = new System.Drawing.Point(43, 0);
+            this.search_txb.Location = new System.Drawing.Point(44, 0);
             this.search_txb.MaxLength = 32767;
             this.search_txb.Name = "search_txb";
             this.search_txb.PasswordChar = '\0';
@@ -3285,7 +3224,7 @@
             this.gunaButton3.ForeColor = System.Drawing.Color.White;
             this.gunaButton3.Image = global::FFGMS.Properties.Resources.icons8_print_32;
             this.gunaButton3.ImageSize = new System.Drawing.Size(15, 15);
-            this.gunaButton3.Location = new System.Drawing.Point(339, 3);
+            this.gunaButton3.Location = new System.Drawing.Point(338, 3);
             this.gunaButton3.Name = "gunaButton3";
             this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton3.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -3310,7 +3249,7 @@
             this.gunaButton4.ForeColor = System.Drawing.Color.White;
             this.gunaButton4.Image = global::FFGMS.Properties.Resources.icons8_delete_32;
             this.gunaButton4.ImageSize = new System.Drawing.Size(15, 15);
-            this.gunaButton4.Location = new System.Drawing.Point(219, 3);
+            this.gunaButton4.Location = new System.Drawing.Point(218, 3);
             this.gunaButton4.Name = "gunaButton4";
             this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton4.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -3335,7 +3274,7 @@
             this.gunaButton1.ForeColor = System.Drawing.Color.White;
             this.gunaButton1.Image = global::FFGMS.Properties.Resources.icons8_swap_32;
             this.gunaButton1.ImageSize = new System.Drawing.Size(15, 15);
-            this.gunaButton1.Location = new System.Drawing.Point(105, 3);
+            this.gunaButton1.Location = new System.Drawing.Point(104, 3);
             this.gunaButton1.Name = "gunaButton1";
             this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -3367,7 +3306,7 @@
             this.gunaButton2.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton2.OnHoverImage = null;
             this.gunaButton2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton2.Size = new System.Drawing.Size(96, 33);
+            this.gunaButton2.Size = new System.Drawing.Size(95, 33);
             this.gunaButton2.TabIndex = 2;
             this.gunaButton2.Text = "View";
             this.gunaButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -3431,6 +3370,120 @@
             this.data_view.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.data_view.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.panel9);
+            this.panel6.Controls.Add(this.update_btn);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel6.Location = new System.Drawing.Point(490, 0);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(239, 36);
+            this.panel6.TabIndex = 71;
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.btn_grbx);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel9.Location = new System.Drawing.Point(0, 0);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(239, 36);
+            this.panel9.TabIndex = 6;
+            // 
+            // btn_grbx
+            // 
+            this.btn_grbx.BackColor = System.Drawing.Color.Transparent;
+            this.btn_grbx.BaseColor = System.Drawing.Color.White;
+            this.btn_grbx.BorderColor = System.Drawing.Color.Transparent;
+            this.btn_grbx.Controls.Add(this.erase_btn);
+            this.btn_grbx.Controls.Add(this.add_btn);
+            this.btn_grbx.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_grbx.LineColor = System.Drawing.Color.Transparent;
+            this.btn_grbx.Location = new System.Drawing.Point(0, 0);
+            this.btn_grbx.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_grbx.Name = "btn_grbx";
+            this.btn_grbx.Size = new System.Drawing.Size(239, 36);
+            this.btn_grbx.TabIndex = 65;
+            this.btn_grbx.TextLocation = new System.Drawing.Point(10, 8);
+            // 
+            // erase_btn
+            // 
+            this.erase_btn.AnimationHoverSpeed = 0.07F;
+            this.erase_btn.AnimationSpeed = 0.03F;
+            this.erase_btn.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
+            this.erase_btn.BorderColor = System.Drawing.Color.Black;
+            this.erase_btn.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.erase_btn.Dock = System.Windows.Forms.DockStyle.Left;
+            this.erase_btn.FocusedColor = System.Drawing.Color.Empty;
+            this.erase_btn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.erase_btn.ForeColor = System.Drawing.Color.White;
+            this.erase_btn.Image = global::FFGMS.Properties.Resources.icons8_erase_32;
+            this.erase_btn.ImageSize = new System.Drawing.Size(15, 15);
+            this.erase_btn.Location = new System.Drawing.Point(0, 0);
+            this.erase_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.erase_btn.Name = "erase_btn";
+            this.erase_btn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.erase_btn.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.erase_btn.OnHoverForeColor = System.Drawing.Color.White;
+            this.erase_btn.OnHoverImage = null;
+            this.erase_btn.OnPressedColor = System.Drawing.Color.Black;
+            this.erase_btn.Size = new System.Drawing.Size(115, 36);
+            this.erase_btn.TabIndex = 1;
+            this.erase_btn.Text = "Erase";
+            // 
+            // add_btn
+            // 
+            this.add_btn.AnimationHoverSpeed = 0.07F;
+            this.add_btn.AnimationSpeed = 0.03F;
+            this.add_btn.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
+            this.add_btn.BorderColor = System.Drawing.Color.Black;
+            this.add_btn.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.add_btn.Dock = System.Windows.Forms.DockStyle.Right;
+            this.add_btn.FocusedColor = System.Drawing.Color.Empty;
+            this.add_btn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_btn.ForeColor = System.Drawing.Color.White;
+            this.add_btn.Image = global::FFGMS.Properties.Resources.icons8_plus_32;
+            this.add_btn.ImageSize = new System.Drawing.Size(15, 15);
+            this.add_btn.Location = new System.Drawing.Point(126, 0);
+            this.add_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.add_btn.Name = "add_btn";
+            this.add_btn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.add_btn.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.add_btn.OnHoverForeColor = System.Drawing.Color.White;
+            this.add_btn.OnHoverImage = null;
+            this.add_btn.OnPressedColor = System.Drawing.Color.Black;
+            this.add_btn.Size = new System.Drawing.Size(113, 36);
+            this.add_btn.TabIndex = 0;
+            this.add_btn.Text = "Add";
+            // 
+            // update_btn
+            // 
+            this.update_btn.AnimationHoverSpeed = 0.07F;
+            this.update_btn.AnimationSpeed = 0.03F;
+            this.update_btn.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
+            this.update_btn.BorderColor = System.Drawing.Color.Black;
+            this.update_btn.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.update_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.update_btn.Enabled = false;
+            this.update_btn.FocusedColor = System.Drawing.Color.Empty;
+            this.update_btn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.update_btn.ForeColor = System.Drawing.Color.White;
+            this.update_btn.Image = global::FFGMS.Properties.Resources.icons8_swap_32;
+            this.update_btn.ImageSize = new System.Drawing.Size(15, 15);
+            this.update_btn.Location = new System.Drawing.Point(0, 0);
+            this.update_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.update_btn.Name = "update_btn";
+            this.update_btn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.update_btn.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.update_btn.OnHoverForeColor = System.Drawing.Color.White;
+            this.update_btn.OnHoverImage = null;
+            this.update_btn.OnPressedColor = System.Drawing.Color.Black;
+            this.update_btn.Size = new System.Drawing.Size(239, 36);
+            this.update_btn.TabIndex = 4;
+            this.update_btn.Text = "Change";
+            this.update_btn.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // pro_m_admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -3444,7 +3497,6 @@
             this.pro_add_admin.ResumeLayout(false);
             this.add_pnl.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            this.btn_grbx.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.gunaGroupBox1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
@@ -3478,6 +3530,9 @@
             this.search_panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.search_picbx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.data_view)).EndInit();
+            this.panel6.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            this.btn_grbx.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -3502,9 +3557,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
-        private Guna.UI.WinForms.GunaGroupBox btn_grbx;
-        private Guna.UI.WinForms.GunaButton erase_btn;
-        private Guna.UI.WinForms.GunaButton add_btn;
         private System.Windows.Forms.Panel panel3;
         private Guna.UI.WinForms.GunaGroupBox gunaGroupBox1;
         private Guna.UI.WinForms.GunaButton next_btn;
@@ -3641,5 +3693,11 @@
         private MetroFramework.Controls.MetroComboBox metroComboBox7;
         private MetroFramework.Controls.MetroComboBox metroComboBox8;
         private MetroFramework.Controls.MetroComboBox metroComboBox9;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel9;
+        private Guna.UI.WinForms.GunaGroupBox btn_grbx;
+        private Guna.UI.WinForms.GunaButton erase_btn;
+        private Guna.UI.WinForms.GunaButton add_btn;
+        private Guna.UI.WinForms.GunaButton update_btn;
     }
 }

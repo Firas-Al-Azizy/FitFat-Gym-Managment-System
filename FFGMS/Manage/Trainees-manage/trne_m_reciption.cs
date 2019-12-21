@@ -16,5 +16,10 @@ namespace FFGMS.Manage.Trainees_manage
         {
             InitializeComponent();
         }
+
+        private void btn_grbx_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

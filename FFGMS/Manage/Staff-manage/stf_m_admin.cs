@@ -193,7 +193,7 @@ namespace FFGMS.Manage.Staff_manage
 
         private void gunaButton1_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "All Files|*.*|png |*.png|jpeg|*.jpg|bmp|*.bmp";
+            openFileDialog1.Filter = "All Files|*.png;*.jpg;*.jpeg;*.bmp;*.wdp;*.dib|png |*.png|jpeg|*.jpg;*.jpeg|bmp|*.bmp|wdp|*.wdp|dib|*.dib";
 
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {

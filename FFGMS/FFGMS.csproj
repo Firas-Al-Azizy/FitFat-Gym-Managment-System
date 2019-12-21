@@ -841,5 +841,29 @@
   <ItemGroup>
     <None Include="Resources\icons8_view_module_32.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_prev_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_prev_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_right_button_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_right_button_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_prevb_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_prevb_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_right_buttonb_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_right_buttonb_32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

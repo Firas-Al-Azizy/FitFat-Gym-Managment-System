@@ -16,5 +16,10 @@ namespace FFGMS.Manage
         {
             InitializeComponent();
         }
+
+        private void table_pnl_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

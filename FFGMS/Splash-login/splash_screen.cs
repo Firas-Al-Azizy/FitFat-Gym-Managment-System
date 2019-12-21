@@ -1,5 +1,7 @@
 ﻿using FFGMS.Dashboards;
 using System;
+using System.Data;
+using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Windows.Forms;
 
@@ -8,6 +10,8 @@ namespace FFGMS
 {
     public partial class splash_screen : Form
     {
+        SqlConnection con = new SqlConnection(@"server=DESKTOP-HPA6H4U\SQLEXPRESS;
+        database=db_ffgms ; integrated security=true");
         public splash_screen()
         {
             InitializeComponent();
@@ -97,30 +101,46 @@ namespace FFGMS
 
         private void login_btn_Click(object sender, EventArgs e)
         {
-            
-            if (type_combo.SelectedIndex==0)
+            DataTable dtt = new DataTable();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandText = "[Pkgemp.logIn]";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@Pemp_userName", SqlDbType.NVarChar).Value = bunifuMetroTextbox1.Text;
+            cmd.Parameters.Add("@Pemp_pass", SqlDbType.NVarChar).Value = bunifuMetroTextbox2.Text;
+            cmd.Parameters.Add("@Pemp_pos", SqlDbType.NVarChar).Value = type_combo.Text;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dtt);
+            if (dtt.Rows.Count > 0)
             {
-                
-                Admin_Dashbord main = new Admin_Dashbord();
-                main.Show();
 
-            }
-            else if (type_combo.SelectedIndex == 1)
+                if (type_combo.SelectedIndex == 0)
                 {
-                Reciption_Dashbord main = new Reciption_Dashbord();
-                main.Show();
+
+                    Admin_Dashbord main = new Admin_Dashbord();
+                    main.Show();
+
+                }
+                else if (type_combo.SelectedIndex == 1)
+                {
+                    Reciption_Dashbord main = new Reciption_Dashbord();
+                    main.Show();
+                }
+                else if (type_combo.SelectedIndex == 2)
+                {
+                    Trainer_Dashboard main = new Trainer_Dashboard();
+                    main.Show();
+                }
+                else if (type_combo.SelectedIndex == 3)
+                {
+                    Trainee_Dashboard main = new Trainee_Dashboard();
+                    main.Show();
+                }
+                this.Hide();
             }
-            else if (type_combo.SelectedIndex == 2)
+            else
             {
-                Trainer_Dashboard main = new Trainer_Dashboard();
-                main.Show();
+                MessageBox.Show("Wrong user Name or Password /n choose a correct type of users");
             }
-            else if (type_combo.SelectedIndex == 3)
-            {
-                Trainee_Dashboard main = new Trainee_Dashboard();
-                main.Show();
-            }
-            this.Hide();
 
         }
 
@@ -164,6 +184,16 @@ namespace FFGMS
         }
 
         private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bunifuMetroTextbox1_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuMetroTextbox2_OnValueChanged_1(object sender, EventArgs e)
         {
 
         }

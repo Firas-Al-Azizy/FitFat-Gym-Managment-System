@@ -103,51 +103,51 @@ namespace FFGMS.Manage.Staff_manage
 
         private void gunaButton2_Click(object sender, EventArgs e)
         {
-            if (timer1.Enabled == false)
-            {
-                timer1.Enabled = true;
+            //if (timer1.Enabled == false)
+            //{
+            //    timer1.Enabled = true;
                 //data_view.Columns[1].HeaderCell.Value= "id";
                 DataTable dtt = new DataTable();
-                //con.Open();
-                //SqlCommand myCmd = new SqlCommand("[Pkgemp.SelectAll]", con);
-                //myCmd.CommandType = CommandType.StoredProcedure;
-                //SqlDataAdapter da = new SqlDataAdapter(myCmd);
-                //da.Fill(dt);
-                dtt = cls_emp.selectAll();
-                data_view.DataSource = dtt;
-                if (data_view.RowCount > 0)
-                {
-                    gunaButton1.Enabled = true;
-                    gunaButton4.Enabled = true;
-                }
-                else
-                {
-                    MessageBox.Show("data that you are looking for does not exist");
-                    gunaButton4.Enabled = false;
-                }
-            }
-            else
-            {
-                //data_view.Columns[1].HeaderCell.Value= "id";
-                DataTable dtt = new DataTable();
-                //con.Open();
-                //SqlCommand myCmd = new SqlCommand("[Pkgemp.SelectAll]", con);
-                //myCmd.CommandType = CommandType.StoredProcedure;
-                //SqlDataAdapter da = new SqlDataAdapter(myCmd);
-                //da.Fill(dt);
-                dtt = cls_emp.selectAll();
-                data_view.DataSource = dtt;
-                if (data_view.RowCount > 0)
-                {
-                    gunaButton1.Enabled = true;
-                    gunaButton4.Enabled = true;
-                }
-                else
-                {
-                    MessageBox.Show("data that you are looking for does not exist");
-                    gunaButton4.Enabled = false;
-                }
-            }
+            //con.Open();
+            SqlCommand myCmd = new SqlCommand("[Pkgemp.SelectAll]", con);
+            myCmd.CommandType = CommandType.StoredProcedure;
+            SqlDataAdapter da = new SqlDataAdapter(myCmd);
+            da.Fill(dtt);
+            //dtt = cls_emp.selectAll();
+            //data_view.DataSource = dtt;
+            //if (data_view.RowCount > 0)
+            //{
+            //    gunaButton1.Enabled = true;
+            //    gunaButton4.Enabled = true;
+            //}
+            //else
+            //{
+            //    MessageBox.Show("data that you are looking for does not exist");
+            //    gunaButton4.Enabled = false;
+            //}
+            //}
+            //else
+            //{
+            //    //data_view.Columns[1].HeaderCell.Value= "id";
+            //    DataTable dtt = new DataTable();
+            //    //con.Open();
+            //    //SqlCommand myCmd = new SqlCommand("[Pkgemp.SelectAll]", con);
+            //    //myCmd.CommandType = CommandType.StoredProcedure;
+            //    //SqlDataAdapter da = new SqlDataAdapter(myCmd);
+            //    //da.Fill(dt);
+            //    dtt = cls_emp.selectAll();
+            //    data_view.DataSource = dtt;
+            //    if (data_view.RowCount > 0)
+            //    {
+            //        gunaButton1.Enabled = true;
+            //        gunaButton4.Enabled = true;
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("data that you are looking for does not exist");
+            //        gunaButton4.Enabled = false;
+            //    }
+            //}
 
         }
 
@@ -381,6 +381,16 @@ namespace FFGMS.Manage.Staff_manage
         private void search_txb_KeyPress(object sender, KeyPressEventArgs e)
         {
             timer1.Enabled = false;
+        }
+
+        private void gunaButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void erase_btn_Click(object sender, EventArgs e)
+        {
+            clearinfo();
         }
 
 

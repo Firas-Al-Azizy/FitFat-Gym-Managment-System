@@ -53,6 +53,11 @@
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>..\..\design\UI Frameworks\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="Guna.UI, Version=1.8.0.0, Culture=neutral, PublicKeyToken=ad275b4be6718d4b, processorArchitecture=MSIL">
       <HintPath>..\..\design\UI Frameworks\Guna.UI.dll</HintPath>
     </Reference>
@@ -70,6 +75,8 @@
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -217,6 +224,18 @@
     <Compile Include="Dashboards\Reciption_Dashbord.Designer.cs">
       <DependentUpon>Reciption_Dashbord.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\Staff\staff.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>staff.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Staff\staff_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Staff\staff_report.Designer.cs">
+      <DependentUpon>staff_report.cs</DependentUpon>
+    </Compile>
     <Compile Include="Splash-login\splash_screen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -304,6 +323,13 @@
     </Compile>
     <EmbeddedResource Include="Dashboards\Reciption_Dashbord.resx">
       <DependentUpon>Reciption_Dashbord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Staff\staff.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>staff.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Staff\staff_report.resx">
+      <DependentUpon>staff_report.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Splash-login\splash_screen.resx">
       <DependentUpon>splash_screen.cs</DependentUpon>
@@ -864,6 +890,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_right_buttonb_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

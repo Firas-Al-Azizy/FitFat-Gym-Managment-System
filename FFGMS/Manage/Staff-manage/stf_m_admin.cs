@@ -24,173 +24,12 @@ namespace FFGMS.Manage.Staff_manage
             InitializeComponent();
         }
 
-        private void pho_txb_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void adr_lbl_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void gr_view_admin_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void st_add_admin_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void adr_txb_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void st_tab_admin_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pass_txb_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uname_txb_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uname_lbl_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gender_box_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void email_txb_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void email_lbl_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dob_lbl_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void type_combo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void img_picb_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void img_lbl_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void sal_txb_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void sal_lbl_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pho_lbl_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gender_f_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gender_lbl_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gender_m_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void name_lbl_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void name_txb_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroDateTime1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_grbx_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void add_btn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void erase_btn_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void erase_btn_Click_1(object sender, EventArgs e)
         {
 
             clearinfo();
 
         }
-
-        private void table_pnl_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void gunaButton1_Click(object sender, EventArgs e)
         {
             openFileDialog1.Filter = "All Files|*.png;*.jpg;*.jpeg;*.bmp;*.wdp;*.dib|png |*.png|jpeg|*.jpg;*.jpeg|bmp|*.bmp|wdp|*.wdp|dib|*.dib";
@@ -200,22 +39,12 @@ namespace FFGMS.Manage.Staff_manage
                 img_picb.Image = Image.FromFile(openFileDialog1.FileName);
             }
         }
-
-        private void name_txb_Click_1(object sender, EventArgs e)
-        {
-
-        }
         private void stf_m_admin_Load(object sender, EventArgs e)
         {
             MessageBox.Show("page is loaded");
             gunaButton4.Enabled = false;
 
         }
-
-        private void add_btn_Click_1(object sender, EventArgs e)
-        {
-   
-         }
         byte[] conv_picture()
         {
             try
@@ -223,8 +52,9 @@ namespace FFGMS.Manage.Staff_manage
                 //converting photo to binary data
                 if (img_picb.Image != null)
                 {
-                    Image imageToBeResized =
-                        Image.FromFile(openFileDialog1.FileName);
+                    Image imageToBeResized = Image.FromFile(openFileDialog1.FileName);
+                    //Image imageToBeResized = img_picb.Image;
+
                     int imageHeight = imageToBeResized.Height;
                     int imageWidth = imageToBeResized.Width;
                     int maxHeight = 150;
@@ -246,9 +76,9 @@ namespace FFGMS.Manage.Staff_manage
                     return image;
                 }
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                MessageBox.Show("Error code 0001 img\n");
+                MessageBox.Show("Error code 0001 img\n"+e);
             }
             return null;
         }
@@ -271,69 +101,52 @@ namespace FFGMS.Manage.Staff_manage
 
         }
 
-        private void gunaButton3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void add_btn_Click_2(object sender, EventArgs e)
-        {
-            byte[] picture;
-            int inserted;
-
-            picture = conv_picture();
-            cls_emp s = new cls_emp();
-            s.emp_name = name_txb.Text;
-            s.emp_age = age_txb.Text;
-            if (radio_male.Checked == true)
-            {
-                s.emp_gender = radio_male.Text;
-            }
-            else if (radio_female.Checked == true)
-            {
-                s.emp_gender = radio_female.Text;
-            }
-            s.emp_email = email_txb.Text;
-            s.emp_phone = pho_txb.Text;
-            s.emp_address = adr_txb.Text;
-            s.emp_salary = sal_txb.Text;
-            s.emp_userName = uname_txb.Text;
-            s.emp_pass = pass_txb.Text;
-            s.emp_img = picture;
-            s.emp_pos = type_cobx.Text;
-
-            inserted = cls_emp.InsertData(s);
-            if (inserted > 0)
-            {
-                clearinfo();
-                MessageBox.Show("Has successfully adding a new  employee ^_^");
-            }
-            else
-                MessageBox.Show("Has NOT  completed the process");
-
-
-
-        }
-
         private void gunaButton2_Click(object sender, EventArgs e)
         {
-            DataTable dtt = new DataTable();
-            //con.Open();
-            //SqlCommand myCmd = new SqlCommand("[Pkgemp.SelectAll]", con);
-            //myCmd.CommandType = CommandType.StoredProcedure;
-            //SqlDataAdapter da = new SqlDataAdapter(myCmd);
-            //da.Fill(dt);
-            dtt = cls_emp.selectAll();
-            data_view.DataSource = dtt;
-            if (data_view.RowCount > 0)
+            if (timer1.Enabled == false)
             {
-                gunaButton1.Enabled = true;
-                gunaButton4.Enabled = true;
+                timer1.Enabled = true;
+                //data_view.Columns[1].HeaderCell.Value= "id";
+                DataTable dtt = new DataTable();
+                //con.Open();
+                //SqlCommand myCmd = new SqlCommand("[Pkgemp.SelectAll]", con);
+                //myCmd.CommandType = CommandType.StoredProcedure;
+                //SqlDataAdapter da = new SqlDataAdapter(myCmd);
+                //da.Fill(dt);
+                dtt = cls_emp.selectAll();
+                data_view.DataSource = dtt;
+                if (data_view.RowCount > 0)
+                {
+                    gunaButton1.Enabled = true;
+                    gunaButton4.Enabled = true;
+                }
+                else
+                {
+                    MessageBox.Show("data that you are looking for does not exist");
+                    gunaButton4.Enabled = false;
+                }
             }
             else
             {
-                MessageBox.Show("data that you are looking for does not exist");
-                gunaButton4.Enabled = false;
+                //data_view.Columns[1].HeaderCell.Value= "id";
+                DataTable dtt = new DataTable();
+                //con.Open();
+                //SqlCommand myCmd = new SqlCommand("[Pkgemp.SelectAll]", con);
+                //myCmd.CommandType = CommandType.StoredProcedure;
+                //SqlDataAdapter da = new SqlDataAdapter(myCmd);
+                //da.Fill(dt);
+                dtt = cls_emp.selectAll();
+                data_view.DataSource = dtt;
+                if (data_view.RowCount > 0)
+                {
+                    gunaButton1.Enabled = true;
+                    gunaButton4.Enabled = true;
+                }
+                else
+                {
+                    MessageBox.Show("data that you are looking for does not exist");
+                    gunaButton4.Enabled = false;
+                }
             }
 
         }
@@ -342,9 +155,17 @@ namespace FFGMS.Manage.Staff_manage
         {
             DataTable dtt = new DataTable();
             SqlCommand cmd = con.CreateCommand();
-            cmd.CommandText = "[Pkgemp.selectbyName]";
+            cmd.CommandText = "[Pkgemp.search]";
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("@Pemp_name", SqlDbType.NVarChar).Value = search_txb.Text;
+            cmd.Parameters.Add("@Pemp_age", SqlDbType.NVarChar).Value = search_txb.Text;
+            cmd.Parameters.Add("@Pemp_gender", SqlDbType.NVarChar).Value = search_txb.Text;
+            cmd.Parameters.Add("@Pemp_email", SqlDbType.NVarChar).Value = search_txb.Text;
+            cmd.Parameters.Add("@Pemp_phone", SqlDbType.NVarChar).Value = search_txb.Text;
+            cmd.Parameters.Add("@Pemp_address", SqlDbType.NVarChar).Value = search_txb.Text;
+            cmd.Parameters.Add("@Pemp_salary", SqlDbType.NVarChar).Value = search_txb.Text;
+            cmd.Parameters.Add("@Pemp_userName", SqlDbType.NVarChar).Value = search_txb.Text;
+            cmd.Parameters.Add("@Pemp_pos", SqlDbType.NVarChar).Value = search_txb.Text;
 
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dtt);
@@ -380,6 +201,189 @@ namespace FFGMS.Manage.Staff_manage
             //    gunaButton4.Enabled = false;
             //}
         }
+
+        private void gunaButton1_Click_1(object sender, EventArgs e)
+        {
+            st_tab_admin.SelectedIndex = 0;
+            name_txb.Text = this.data_view.CurrentRow.Cells[1].Value.ToString();
+            age_txb.Text = this.data_view.CurrentRow.Cells[3].Value.ToString();
+            if (this.data_view.CurrentRow.Cells[2].Value.ToString() == "Male")
+            {
+                radio_male.Checked = true;
+            }
+            else if (this.data_view.CurrentRow.Cells[2].Value.ToString() == "Female")
+            {
+                radio_female.Checked = true;
+            }
+            email_txb.Text = this.data_view.CurrentRow.Cells[4].Value.ToString();
+            pho_txb.Text = this.data_view.CurrentRow.Cells[5].Value.ToString();
+            adr_txb.Text = this.data_view.CurrentRow.Cells[6].Value.ToString();
+            sal_txb.Text = this.data_view.CurrentRow.Cells[7].Value.ToString();
+            uname_txb.Text = this.data_view.CurrentRow.Cells[8].Value.ToString();
+            pass_txb.Text = this.data_view.CurrentRow.Cells[9].Value.ToString();
+           // img_picb.Image = this.data_view.CurrentRow.Cells[9].Value.ToString();
+            type_cobx.Text = this.data_view.CurrentRow.Cells[11].Value.ToString();
+            DataTable dt = new DataTable();
+            try
+            { // this methode to take employee img from db to ds then to dt
+                dt = GetstdImg(name_txb.Text);
+                if (dt.Rows.Count > 0)
+                {
+                    byte[] img = (byte[])dt.Rows[0][0];
+
+                    MemoryStream ms = new MemoryStream(img);
+                    img_picb.Image = Image.FromStream(ms);
+                }
+                else
+                {
+                    img_picb.Image = null;             }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("image in db is in a wrong format " + "\n Error code 00039", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            panel5.Visible = false;
+            update_btn.Enabled = true;
+
+        }
+
+        public DataTable GetstdImg(string name_txb)
+        {
+            DataTable dtt = new DataTable();
+            try {
+           
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandText = "[Pkgemp.selectImage]";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@Pemp_name", SqlDbType.NVarChar).Value = this.data_view.CurrentRow.Cells[1].Value.ToString();
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dtt);
+            return dtt;
+            }
+            catch(Exception)
+            {
+                return dtt;
+            }
+            //data_view.DataSource = dtt;
+
+            //string command = "select[emp_img] from[db_ffgms].[dbo].[employee] where [emp_name] = '" + name_txb + "'";
+
+            //DataTable dt = new DataTable();
+            //con.Open();
+            //SqlDataAdapter adapter = new SqlDataAdapter(command, con);
+
+            //adapter.Fill(dt);
+            //con.Close();
+            //return dt;
+
+        }
+
+        private void update_btn_Click(object sender, EventArgs e)
+        {
+            byte[] picture;
+            int inserted;
+
+            picture = conv_picture();
+           
+            cls_emp s = new cls_emp();
+            s.emp_name = name_txb.Text;
+            s.emp_age = age_txb.Text;
+            if (radio_male.Checked == true)
+            {
+                s.emp_gender = radio_male.Text;
+            }
+            else if (radio_female.Checked == true)
+            {
+                s.emp_gender = radio_female.Text;
+            }
+            s.emp_email = email_txb.Text;
+            s.emp_phone = pho_txb.Text;
+            s.emp_address = adr_txb.Text;
+            s.emp_salary = sal_txb.Text;
+            s.emp_userName = uname_txb.Text;
+            s.emp_pass = pass_txb.Text;
+            s.emp_img = picture;
+            s.emp_pos = type_cobx.Text;
+
+            inserted = cls_emp.updateData(s);
+            if (inserted > 0)
+            {
+                clearinfo();
+                MessageBox.Show("Has successfully updating  employee ^_^");
+            }
+            else
+                MessageBox.Show("Has NOT  completed the process");
+        }
+
+        private void add_btn_Click_3(object sender, EventArgs e)
+        {
+            byte[] picture;
+            int inserted;
+
+            picture = conv_picture();
+            cls_emp s = new cls_emp();
+            s.emp_name = name_txb.Text;
+            s.emp_age = age_txb.Text;
+            if (radio_male.Checked == true)
+            {
+                s.emp_gender = radio_male.Text;
+            }
+            else if (radio_female.Checked == true)
+            {
+                s.emp_gender = radio_female.Text;
+            }
+            s.emp_email = email_txb.Text;
+            s.emp_phone = pho_txb.Text;
+            s.emp_address = adr_txb.Text;
+            s.emp_salary = sal_txb.Text;
+            s.emp_userName = uname_txb.Text;
+            s.emp_pass = pass_txb.Text;
+            s.emp_img = picture;
+            s.emp_pos = type_cobx.Text;
+
+            inserted = cls_emp.InsertData(s);
+            if (inserted > 0)
+            {
+                clearinfo();
+                MessageBox.Show("Has successfully adding a new  employee ^_^");
+            }
+            else
+                MessageBox.Show("Has NOT  completed the process");
+        }
+
+        private void gunaButton4_Click(object sender, EventArgs e)
+        {
+            DataTable dtt = new DataTable();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandText = "[Pkgemp.delete]";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@Pemp_id", SqlDbType.NVarChar).Value = this.data_view.CurrentRow.Cells[0].Value.ToString();
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dtt);
+            //data_view.DataSource = dtt;
+            if (data_view.RowCount > 0)
+            {
+                gunaButton1.Enabled = true;
+                gunaButton4.Enabled = true;
+
+            }
+            else
+            {
+                MessageBox.Show("data that you are looking for does not exist");
+                gunaButton1.Enabled = false;
+                gunaButton4.Enabled = false;
+            }
+        }
+
+        private void search_txb_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            timer1.Enabled = false;
+        }
+
+
 
         //SqlCommand cmd = con.CreateCommand();
         //cmd.CommandText = "[Pkgemp.insert]";

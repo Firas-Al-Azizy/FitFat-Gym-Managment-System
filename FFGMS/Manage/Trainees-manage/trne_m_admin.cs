@@ -227,5 +227,15 @@ namespace FFGMS.Manage.Trainees_manage
             }
            
         }
+
+        private void gunaButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void data_view_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

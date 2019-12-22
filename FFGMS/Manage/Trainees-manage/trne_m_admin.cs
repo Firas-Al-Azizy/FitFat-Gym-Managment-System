@@ -202,5 +202,30 @@ namespace FFGMS.Manage.Trainees_manage
         {
             clearinfo();
         }
+
+        private void gunaButton2_Click(object sender, EventArgs e)
+        {
+                //data_view.Columns[1].HeaderCell.Value= "id";
+                DataTable dtt = new DataTable();
+                //con.Open();
+                //SqlCommand myCmd = new SqlCommand("[Pkgemp.SelectAll]", con);
+                //myCmd.CommandType = CommandType.StoredProcedure;
+                //SqlDataAdapter da = new SqlDataAdapter(myCmd);
+                //da.Fill(dt);
+                dtt = cls_trne.selectAll();
+                data_view.DataSource = dtt;
+                if (data_view.RowCount > 0)
+                {
+                    gunaButton1.Enabled = true;
+                    gunaButton4.Enabled = true;
+                }
+                else
+                {
+                    MessageBox.Show("data that you are looking for does not exist");
+                    gunaButton4.Enabled = false;
+                     gunaButton1.Enabled = true;
+            }
+           
+        }
     }
 }

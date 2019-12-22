@@ -214,7 +214,7 @@ namespace FFGMS.db_con
                 {
                     {
                         var withBlock = SqlCmd;
-                        withBlock.CommandText = "[Pkgemp.SelectAll]";
+                        withBlock.CommandText = "[Pkgtra.SelectAll]";
                         withBlock.CommandType = CommandType.StoredProcedure;
                     }
 
@@ -265,5 +265,6 @@ namespace FFGMS.db_con
             return dt;
 
         }
+        
     }
 }

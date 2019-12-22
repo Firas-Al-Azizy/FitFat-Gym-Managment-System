@@ -10,8 +10,10 @@ namespace FFGMS
 {
     public partial class splash_screen : Form
     {
-        SqlConnection con = new SqlConnection(@"server=DESKTOP-46DG448\SQLEXPRESS;
-        database=db_ffgms ; integrated security=true");
+        SqlConnection con = new SqlConnection(@"server=DESKTOP-HPA6H4U\SQLEXPRESS;
+        database=db_ffgms_new ; integrated security=true");
+        //   con = new SqlConnection(@"Server=DESKTOP-HPA6H4U\SQLEXPRESS;
+        //User Id=ali_admin;Password=ali123;Database=stud_db;");
         public splash_screen()
         {
             InitializeComponent();
@@ -110,8 +112,22 @@ namespace FFGMS
             cmd.Parameters.Add("@Pemp_pos", SqlDbType.NVarChar).Value = type_combo.Text;
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dtt);
+
+            if (bunifuMetroTextbox1.Text.Trim() == "")
+            {
+                errorProvider1.SetError(bunifuMetroTextbox1, "Please Enter your User Name");
+            }
+            if (bunifuMetroTextbox2.Text.Trim() == "")
+            {
+                errorProvider1.SetError(bunifuMetroTextbox2, "Please Enter your Password");
+            }
+            if (type_combo.SelectedIndex == -1)
+            {
+                errorProvider1.SetError(type_combo, "Please Select a type");
+            }
             if (dtt.Rows.Count > 0)
             {
+                
 
                 if (type_combo.SelectedIndex == 0)
                 {
@@ -188,12 +204,12 @@ namespace FFGMS
 
         }
 
-        private void bunifuMetroTextbox1_OnValueChanged(object sender, EventArgs e)
+        private void label7_Click_1(object sender, EventArgs e)
         {
 
         }
 
-        private void bunifuMetroTextbox2_OnValueChanged_1(object sender, EventArgs e)
+        private void bunifuMetroTextbox1_OnValueChanged(object sender, EventArgs e)
         {
 
         }

@@ -10,7 +10,7 @@ namespace FFGMS
 {
     public partial class splash_screen : Form
     {
-        SqlConnection con = new SqlConnection(@"server=DESKTOP-HPA6H4U\SQLEXPRESS;
+        SqlConnection con = new SqlConnection(@"server=DESKTOP-46DG448\SQLEXPRESS;
         database=db_ffgms ; integrated security=true");
         public splash_screen()
         {

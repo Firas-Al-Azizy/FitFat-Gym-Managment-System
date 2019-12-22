@@ -138,63 +138,63 @@ namespace FFGMS.Manage.Trainees_manage
             int inserted;
 
             picture = conv_picture();
-            //    cls_trne s = new cls_trne();
-            //    s.tra_name = name_txb.Text;
-            //    s.tra_age = age_txb.Text;
-            //    if (radio_male.Checked == true)
-            //    {
-            //        s.tra_gender = radio_male.Text;
-            //    }
-            //    else if (radio_female.Checked == true)
-            //    {
-            //        s.tra_gender = radio_female.Text;
-            //    }
-            //    s.tra_email = email_txb.Text;
-            //    s.tra_phone = pho_txb.Text;
-            //    s.tra_height = hig_txb.Text;
-            //    s.tra_weight = wid_txb.Text;
-            //    s.tra_address = adr_txb.Text;
-            //    s.tra_userName = uname_txb.Text;
-            //    s.tra_img = picture;
-            //    s.mem_id = selecting("select[mem_id] from[db_ffgms_new].[dbo].[membership] where [mem_duration] = '" + mem_combx.Text + "' ");
-            //    s.tg_id = int.Parse(gr_combx.Text);
-            //    s.pro_id = int.Parse(pro_combx.Text);
-
-            //    inserted = cls_trne.InsertData(s);
-            //    if (inserted > 0)
-            //    {
-            //        clearinfo();
-            //        MessageBox.Show("Has successfully adding a new  employee ^_^");
-            //    }
-            //    else
-            //        MessageBox.Show("Has NOT  completed the process");
-            SqlCommand cmd = con.CreateCommand();
-            cmd.CommandText = "[Pkgtra.insert]";
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("@Ptra_name", SqlDbType.NVarChar).Value = name_txb.Text;
-            cmd.Parameters.Add("@Ptra_age", SqlDbType.NVarChar).Value = age_txb.Text;
+            cls_trne s = new cls_trne();
+            s.tra_name = name_txb.Text;
+            s.tra_age = age_txb.Text;
             if (radio_male.Checked == true)
             {
-                cmd.Parameters.Add("@Ptra_gender", SqlDbType.NVarChar).Value = radio_male.Text;
+                s.tra_gender = radio_male.Text;
             }
             else if (radio_female.Checked == true)
             {
-                cmd.Parameters.Add("@Ptra_gender", SqlDbType.NVarChar).Value = radio_female.Text;
+                s.tra_gender = radio_female.Text;
             }
-            cmd.Parameters.Add("@Ptra_email", SqlDbType.NVarChar).Value = email_txb.Text;
-            cmd.Parameters.Add("@Ptra_phone", SqlDbType.NVarChar).Value = pho_txb.Text;
-            cmd.Parameters.Add("@Ptra_height", SqlDbType.NVarChar).Value = hig_txb.Text;
-            cmd.Parameters.Add("@Ptra_weight", SqlDbType.NVarChar).Value = wid_txb.Text;
+            s.tra_email = email_txb.Text;
+            s.tra_phone = pho_txb.Text;
+            s.tra_height = hig_txb.Text;
+            s.tra_weight = wid_txb.Text;
+            s.tra_address = adr_txb.Text;
+            s.tra_userName = uname_txb.Text;
+            s.tra_img = picture;
+            s.mem_id = selecting("select[mem_id] from[db_ffgms_new].[dbo].[membership] where [mem_duration] = '" + mem_combx.Text + "' ");
+            s.tg_id = int.Parse(gr_combx.Text);
+            s.pro_id = int.Parse(pro_combx.Text);
 
-            cmd.Parameters.Add("@Ptra_address", SqlDbType.NVarChar).Value = adr_txb.Text;
-            cmd.Parameters.Add("@Ptra_userName", SqlDbType.NVarChar).Value = uname_txb.Text;
-            cmd.Parameters.Add("@Ptra_img", SqlDbType.Image).Value = picture;
-            cmd.Parameters.Add("@Pmem_id", SqlDbType.Int).Value = selecting("select[mem_id] from[db_ffgms_new].[dbo].[membership] where [mem_duration] = '" + mem_combx.Text + "' ");
-            cmd.Parameters.Add("@Ptg_id", SqlDbType.Int).Value = int.Parse(gr_combx.Text);
-            cmd.Parameters.Add("@Ppro_id", SqlDbType.Int).Value = int.Parse(pro_combx.Text);
-            con.Open();
-            cmd.ExecuteNonQuery();
-            con.Close();
+            inserted = cls_trne.InsertData(s);
+            if (inserted > 0)
+            {
+                clearinfo();
+                MessageBox.Show("Has successfully adding a new  trainee ^_^");
+            }
+            else
+                MessageBox.Show("Has NOT  completed the process");
+            //SqlCommand cmd = con.CreateCommand();
+            //cmd.CommandText = "[Pkgtra.insert]";
+            //cmd.CommandType = CommandType.StoredProcedure;
+            //cmd.Parameters.Add("@Ptra_name", SqlDbType.NVarChar).Value = name_txb.Text;
+            //cmd.Parameters.Add("@Ptra_age", SqlDbType.NVarChar).Value = age_txb.Text;
+            //if (radio_male.Checked == true)
+            //{
+            //    cmd.Parameters.Add("@Ptra_gender", SqlDbType.NVarChar).Value = radio_male.Text;
+            //}
+            //else if (radio_female.Checked == true)
+            //{
+            //    cmd.Parameters.Add("@Ptra_gender", SqlDbType.NVarChar).Value = radio_female.Text;
+            //}
+            //cmd.Parameters.Add("@Ptra_email", SqlDbType.NVarChar).Value = email_txb.Text;
+            //cmd.Parameters.Add("@Ptra_phone", SqlDbType.NVarChar).Value = pho_txb.Text;
+            //cmd.Parameters.Add("@Ptra_height", SqlDbType.NVarChar).Value = hig_txb.Text;
+            //cmd.Parameters.Add("@Ptra_weight", SqlDbType.NVarChar).Value = wid_txb.Text;
+
+            //cmd.Parameters.Add("@Ptra_address", SqlDbType.NVarChar).Value = adr_txb.Text;
+            //cmd.Parameters.Add("@Ptra_userName", SqlDbType.NVarChar).Value = uname_txb.Text;
+            //cmd.Parameters.Add("@Ptra_img", SqlDbType.Image).Value = picture;
+            //cmd.Parameters.Add("@Pmem_id", SqlDbType.Int).Value = selecting("select[mem_id] from[db_ffgms_new].[dbo].[membership] where [mem_duration] = '" + mem_combx.Text + "' ");
+            //cmd.Parameters.Add("@Ptg_id", SqlDbType.Int).Value = int.Parse(gr_combx.Text);
+            //cmd.Parameters.Add("@Ppro_id", SqlDbType.Int).Value = int.Parse(pro_combx.Text);
+            //con.Open();
+            //cmd.ExecuteNonQuery();
+            //con.Close();
 
         }
 

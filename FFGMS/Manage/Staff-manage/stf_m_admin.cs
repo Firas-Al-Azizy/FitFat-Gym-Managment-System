@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using FFGMS.db_con;
 using System.Data.SqlClient;
 using System.IO;
-using FFGMS.Reports.Staff;
+
 //using FFGMS.Reports.Staff;
 
 namespace FFGMS.Manage.Staff_manage
@@ -18,7 +18,7 @@ namespace FFGMS.Manage.Staff_manage
     public partial class stf_m_admin : Form
     {
 
-        SqlConnection con = new SqlConnection(@"server=DESKTOP-46DG448\SQLEXPRESS;
+        SqlConnection con = new SqlConnection(@"server=DESKTOP-HPA6H4U\SQLEXPRESS;
         database=db_ffgms_new ; integrated security=true");
 
         public stf_m_admin()
@@ -387,8 +387,7 @@ namespace FFGMS.Manage.Staff_manage
 
         private void gunaButton3_Click(object sender, EventArgs e)
         {
-            staff_report main = new staff_report();
-            main.ShowDialog();
+            
         }
 
 

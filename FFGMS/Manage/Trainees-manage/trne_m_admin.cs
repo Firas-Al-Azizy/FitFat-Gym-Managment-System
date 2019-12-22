@@ -15,7 +15,7 @@ namespace FFGMS.Manage.Trainees_manage
 {
     public partial class trne_m_admin : Form
     {
-        SqlConnection con = new SqlConnection(@"server=DESKTOP-46DG448\SQLEXPRESS;
+        SqlConnection con = new SqlConnection(@"server=DESKTOP-HPA6H4U\SQLEXPRESS;
         database=db_ffgms_new ; integrated security=true");
         public trne_m_admin()
         {
@@ -229,6 +229,11 @@ namespace FFGMS.Manage.Trainees_manage
         }
 
         private void gunaButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void data_view_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

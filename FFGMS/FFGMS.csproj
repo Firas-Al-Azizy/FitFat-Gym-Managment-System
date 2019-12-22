@@ -225,21 +225,6 @@
     <Compile Include="Dashboards\Reciption_Dashbord.Designer.cs">
       <DependentUpon>Reciption_Dashbord.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\Staff\staffReport.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>staffReport.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Reports\Staff\staff.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Reports\Staff\staff_report.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reports\Staff\staff_report.Designer.cs">
-      <DependentUpon>staff_report.cs</DependentUpon>
-    </Compile>
     <Compile Include="Splash-login\splash_screen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -251,18 +236,6 @@
     </Compile>
     <Compile Include="Dashboards\Trainer_Dashboard.Designer.cs">
       <DependentUpon>Trainer_Dashboard.cs</DependentUpon>
-    </Compile>
-    <Compile Include="staffCrystal2.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>staffCrystal2.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="staffrep.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>staffrep.rpt</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <EmbeddedResource Include="Dashboards\Admin_Dashbord.resx">
       <DependentUpon>Admin_Dashbord.cs</DependentUpon>
@@ -340,26 +313,11 @@
     <EmbeddedResource Include="Dashboards\Reciption_Dashbord.resx">
       <DependentUpon>Reciption_Dashbord.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Staff\staffReport.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>staffReport.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Staff\staff_report.resx">
-      <DependentUpon>staff_report.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Splash-login\splash_screen.resx">
       <DependentUpon>splash_screen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboards\Trainer_Dashboard.resx">
       <DependentUpon>Trainer_Dashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="staffCrystal2.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>staffCrystal2.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="staffrep.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>staffrep.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

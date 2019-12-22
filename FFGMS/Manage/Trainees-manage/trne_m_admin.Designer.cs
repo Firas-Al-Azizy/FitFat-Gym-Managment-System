@@ -185,7 +185,7 @@
             this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.22874F));
             this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.77126F));
             this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 131F));
-            this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 253F));
+            this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 254F));
             this.table_pnl.Controls.Add(this.panel3, 1, 2);
             this.table_pnl.Controls.Add(this.name_lbl, 0, 0);
             this.table_pnl.Controls.Add(this.name_txb, 1, 0);
@@ -226,7 +226,7 @@
             this.table_pnl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.table_pnl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.table_pnl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 7F));
-            this.table_pnl.Size = new System.Drawing.Size(722, 367);
+            this.table_pnl.Size = new System.Drawing.Size(723, 367);
             this.table_pnl.TabIndex = 72;
             // 
             // panel3
@@ -311,10 +311,10 @@
             // 
             // 
             this.name_txb.CustomButton.Image = null;
-            this.name_txb.CustomButton.Location = new System.Drawing.Point(212, 1);
+            this.name_txb.CustomButton.Location = new System.Drawing.Point(159, 1);
             this.name_txb.CustomButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.name_txb.CustomButton.Name = "";
-            this.name_txb.CustomButton.Size = new System.Drawing.Size(39, 36);
+            this.name_txb.CustomButton.Size = new System.Drawing.Size(29, 29);
             this.name_txb.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.name_txb.CustomButton.TabIndex = 1;
             this.name_txb.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -370,10 +370,10 @@
             // 
             // 
             this.email_txb.CustomButton.Image = null;
-            this.email_txb.CustomButton.Location = new System.Drawing.Point(291, 1);
+            this.email_txb.CustomButton.Location = new System.Drawing.Point(219, 1);
             this.email_txb.CustomButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.email_txb.CustomButton.Name = "";
-            this.email_txb.CustomButton.Size = new System.Drawing.Size(39, 36);
+            this.email_txb.CustomButton.Size = new System.Drawing.Size(29, 29);
             this.email_txb.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.email_txb.CustomButton.TabIndex = 1;
             this.email_txb.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -391,7 +391,7 @@
             this.email_txb.SelectionLength = 0;
             this.email_txb.SelectionStart = 0;
             this.email_txb.ShortcutsEnabled = true;
-            this.email_txb.Size = new System.Drawing.Size(248, 31);
+            this.email_txb.Size = new System.Drawing.Size(249, 31);
             this.email_txb.TabIndex = 48;
             this.email_txb.UseSelectable = true;
             this.email_txb.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -403,10 +403,10 @@
             // 
             // 
             this.pho_txb.CustomButton.Image = null;
-            this.pho_txb.CustomButton.Location = new System.Drawing.Point(291, 1);
+            this.pho_txb.CustomButton.Location = new System.Drawing.Point(219, 1);
             this.pho_txb.CustomButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.pho_txb.CustomButton.Name = "";
-            this.pho_txb.CustomButton.Size = new System.Drawing.Size(39, 36);
+            this.pho_txb.CustomButton.Size = new System.Drawing.Size(29, 29);
             this.pho_txb.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.pho_txb.CustomButton.TabIndex = 1;
             this.pho_txb.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -424,7 +424,7 @@
             this.pho_txb.SelectionLength = 0;
             this.pho_txb.SelectionStart = 0;
             this.pho_txb.ShortcutsEnabled = true;
-            this.pho_txb.Size = new System.Drawing.Size(248, 31);
+            this.pho_txb.Size = new System.Drawing.Size(249, 31);
             this.pho_txb.TabIndex = 57;
             this.pho_txb.UseSelectable = true;
             this.pho_txb.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -475,7 +475,7 @@
             // 
             // 
             this.adr_txb.CustomButton.Image = null;
-            this.adr_txb.CustomButton.Location = new System.Drawing.Point(104, 1);
+            this.adr_txb.CustomButton.Location = new System.Drawing.Point(105, 1);
             this.adr_txb.CustomButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.adr_txb.CustomButton.Name = "";
             this.adr_txb.CustomButton.Size = new System.Drawing.Size(143, 143);
@@ -497,7 +497,7 @@
             this.adr_txb.SelectionLength = 0;
             this.adr_txb.SelectionStart = 0;
             this.adr_txb.ShortcutsEnabled = true;
-            this.adr_txb.Size = new System.Drawing.Size(248, 145);
+            this.adr_txb.Size = new System.Drawing.Size(249, 145);
             this.adr_txb.TabIndex = 50;
             this.adr_txb.UseSelectable = true;
             this.adr_txb.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -509,10 +509,10 @@
             // 
             // 
             this.age_txb.CustomButton.Image = null;
-            this.age_txb.CustomButton.Location = new System.Drawing.Point(212, 1);
+            this.age_txb.CustomButton.Location = new System.Drawing.Point(159, 1);
             this.age_txb.CustomButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.age_txb.CustomButton.Name = "";
-            this.age_txb.CustomButton.Size = new System.Drawing.Size(39, 36);
+            this.age_txb.CustomButton.Size = new System.Drawing.Size(29, 29);
             this.age_txb.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.age_txb.CustomButton.TabIndex = 1;
             this.age_txb.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -548,7 +548,7 @@
             this.gender_gbx.Location = new System.Drawing.Point(471, 296);
             this.gender_gbx.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gender_gbx.Name = "gender_gbx";
-            this.gender_gbx.Size = new System.Drawing.Size(248, 32);
+            this.gender_gbx.Size = new System.Drawing.Size(249, 32);
             this.gender_gbx.TabIndex = 65;
             this.gender_gbx.TextLocation = new System.Drawing.Point(10, 8);
             // 
@@ -573,7 +573,7 @@
             this.radio_female.Dock = System.Windows.Forms.DockStyle.Right;
             this.radio_female.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radio_female.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
-            this.radio_female.Location = new System.Drawing.Point(167, 0);
+            this.radio_female.Location = new System.Drawing.Point(168, 0);
             this.radio_female.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radio_female.Name = "radio_female";
             this.radio_female.Size = new System.Drawing.Size(81, 32);
@@ -754,7 +754,7 @@
             // 
             // 
             this.uname_txb.CustomButton.Image = null;
-            this.uname_txb.CustomButton.Location = new System.Drawing.Point(216, 1);
+            this.uname_txb.CustomButton.Location = new System.Drawing.Point(217, 1);
             this.uname_txb.CustomButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.uname_txb.CustomButton.Name = "";
             this.uname_txb.CustomButton.Size = new System.Drawing.Size(31, 31);
@@ -775,7 +775,7 @@
             this.uname_txb.SelectionLength = 0;
             this.uname_txb.SelectionStart = 0;
             this.uname_txb.ShortcutsEnabled = true;
-            this.uname_txb.Size = new System.Drawing.Size(248, 33);
+            this.uname_txb.Size = new System.Drawing.Size(249, 33);
             this.uname_txb.TabIndex = 52;
             this.uname_txb.UseSelectable = true;
             this.uname_txb.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -787,7 +787,7 @@
             // 
             // 
             this.wid_txb.CustomButton.Image = null;
-            this.wid_txb.CustomButton.Location = new System.Drawing.Point(216, 2);
+            this.wid_txb.CustomButton.Location = new System.Drawing.Point(217, 2);
             this.wid_txb.CustomButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.wid_txb.CustomButton.Name = "";
             this.wid_txb.CustomButton.Size = new System.Drawing.Size(29, 29);
@@ -808,7 +808,7 @@
             this.wid_txb.SelectionLength = 0;
             this.wid_txb.SelectionStart = 0;
             this.wid_txb.ShortcutsEnabled = true;
-            this.wid_txb.Size = new System.Drawing.Size(248, 34);
+            this.wid_txb.Size = new System.Drawing.Size(249, 34);
             this.wid_txb.TabIndex = 54;
             this.wid_txb.UseSelectable = true;
             this.wid_txb.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -820,9 +820,9 @@
             this.panel5.Controls.Add(this.update_btn);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(472, 334);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(246, 22);
+            this.panel5.Size = new System.Drawing.Size(247, 22);
             this.panel5.TabIndex = 73;
             // 
             // panel6
@@ -830,9 +830,9 @@
             this.panel6.Controls.Add(this.btn_grbx);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(246, 22);
+            this.panel6.Size = new System.Drawing.Size(247, 22);
             this.panel6.TabIndex = 6;
             // 
             // btn_grbx
@@ -847,7 +847,7 @@
             this.btn_grbx.Location = new System.Drawing.Point(0, 0);
             this.btn_grbx.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_grbx.Name = "btn_grbx";
-            this.btn_grbx.Size = new System.Drawing.Size(246, 22);
+            this.btn_grbx.Size = new System.Drawing.Size(247, 22);
             this.btn_grbx.TabIndex = 65;
             this.btn_grbx.TextLocation = new System.Drawing.Point(10, 8);
             // 
@@ -890,7 +890,7 @@
             this.add_btn.ForeColor = System.Drawing.Color.White;
             this.add_btn.Image = global::FFGMS.Properties.Resources.icons8_plus_32;
             this.add_btn.ImageSize = new System.Drawing.Size(15, 15);
-            this.add_btn.Location = new System.Drawing.Point(133, 0);
+            this.add_btn.Location = new System.Drawing.Point(134, 0);
             this.add_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.add_btn.Name = "add_btn";
             this.add_btn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -925,7 +925,7 @@
             this.update_btn.OnHoverForeColor = System.Drawing.Color.White;
             this.update_btn.OnHoverImage = null;
             this.update_btn.OnPressedColor = System.Drawing.Color.Black;
-            this.update_btn.Size = new System.Drawing.Size(246, 22);
+            this.update_btn.Size = new System.Drawing.Size(247, 22);
             this.update_btn.TabIndex = 4;
             this.update_btn.Text = "Change";
             this.update_btn.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -975,7 +975,7 @@
             this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.91667F));
             this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
             this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 116F));
-            this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 271F));
+            this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 272F));
             this.view_menu.Controls.Add(this.search_panel, 4, 0);
             this.view_menu.Controls.Add(this.gunaButton3, 0, 0);
             this.view_menu.Controls.Add(this.gunaButton4, 0, 0);
@@ -997,10 +997,10 @@
             this.search_panel.Controls.Add(this.search_txb);
             this.search_panel.Controls.Add(this.search_picbx);
             this.search_panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.search_panel.Location = new System.Drawing.Point(454, 2);
+            this.search_panel.Location = new System.Drawing.Point(453, 2);
             this.search_panel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.search_panel.Name = "search_panel";
-            this.search_panel.Size = new System.Drawing.Size(266, 33);
+            this.search_panel.Size = new System.Drawing.Size(267, 33);
             this.search_panel.TabIndex = 4;
             // 
             // search_txb
@@ -1009,10 +1009,10 @@
             // 
             // 
             this.search_txb.CustomButton.Image = null;
-            this.search_txb.CustomButton.Location = new System.Drawing.Point(252, 1);
+            this.search_txb.CustomButton.Location = new System.Drawing.Point(189, 1);
             this.search_txb.CustomButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.search_txb.CustomButton.Name = "";
-            this.search_txb.CustomButton.Size = new System.Drawing.Size(41, 38);
+            this.search_txb.CustomButton.Size = new System.Drawing.Size(31, 31);
             this.search_txb.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.search_txb.CustomButton.TabIndex = 1;
             this.search_txb.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -1020,7 +1020,7 @@
             this.search_txb.CustomButton.Visible = false;
             this.search_txb.Dock = System.Windows.Forms.DockStyle.Right;
             this.search_txb.Lines = new string[0];
-            this.search_txb.Location = new System.Drawing.Point(45, 0);
+            this.search_txb.Location = new System.Drawing.Point(46, 0);
             this.search_txb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.search_txb.MaxLength = 32767;
             this.search_txb.Name = "search_txb";
@@ -1062,7 +1062,7 @@
             this.gunaButton3.ForeColor = System.Drawing.Color.White;
             this.gunaButton3.Image = global::FFGMS.Properties.Resources.icons8_print_32;
             this.gunaButton3.ImageSize = new System.Drawing.Size(15, 15);
-            this.gunaButton3.Location = new System.Drawing.Point(338, 2);
+            this.gunaButton3.Location = new System.Drawing.Point(337, 2);
             this.gunaButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaButton3.Name = "gunaButton3";
             this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -1090,7 +1090,7 @@
             this.gunaButton4.ForeColor = System.Drawing.Color.White;
             this.gunaButton4.Image = global::FFGMS.Properties.Resources.icons8_delete_32;
             this.gunaButton4.ImageSize = new System.Drawing.Size(15, 15);
-            this.gunaButton4.Location = new System.Drawing.Point(218, 2);
+            this.gunaButton4.Location = new System.Drawing.Point(217, 2);
             this.gunaButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaButton4.Name = "gunaButton4";
             this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -1125,7 +1125,7 @@
             this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton1.OnHoverImage = null;
             this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton1.Size = new System.Drawing.Size(108, 33);
+            this.gunaButton1.Size = new System.Drawing.Size(107, 33);
             this.gunaButton1.TabIndex = 3;
             this.gunaButton1.Text = "Change";
             this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -1216,6 +1216,7 @@
             this.data_view.ThemeStyle.RowsStyle.Height = 24;
             this.data_view.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.data_view.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.data_view.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_view_CellContentClick);
             // 
             // trne_m_admin
             // 

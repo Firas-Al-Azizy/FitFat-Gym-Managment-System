@@ -29,18 +29,22 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.wrk_add_admin = new MetroFramework.Controls.MetroTabPage();
             this.add_pnl = new System.Windows.Forms.Panel();
             this.table_pnl = new System.Windows.Forms.TableLayoutPanel();
             this.wrk_name_lbl = new System.Windows.Forms.Label();
             this.dur_txb = new MetroFramework.Controls.MetroTextBox();
-            this.cost_txb = new MetroFramework.Controls.MetroTextBox();
             this.trg_mus_lbl = new System.Windows.Forms.Label();
             this.used_mac_lbl = new System.Windows.Forms.Label();
-            this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btn_grbx = new Guna.UI.WinForms.GunaGroupBox();
+            this.erase_btn = new Guna.UI.WinForms.GunaButton();
+            this.add_btn = new Guna.UI.WinForms.GunaButton();
+            this.update_btn = new Guna.UI.WinForms.GunaButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.wrk_view_admin = new MetroFramework.Controls.MetroTabPage();
@@ -56,15 +60,14 @@
             this.data_view = new Guna.UI.WinForms.GunaDataGridView();
             this.wrk_tab_admin = new MetroFramework.Controls.MetroTabControl();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.btn_grbx = new Guna.UI.WinForms.GunaGroupBox();
-            this.erase_btn = new Guna.UI.WinForms.GunaButton();
-            this.add_btn = new Guna.UI.WinForms.GunaButton();
-            this.update_btn = new Guna.UI.WinForms.GunaButton();
+            this.mus_combx = new MetroFramework.Controls.MetroComboBox();
+            this.mac_combx = new MetroFramework.Controls.MetroComboBox();
             this.wrk_add_admin.SuspendLayout();
             this.add_pnl.SuspendLayout();
             this.table_pnl.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.btn_grbx.SuspendLayout();
             this.wrk_view_admin.SuspendLayout();
             this.view_pnl.SuspendLayout();
             this.view_menu.SuspendLayout();
@@ -72,9 +75,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.search_picbx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.data_view)).BeginInit();
             this.wrk_tab_admin.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.btn_grbx.SuspendLayout();
             this.SuspendLayout();
             // 
             // wrk_add_admin
@@ -115,14 +115,14 @@
             this.table_pnl.ColumnCount = 3;
             this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.44444F));
             this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.55556F));
-            this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 189F));
+            this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
             this.table_pnl.Controls.Add(this.wrk_name_lbl, 0, 0);
             this.table_pnl.Controls.Add(this.dur_txb, 1, 0);
-            this.table_pnl.Controls.Add(this.cost_txb, 1, 1);
             this.table_pnl.Controls.Add(this.trg_mus_lbl, 0, 1);
             this.table_pnl.Controls.Add(this.used_mac_lbl, 0, 2);
-            this.table_pnl.Controls.Add(this.metroTextBox1, 1, 2);
             this.table_pnl.Controls.Add(this.panel3, 1, 4);
+            this.table_pnl.Controls.Add(this.mus_combx, 1, 1);
+            this.table_pnl.Controls.Add(this.mac_combx, 1, 2);
             this.table_pnl.Dock = System.Windows.Forms.DockStyle.Top;
             this.table_pnl.Location = new System.Drawing.Point(0, 98);
             this.table_pnl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -157,7 +157,7 @@
             // 
             // 
             this.dur_txb.CustomButton.Image = null;
-            this.dur_txb.CustomButton.Location = new System.Drawing.Point(264, 1);
+            this.dur_txb.CustomButton.Location = new System.Drawing.Point(263, 1);
             this.dur_txb.CustomButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.dur_txb.CustomButton.Name = "";
             this.dur_txb.CustomButton.Size = new System.Drawing.Size(29, 29);
@@ -178,44 +178,11 @@
             this.dur_txb.SelectionLength = 0;
             this.dur_txb.SelectionStart = 0;
             this.dur_txb.ShortcutsEnabled = true;
-            this.dur_txb.Size = new System.Drawing.Size(294, 31);
+            this.dur_txb.Size = new System.Drawing.Size(293, 31);
             this.dur_txb.TabIndex = 44;
             this.dur_txb.UseSelectable = true;
             this.dur_txb.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.dur_txb.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // cost_txb
-            // 
-            // 
-            // 
-            // 
-            this.cost_txb.CustomButton.Image = null;
-            this.cost_txb.CustomButton.Location = new System.Drawing.Point(264, 1);
-            this.cost_txb.CustomButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.cost_txb.CustomButton.Name = "";
-            this.cost_txb.CustomButton.Size = new System.Drawing.Size(29, 29);
-            this.cost_txb.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.cost_txb.CustomButton.TabIndex = 1;
-            this.cost_txb.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.cost_txb.CustomButton.UseSelectable = true;
-            this.cost_txb.CustomButton.Visible = false;
-            this.cost_txb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cost_txb.Lines = new string[0];
-            this.cost_txb.Location = new System.Drawing.Point(242, 37);
-            this.cost_txb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cost_txb.MaxLength = 32767;
-            this.cost_txb.Name = "cost_txb";
-            this.cost_txb.PasswordChar = '\0';
-            this.cost_txb.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.cost_txb.SelectedText = "";
-            this.cost_txb.SelectionLength = 0;
-            this.cost_txb.SelectionStart = 0;
-            this.cost_txb.ShortcutsEnabled = true;
-            this.cost_txb.Size = new System.Drawing.Size(294, 31);
-            this.cost_txb.TabIndex = 48;
-            this.cost_txb.UseSelectable = true;
-            this.cost_txb.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.cost_txb.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // trg_mus_lbl
             // 
@@ -245,38 +212,119 @@
             this.used_mac_lbl.Text = "Used Machine:";
             this.used_mac_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // metroTextBox1
+            // panel3
             // 
+            this.panel3.Controls.Add(this.panel5);
+            this.panel3.Controls.Add(this.update_btn);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(243, 134);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(291, 24);
+            this.panel3.TabIndex = 71;
             // 
+            // panel5
             // 
+            this.panel5.Controls.Add(this.btn_grbx);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(291, 24);
+            this.panel5.TabIndex = 6;
             // 
-            this.metroTextBox1.CustomButton.Image = null;
-            this.metroTextBox1.CustomButton.Location = new System.Drawing.Point(266, 2);
-            this.metroTextBox1.CustomButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.metroTextBox1.CustomButton.Name = "";
-            this.metroTextBox1.CustomButton.Size = new System.Drawing.Size(25, 25);
-            this.metroTextBox1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox1.CustomButton.TabIndex = 1;
-            this.metroTextBox1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox1.CustomButton.UseSelectable = true;
-            this.metroTextBox1.CustomButton.Visible = false;
-            this.metroTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroTextBox1.Lines = new string[0];
-            this.metroTextBox1.Location = new System.Drawing.Point(242, 72);
-            this.metroTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.metroTextBox1.MaxLength = 32767;
-            this.metroTextBox1.Name = "metroTextBox1";
-            this.metroTextBox1.PasswordChar = '\0';
-            this.metroTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox1.SelectedText = "";
-            this.metroTextBox1.SelectionLength = 0;
-            this.metroTextBox1.SelectionStart = 0;
-            this.metroTextBox1.ShortcutsEnabled = true;
-            this.metroTextBox1.Size = new System.Drawing.Size(294, 30);
-            this.metroTextBox1.TabIndex = 66;
-            this.metroTextBox1.UseSelectable = true;
-            this.metroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // btn_grbx
+            // 
+            this.btn_grbx.BackColor = System.Drawing.Color.Transparent;
+            this.btn_grbx.BaseColor = System.Drawing.Color.White;
+            this.btn_grbx.BorderColor = System.Drawing.Color.Transparent;
+            this.btn_grbx.Controls.Add(this.erase_btn);
+            this.btn_grbx.Controls.Add(this.add_btn);
+            this.btn_grbx.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_grbx.LineColor = System.Drawing.Color.Transparent;
+            this.btn_grbx.Location = new System.Drawing.Point(0, 0);
+            this.btn_grbx.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_grbx.Name = "btn_grbx";
+            this.btn_grbx.Size = new System.Drawing.Size(291, 24);
+            this.btn_grbx.TabIndex = 65;
+            this.btn_grbx.TextLocation = new System.Drawing.Point(10, 8);
+            // 
+            // erase_btn
+            // 
+            this.erase_btn.AnimationHoverSpeed = 0.07F;
+            this.erase_btn.AnimationSpeed = 0.03F;
+            this.erase_btn.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
+            this.erase_btn.BorderColor = System.Drawing.Color.Black;
+            this.erase_btn.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.erase_btn.Dock = System.Windows.Forms.DockStyle.Left;
+            this.erase_btn.FocusedColor = System.Drawing.Color.Empty;
+            this.erase_btn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.erase_btn.ForeColor = System.Drawing.Color.White;
+            this.erase_btn.Image = global::FFGMS.Properties.Resources.icons8_erase_32;
+            this.erase_btn.ImageSize = new System.Drawing.Size(15, 15);
+            this.erase_btn.Location = new System.Drawing.Point(0, 0);
+            this.erase_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.erase_btn.Name = "erase_btn";
+            this.erase_btn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.erase_btn.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.erase_btn.OnHoverForeColor = System.Drawing.Color.White;
+            this.erase_btn.OnHoverImage = null;
+            this.erase_btn.OnPressedColor = System.Drawing.Color.Black;
+            this.erase_btn.Size = new System.Drawing.Size(115, 24);
+            this.erase_btn.TabIndex = 1;
+            this.erase_btn.Text = "Erase";
+            // 
+            // add_btn
+            // 
+            this.add_btn.AnimationHoverSpeed = 0.07F;
+            this.add_btn.AnimationSpeed = 0.03F;
+            this.add_btn.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
+            this.add_btn.BorderColor = System.Drawing.Color.Black;
+            this.add_btn.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.add_btn.Dock = System.Windows.Forms.DockStyle.Right;
+            this.add_btn.FocusedColor = System.Drawing.Color.Empty;
+            this.add_btn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_btn.ForeColor = System.Drawing.Color.White;
+            this.add_btn.Image = global::FFGMS.Properties.Resources.icons8_plus_32;
+            this.add_btn.ImageSize = new System.Drawing.Size(15, 15);
+            this.add_btn.Location = new System.Drawing.Point(178, 0);
+            this.add_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.add_btn.Name = "add_btn";
+            this.add_btn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.add_btn.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.add_btn.OnHoverForeColor = System.Drawing.Color.White;
+            this.add_btn.OnHoverImage = null;
+            this.add_btn.OnPressedColor = System.Drawing.Color.Black;
+            this.add_btn.Size = new System.Drawing.Size(113, 24);
+            this.add_btn.TabIndex = 0;
+            this.add_btn.Text = "Add";
+            // 
+            // update_btn
+            // 
+            this.update_btn.AnimationHoverSpeed = 0.07F;
+            this.update_btn.AnimationSpeed = 0.03F;
+            this.update_btn.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
+            this.update_btn.BorderColor = System.Drawing.Color.Black;
+            this.update_btn.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.update_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.update_btn.Enabled = false;
+            this.update_btn.FocusedColor = System.Drawing.Color.Empty;
+            this.update_btn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.update_btn.ForeColor = System.Drawing.Color.White;
+            this.update_btn.Image = global::FFGMS.Properties.Resources.icons8_swap_32;
+            this.update_btn.ImageSize = new System.Drawing.Size(15, 15);
+            this.update_btn.Location = new System.Drawing.Point(0, 0);
+            this.update_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.update_btn.Name = "update_btn";
+            this.update_btn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.update_btn.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.update_btn.OnHoverForeColor = System.Drawing.Color.White;
+            this.update_btn.OnHoverImage = null;
+            this.update_btn.OnPressedColor = System.Drawing.Color.Black;
+            this.update_btn.Size = new System.Drawing.Size(291, 24);
+            this.update_btn.TabIndex = 4;
+            this.update_btn.Text = "Change";
+            this.update_btn.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel2
             // 
@@ -341,7 +389,7 @@
             this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.91667F));
             this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
             this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 116F));
-            this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 268F));
+            this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 269F));
             this.view_menu.Controls.Add(this.search_panel, 4, 0);
             this.view_menu.Controls.Add(this.gunaButton3, 0, 0);
             this.view_menu.Controls.Add(this.gunaButton4, 0, 0);
@@ -362,9 +410,9 @@
             this.search_panel.Controls.Add(this.search_txb);
             this.search_panel.Controls.Add(this.search_picbx);
             this.search_panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.search_panel.Location = new System.Drawing.Point(457, 3);
+            this.search_panel.Location = new System.Drawing.Point(456, 3);
             this.search_panel.Name = "search_panel";
-            this.search_panel.Size = new System.Drawing.Size(263, 33);
+            this.search_panel.Size = new System.Drawing.Size(264, 33);
             this.search_panel.TabIndex = 4;
             // 
             // search_txb
@@ -383,7 +431,7 @@
             this.search_txb.CustomButton.Visible = false;
             this.search_txb.Dock = System.Windows.Forms.DockStyle.Right;
             this.search_txb.Lines = new string[0];
-            this.search_txb.Location = new System.Drawing.Point(41, 0);
+            this.search_txb.Location = new System.Drawing.Point(42, 0);
             this.search_txb.MaxLength = 32767;
             this.search_txb.Name = "search_txb";
             this.search_txb.PasswordChar = '\0';
@@ -423,7 +471,7 @@
             this.gunaButton3.ForeColor = System.Drawing.Color.White;
             this.gunaButton3.Image = global::FFGMS.Properties.Resources.icons8_print_32;
             this.gunaButton3.ImageSize = new System.Drawing.Size(15, 15);
-            this.gunaButton3.Location = new System.Drawing.Point(341, 3);
+            this.gunaButton3.Location = new System.Drawing.Point(340, 3);
             this.gunaButton3.Name = "gunaButton3";
             this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton3.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -448,7 +496,7 @@
             this.gunaButton4.ForeColor = System.Drawing.Color.White;
             this.gunaButton4.Image = global::FFGMS.Properties.Resources.icons8_delete_32;
             this.gunaButton4.ImageSize = new System.Drawing.Size(15, 15);
-            this.gunaButton4.Location = new System.Drawing.Point(221, 3);
+            this.gunaButton4.Location = new System.Drawing.Point(220, 3);
             this.gunaButton4.Name = "gunaButton4";
             this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton4.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -473,7 +521,7 @@
             this.gunaButton1.ForeColor = System.Drawing.Color.White;
             this.gunaButton1.Image = global::FFGMS.Properties.Resources.icons8_swap_32;
             this.gunaButton1.ImageSize = new System.Drawing.Size(15, 15);
-            this.gunaButton1.Location = new System.Drawing.Point(106, 3);
+            this.gunaButton1.Location = new System.Drawing.Point(105, 3);
             this.gunaButton1.Name = "gunaButton1";
             this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -505,37 +553,37 @@
             this.gunaButton2.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton2.OnHoverImage = null;
             this.gunaButton2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton2.Size = new System.Drawing.Size(97, 33);
+            this.gunaButton2.Size = new System.Drawing.Size(96, 33);
             this.gunaButton2.TabIndex = 2;
             this.gunaButton2.Text = "View";
             this.gunaButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // data_view
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.data_view.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.data_view.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.data_view.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.data_view.BackgroundColor = System.Drawing.SystemColors.Control;
             this.data_view.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.data_view.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.data_view.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.data_view.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.data_view.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.data_view.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.data_view.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.data_view.DefaultCellStyle = dataGridViewCellStyle6;
             this.data_view.Dock = System.Windows.Forms.DockStyle.Fill;
             this.data_view.EnableHeadersVisualStyles = false;
             this.data_view.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -593,119 +641,41 @@
             this.bunifuElipse1.ElipseRadius = 5;
             this.bunifuElipse1.TargetControl = this;
             // 
-            // panel3
+            // mus_combx
             // 
-            this.panel3.Controls.Add(this.panel5);
-            this.panel3.Controls.Add(this.update_btn);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(243, 134);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(292, 24);
-            this.panel3.TabIndex = 71;
+            this.mus_combx.BackColor = System.Drawing.Color.Transparent;
+            this.mus_combx.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mus_combx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
+            this.mus_combx.FormattingEnabled = true;
+            this.mus_combx.ItemHeight = 24;
+            this.mus_combx.Items.AddRange(new object[] {
+            "Admin",
+            "Reciptioniest",
+            "Trainer"});
+            this.mus_combx.Location = new System.Drawing.Point(242, 37);
+            this.mus_combx.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.mus_combx.Name = "mus_combx";
+            this.mus_combx.Size = new System.Drawing.Size(293, 30);
+            this.mus_combx.TabIndex = 103;
+            this.mus_combx.UseSelectable = true;
             // 
-            // panel5
+            // mac_combx
             // 
-            this.panel5.Controls.Add(this.btn_grbx);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(292, 24);
-            this.panel5.TabIndex = 6;
-            // 
-            // btn_grbx
-            // 
-            this.btn_grbx.BackColor = System.Drawing.Color.Transparent;
-            this.btn_grbx.BaseColor = System.Drawing.Color.White;
-            this.btn_grbx.BorderColor = System.Drawing.Color.Transparent;
-            this.btn_grbx.Controls.Add(this.erase_btn);
-            this.btn_grbx.Controls.Add(this.add_btn);
-            this.btn_grbx.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_grbx.LineColor = System.Drawing.Color.Transparent;
-            this.btn_grbx.Location = new System.Drawing.Point(0, 0);
-            this.btn_grbx.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_grbx.Name = "btn_grbx";
-            this.btn_grbx.Size = new System.Drawing.Size(292, 24);
-            this.btn_grbx.TabIndex = 65;
-            this.btn_grbx.TextLocation = new System.Drawing.Point(10, 8);
-            // 
-            // erase_btn
-            // 
-            this.erase_btn.AnimationHoverSpeed = 0.07F;
-            this.erase_btn.AnimationSpeed = 0.03F;
-            this.erase_btn.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
-            this.erase_btn.BorderColor = System.Drawing.Color.Black;
-            this.erase_btn.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.erase_btn.Dock = System.Windows.Forms.DockStyle.Left;
-            this.erase_btn.FocusedColor = System.Drawing.Color.Empty;
-            this.erase_btn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.erase_btn.ForeColor = System.Drawing.Color.White;
-            this.erase_btn.Image = global::FFGMS.Properties.Resources.icons8_erase_32;
-            this.erase_btn.ImageSize = new System.Drawing.Size(15, 15);
-            this.erase_btn.Location = new System.Drawing.Point(0, 0);
-            this.erase_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.erase_btn.Name = "erase_btn";
-            this.erase_btn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.erase_btn.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.erase_btn.OnHoverForeColor = System.Drawing.Color.White;
-            this.erase_btn.OnHoverImage = null;
-            this.erase_btn.OnPressedColor = System.Drawing.Color.Black;
-            this.erase_btn.Size = new System.Drawing.Size(115, 24);
-            this.erase_btn.TabIndex = 1;
-            this.erase_btn.Text = "Erase";
-            // 
-            // add_btn
-            // 
-            this.add_btn.AnimationHoverSpeed = 0.07F;
-            this.add_btn.AnimationSpeed = 0.03F;
-            this.add_btn.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
-            this.add_btn.BorderColor = System.Drawing.Color.Black;
-            this.add_btn.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.add_btn.Dock = System.Windows.Forms.DockStyle.Right;
-            this.add_btn.FocusedColor = System.Drawing.Color.Empty;
-            this.add_btn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.add_btn.ForeColor = System.Drawing.Color.White;
-            this.add_btn.Image = global::FFGMS.Properties.Resources.icons8_plus_32;
-            this.add_btn.ImageSize = new System.Drawing.Size(15, 15);
-            this.add_btn.Location = new System.Drawing.Point(179, 0);
-            this.add_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.add_btn.Name = "add_btn";
-            this.add_btn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.add_btn.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.add_btn.OnHoverForeColor = System.Drawing.Color.White;
-            this.add_btn.OnHoverImage = null;
-            this.add_btn.OnPressedColor = System.Drawing.Color.Black;
-            this.add_btn.Size = new System.Drawing.Size(113, 24);
-            this.add_btn.TabIndex = 0;
-            this.add_btn.Text = "Add";
-            // 
-            // update_btn
-            // 
-            this.update_btn.AnimationHoverSpeed = 0.07F;
-            this.update_btn.AnimationSpeed = 0.03F;
-            this.update_btn.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
-            this.update_btn.BorderColor = System.Drawing.Color.Black;
-            this.update_btn.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.update_btn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.update_btn.Enabled = false;
-            this.update_btn.FocusedColor = System.Drawing.Color.Empty;
-            this.update_btn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.update_btn.ForeColor = System.Drawing.Color.White;
-            this.update_btn.Image = global::FFGMS.Properties.Resources.icons8_swap_32;
-            this.update_btn.ImageSize = new System.Drawing.Size(15, 15);
-            this.update_btn.Location = new System.Drawing.Point(0, 0);
-            this.update_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.update_btn.Name = "update_btn";
-            this.update_btn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.update_btn.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.update_btn.OnHoverForeColor = System.Drawing.Color.White;
-            this.update_btn.OnHoverImage = null;
-            this.update_btn.OnPressedColor = System.Drawing.Color.Black;
-            this.update_btn.Size = new System.Drawing.Size(292, 24);
-            this.update_btn.TabIndex = 4;
-            this.update_btn.Text = "Change";
-            this.update_btn.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.mac_combx.BackColor = System.Drawing.Color.Transparent;
+            this.mac_combx.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mac_combx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
+            this.mac_combx.FormattingEnabled = true;
+            this.mac_combx.ItemHeight = 24;
+            this.mac_combx.Items.AddRange(new object[] {
+            "Admin",
+            "Reciptioniest",
+            "Trainer"});
+            this.mac_combx.Location = new System.Drawing.Point(242, 72);
+            this.mac_combx.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.mac_combx.Name = "mac_combx";
+            this.mac_combx.Size = new System.Drawing.Size(293, 30);
+            this.mac_combx.TabIndex = 104;
+            this.mac_combx.UseSelectable = true;
             // 
             // wrkot_m_admin
             // 
@@ -721,6 +691,9 @@
             this.add_pnl.PerformLayout();
             this.table_pnl.ResumeLayout(false);
             this.table_pnl.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.btn_grbx.ResumeLayout(false);
             this.wrk_view_admin.ResumeLayout(false);
             this.view_pnl.ResumeLayout(false);
             this.view_menu.ResumeLayout(false);
@@ -728,9 +701,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.search_picbx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.data_view)).EndInit();
             this.wrk_tab_admin.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.btn_grbx.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -755,10 +725,8 @@
         private System.Windows.Forms.TableLayoutPanel table_pnl;
         private System.Windows.Forms.Label wrk_name_lbl;
         private MetroFramework.Controls.MetroTextBox dur_txb;
-        private MetroFramework.Controls.MetroTextBox cost_txb;
         private System.Windows.Forms.Label trg_mus_lbl;
         private System.Windows.Forms.Label used_mac_lbl;
-        private MetroFramework.Controls.MetroTextBox metroTextBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
@@ -767,5 +735,7 @@
         private Guna.UI.WinForms.GunaButton erase_btn;
         private Guna.UI.WinForms.GunaButton add_btn;
         private Guna.UI.WinForms.GunaButton update_btn;
+        private MetroFramework.Controls.MetroComboBox mus_combx;
+        private MetroFramework.Controls.MetroComboBox mac_combx;
     }
 }

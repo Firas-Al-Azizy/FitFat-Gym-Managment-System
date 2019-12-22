@@ -33,10 +33,12 @@ namespace FFGMS.Manage.Program_manage
             if (-1 < count && count < 4)
             {
                 count = count + 1;
+                count_lbl.Text = count.ToString();
             }
             else
             {
                 count = 0;
+                count_lbl.Text = count.ToString();
             }
             if (wrkouts_pnl1.Visible == true && count==1)
             {
@@ -60,10 +62,12 @@ namespace FFGMS.Manage.Program_manage
         {
             if (-1<count &&count < 4) {
                 count = count - 1;
+                count_lbl.Text = count.ToString();
             }
             else
             {
                 count = 3;
+                count_lbl.Text = count.ToString();
             }
             
             if (workout_pnl4.Visible == true && count == 2)

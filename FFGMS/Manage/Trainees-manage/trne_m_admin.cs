@@ -15,7 +15,7 @@ namespace FFGMS.Manage.Trainees_manage
 {
     public partial class trne_m_admin : Form
     {
-        SqlConnection con = new SqlConnection(@"server=DESKTOP-HPA6H4U\SQLEXPRESS;
+        SqlConnection con = new SqlConnection(@"server=DESKTOP-46DG448\SQLEXPRESS;
         database=db_ffgms_new ; integrated security=true");
         public trne_m_admin()
         {
@@ -226,6 +226,11 @@ namespace FFGMS.Manage.Trainees_manage
                      gunaButton1.Enabled = true;
             }
            
+        }
+
+        private void gunaButton3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

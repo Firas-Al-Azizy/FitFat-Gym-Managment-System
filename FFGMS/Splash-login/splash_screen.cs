@@ -112,8 +112,22 @@ namespace FFGMS
             cmd.Parameters.Add("@Pemp_pos", SqlDbType.NVarChar).Value = type_combo.Text;
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dtt);
+
+            if (bunifuMetroTextbox1.Text.Trim() == "")
+            {
+                errorProvider1.SetError(bunifuMetroTextbox1, "Please Enter your User Name");
+            }
+            if (bunifuMetroTextbox2.Text.Trim() == "")
+            {
+                errorProvider1.SetError(bunifuMetroTextbox2, "Please Enter your Password");
+            }
+            if (type_combo.SelectedIndex == -1)
+            {
+                errorProvider1.SetError(type_combo, "Please Select a type");
+            }
             if (dtt.Rows.Count > 0)
             {
+                
 
                 if (type_combo.SelectedIndex == 0)
                 {

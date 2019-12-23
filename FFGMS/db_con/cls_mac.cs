@@ -51,5 +51,34 @@ namespace FFGMS.db_con
             return EffectedRows;
 
         }
+
+        public static DataTable selectAll()
+        {
+            DataTable dt = new DataTable();
+
+           
+            try
+            {
+                using (SqlCommand SqlCmd = new SqlCommand())
+                {
+                    {
+                        var withBlock = SqlCmd;
+                        withBlock.CommandText = "[Pkgmac.SelectAll]";
+                        withBlock.CommandType = CommandType.StoredProcedure;
+                    }
+
+                    dt = (DataTable)cls_db.exe_pro(SqlCmd, 2);
+                }
+            }
+
+            catch (Exception)
+            {
+                dt = new DataTable();
+
+
+            }
+            return dt;
+
+        }
     }
 }

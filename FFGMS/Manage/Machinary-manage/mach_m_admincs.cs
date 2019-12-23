@@ -105,5 +105,26 @@ namespace FFGMS.Manage.Machinary_manage
             }
             return null;
         }
+
+        private void gunaButton2_Click(object sender, EventArgs e)
+        {
+            DataTable dtt = new DataTable();
+            
+            dtt = cls_mac.selectAll();
+            data_view.DataSource = dtt;
+            if (data_view.RowCount > 0)
+            {
+                gunaButton1.Enabled = true;
+                gunaButton4.Enabled = true;
+            }
+            else
+            {
+                MessageBox.Show("data that you are looking for does not exist");
+                gunaButton4.Enabled = false;
+                gunaButton1.Enabled = true;
+            }
+
+        }
     }
+    
 }

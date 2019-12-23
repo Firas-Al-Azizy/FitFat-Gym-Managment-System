@@ -243,7 +243,7 @@ namespace FFGMS.db_con
 
         }
 
-        public static DataTable searchdata(cls_emp o)
+        public static DataTable searchdata(cls_trne o)
         {
             DataTable dt = new DataTable();
 
@@ -254,12 +254,12 @@ namespace FFGMS.db_con
                 {
                     {
                         var withBlock = SqlCmd;
-                        withBlock.CommandText = "[Pkgemp.selectbyName]";
+                        withBlock.CommandText = "[Pkgtra.search]";
                         withBlock.CommandType = CommandType.StoredProcedure;
                     }
-                    p = new SqlParameter("@Pemp_name", SqlDbType.NVarChar)
+                    p = new SqlParameter("@Ptra_name", SqlDbType.NVarChar)
                     {
-                        Value = o.emp_name
+                        Value = o.tra_name
                     };
 
 

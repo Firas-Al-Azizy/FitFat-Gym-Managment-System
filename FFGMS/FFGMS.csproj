@@ -103,6 +103,7 @@
     <Compile Include="db_con\cls_emp.cs" />
     <Compile Include="db_con\cls_db.cs" />
     <Compile Include="db_con\cls_mac.cs" />
+    <Compile Include="db_con\cls_mem.cs" />
     <Compile Include="db_con\cls_trne.cs" />
     <Compile Include="Manage\Group-manage\gr_m_admin.cs">
       <SubType>Form</SubType>

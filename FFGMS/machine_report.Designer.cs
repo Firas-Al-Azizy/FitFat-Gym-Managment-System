@@ -30,16 +30,18 @@
         {
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.machien1 = new FFGMS.machien();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
             // 
-            this.crystalReportViewer1.ActiveViewIndex = -1;
+            this.crystalReportViewer1.ActiveViewIndex = 0;
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
+            this.crystalReportViewer1.ReportSource = this.machien1;
             this.crystalReportViewer1.Size = new System.Drawing.Size(282, 253);
             this.crystalReportViewer1.TabIndex = 1;
             // 
@@ -59,5 +61,6 @@
 
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
+        private machien machien1;
     }
 }

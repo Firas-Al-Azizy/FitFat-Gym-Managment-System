@@ -124,6 +124,12 @@
     <Compile Include="group_report.Designer.cs">
       <DependentUpon>group_report.cs</DependentUpon>
     </Compile>
+    <Compile Include="machien.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>machien.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="machine_report.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -220,6 +226,12 @@
     <Compile Include="Manage\Workout-manage\wrkot_m_trainer.Designer.cs">
       <DependentUpon>wrkot_m_trainer.cs</DependentUpon>
     </Compile>
+    <Compile Include="membership.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>membership.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="membership_report.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -288,6 +300,12 @@
     <Compile Include="staff_report.Designer.cs">
       <DependentUpon>staff_report.cs</DependentUpon>
     </Compile>
+    <Compile Include="trainee.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>trainee.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="trainee_report.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -315,6 +333,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="group_report.resx">
       <DependentUpon>group_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="machien.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>machien.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="machine_report.resx">
       <DependentUpon>machine_report.cs</DependentUpon>
@@ -364,6 +386,10 @@
     <EmbeddedResource Include="Manage\Workout-manage\wrkot_m_trainer.resx">
       <DependentUpon>wrkot_m_trainer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="membership.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>membership.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="membership_report.resx">
       <DependentUpon>membership_report.cs</DependentUpon>
     </EmbeddedResource>
@@ -407,6 +433,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="staff_report.resx">
       <DependentUpon>staff_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trainee.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>trainee.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="trainee_report.resx">
       <DependentUpon>trainee_report.cs</DependentUpon>

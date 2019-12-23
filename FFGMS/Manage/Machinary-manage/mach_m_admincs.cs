@@ -15,7 +15,7 @@ namespace FFGMS.Manage.Machinary_manage
 {
     public partial class mach_m_admincs : Form
     {
-        SqlConnection con = new SqlConnection(@"server=DESKTOP-HPA6H4U\SQLEXPRESS;
+        SqlConnection con = new SqlConnection(@"server=DESKTOP-46DG448\SQLEXPRESS;
         database=db_ffgms_new ; integrated security=true");
         public mach_m_admincs()
         {
@@ -249,6 +249,7 @@ namespace FFGMS.Manage.Machinary_manage
         private void gunaButton3_Click(object sender, EventArgs e)
         {
             machine_report main = new machine_report();
+            main.ShowDialog();
         }
     }
     }

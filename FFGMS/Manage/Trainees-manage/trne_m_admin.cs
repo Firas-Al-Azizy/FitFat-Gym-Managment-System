@@ -15,7 +15,7 @@ namespace FFGMS.Manage.Trainees_manage
 {
     public partial class trne_m_admin : Form
     {
-        SqlConnection con = new SqlConnection(@"server=DESKTOP-HPA6H4U\SQLEXPRESS;
+        SqlConnection con = new SqlConnection(@"server=DESKTOP-46DG448\SQLEXPRESS;
         database=db_ffgms_new ; integrated security=true");
         public trne_m_admin()
         {
@@ -168,6 +168,8 @@ namespace FFGMS.Manage.Trainees_manage
             {
                 clearinfo();
                 MessageBox.Show("Has successfully adding a new  trainee ^_^");
+                bill_report main = new bill_report();
+                main.ShowDialog();
             }
             else
                 MessageBox.Show("Has NOT  completed the process");
@@ -233,7 +235,8 @@ namespace FFGMS.Manage.Trainees_manage
 
         private void gunaButton3_Click(object sender, EventArgs e)
         {
-
+            trainee_report main = new trainee_report();
+            main.ShowDialog();
         }
 
         private void data_view_CellContentClick(object sender, DataGridViewCellEventArgs e)

@@ -15,7 +15,7 @@ namespace FFGMS.Manage.MemberShip_manage
 {
     public partial class memb_m_admin : Form
     {
-        SqlConnection con = new SqlConnection(@"server=DESKTOP-HPA6H4U\SQLEXPRESS;
+        SqlConnection con = new SqlConnection(@"server=DESKTOP-46DG448\SQLEXPRESS;
         database=db_ffgms_new ; integrated security=true");
         public memb_m_admin()
         {
@@ -145,6 +145,12 @@ namespace FFGMS.Manage.MemberShip_manage
                 gunaButton1.Enabled = false;
                 gunaButton4.Enabled = false;
             }
+        }
+
+        private void gunaButton3_Click(object sender, EventArgs e)
+        {
+            membership_report main = new membership_report();
+            main.ShowDialog();
         }
     }
 }

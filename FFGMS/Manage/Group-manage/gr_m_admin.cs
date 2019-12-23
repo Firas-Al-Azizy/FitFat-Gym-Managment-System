@@ -14,7 +14,7 @@ namespace FFGMS.Manage
 {
     public partial class gr_m_admin : Form
     {
-        SqlConnection con = new SqlConnection(@"server=DESKTOP-HPA6H4U\SQLEXPRESS;
+        SqlConnection con = new SqlConnection(@"server=DESKTOP-46DG448\SQLEXPRESS;
         database=db_ffgms_new ; integrated security=true");
         public gr_m_admin()
         {

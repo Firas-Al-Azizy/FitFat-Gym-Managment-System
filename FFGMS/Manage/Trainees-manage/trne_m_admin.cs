@@ -376,6 +376,8 @@ namespace FFGMS.Manage.Trainees_manage
             picture = conv_picture();
 
             cls_trne s = new cls_trne();
+            s.tra_id = Convert.ToInt16(this.data_view.CurrentRow.Cells[0].Value.ToString());
+
             s.tra_name = name_txb.Text;
             s.tra_age = age_txb.Text;
             if (radio_male.Checked == true)

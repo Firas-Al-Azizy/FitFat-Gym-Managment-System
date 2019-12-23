@@ -10,6 +10,7 @@ namespace FFGMS.db_con
 {
     class cls_mac
     {
+        public int mac_id { get; set; }
         public string mac_name { get; set; }
         public byte[] mac_img { get; set; }
         public static int InsertData(cls_mac o)
@@ -34,6 +35,11 @@ namespace FFGMS.db_con
                     p = new SqlParameter("@Pmac_img", SqlDbType.Image)
                     {
                         Value = o.mac_img
+                    };
+                    SqlCmd.Parameters.Add(p);
+                    p = new SqlParameter("@Pmac_id", SqlDbType.Int)
+                    {
+                        Value = o.mac_id
                     };
                     SqlCmd.Parameters.Add(p);
 
@@ -73,6 +79,11 @@ namespace FFGMS.db_con
                     p = new SqlParameter("@Pmac_img", SqlDbType.Image)
                     {
                         Value = o.mac_img
+                    };
+                    SqlCmd.Parameters.Add(p);
+                    p = new SqlParameter("@Pmac_id", SqlDbType.Int)
+                    {
+                        Value = o.mac_id
                     };
                     SqlCmd.Parameters.Add(p);
 

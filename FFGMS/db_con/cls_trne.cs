@@ -11,6 +11,7 @@ namespace FFGMS.db_con
 {
     class cls_trne
     {
+        public int tra_id { get; set; }
         public string tra_name { get; set; }
         public string tra_age { get; set; }
         public string tra_gender { get; set; }
@@ -197,6 +198,11 @@ namespace FFGMS.db_con
                     p = new SqlParameter("@Ppro_id", SqlDbType.Int)
                     {
                         Value = o.pro_id
+                    };
+                    SqlCmd.Parameters.Add(p);
+                    p = new SqlParameter("@Ptra_id", SqlDbType.Int)
+                    {
+                        Value = o.tra_id
                     };
                     SqlCmd.Parameters.Add(p);
 

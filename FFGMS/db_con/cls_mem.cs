@@ -12,6 +12,7 @@ namespace FFGMS.db_con
     {
         public string mem_duration { get; set; }
         public string mem_cost { get; set; }
+        public int mem_id { get; set; }
 
         public static int InsertData(cls_mem o)
         {
@@ -74,6 +75,11 @@ namespace FFGMS.db_con
                     p = new SqlParameter("@Pmem_cost", SqlDbType.NVarChar)
                     {
                         Value = o.mem_cost
+                    };
+                    SqlCmd.Parameters.Add(p);
+                    p = new SqlParameter("@Pmem_id", SqlDbType.Int)
+                    {
+                        Value = o.mem_id
                     };
                     SqlCmd.Parameters.Add(p);
 

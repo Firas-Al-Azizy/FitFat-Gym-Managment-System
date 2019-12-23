@@ -185,6 +185,7 @@ namespace FFGMS.Manage.Machinary_manage
             picture = conv_picture();
             cls_mac s = new cls_mac();
             s.mac_name = name_txb.Text;
+            s.mac_id = Convert.ToInt16(this.data_view.CurrentRow.Cells[0].Value.ToString());
             s.mac_img = picture;
             inserted = cls_mac.updateData(s);
             if (inserted > 0)

@@ -245,6 +245,11 @@ namespace FFGMS.Manage.Machinary_manage
                 gunaButton4.Enabled = false;
             }
         }
+
+        private void gunaButton3_Click(object sender, EventArgs e)
+        {
+            machine_report main = new machine_report();
+        }
     }
     }
     

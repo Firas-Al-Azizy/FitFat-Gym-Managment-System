@@ -388,7 +388,8 @@ namespace FFGMS.Manage.Staff_manage
 
         private void gunaButton3_Click(object sender, EventArgs e)
         {
-            
+            staff_report main = new staff_report();
+            main.ShowDialog();
         }
 
 

@@ -26,5 +26,15 @@ namespace FFGMS.Manage.Machinary_manage
         {
 
         }
+
+        private void sel_img_btn_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "All Files|*.png;*.jpg;*.jpeg;*.bmp;*.wdp;*.dib|png |*.png|jpeg|*.jpg;*.jpeg|bmp|*.bmp|wdp|*.wdp|dib|*.dib";
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                img_picb.Image = Image.FromFile(openFileDialog1.FileName);
+            }
+        }
     }
 }

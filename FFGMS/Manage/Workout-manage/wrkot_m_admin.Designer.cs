@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.wrk_add_admin = new MetroFramework.Controls.MetroTabPage();
             this.add_pnl = new System.Windows.Forms.Panel();
             this.table_pnl = new System.Windows.Forms.TableLayoutPanel();
@@ -45,6 +45,8 @@
             this.erase_btn = new Guna.UI.WinForms.GunaButton();
             this.add_btn = new Guna.UI.WinForms.GunaButton();
             this.update_btn = new Guna.UI.WinForms.GunaButton();
+            this.mus_combx = new MetroFramework.Controls.MetroComboBox();
+            this.mac_combx = new MetroFramework.Controls.MetroComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.wrk_view_admin = new MetroFramework.Controls.MetroTabPage();
@@ -60,8 +62,6 @@
             this.data_view = new Guna.UI.WinForms.GunaDataGridView();
             this.wrk_tab_admin = new MetroFramework.Controls.MetroTabControl();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.mus_combx = new MetroFramework.Controls.MetroComboBox();
-            this.mac_combx = new MetroFramework.Controls.MetroComboBox();
             this.wrk_add_admin.SuspendLayout();
             this.add_pnl.SuspendLayout();
             this.table_pnl.SuspendLayout();
@@ -83,17 +83,18 @@
             this.wrk_add_admin.Controls.Add(this.add_pnl);
             this.wrk_add_admin.HorizontalScrollbarBarColor = true;
             this.wrk_add_admin.HorizontalScrollbarHighlightOnWheel = false;
-            this.wrk_add_admin.HorizontalScrollbarSize = 10;
+            this.wrk_add_admin.HorizontalScrollbarSize = 8;
             this.wrk_add_admin.Location = new System.Drawing.Point(4, 44);
+            this.wrk_add_admin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.wrk_add_admin.Name = "wrk_add_admin";
-            this.wrk_add_admin.Size = new System.Drawing.Size(729, 391);
+            this.wrk_add_admin.Size = new System.Drawing.Size(545, 309);
             this.wrk_add_admin.Style = MetroFramework.MetroColorStyle.Black;
             this.wrk_add_admin.TabIndex = 0;
             this.wrk_add_admin.Text = "Add Workouts";
             this.wrk_add_admin.UseStyleColors = true;
             this.wrk_add_admin.VerticalScrollbarBarColor = true;
             this.wrk_add_admin.VerticalScrollbarHighlightOnWheel = false;
-            this.wrk_add_admin.VerticalScrollbarSize = 10;
+            this.wrk_add_admin.VerticalScrollbarSize = 8;
             // 
             // add_pnl
             // 
@@ -103,8 +104,9 @@
             this.add_pnl.Controls.Add(this.panel1);
             this.add_pnl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.add_pnl.Location = new System.Drawing.Point(0, 0);
+            this.add_pnl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.add_pnl.Name = "add_pnl";
-            this.add_pnl.Size = new System.Drawing.Size(729, 391);
+            this.add_pnl.Size = new System.Drawing.Size(545, 309);
             this.add_pnl.TabIndex = 4;
             // 
             // table_pnl
@@ -115,7 +117,7 @@
             this.table_pnl.ColumnCount = 3;
             this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.44444F));
             this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.55556F));
-            this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
+            this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 143F));
             this.table_pnl.Controls.Add(this.wrk_name_lbl, 0, 0);
             this.table_pnl.Controls.Add(this.dur_txb, 1, 0);
             this.table_pnl.Controls.Add(this.trg_mus_lbl, 0, 1);
@@ -124,17 +126,17 @@
             this.table_pnl.Controls.Add(this.mus_combx, 1, 1);
             this.table_pnl.Controls.Add(this.mac_combx, 1, 2);
             this.table_pnl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.table_pnl.Location = new System.Drawing.Point(0, 98);
-            this.table_pnl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.table_pnl.Location = new System.Drawing.Point(0, 80);
+            this.table_pnl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.table_pnl.Name = "table_pnl";
             this.table_pnl.RowCount = 5;
             this.table_pnl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.table_pnl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.table_pnl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
+            this.table_pnl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.table_pnl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
             this.table_pnl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
-            this.table_pnl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.table_pnl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.table_pnl.Size = new System.Drawing.Size(729, 162);
+            this.table_pnl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.table_pnl.Size = new System.Drawing.Size(545, 143);
             this.table_pnl.TabIndex = 68;
             // 
             // wrk_name_lbl
@@ -144,9 +146,10 @@
             this.wrk_name_lbl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.wrk_name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wrk_name_lbl.ForeColor = System.Drawing.Color.DarkCyan;
-            this.wrk_name_lbl.Location = new System.Drawing.Point(3, 0);
+            this.wrk_name_lbl.Location = new System.Drawing.Point(2, 0);
+            this.wrk_name_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.wrk_name_lbl.Name = "wrk_name_lbl";
-            this.wrk_name_lbl.Size = new System.Drawing.Size(233, 35);
+            this.wrk_name_lbl.Size = new System.Drawing.Size(174, 34);
             this.wrk_name_lbl.TabIndex = 43;
             this.wrk_name_lbl.Text = "Workout Name:";
             this.wrk_name_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -157,10 +160,10 @@
             // 
             // 
             this.dur_txb.CustomButton.Image = null;
-            this.dur_txb.CustomButton.Location = new System.Drawing.Point(263, 1);
-            this.dur_txb.CustomButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.dur_txb.CustomButton.Location = new System.Drawing.Point(191, 2);
+            this.dur_txb.CustomButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dur_txb.CustomButton.Name = "";
-            this.dur_txb.CustomButton.Size = new System.Drawing.Size(29, 29);
+            this.dur_txb.CustomButton.Size = new System.Drawing.Size(25, 25);
             this.dur_txb.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.dur_txb.CustomButton.TabIndex = 1;
             this.dur_txb.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -168,8 +171,8 @@
             this.dur_txb.CustomButton.Visible = false;
             this.dur_txb.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dur_txb.Lines = new string[0];
-            this.dur_txb.Location = new System.Drawing.Point(242, 2);
-            this.dur_txb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dur_txb.Location = new System.Drawing.Point(180, 2);
+            this.dur_txb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dur_txb.MaxLength = 32767;
             this.dur_txb.Name = "dur_txb";
             this.dur_txb.PasswordChar = '\0';
@@ -178,7 +181,7 @@
             this.dur_txb.SelectionLength = 0;
             this.dur_txb.SelectionStart = 0;
             this.dur_txb.ShortcutsEnabled = true;
-            this.dur_txb.Size = new System.Drawing.Size(293, 31);
+            this.dur_txb.Size = new System.Drawing.Size(219, 30);
             this.dur_txb.TabIndex = 44;
             this.dur_txb.UseSelectable = true;
             this.dur_txb.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -191,9 +194,10 @@
             this.trg_mus_lbl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.trg_mus_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.trg_mus_lbl.ForeColor = System.Drawing.Color.DarkCyan;
-            this.trg_mus_lbl.Location = new System.Drawing.Point(3, 35);
+            this.trg_mus_lbl.Location = new System.Drawing.Point(2, 34);
+            this.trg_mus_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.trg_mus_lbl.Name = "trg_mus_lbl";
-            this.trg_mus_lbl.Size = new System.Drawing.Size(233, 35);
+            this.trg_mus_lbl.Size = new System.Drawing.Size(174, 34);
             this.trg_mus_lbl.TabIndex = 47;
             this.trg_mus_lbl.Text = "Target Muscle:";
             this.trg_mus_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -205,9 +209,10 @@
             this.used_mac_lbl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.used_mac_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.used_mac_lbl.ForeColor = System.Drawing.Color.DarkCyan;
-            this.used_mac_lbl.Location = new System.Drawing.Point(3, 70);
+            this.used_mac_lbl.Location = new System.Drawing.Point(2, 68);
+            this.used_mac_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.used_mac_lbl.Name = "used_mac_lbl";
-            this.used_mac_lbl.Size = new System.Drawing.Size(233, 34);
+            this.used_mac_lbl.Size = new System.Drawing.Size(174, 28);
             this.used_mac_lbl.TabIndex = 65;
             this.used_mac_lbl.Text = "Used Machine:";
             this.used_mac_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -217,10 +222,9 @@
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.update_btn);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(243, 134);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Location = new System.Drawing.Point(181, 120);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(291, 24);
+            this.panel3.Size = new System.Drawing.Size(217, 20);
             this.panel3.TabIndex = 71;
             // 
             // panel5
@@ -228,9 +232,8 @@
             this.panel5.Controls.Add(this.btn_grbx);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(291, 24);
+            this.panel5.Size = new System.Drawing.Size(217, 20);
             this.panel5.TabIndex = 6;
             // 
             // btn_grbx
@@ -243,9 +246,9 @@
             this.btn_grbx.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_grbx.LineColor = System.Drawing.Color.Transparent;
             this.btn_grbx.Location = new System.Drawing.Point(0, 0);
-            this.btn_grbx.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_grbx.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_grbx.Name = "btn_grbx";
-            this.btn_grbx.Size = new System.Drawing.Size(291, 24);
+            this.btn_grbx.Size = new System.Drawing.Size(217, 20);
             this.btn_grbx.TabIndex = 65;
             this.btn_grbx.TextLocation = new System.Drawing.Point(10, 8);
             // 
@@ -263,14 +266,14 @@
             this.erase_btn.Image = global::FFGMS.Properties.Resources.icons8_erase_32;
             this.erase_btn.ImageSize = new System.Drawing.Size(15, 15);
             this.erase_btn.Location = new System.Drawing.Point(0, 0);
-            this.erase_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.erase_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.erase_btn.Name = "erase_btn";
             this.erase_btn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.erase_btn.OnHoverBorderColor = System.Drawing.Color.Black;
             this.erase_btn.OnHoverForeColor = System.Drawing.Color.White;
             this.erase_btn.OnHoverImage = null;
             this.erase_btn.OnPressedColor = System.Drawing.Color.Black;
-            this.erase_btn.Size = new System.Drawing.Size(115, 24);
+            this.erase_btn.Size = new System.Drawing.Size(86, 20);
             this.erase_btn.TabIndex = 1;
             this.erase_btn.Text = "Erase";
             // 
@@ -287,15 +290,15 @@
             this.add_btn.ForeColor = System.Drawing.Color.White;
             this.add_btn.Image = global::FFGMS.Properties.Resources.icons8_plus_32;
             this.add_btn.ImageSize = new System.Drawing.Size(15, 15);
-            this.add_btn.Location = new System.Drawing.Point(178, 0);
-            this.add_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.add_btn.Location = new System.Drawing.Point(132, 0);
+            this.add_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.add_btn.Name = "add_btn";
             this.add_btn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.add_btn.OnHoverBorderColor = System.Drawing.Color.Black;
             this.add_btn.OnHoverForeColor = System.Drawing.Color.White;
             this.add_btn.OnHoverImage = null;
             this.add_btn.OnPressedColor = System.Drawing.Color.Black;
-            this.add_btn.Size = new System.Drawing.Size(113, 24);
+            this.add_btn.Size = new System.Drawing.Size(85, 20);
             this.add_btn.TabIndex = 0;
             this.add_btn.Text = "Add";
             // 
@@ -314,26 +317,62 @@
             this.update_btn.Image = global::FFGMS.Properties.Resources.icons8_swap_32;
             this.update_btn.ImageSize = new System.Drawing.Size(15, 15);
             this.update_btn.Location = new System.Drawing.Point(0, 0);
-            this.update_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.update_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.update_btn.Name = "update_btn";
             this.update_btn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.update_btn.OnHoverBorderColor = System.Drawing.Color.Black;
             this.update_btn.OnHoverForeColor = System.Drawing.Color.White;
             this.update_btn.OnHoverImage = null;
             this.update_btn.OnPressedColor = System.Drawing.Color.Black;
-            this.update_btn.Size = new System.Drawing.Size(291, 24);
+            this.update_btn.Size = new System.Drawing.Size(217, 20);
             this.update_btn.TabIndex = 4;
             this.update_btn.Text = "Change";
             this.update_btn.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // mus_combx
+            // 
+            this.mus_combx.BackColor = System.Drawing.Color.Transparent;
+            this.mus_combx.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mus_combx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
+            this.mus_combx.FormattingEnabled = true;
+            this.mus_combx.ItemHeight = 23;
+            this.mus_combx.Items.AddRange(new object[] {
+            "Admin",
+            "Reciptioniest",
+            "Trainer"});
+            this.mus_combx.Location = new System.Drawing.Point(180, 36);
+            this.mus_combx.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mus_combx.Name = "mus_combx";
+            this.mus_combx.Size = new System.Drawing.Size(219, 29);
+            this.mus_combx.TabIndex = 103;
+            this.mus_combx.UseSelectable = true;
+            // 
+            // mac_combx
+            // 
+            this.mac_combx.BackColor = System.Drawing.Color.Transparent;
+            this.mac_combx.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mac_combx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
+            this.mac_combx.FormattingEnabled = true;
+            this.mac_combx.ItemHeight = 23;
+            this.mac_combx.Items.AddRange(new object[] {
+            "Admin",
+            "Reciptioniest",
+            "Trainer"});
+            this.mac_combx.Location = new System.Drawing.Point(180, 70);
+            this.mac_combx.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mac_combx.Name = "mac_combx";
+            this.mac_combx.Size = new System.Drawing.Size(219, 29);
+            this.mac_combx.TabIndex = 104;
+            this.mac_combx.UseSelectable = true;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 49);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Location = new System.Drawing.Point(0, 40);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(729, 49);
+            this.panel2.Size = new System.Drawing.Size(545, 40);
             this.panel2.TabIndex = 4;
             // 
             // panel1
@@ -341,9 +380,9 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(729, 49);
+            this.panel1.Size = new System.Drawing.Size(545, 40);
             this.panel1.TabIndex = 3;
             // 
             // wrk_view_admin
@@ -353,16 +392,17 @@
             this.wrk_view_admin.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.wrk_view_admin.HorizontalScrollbarBarColor = true;
             this.wrk_view_admin.HorizontalScrollbarHighlightOnWheel = false;
-            this.wrk_view_admin.HorizontalScrollbarSize = 10;
+            this.wrk_view_admin.HorizontalScrollbarSize = 8;
             this.wrk_view_admin.Location = new System.Drawing.Point(4, 44);
+            this.wrk_view_admin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.wrk_view_admin.Name = "wrk_view_admin";
-            this.wrk_view_admin.Size = new System.Drawing.Size(729, 391);
+            this.wrk_view_admin.Size = new System.Drawing.Size(545, 309);
             this.wrk_view_admin.TabIndex = 1;
             this.wrk_view_admin.Text = "View Workouts";
             this.wrk_view_admin.UseStyleColors = true;
             this.wrk_view_admin.VerticalScrollbarBarColor = true;
             this.wrk_view_admin.VerticalScrollbarHighlightOnWheel = false;
-            this.wrk_view_admin.VerticalScrollbarSize = 10;
+            this.wrk_view_admin.VerticalScrollbarSize = 8;
             // 
             // view_pnl
             // 
@@ -373,12 +413,13 @@
             this.view_pnl.Controls.Add(this.data_view, 0, 1);
             this.view_pnl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.view_pnl.Location = new System.Drawing.Point(0, 0);
+            this.view_pnl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.view_pnl.Name = "view_pnl";
             this.view_pnl.RowCount = 3;
             this.view_pnl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.42857F));
             this.view_pnl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 88.57143F));
-            this.view_pnl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.view_pnl.Size = new System.Drawing.Size(729, 391);
+            this.view_pnl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.view_pnl.Size = new System.Drawing.Size(545, 309);
             this.view_pnl.TabIndex = 4;
             // 
             // view_menu
@@ -387,21 +428,22 @@
             this.view_menu.ColumnCount = 5;
             this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.08333F));
             this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.91667F));
-            this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
-            this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 116F));
-            this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 269F));
+            this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
+            this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 87F));
+            this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 202F));
             this.view_menu.Controls.Add(this.search_panel, 4, 0);
             this.view_menu.Controls.Add(this.gunaButton3, 0, 0);
             this.view_menu.Controls.Add(this.gunaButton4, 0, 0);
             this.view_menu.Controls.Add(this.gunaButton1, 0, 0);
             this.view_menu.Controls.Add(this.gunaButton2, 0, 0);
             this.view_menu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.view_menu.Location = new System.Drawing.Point(3, 3);
+            this.view_menu.Location = new System.Drawing.Point(2, 2);
+            this.view_menu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.view_menu.Name = "view_menu";
             this.view_menu.RowCount = 1;
             this.view_menu.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.view_menu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
-            this.view_menu.Size = new System.Drawing.Size(723, 36);
+            this.view_menu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.view_menu.Size = new System.Drawing.Size(541, 29);
             this.view_menu.TabIndex = 4;
             // 
             // search_panel
@@ -410,9 +452,10 @@
             this.search_panel.Controls.Add(this.search_txb);
             this.search_panel.Controls.Add(this.search_picbx);
             this.search_panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.search_panel.Location = new System.Drawing.Point(456, 3);
+            this.search_panel.Location = new System.Drawing.Point(340, 2);
+            this.search_panel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.search_panel.Name = "search_panel";
-            this.search_panel.Size = new System.Drawing.Size(264, 33);
+            this.search_panel.Size = new System.Drawing.Size(199, 27);
             this.search_panel.TabIndex = 4;
             // 
             // search_txb
@@ -421,9 +464,10 @@
             // 
             // 
             this.search_txb.CustomButton.Image = null;
-            this.search_txb.CustomButton.Location = new System.Drawing.Point(190, 1);
+            this.search_txb.CustomButton.Location = new System.Drawing.Point(105, 1);
+            this.search_txb.CustomButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.search_txb.CustomButton.Name = "";
-            this.search_txb.CustomButton.Size = new System.Drawing.Size(31, 31);
+            this.search_txb.CustomButton.Size = new System.Drawing.Size(19, 20);
             this.search_txb.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.search_txb.CustomButton.TabIndex = 1;
             this.search_txb.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -431,7 +475,8 @@
             this.search_txb.CustomButton.Visible = false;
             this.search_txb.Dock = System.Windows.Forms.DockStyle.Right;
             this.search_txb.Lines = new string[0];
-            this.search_txb.Location = new System.Drawing.Point(42, 0);
+            this.search_txb.Location = new System.Drawing.Point(33, 0);
+            this.search_txb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.search_txb.MaxLength = 32767;
             this.search_txb.Name = "search_txb";
             this.search_txb.PasswordChar = '\0';
@@ -440,7 +485,7 @@
             this.search_txb.SelectionLength = 0;
             this.search_txb.SelectionStart = 0;
             this.search_txb.ShortcutsEnabled = true;
-            this.search_txb.Size = new System.Drawing.Size(222, 33);
+            this.search_txb.Size = new System.Drawing.Size(166, 27);
             this.search_txb.TabIndex = 6;
             this.search_txb.UseSelectable = true;
             this.search_txb.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -452,8 +497,9 @@
             this.search_picbx.Dock = System.Windows.Forms.DockStyle.Left;
             this.search_picbx.Image = global::FFGMS.Properties.Resources.search_64px;
             this.search_picbx.Location = new System.Drawing.Point(0, 0);
+            this.search_picbx.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.search_picbx.Name = "search_picbx";
-            this.search_picbx.Size = new System.Drawing.Size(39, 33);
+            this.search_picbx.Size = new System.Drawing.Size(29, 27);
             this.search_picbx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.search_picbx.TabIndex = 4;
             this.search_picbx.TabStop = false;
@@ -471,14 +517,15 @@
             this.gunaButton3.ForeColor = System.Drawing.Color.White;
             this.gunaButton3.Image = global::FFGMS.Properties.Resources.icons8_print_32;
             this.gunaButton3.ImageSize = new System.Drawing.Size(15, 15);
-            this.gunaButton3.Location = new System.Drawing.Point(340, 3);
+            this.gunaButton3.Location = new System.Drawing.Point(253, 2);
+            this.gunaButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gunaButton3.Name = "gunaButton3";
             this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton3.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaButton3.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton3.OnHoverImage = null;
             this.gunaButton3.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton3.Size = new System.Drawing.Size(110, 33);
+            this.gunaButton3.Size = new System.Drawing.Size(83, 27);
             this.gunaButton3.TabIndex = 5;
             this.gunaButton3.Text = "Print";
             this.gunaButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -496,14 +543,15 @@
             this.gunaButton4.ForeColor = System.Drawing.Color.White;
             this.gunaButton4.Image = global::FFGMS.Properties.Resources.icons8_delete_32;
             this.gunaButton4.ImageSize = new System.Drawing.Size(15, 15);
-            this.gunaButton4.Location = new System.Drawing.Point(220, 3);
+            this.gunaButton4.Location = new System.Drawing.Point(163, 2);
+            this.gunaButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gunaButton4.Name = "gunaButton4";
             this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton4.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaButton4.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton4.OnHoverImage = null;
             this.gunaButton4.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton4.Size = new System.Drawing.Size(114, 33);
+            this.gunaButton4.Size = new System.Drawing.Size(86, 27);
             this.gunaButton4.TabIndex = 4;
             this.gunaButton4.Text = "Delete";
             this.gunaButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -521,14 +569,15 @@
             this.gunaButton1.ForeColor = System.Drawing.Color.White;
             this.gunaButton1.Image = global::FFGMS.Properties.Resources.icons8_swap_32;
             this.gunaButton1.ImageSize = new System.Drawing.Size(15, 15);
-            this.gunaButton1.Location = new System.Drawing.Point(105, 3);
+            this.gunaButton1.Location = new System.Drawing.Point(78, 2);
+            this.gunaButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gunaButton1.Name = "gunaButton1";
             this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton1.OnHoverImage = null;
             this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton1.Size = new System.Drawing.Size(109, 33);
+            this.gunaButton1.Size = new System.Drawing.Size(81, 27);
             this.gunaButton1.TabIndex = 3;
             this.gunaButton1.Text = "Change";
             this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -546,53 +595,55 @@
             this.gunaButton2.ForeColor = System.Drawing.Color.White;
             this.gunaButton2.Image = global::FFGMS.Properties.Resources.icons8_view_module_32;
             this.gunaButton2.ImageSize = new System.Drawing.Size(15, 15);
-            this.gunaButton2.Location = new System.Drawing.Point(3, 3);
+            this.gunaButton2.Location = new System.Drawing.Point(2, 2);
+            this.gunaButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gunaButton2.Name = "gunaButton2";
             this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaButton2.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton2.OnHoverImage = null;
             this.gunaButton2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton2.Size = new System.Drawing.Size(96, 33);
+            this.gunaButton2.Size = new System.Drawing.Size(72, 27);
             this.gunaButton2.TabIndex = 2;
             this.gunaButton2.Text = "View";
             this.gunaButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // data_view
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.data_view.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.data_view.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.data_view.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.data_view.BackgroundColor = System.Drawing.SystemColors.Control;
             this.data_view.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.data_view.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.data_view.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.data_view.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.data_view.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.data_view.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.data_view.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.data_view.DefaultCellStyle = dataGridViewCellStyle3;
             this.data_view.Dock = System.Windows.Forms.DockStyle.Fill;
             this.data_view.EnableHeadersVisualStyles = false;
             this.data_view.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.data_view.Location = new System.Drawing.Point(3, 45);
+            this.data_view.Location = new System.Drawing.Point(2, 35);
+            this.data_view.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.data_view.Name = "data_view";
             this.data_view.RowHeadersVisible = false;
             this.data_view.RowTemplate.Height = 24;
             this.data_view.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.data_view.Size = new System.Drawing.Size(723, 322);
+            this.data_view.Size = new System.Drawing.Size(541, 255);
             this.data_view.TabIndex = 5;
             this.data_view.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.data_view.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -625,9 +676,10 @@
             this.wrk_tab_admin.FontWeight = MetroFramework.MetroTabControlWeight.Bold;
             this.wrk_tab_admin.ItemSize = new System.Drawing.Size(266, 40);
             this.wrk_tab_admin.Location = new System.Drawing.Point(0, 0);
+            this.wrk_tab_admin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.wrk_tab_admin.Name = "wrk_tab_admin";
             this.wrk_tab_admin.SelectedIndex = 0;
-            this.wrk_tab_admin.Size = new System.Drawing.Size(737, 439);
+            this.wrk_tab_admin.Size = new System.Drawing.Size(553, 357);
             this.wrk_tab_admin.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.wrk_tab_admin.Style = MetroFramework.MetroColorStyle.Teal;
             this.wrk_tab_admin.TabIndex = 4;
@@ -641,49 +693,14 @@
             this.bunifuElipse1.ElipseRadius = 5;
             this.bunifuElipse1.TargetControl = this;
             // 
-            // mus_combx
-            // 
-            this.mus_combx.BackColor = System.Drawing.Color.Transparent;
-            this.mus_combx.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mus_combx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
-            this.mus_combx.FormattingEnabled = true;
-            this.mus_combx.ItemHeight = 24;
-            this.mus_combx.Items.AddRange(new object[] {
-            "Admin",
-            "Reciptioniest",
-            "Trainer"});
-            this.mus_combx.Location = new System.Drawing.Point(242, 37);
-            this.mus_combx.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.mus_combx.Name = "mus_combx";
-            this.mus_combx.Size = new System.Drawing.Size(293, 30);
-            this.mus_combx.TabIndex = 103;
-            this.mus_combx.UseSelectable = true;
-            // 
-            // mac_combx
-            // 
-            this.mac_combx.BackColor = System.Drawing.Color.Transparent;
-            this.mac_combx.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mac_combx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
-            this.mac_combx.FormattingEnabled = true;
-            this.mac_combx.ItemHeight = 24;
-            this.mac_combx.Items.AddRange(new object[] {
-            "Admin",
-            "Reciptioniest",
-            "Trainer"});
-            this.mac_combx.Location = new System.Drawing.Point(242, 72);
-            this.mac_combx.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.mac_combx.Name = "mac_combx";
-            this.mac_combx.Size = new System.Drawing.Size(293, 30);
-            this.mac_combx.TabIndex = 104;
-            this.mac_combx.UseSelectable = true;
-            // 
             // wrkot_m_admin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(737, 439);
+            this.ClientSize = new System.Drawing.Size(553, 357);
             this.Controls.Add(this.wrk_tab_admin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "wrkot_m_admin";
             this.Text = "wrkot_m_admin";
             this.wrk_add_admin.ResumeLayout(false);

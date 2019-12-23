@@ -114,6 +114,7 @@
     </Compile>
     <Compile Include="db_con\cls_emp.cs" />
     <Compile Include="db_con\cls_db.cs" />
+    <Compile Include="db_con\cls_gr.cs" />
     <Compile Include="db_con\cls_mac.cs" />
     <Compile Include="db_con\cls_mem.cs" />
     <Compile Include="db_con\cls_trne.cs" />

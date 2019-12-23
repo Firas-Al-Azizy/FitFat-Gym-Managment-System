@@ -10,8 +10,9 @@ namespace FFGMS.db_con
 {
     class cls_mem
     {
-        public string mac_name { get; set; }
-        public byte[] mac_img { get; set; }
+        public string mem_duration { get; set; }
+        public string mem_cost { get; set; }
+
         public static int InsertData(cls_mem o)
         {
             var EffectedRows = 0;
@@ -26,14 +27,14 @@ namespace FFGMS.db_con
                         withBlock.CommandText = "[Pkgmem.insert]";
                         withBlock.CommandType = CommandType.StoredProcedure;
                     }
-                    p = new SqlParameter("@Pmac_name", SqlDbType.NVarChar)
+                    p = new SqlParameter("@Pmem_duration ", SqlDbType.NVarChar)
                     {
-                        Value = o.mac_name
+                        Value = o.mem_duration
                     };
                     SqlCmd.Parameters.Add(p);
-                    p = new SqlParameter("@Pmac_img", SqlDbType.Image)
+                    p = new SqlParameter("@Pmem_cost", SqlDbType.NVarChar)
                     {
-                        Value = o.mac_img
+                        Value = o.mem_cost
                     };
                     SqlCmd.Parameters.Add(p);
 
@@ -65,14 +66,14 @@ namespace FFGMS.db_con
                         withBlock.CommandText = "[Pkgmem.update]";
                         withBlock.CommandType = CommandType.StoredProcedure;
                     }
-                    p = new SqlParameter("@Pmac_name", SqlDbType.NVarChar)
+                    p = new SqlParameter("@Pmem_duration ", SqlDbType.NVarChar)
                     {
-                        Value = o.mac_name
+                        Value = o.mem_duration
                     };
                     SqlCmd.Parameters.Add(p);
-                    p = new SqlParameter("@Pmac_img", SqlDbType.Image)
+                    p = new SqlParameter("@Pmem_cost", SqlDbType.NVarChar)
                     {
-                        Value = o.mac_img
+                        Value = o.mem_cost
                     };
                     SqlCmd.Parameters.Add(p);
 

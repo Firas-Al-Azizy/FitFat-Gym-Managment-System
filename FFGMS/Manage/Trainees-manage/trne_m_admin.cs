@@ -281,7 +281,7 @@ namespace FFGMS.Manage.Trainees_manage
                     img_picb.Image = null;
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 img_picb.Image = null;
                // MessageBox.Show("image in db is in a wrong format " + "\n Error code 00039", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

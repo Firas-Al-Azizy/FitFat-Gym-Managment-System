@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -14,6 +15,8 @@ namespace FFGMS.Manage.Machinary_manage
 {
     public partial class mach_m_admincs : Form
     {
+        SqlConnection con = new SqlConnection(@"server=DESKTOP-HPA6H4U\SQLEXPRESS;
+        database=db_ffgms_new ; integrated security=true");
         public mach_m_admincs()
         {
             InitializeComponent();
@@ -125,6 +128,55 @@ namespace FFGMS.Manage.Machinary_manage
             }
 
         }
+
+        private void gunaButton1_Click(object sender, EventArgs e)
+        {
+            mach_tab_admin.SelectedIndex = 0;
+            name_txb.Text = this.data_view.CurrentRow.Cells[1].Value.ToString();
+            DataTable dt = new DataTable();
+            try
+            {
+                dt = GetstdImg(name_txb.Text);
+                if (dt.Rows.Count > 0)
+                {
+                    byte[] img = (byte[])dt.Rows[0][0];
+
+                    MemoryStream ms = new MemoryStream(img);
+                    img_picb.Image = Image.FromStream(ms);
+                }
+                else
+                {
+                    img_picb.Image = null;
+                }
+            }
+            catch (Exception)
+            {
+                img_picb.Image = null;
+            }
+            panel6.Visible = false;
+            update_btn.Enabled = true;
+        }
+        public DataTable GetstdImg(string name_txb)
+        {
+            DataTable dtt = new DataTable();
+            try
+            {
+
+                SqlCommand cmd = con.CreateCommand();
+                cmd.CommandText = "[Pkgmac.selectImage]";
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@Pmac_name", SqlDbType.NVarChar).Value = this.data_view.CurrentRow.Cells[1].Value.ToString();
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dtt);
+                return dtt;
+            }
+            catch (Exception)
+            {
+                return dtt;
+            }
+        }
+    }
     }
     
-}
+

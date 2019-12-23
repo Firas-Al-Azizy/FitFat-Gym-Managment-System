@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.mach_view_admin = new MetroFramework.Controls.MetroTabPage();
             this.view_pnl = new System.Windows.Forms.TableLayoutPanel();
             this.view_menu = new System.Windows.Forms.TableLayoutPanel();
@@ -53,7 +53,7 @@
             this.sel_img_btn = new Guna.UI.WinForms.GunaButton();
             this.img_picb = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.mac_name_lbl = new System.Windows.Forms.Label();
-            this.age_txb = new MetroFramework.Controls.MetroTextBox();
+            this.name_txb = new MetroFramework.Controls.MetroTextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btn_grbx = new Guna.UI.WinForms.GunaGroupBox();
@@ -306,30 +306,30 @@
             // 
             // data_view
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.data_view.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.data_view.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.data_view.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.data_view.BackgroundColor = System.Drawing.SystemColors.Control;
             this.data_view.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.data_view.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.data_view.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.data_view.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.data_view.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.data_view.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.data_view.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.data_view.DefaultCellStyle = dataGridViewCellStyle3;
             this.data_view.Dock = System.Windows.Forms.DockStyle.Fill;
             this.data_view.EnableHeadersVisualStyles = false;
             this.data_view.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -430,7 +430,7 @@
             this.table_pnl.Controls.Add(this.from_lbl, 0, 2);
             this.table_pnl.Controls.Add(this.panel3, 1, 2);
             this.table_pnl.Controls.Add(this.mac_name_lbl, 0, 3);
-            this.table_pnl.Controls.Add(this.age_txb, 1, 3);
+            this.table_pnl.Controls.Add(this.name_txb, 1, 3);
             this.table_pnl.Controls.Add(this.panel5, 2, 5);
             this.table_pnl.Dock = System.Windows.Forms.DockStyle.Top;
             this.table_pnl.Location = new System.Drawing.Point(0, 80);
@@ -554,38 +554,38 @@
             this.mac_name_lbl.Text = "Machine Name:";
             this.mac_name_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // age_txb
+            // name_txb
             // 
             // 
             // 
             // 
-            this.age_txb.CustomButton.Image = null;
-            this.age_txb.CustomButton.Location = new System.Drawing.Point(139, 2);
-            this.age_txb.CustomButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.age_txb.CustomButton.Name = "";
-            this.age_txb.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.age_txb.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.age_txb.CustomButton.TabIndex = 1;
-            this.age_txb.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.age_txb.CustomButton.UseSelectable = true;
-            this.age_txb.CustomButton.Visible = false;
-            this.age_txb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.age_txb.Lines = new string[0];
-            this.age_txb.Location = new System.Drawing.Point(188, 117);
-            this.age_txb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.age_txb.MaxLength = 32767;
-            this.age_txb.Name = "age_txb";
-            this.age_txb.PasswordChar = '\0';
-            this.age_txb.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.age_txb.SelectedText = "";
-            this.age_txb.SelectionLength = 0;
-            this.age_txb.SelectionStart = 0;
-            this.age_txb.ShortcutsEnabled = true;
-            this.age_txb.Size = new System.Drawing.Size(163, 26);
-            this.age_txb.TabIndex = 66;
-            this.age_txb.UseSelectable = true;
-            this.age_txb.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.age_txb.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.name_txb.CustomButton.Image = null;
+            this.name_txb.CustomButton.Location = new System.Drawing.Point(139, 2);
+            this.name_txb.CustomButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.name_txb.CustomButton.Name = "";
+            this.name_txb.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.name_txb.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.name_txb.CustomButton.TabIndex = 1;
+            this.name_txb.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.name_txb.CustomButton.UseSelectable = true;
+            this.name_txb.CustomButton.Visible = false;
+            this.name_txb.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.name_txb.Lines = new string[0];
+            this.name_txb.Location = new System.Drawing.Point(188, 117);
+            this.name_txb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.name_txb.MaxLength = 32767;
+            this.name_txb.Name = "name_txb";
+            this.name_txb.PasswordChar = '\0';
+            this.name_txb.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.name_txb.SelectedText = "";
+            this.name_txb.SelectionLength = 0;
+            this.name_txb.SelectionStart = 0;
+            this.name_txb.ShortcutsEnabled = true;
+            this.name_txb.Size = new System.Drawing.Size(163, 26);
+            this.name_txb.TabIndex = 66;
+            this.name_txb.UseSelectable = true;
+            this.name_txb.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.name_txb.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // panel5
             // 
@@ -646,6 +646,7 @@
             this.erase_btn.Size = new System.Drawing.Size(86, 22);
             this.erase_btn.TabIndex = 1;
             this.erase_btn.Text = "Erase";
+            this.erase_btn.Click += new System.EventHandler(this.erase_btn_Click);
             // 
             // add_btn
             // 
@@ -775,7 +776,7 @@
         private System.Windows.Forms.TableLayoutPanel table_pnl;
         private System.Windows.Forms.Label empty_lbl;
         private System.Windows.Forms.Label from_lbl;
-        private MetroFramework.Controls.MetroTextBox age_txb;
+        private MetroFramework.Controls.MetroTextBox name_txb;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label mac_name_lbl;

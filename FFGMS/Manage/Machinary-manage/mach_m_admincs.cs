@@ -36,5 +36,14 @@ namespace FFGMS.Manage.Machinary_manage
                 img_picb.Image = Image.FromFile(openFileDialog1.FileName);
             }
         }
+
+        private void erase_btn_Click(object sender, EventArgs e)
+        {
+            clearinfo();
+        }
+        void clearinfo()
+        {
+            name_txb.Clear();
+        }
     }
 }

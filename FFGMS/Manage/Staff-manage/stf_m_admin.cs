@@ -290,6 +290,7 @@ namespace FFGMS.Manage.Staff_manage
             picture = conv_picture();
            
             cls_emp s = new cls_emp();
+            s.emp_id = Convert.ToInt16(this.data_view.CurrentRow.Cells[0].Value.ToString());
             s.emp_name = name_txb.Text;
             s.emp_age = age_txb.Text;
             if (radio_male.Checked == true)

@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.memb_add_admin = new MetroFramework.Controls.MetroTabPage();
             this.add_pnl = new System.Windows.Forms.Panel();
             this.table_pnl = new System.Windows.Forms.TableLayoutPanel();
@@ -82,7 +82,7 @@
             this.memb_add_admin.HorizontalScrollbarHighlightOnWheel = false;
             this.memb_add_admin.HorizontalScrollbarSize = 8;
             this.memb_add_admin.Location = new System.Drawing.Point(4, 44);
-            this.memb_add_admin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.memb_add_admin.Margin = new System.Windows.Forms.Padding(2);
             this.memb_add_admin.Name = "memb_add_admin";
             this.memb_add_admin.Size = new System.Drawing.Size(545, 309);
             this.memb_add_admin.Style = MetroFramework.MetroColorStyle.Black;
@@ -101,7 +101,7 @@
             this.add_pnl.Controls.Add(this.panel1);
             this.add_pnl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.add_pnl.Location = new System.Drawing.Point(0, 0);
-            this.add_pnl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.add_pnl.Margin = new System.Windows.Forms.Padding(2);
             this.add_pnl.Name = "add_pnl";
             this.add_pnl.Size = new System.Drawing.Size(545, 309);
             this.add_pnl.TabIndex = 3;
@@ -115,7 +115,7 @@
             this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.23529F));
             this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.76471F));
             this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 42F));
-            this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 187F));
+            this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 188F));
             this.table_pnl.Controls.Add(this.mem_dur_lbl, 0, 0);
             this.table_pnl.Controls.Add(this.dur_txb, 1, 0);
             this.table_pnl.Controls.Add(this.cost_lbl, 2, 0);
@@ -123,7 +123,7 @@
             this.table_pnl.Controls.Add(this.panel3, 3, 4);
             this.table_pnl.Dock = System.Windows.Forms.DockStyle.Top;
             this.table_pnl.Location = new System.Drawing.Point(0, 80);
-            this.table_pnl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.table_pnl.Margin = new System.Windows.Forms.Padding(2);
             this.table_pnl.Name = "table_pnl";
             this.table_pnl.RowCount = 5;
             this.table_pnl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -145,7 +145,7 @@
             this.mem_dur_lbl.Location = new System.Drawing.Point(2, 0);
             this.mem_dur_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.mem_dur_lbl.Name = "mem_dur_lbl";
-            this.mem_dur_lbl.Size = new System.Drawing.Size(148, 29);
+            this.mem_dur_lbl.Size = new System.Drawing.Size(147, 29);
             this.mem_dur_lbl.TabIndex = 43;
             this.mem_dur_lbl.Text = "Membership duration:";
             // 
@@ -156,7 +156,7 @@
             // 
             this.dur_txb.CustomButton.Image = null;
             this.dur_txb.CustomButton.Location = new System.Drawing.Point(135, 1);
-            this.dur_txb.CustomButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dur_txb.CustomButton.Margin = new System.Windows.Forms.Padding(2);
             this.dur_txb.CustomButton.Name = "";
             this.dur_txb.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.dur_txb.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -166,8 +166,8 @@
             this.dur_txb.CustomButton.Visible = false;
             this.dur_txb.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dur_txb.Lines = new string[0];
-            this.dur_txb.Location = new System.Drawing.Point(154, 2);
-            this.dur_txb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dur_txb.Location = new System.Drawing.Point(153, 2);
+            this.dur_txb.Margin = new System.Windows.Forms.Padding(2);
             this.dur_txb.MaxLength = 32767;
             this.dur_txb.Name = "dur_txb";
             this.dur_txb.PasswordChar = '\0';
@@ -189,7 +189,7 @@
             this.cost_lbl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cost_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cost_lbl.ForeColor = System.Drawing.Color.DarkCyan;
-            this.cost_lbl.Location = new System.Drawing.Point(317, 0);
+            this.cost_lbl.Location = new System.Drawing.Point(316, 0);
             this.cost_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.cost_lbl.Name = "cost_lbl";
             this.cost_lbl.Size = new System.Drawing.Size(38, 29);
@@ -202,8 +202,8 @@
             // 
             // 
             this.cost_txb.CustomButton.Image = null;
-            this.cost_txb.CustomButton.Location = new System.Drawing.Point(160, 1);
-            this.cost_txb.CustomButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cost_txb.CustomButton.Location = new System.Drawing.Point(161, 1);
+            this.cost_txb.CustomButton.Margin = new System.Windows.Forms.Padding(2);
             this.cost_txb.CustomButton.Name = "";
             this.cost_txb.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.cost_txb.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -213,8 +213,8 @@
             this.cost_txb.CustomButton.Visible = false;
             this.cost_txb.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cost_txb.Lines = new string[0];
-            this.cost_txb.Location = new System.Drawing.Point(359, 2);
-            this.cost_txb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cost_txb.Location = new System.Drawing.Point(358, 2);
+            this.cost_txb.Margin = new System.Windows.Forms.Padding(2);
             this.cost_txb.MaxLength = 32767;
             this.cost_txb.Name = "cost_txb";
             this.cost_txb.PasswordChar = '\0';
@@ -223,7 +223,7 @@
             this.cost_txb.SelectionLength = 0;
             this.cost_txb.SelectionStart = 0;
             this.cost_txb.ShortcutsEnabled = true;
-            this.cost_txb.Size = new System.Drawing.Size(184, 25);
+            this.cost_txb.Size = new System.Drawing.Size(185, 25);
             this.cost_txb.TabIndex = 48;
             this.cost_txb.UseSelectable = true;
             this.cost_txb.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -234,9 +234,9 @@
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.update_btn);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(360, 105);
+            this.panel3.Location = new System.Drawing.Point(359, 105);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(182, 25);
+            this.panel3.Size = new System.Drawing.Size(183, 25);
             this.panel3.TabIndex = 71;
             // 
             // panel5
@@ -245,7 +245,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(182, 25);
+            this.panel5.Size = new System.Drawing.Size(183, 25);
             this.panel5.TabIndex = 6;
             // 
             // btn_grbx
@@ -258,9 +258,9 @@
             this.btn_grbx.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_grbx.LineColor = System.Drawing.Color.Transparent;
             this.btn_grbx.Location = new System.Drawing.Point(0, 0);
-            this.btn_grbx.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_grbx.Margin = new System.Windows.Forms.Padding(2);
             this.btn_grbx.Name = "btn_grbx";
-            this.btn_grbx.Size = new System.Drawing.Size(182, 25);
+            this.btn_grbx.Size = new System.Drawing.Size(183, 25);
             this.btn_grbx.TabIndex = 65;
             this.btn_grbx.TextLocation = new System.Drawing.Point(10, 8);
             // 
@@ -278,7 +278,7 @@
             this.erase_btn.Image = global::FFGMS.Properties.Resources.icons8_erase_32;
             this.erase_btn.ImageSize = new System.Drawing.Size(15, 15);
             this.erase_btn.Location = new System.Drawing.Point(0, 0);
-            this.erase_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.erase_btn.Margin = new System.Windows.Forms.Padding(2);
             this.erase_btn.Name = "erase_btn";
             this.erase_btn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.erase_btn.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -302,8 +302,8 @@
             this.add_btn.ForeColor = System.Drawing.Color.White;
             this.add_btn.Image = global::FFGMS.Properties.Resources.icons8_plus_32;
             this.add_btn.ImageSize = new System.Drawing.Size(15, 15);
-            this.add_btn.Location = new System.Drawing.Point(97, 0);
-            this.add_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.add_btn.Location = new System.Drawing.Point(98, 0);
+            this.add_btn.Margin = new System.Windows.Forms.Padding(2);
             this.add_btn.Name = "add_btn";
             this.add_btn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.add_btn.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -330,14 +330,14 @@
             this.update_btn.Image = global::FFGMS.Properties.Resources.icons8_swap_32;
             this.update_btn.ImageSize = new System.Drawing.Size(15, 15);
             this.update_btn.Location = new System.Drawing.Point(0, 0);
-            this.update_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.update_btn.Margin = new System.Windows.Forms.Padding(2);
             this.update_btn.Name = "update_btn";
             this.update_btn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.update_btn.OnHoverBorderColor = System.Drawing.Color.Black;
             this.update_btn.OnHoverForeColor = System.Drawing.Color.White;
             this.update_btn.OnHoverImage = null;
             this.update_btn.OnPressedColor = System.Drawing.Color.Black;
-            this.update_btn.Size = new System.Drawing.Size(182, 25);
+            this.update_btn.Size = new System.Drawing.Size(183, 25);
             this.update_btn.TabIndex = 4;
             this.update_btn.Text = "Change";
             this.update_btn.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -348,7 +348,7 @@
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 40);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(545, 40);
             this.panel2.TabIndex = 4;
@@ -358,7 +358,7 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(545, 40);
             this.panel1.TabIndex = 3;
@@ -371,7 +371,7 @@
             this.memb_tab_admin.FontWeight = MetroFramework.MetroTabControlWeight.Bold;
             this.memb_tab_admin.ItemSize = new System.Drawing.Size(266, 40);
             this.memb_tab_admin.Location = new System.Drawing.Point(0, 0);
-            this.memb_tab_admin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.memb_tab_admin.Margin = new System.Windows.Forms.Padding(2);
             this.memb_tab_admin.Name = "memb_tab_admin";
             this.memb_tab_admin.SelectedIndex = 1;
             this.memb_tab_admin.Size = new System.Drawing.Size(553, 357);
@@ -392,7 +392,7 @@
             this.memb_view_admin.HorizontalScrollbarHighlightOnWheel = false;
             this.memb_view_admin.HorizontalScrollbarSize = 8;
             this.memb_view_admin.Location = new System.Drawing.Point(4, 44);
-            this.memb_view_admin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.memb_view_admin.Margin = new System.Windows.Forms.Padding(2);
             this.memb_view_admin.Name = "memb_view_admin";
             this.memb_view_admin.Size = new System.Drawing.Size(545, 309);
             this.memb_view_admin.TabIndex = 1;
@@ -411,7 +411,7 @@
             this.view_pnl.Controls.Add(this.data_view, 0, 1);
             this.view_pnl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.view_pnl.Location = new System.Drawing.Point(0, 0);
-            this.view_pnl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.view_pnl.Margin = new System.Windows.Forms.Padding(2);
             this.view_pnl.Name = "view_pnl";
             this.view_pnl.RowCount = 3;
             this.view_pnl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.42857F));
@@ -428,7 +428,7 @@
             this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.91667F));
             this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
             this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 87F));
-            this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 202F));
+            this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 203F));
             this.view_menu.Controls.Add(this.search_panel, 4, 0);
             this.view_menu.Controls.Add(this.gunaButton3, 0, 0);
             this.view_menu.Controls.Add(this.gunaButton4, 0, 0);
@@ -436,11 +436,11 @@
             this.view_menu.Controls.Add(this.gunaButton2, 0, 0);
             this.view_menu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.view_menu.Location = new System.Drawing.Point(2, 2);
-            this.view_menu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.view_menu.Margin = new System.Windows.Forms.Padding(2);
             this.view_menu.Name = "view_menu";
             this.view_menu.RowCount = 1;
             this.view_menu.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.view_menu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.view_menu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.view_menu.Size = new System.Drawing.Size(541, 29);
             this.view_menu.TabIndex = 4;
             // 
@@ -450,10 +450,10 @@
             this.search_panel.Controls.Add(this.search_txb);
             this.search_panel.Controls.Add(this.search_picbx);
             this.search_panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.search_panel.Location = new System.Drawing.Point(340, 2);
-            this.search_panel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.search_panel.Location = new System.Drawing.Point(339, 2);
+            this.search_panel.Margin = new System.Windows.Forms.Padding(2);
             this.search_panel.Name = "search_panel";
-            this.search_panel.Size = new System.Drawing.Size(199, 27);
+            this.search_panel.Size = new System.Drawing.Size(200, 27);
             this.search_panel.TabIndex = 4;
             // 
             // search_txb
@@ -462,10 +462,10 @@
             // 
             // 
             this.search_txb.CustomButton.Image = null;
-            this.search_txb.CustomButton.Location = new System.Drawing.Point(105, 1);
-            this.search_txb.CustomButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.search_txb.CustomButton.Location = new System.Drawing.Point(140, 1);
+            this.search_txb.CustomButton.Margin = new System.Windows.Forms.Padding(2);
             this.search_txb.CustomButton.Name = "";
-            this.search_txb.CustomButton.Size = new System.Drawing.Size(19, 20);
+            this.search_txb.CustomButton.Size = new System.Drawing.Size(25, 25);
             this.search_txb.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.search_txb.CustomButton.TabIndex = 1;
             this.search_txb.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -473,8 +473,8 @@
             this.search_txb.CustomButton.Visible = false;
             this.search_txb.Dock = System.Windows.Forms.DockStyle.Right;
             this.search_txb.Lines = new string[0];
-            this.search_txb.Location = new System.Drawing.Point(33, 0);
-            this.search_txb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.search_txb.Location = new System.Drawing.Point(34, 0);
+            this.search_txb.Margin = new System.Windows.Forms.Padding(2);
             this.search_txb.MaxLength = 32767;
             this.search_txb.Name = "search_txb";
             this.search_txb.PasswordChar = '\0';
@@ -495,7 +495,7 @@
             this.search_picbx.Dock = System.Windows.Forms.DockStyle.Left;
             this.search_picbx.Image = global::FFGMS.Properties.Resources.search_64px;
             this.search_picbx.Location = new System.Drawing.Point(0, 0);
-            this.search_picbx.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.search_picbx.Margin = new System.Windows.Forms.Padding(2);
             this.search_picbx.Name = "search_picbx";
             this.search_picbx.Size = new System.Drawing.Size(29, 27);
             this.search_picbx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -516,8 +516,8 @@
             this.gunaButton3.ForeColor = System.Drawing.Color.White;
             this.gunaButton3.Image = global::FFGMS.Properties.Resources.icons8_print_32;
             this.gunaButton3.ImageSize = new System.Drawing.Size(15, 15);
-            this.gunaButton3.Location = new System.Drawing.Point(253, 2);
-            this.gunaButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaButton3.Location = new System.Drawing.Point(252, 2);
+            this.gunaButton3.Margin = new System.Windows.Forms.Padding(2);
             this.gunaButton3.Name = "gunaButton3";
             this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton3.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -537,13 +537,14 @@
             this.gunaButton4.BorderColor = System.Drawing.Color.Black;
             this.gunaButton4.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaButton4.Enabled = false;
             this.gunaButton4.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaButton4.ForeColor = System.Drawing.Color.White;
             this.gunaButton4.Image = global::FFGMS.Properties.Resources.icons8_delete_32;
             this.gunaButton4.ImageSize = new System.Drawing.Size(15, 15);
-            this.gunaButton4.Location = new System.Drawing.Point(163, 2);
-            this.gunaButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaButton4.Location = new System.Drawing.Point(162, 2);
+            this.gunaButton4.Margin = new System.Windows.Forms.Padding(2);
             this.gunaButton4.Name = "gunaButton4";
             this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton4.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -564,13 +565,14 @@
             this.gunaButton1.BorderColor = System.Drawing.Color.Black;
             this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaButton1.Enabled = false;
             this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaButton1.ForeColor = System.Drawing.Color.White;
             this.gunaButton1.Image = global::FFGMS.Properties.Resources.icons8_swap_32;
             this.gunaButton1.ImageSize = new System.Drawing.Size(15, 15);
-            this.gunaButton1.Location = new System.Drawing.Point(78, 2);
-            this.gunaButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaButton1.Location = new System.Drawing.Point(77, 2);
+            this.gunaButton1.Margin = new System.Windows.Forms.Padding(2);
             this.gunaButton1.Name = "gunaButton1";
             this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -597,14 +599,14 @@
             this.gunaButton2.Image = global::FFGMS.Properties.Resources.icons8_view_module_32;
             this.gunaButton2.ImageSize = new System.Drawing.Size(15, 15);
             this.gunaButton2.Location = new System.Drawing.Point(2, 2);
-            this.gunaButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaButton2.Margin = new System.Windows.Forms.Padding(2);
             this.gunaButton2.Name = "gunaButton2";
             this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaButton2.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton2.OnHoverImage = null;
             this.gunaButton2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton2.Size = new System.Drawing.Size(72, 27);
+            this.gunaButton2.Size = new System.Drawing.Size(71, 27);
             this.gunaButton2.TabIndex = 2;
             this.gunaButton2.Text = "View";
             this.gunaButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -612,35 +614,35 @@
             // 
             // data_view
             // 
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
-            this.data_view.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.data_view.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.data_view.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.data_view.BackgroundColor = System.Drawing.SystemColors.Control;
             this.data_view.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.data_view.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.data_view.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.data_view.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.data_view.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.data_view.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.data_view.DefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.data_view.DefaultCellStyle = dataGridViewCellStyle3;
             this.data_view.Dock = System.Windows.Forms.DockStyle.Fill;
             this.data_view.EnableHeadersVisualStyles = false;
             this.data_view.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.data_view.Location = new System.Drawing.Point(2, 35);
-            this.data_view.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.data_view.Margin = new System.Windows.Forms.Padding(2);
             this.data_view.Name = "data_view";
             this.data_view.RowHeadersVisible = false;
             this.data_view.RowTemplate.Height = 24;
@@ -681,7 +683,7 @@
             this.ClientSize = new System.Drawing.Size(553, 357);
             this.Controls.Add(this.memb_tab_admin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "memb_m_admin";
             this.Text = "memb_m_admin";
             this.Load += new System.EventHandler(this.memb_m_admin_Load);

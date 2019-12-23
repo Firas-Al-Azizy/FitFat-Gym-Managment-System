@@ -11,7 +11,7 @@ namespace FFGMS.db_con
 {
     class cls_emp
     {
-
+        public int emp_id { get; set; }
         public string emp_name { get; set; }
         public string emp_age { get; set; }
         public string emp_gender { get; set; }
@@ -177,6 +177,11 @@ namespace FFGMS.db_con
                     p = new SqlParameter("@Pemp_pos", SqlDbType.NVarChar)
                     {
                         Value = o.emp_pos
+                    };
+                    SqlCmd.Parameters.Add(p);
+                    p = new SqlParameter("@Pemp_id", SqlDbType.Int)
+                    {
+                        Value = o.emp_id
                     };
                     SqlCmd.Parameters.Add(p);
 

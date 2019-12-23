@@ -242,8 +242,8 @@ namespace FFGMS.Manage.Staff_manage
             }
             catch (Exception ex)
             {
-
-                MessageBox.Show("image in db is in a wrong format " + "\n Error code 00039", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                img_picb.Image = null;
+                //MessageBox.Show("image in db is in a wrong format " + "\n Error code 00039", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             panel5.Visible = false;
             update_btn.Enabled = true;

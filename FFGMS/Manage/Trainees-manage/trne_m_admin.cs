@@ -61,7 +61,7 @@ namespace FFGMS.Manage.Trainees_manage
 
         int selecting(string cmd)
         {
-            int id=0;
+            int id = 0;
             DataTable dtt = new DataTable();
             con.Open();
             SqlDataAdapter adapter = new SqlDataAdapter(cmd, con);
@@ -70,10 +70,11 @@ namespace FFGMS.Manage.Trainees_manage
             con.Close();
             if (dtt.Rows.Count > 0)
             {
-                 id = (int)dtt.Rows[0][0];
+                id = (int)dtt.Rows[0][0];
                 return id;
             }
-            else{
+            else
+            {
                 MessageBox.Show("cannot find what you need");
             }
             return id = -1;
@@ -86,6 +87,8 @@ namespace FFGMS.Manage.Trainees_manage
             name_txb.Clear();
             pho_txb.Clear();
             uname_txb.Clear();
+            hig_txb.Clear();
+            wid_txb.Clear();
             mem_combx.SelectedIndex = -1;
             gr_combx.SelectedIndex = -1;
             pro_combx.SelectedIndex = -1;
@@ -110,7 +113,7 @@ namespace FFGMS.Manage.Trainees_manage
             da2.Fill(dtt2);
             gr_combx.DataSource = dtt2;
             gr_combx.DisplayMember = "tg_id";
-            
+
             //
             DataTable dtt3 = new DataTable();
             SqlCommand cmd3 = new SqlCommand("SELECT [pro_id]FROM [db_ffgms_new].[dbo].[program]", con);
@@ -205,27 +208,27 @@ namespace FFGMS.Manage.Trainees_manage
 
         private void gunaButton2_Click(object sender, EventArgs e)
         {
-                //data_view.Columns[1].HeaderCell.Value= "id";
-                DataTable dtt = new DataTable();
-                //con.Open();
-                //SqlCommand myCmd = new SqlCommand("[Pkgemp.SelectAll]", con);
-                //myCmd.CommandType = CommandType.StoredProcedure;
-                //SqlDataAdapter da = new SqlDataAdapter(myCmd);
-                //da.Fill(dt);
-                dtt = cls_trne.selectAll();
-                data_view.DataSource = dtt;
-                if (data_view.RowCount > 0)
-                {
-                    gunaButton1.Enabled = true;
-                    gunaButton4.Enabled = true;
-                }
-                else
-                {
-                    MessageBox.Show("data that you are looking for does not exist");
-                    gunaButton4.Enabled = false;
-                     gunaButton1.Enabled = true;
+            //data_view.Columns[1].HeaderCell.Value= "id";
+            DataTable dtt = new DataTable();
+            //con.Open();
+            //SqlCommand myCmd = new SqlCommand("[Pkgemp.SelectAll]", con);
+            //myCmd.CommandType = CommandType.StoredProcedure;
+            //SqlDataAdapter da = new SqlDataAdapter(myCmd);
+            //da.Fill(dt);
+            dtt = cls_trne.selectAll();
+            data_view.DataSource = dtt;
+            if (data_view.RowCount > 0)
+            {
+                gunaButton1.Enabled = true;
+                gunaButton4.Enabled = true;
             }
-           
+            else
+            {
+                MessageBox.Show("data that you are looking for does not exist");
+                gunaButton4.Enabled = false;
+                gunaButton1.Enabled = true;
+            }
+
         }
 
         private void gunaButton3_Click(object sender, EventArgs e)
@@ -236,6 +239,75 @@ namespace FFGMS.Manage.Trainees_manage
         private void data_view_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void gunaButton1_Click(object sender, EventArgs e)
+        {
+            trane_tab_admin.SelectedIndex = 0;
+            name_txb.Text = this.data_view.CurrentRow.Cells[1].Value.ToString();
+            age_txb.Text = this.data_view.CurrentRow.Cells[2].Value.ToString();
+            if (this.data_view.CurrentRow.Cells[3].Value.ToString() == "Male")
+            {
+                radio_male.Checked = true;
+            }
+            else if (this.data_view.CurrentRow.Cells[3].Value.ToString() == "Female")
+            {
+                radio_female.Checked = true;
+            }
+            email_txb.Text = this.data_view.CurrentRow.Cells[4].Value.ToString();
+            pho_txb.Text = this.data_view.CurrentRow.Cells[5].Value.ToString();
+            hig_txb.Text = this.data_view.CurrentRow.Cells[6].Value.ToString();
+            wid_txb.Text = this.data_view.CurrentRow.Cells[7].Value.ToString();
+            adr_txb.Text = this.data_view.CurrentRow.Cells[8].Value.ToString();
+            uname_txb.Text = this.data_view.CurrentRow.Cells[9].Value.ToString();
+            // img_picb.Image = this.data_view.CurrentRow.Cells[10].Value.ToString();
+            mem_combx.Text = this.data_view.CurrentRow.Cells[11].Value.ToString();
+            gr_combx.Text = this.data_view.CurrentRow.Cells[12].Value.ToString();
+            pro_combx.Text = this.data_view.CurrentRow.Cells[13].Value.ToString();
+
+            DataTable dt = new DataTable();
+            try
+            { // this methode to take employee img from db to ds then to dt
+                dt = GetstdImg(name_txb.Text);
+                if (dt.Rows.Count > 0)
+                {
+                    byte[] img = (byte[])dt.Rows[0][0];
+
+                    MemoryStream ms = new MemoryStream(img);
+                    img_picb.Image = Image.FromStream(ms);
+                }
+                else
+                {
+                    img_picb.Image = null;
+                }
+            }
+            catch (Exception ex)
+            {
+                img_picb.Image = null;
+               // MessageBox.Show("image in db is in a wrong format " + "\n Error code 00039", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            panel6.Visible = false;
+            update_btn.Enabled = true;
+        }
+        public DataTable GetstdImg(string name_txb)
+        {
+            DataTable dtt = new DataTable();
+            try
+            {
+
+                SqlCommand cmd = con.CreateCommand();
+                cmd.CommandText = "[Pkgtra.selectImage]";
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@Ptra_name", SqlDbType.NVarChar).Value = this.data_view.CurrentRow.Cells[1].Value.ToString();
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dtt);
+                return dtt;
+            }
+            catch (Exception)
+            {
+                return dtt;
+            }
         }
     }
 }

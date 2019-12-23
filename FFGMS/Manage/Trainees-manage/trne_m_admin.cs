@@ -368,5 +368,45 @@ namespace FFGMS.Manage.Trainees_manage
                 gunaButton4.Enabled = false;
             }
         }
+
+        private void update_btn_Click_1(object sender, EventArgs e)
+        {
+            byte[] picture;
+            int inserted;
+            picture = conv_picture();
+
+            cls_trne s = new cls_trne();
+            s.tra_name = name_txb.Text;
+            s.tra_age = age_txb.Text;
+            if (radio_male.Checked == true)
+            {
+                s.tra_gender = radio_male.Text;
+            }
+            else if (radio_female.Checked == true)
+            {
+                s.tra_gender = radio_female.Text;
+            }
+            s.tra_email = email_txb.Text;
+            s.tra_phone = pho_txb.Text;
+            s.tra_height = hig_txb.Text;
+            s.tra_weight = wid_txb.Text;
+            s.tra_address = adr_txb.Text;
+            s.tra_userName = uname_txb.Text;
+            s.tra_img = picture;
+            s.mem_id = selecting("select[mem_id] from[db_ffgms_new].[dbo].[membership] where [mem_duration] = '" + mem_combx.Text + "' ");
+            s.tg_id = int.Parse(gr_combx.Text);
+            s.pro_id = int.Parse(pro_combx.Text);
+
+
+            inserted = cls_trne.updateData(s);
+            if (inserted > 0)
+            {
+                clearinfo();
+                MessageBox.Show("Has successfully updating  employee ^_^");
+            }
+            else
+                MessageBox.Show("Has NOT  completed the process");
+
+        }
     }
 }

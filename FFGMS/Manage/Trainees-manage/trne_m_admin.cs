@@ -334,5 +334,39 @@ namespace FFGMS.Manage.Trainees_manage
                 gunaButton4.Enabled = false;
             }
         }
+
+        private void search_picbx_Click(object sender, EventArgs e)
+        {
+            DataTable dtt = new DataTable();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandText = "[Pkgtra.search]";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@Ptra_name", SqlDbType.NVarChar).Value = search_txb.Text;
+            cmd.Parameters.Add("@Ptra_age", SqlDbType.NVarChar).Value = search_txb.Text;
+            cmd.Parameters.Add("@Ptra_gender", SqlDbType.NVarChar).Value = search_txb.Text;
+            cmd.Parameters.Add("@Ptra_email", SqlDbType.NVarChar).Value = search_txb.Text;
+            cmd.Parameters.Add("@Ptra_phone", SqlDbType.NVarChar).Value = search_txb.Text;
+            cmd.Parameters.Add("@Ptra_address", SqlDbType.NVarChar).Value = search_txb.Text;
+            cmd.Parameters.Add("@Ptra_userName", SqlDbType.NVarChar).Value = search_txb.Text;
+            cmd.Parameters.Add("@Ptra_height", SqlDbType.NVarChar).Value = search_txb.Text;
+            cmd.Parameters.Add("@Ptra_weight", SqlDbType.NVarChar).Value = search_txb.Text;
+            
+
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dtt);
+            data_view.DataSource = dtt;
+            if (data_view.RowCount > 0)
+            {
+                gunaButton1.Enabled = true;
+                gunaButton4.Enabled = true;
+            }
+            else
+            {
+                MessageBox.Show("data that you are looking for does not exist");
+                gunaButton1.Enabled = false;
+                gunaButton4.Enabled = false;
+            }
+        }
     }
 }

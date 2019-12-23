@@ -176,6 +176,74 @@ namespace FFGMS.Manage.Machinary_manage
                 return dtt;
             }
         }
+
+        private void update_btn_Click(object sender, EventArgs e)
+        {
+            byte[] picture;
+            int inserted;
+
+            picture = conv_picture();
+            cls_mac s = new cls_mac();
+            s.mac_name = name_txb.Text;
+            s.mac_img = picture;
+            inserted = cls_mac.updateData(s);
+            if (inserted > 0)
+            {
+                clearinfo();
+                MessageBox.Show("Has successfully updating a machain ^_^");
+            }
+            else
+                MessageBox.Show("Has NOT  completed the process");
+        }
+
+        private void search_picbx_Click(object sender, EventArgs e)
+        {
+
+            DataTable dtt = new DataTable();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandText = "[Pkgmac.search]";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@Pmac_name", SqlDbType.NVarChar).Value = search_txb.Text;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dtt);
+            data_view.DataSource = dtt;
+            if (data_view.RowCount > 0)
+            {
+                gunaButton1.Enabled = true;
+                gunaButton4.Enabled = true;
+            }
+            else
+            {
+                MessageBox.Show("data that you are looking for does not exist");
+                gunaButton1.Enabled = false;
+                gunaButton4.Enabled = false;
+            }
+        }
+
+        private void gunaButton4_Click(object sender, EventArgs e)
+        {
+            DataTable dtt = new DataTable();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandText = "[Pkgmac.delete]";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@Pmac_id", SqlDbType.NVarChar).Value = this.data_view.CurrentRow.Cells[0].Value.ToString();
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dtt);
+            //data_view.DataSource = dtt;
+            if (data_view.RowCount > 0)
+            {
+                gunaButton1.Enabled = true;
+                gunaButton4.Enabled = true;
+
+            }
+            else
+            {
+                MessageBox.Show("data that you are looking for does not exist");
+                gunaButton1.Enabled = false;
+                gunaButton4.Enabled = false;
+            }
+        }
     }
     }
     

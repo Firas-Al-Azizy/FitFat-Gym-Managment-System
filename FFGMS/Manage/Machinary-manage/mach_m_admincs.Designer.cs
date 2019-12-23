@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
             this.mach_view_admin = new MetroFramework.Controls.MetroTabPage();
             this.view_pnl = new System.Windows.Forms.TableLayoutPanel();
             this.view_menu = new System.Windows.Forms.TableLayoutPanel();
@@ -55,14 +55,14 @@
             this.mac_name_lbl = new System.Windows.Forms.Label();
             this.name_txb = new MetroFramework.Controls.MetroTextBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.btn_grbx = new Guna.UI.WinForms.GunaGroupBox();
-            this.erase_btn = new Guna.UI.WinForms.GunaButton();
-            this.add_btn = new Guna.UI.WinForms.GunaButton();
             this.update_btn = new Guna.UI.WinForms.GunaButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.btn_grbx = new Guna.UI.WinForms.GunaGroupBox();
+            this.add_btn = new Guna.UI.WinForms.GunaButton();
+            this.erase_btn = new Guna.UI.WinForms.GunaButton();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.mach_view_admin.SuspendLayout();
             this.view_pnl.SuspendLayout();
             this.view_menu.SuspendLayout();
@@ -77,8 +77,8 @@
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_picb)).BeginInit();
             this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.btn_grbx.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // mach_view_admin
@@ -199,6 +199,7 @@
             this.search_picbx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.search_picbx.TabIndex = 4;
             this.search_picbx.TabStop = false;
+            this.search_picbx.Click += new System.EventHandler(this.search_picbx_Click);
             // 
             // gunaButton3
             // 
@@ -251,6 +252,7 @@
             this.gunaButton4.TabIndex = 4;
             this.gunaButton4.Text = "Delete";
             this.gunaButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.gunaButton4.Click += new System.EventHandler(this.gunaButton4_Click);
             // 
             // gunaButton1
             // 
@@ -308,30 +310,30 @@
             // 
             // data_view
             // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.data_view.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.White;
+            this.data_view.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle25;
             this.data_view.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.data_view.BackgroundColor = System.Drawing.SystemColors.Control;
             this.data_view.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.data_view.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.data_view.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.data_view.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.data_view.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle26;
             this.data_view.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.data_view.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle27.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.data_view.DefaultCellStyle = dataGridViewCellStyle27;
             this.data_view.Dock = System.Windows.Forms.DockStyle.Fill;
             this.data_view.EnableHeadersVisualStyles = false;
             this.data_view.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -599,83 +601,6 @@
             this.panel5.Size = new System.Drawing.Size(177, 22);
             this.panel5.TabIndex = 71;
             // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.btn_grbx);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(177, 22);
-            this.panel6.TabIndex = 6;
-            // 
-            // btn_grbx
-            // 
-            this.btn_grbx.BackColor = System.Drawing.Color.Transparent;
-            this.btn_grbx.BaseColor = System.Drawing.Color.White;
-            this.btn_grbx.BorderColor = System.Drawing.Color.Transparent;
-            this.btn_grbx.Controls.Add(this.erase_btn);
-            this.btn_grbx.Controls.Add(this.add_btn);
-            this.btn_grbx.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_grbx.LineColor = System.Drawing.Color.Transparent;
-            this.btn_grbx.Location = new System.Drawing.Point(0, 0);
-            this.btn_grbx.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_grbx.Name = "btn_grbx";
-            this.btn_grbx.Size = new System.Drawing.Size(177, 22);
-            this.btn_grbx.TabIndex = 65;
-            this.btn_grbx.TextLocation = new System.Drawing.Point(10, 8);
-            // 
-            // erase_btn
-            // 
-            this.erase_btn.AnimationHoverSpeed = 0.07F;
-            this.erase_btn.AnimationSpeed = 0.03F;
-            this.erase_btn.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
-            this.erase_btn.BorderColor = System.Drawing.Color.Black;
-            this.erase_btn.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.erase_btn.Dock = System.Windows.Forms.DockStyle.Left;
-            this.erase_btn.FocusedColor = System.Drawing.Color.Empty;
-            this.erase_btn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.erase_btn.ForeColor = System.Drawing.Color.White;
-            this.erase_btn.Image = global::FFGMS.Properties.Resources.icons8_erase_32;
-            this.erase_btn.ImageSize = new System.Drawing.Size(15, 15);
-            this.erase_btn.Location = new System.Drawing.Point(0, 0);
-            this.erase_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.erase_btn.Name = "erase_btn";
-            this.erase_btn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.erase_btn.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.erase_btn.OnHoverForeColor = System.Drawing.Color.White;
-            this.erase_btn.OnHoverImage = null;
-            this.erase_btn.OnPressedColor = System.Drawing.Color.Black;
-            this.erase_btn.Size = new System.Drawing.Size(86, 22);
-            this.erase_btn.TabIndex = 1;
-            this.erase_btn.Text = "Erase";
-            this.erase_btn.Click += new System.EventHandler(this.erase_btn_Click);
-            // 
-            // add_btn
-            // 
-            this.add_btn.AnimationHoverSpeed = 0.07F;
-            this.add_btn.AnimationSpeed = 0.03F;
-            this.add_btn.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
-            this.add_btn.BorderColor = System.Drawing.Color.Black;
-            this.add_btn.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.add_btn.Dock = System.Windows.Forms.DockStyle.Right;
-            this.add_btn.FocusedColor = System.Drawing.Color.Empty;
-            this.add_btn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.add_btn.ForeColor = System.Drawing.Color.White;
-            this.add_btn.Image = global::FFGMS.Properties.Resources.icons8_plus_32;
-            this.add_btn.ImageSize = new System.Drawing.Size(15, 15);
-            this.add_btn.Location = new System.Drawing.Point(92, 0);
-            this.add_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.add_btn.Name = "add_btn";
-            this.add_btn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.add_btn.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.add_btn.OnHoverForeColor = System.Drawing.Color.White;
-            this.add_btn.OnHoverImage = null;
-            this.add_btn.OnPressedColor = System.Drawing.Color.Black;
-            this.add_btn.Size = new System.Drawing.Size(85, 22);
-            this.add_btn.TabIndex = 0;
-            this.add_btn.Text = "Add";
-            this.add_btn.Click += new System.EventHandler(this.add_btn_Click);
-            // 
             // update_btn
             // 
             this.update_btn.AnimationHoverSpeed = 0.07F;
@@ -702,6 +627,7 @@
             this.update_btn.TabIndex = 4;
             this.update_btn.Text = "Change";
             this.update_btn.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.update_btn.Click += new System.EventHandler(this.update_btn_Click);
             // 
             // panel2
             // 
@@ -726,6 +652,83 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // btn_grbx
+            // 
+            this.btn_grbx.BackColor = System.Drawing.Color.Transparent;
+            this.btn_grbx.BaseColor = System.Drawing.Color.White;
+            this.btn_grbx.BorderColor = System.Drawing.Color.Transparent;
+            this.btn_grbx.Controls.Add(this.erase_btn);
+            this.btn_grbx.Controls.Add(this.add_btn);
+            this.btn_grbx.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_grbx.LineColor = System.Drawing.Color.Transparent;
+            this.btn_grbx.Location = new System.Drawing.Point(0, 0);
+            this.btn_grbx.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_grbx.Name = "btn_grbx";
+            this.btn_grbx.Size = new System.Drawing.Size(177, 22);
+            this.btn_grbx.TabIndex = 65;
+            this.btn_grbx.TextLocation = new System.Drawing.Point(10, 8);
+            // 
+            // add_btn
+            // 
+            this.add_btn.AnimationHoverSpeed = 0.07F;
+            this.add_btn.AnimationSpeed = 0.03F;
+            this.add_btn.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
+            this.add_btn.BorderColor = System.Drawing.Color.Black;
+            this.add_btn.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.add_btn.Dock = System.Windows.Forms.DockStyle.Right;
+            this.add_btn.FocusedColor = System.Drawing.Color.Empty;
+            this.add_btn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_btn.ForeColor = System.Drawing.Color.White;
+            this.add_btn.Image = global::FFGMS.Properties.Resources.icons8_plus_32;
+            this.add_btn.ImageSize = new System.Drawing.Size(15, 15);
+            this.add_btn.Location = new System.Drawing.Point(92, 0);
+            this.add_btn.Margin = new System.Windows.Forms.Padding(2);
+            this.add_btn.Name = "add_btn";
+            this.add_btn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.add_btn.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.add_btn.OnHoverForeColor = System.Drawing.Color.White;
+            this.add_btn.OnHoverImage = null;
+            this.add_btn.OnPressedColor = System.Drawing.Color.Black;
+            this.add_btn.Size = new System.Drawing.Size(85, 22);
+            this.add_btn.TabIndex = 0;
+            this.add_btn.Text = "Add";
+            this.add_btn.Click += new System.EventHandler(this.add_btn_Click);
+            // 
+            // erase_btn
+            // 
+            this.erase_btn.AnimationHoverSpeed = 0.07F;
+            this.erase_btn.AnimationSpeed = 0.03F;
+            this.erase_btn.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
+            this.erase_btn.BorderColor = System.Drawing.Color.Black;
+            this.erase_btn.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.erase_btn.Dock = System.Windows.Forms.DockStyle.Left;
+            this.erase_btn.FocusedColor = System.Drawing.Color.Empty;
+            this.erase_btn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.erase_btn.ForeColor = System.Drawing.Color.White;
+            this.erase_btn.Image = global::FFGMS.Properties.Resources.icons8_erase_32;
+            this.erase_btn.ImageSize = new System.Drawing.Size(15, 15);
+            this.erase_btn.Location = new System.Drawing.Point(0, 0);
+            this.erase_btn.Margin = new System.Windows.Forms.Padding(2);
+            this.erase_btn.Name = "erase_btn";
+            this.erase_btn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.erase_btn.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.erase_btn.OnHoverForeColor = System.Drawing.Color.White;
+            this.erase_btn.OnHoverImage = null;
+            this.erase_btn.OnPressedColor = System.Drawing.Color.Black;
+            this.erase_btn.Size = new System.Drawing.Size(86, 22);
+            this.erase_btn.TabIndex = 1;
+            this.erase_btn.Text = "Erase";
+            this.erase_btn.Click += new System.EventHandler(this.erase_btn_Click);
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.btn_grbx);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(177, 22);
+            this.panel6.TabIndex = 6;
             // 
             // mach_m_admincs
             // 
@@ -754,8 +757,8 @@
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.img_picb)).EndInit();
             this.panel5.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
             this.btn_grbx.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -788,11 +791,11 @@
         private Guna.UI.WinForms.GunaButton sel_img_btn;
         private Guna.UI.WinForms.GunaCirclePictureBox img_picb;
         private System.Windows.Forms.Panel panel5;
+        private Guna.UI.WinForms.GunaButton update_btn;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Panel panel6;
         private Guna.UI.WinForms.GunaGroupBox btn_grbx;
         private Guna.UI.WinForms.GunaButton erase_btn;
         private Guna.UI.WinForms.GunaButton add_btn;
-        private Guna.UI.WinForms.GunaButton update_btn;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

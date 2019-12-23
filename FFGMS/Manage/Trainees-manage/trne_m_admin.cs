@@ -402,7 +402,7 @@ namespace FFGMS.Manage.Trainees_manage
             if (inserted > 0)
             {
                 clearinfo();
-                MessageBox.Show("Has successfully updating  employee ^_^");
+                MessageBox.Show("Has successfully updating  trainee ^_^");
             }
             else
                 MessageBox.Show("Has NOT  completed the process");

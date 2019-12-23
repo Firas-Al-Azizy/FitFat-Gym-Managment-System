@@ -309,5 +309,30 @@ namespace FFGMS.Manage.Trainees_manage
                 return dtt;
             }
         }
+
+        private void gunaButton4_Click(object sender, EventArgs e)
+        {
+            DataTable dtt = new DataTable();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandText = "[Pkgtra.delete]";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@Ptra_id", SqlDbType.NVarChar).Value = this.data_view.CurrentRow.Cells[0].Value.ToString();
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dtt);
+            //data_view.DataSource = dtt;
+            if (data_view.RowCount > 0)
+            {
+                gunaButton1.Enabled = true;
+                gunaButton4.Enabled = true;
+
+            }
+            else
+            {
+                MessageBox.Show("data that you are looking for does not exist");
+                gunaButton1.Enabled = false;
+                gunaButton4.Enabled = false;
+            }
+        }
     }
 }

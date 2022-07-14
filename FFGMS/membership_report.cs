@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FFGMS.Reports.Staff
+namespace FFGMS
 {
-    public partial class staff_report : Form
+    public partial class membership_report : Form
     {
-        public staff_report()
+        public membership_report()
         {
             InitializeComponent();
         }

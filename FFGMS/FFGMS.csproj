@@ -88,6 +88,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bill.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bill.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bill_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bill_report.Designer.cs">
+      <DependentUpon>bill_report.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboards\Admin_Dashbord.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +114,28 @@
     </Compile>
     <Compile Include="db_con\cls_emp.cs" />
     <Compile Include="db_con\cls_db.cs" />
+    <Compile Include="db_con\cls_gr.cs" />
+    <Compile Include="db_con\cls_mac.cs" />
+    <Compile Include="db_con\cls_mem.cs" />
+    <Compile Include="db_con\cls_trne.cs" />
+    <Compile Include="group_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="group_report.Designer.cs">
+      <DependentUpon>group_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="machien.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>machien.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="machine_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="machine_report.Designer.cs">
+      <DependentUpon>machine_report.cs</DependentUpon>
+    </Compile>
     <Compile Include="Manage\Group-manage\gr_m_admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,6 +226,18 @@
     <Compile Include="Manage\Workout-manage\wrkot_m_trainer.Designer.cs">
       <DependentUpon>wrkot_m_trainer.cs</DependentUpon>
     </Compile>
+    <Compile Include="membership.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>membership.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="membership_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="membership_report.Designer.cs">
+      <DependentUpon>membership_report.cs</DependentUpon>
+    </Compile>
     <Compile Include="profiles\admin_profile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -217,24 +263,18 @@
       <DependentUpon>trainer_profile.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="program_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="program_report.Designer.cs">
+      <DependentUpon>program_report.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Dashboards\Reciption_Dashbord.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Dashboards\Reciption_Dashbord.Designer.cs">
       <DependentUpon>Reciption_Dashbord.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Reports\Staff\staff.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>staff.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Reports\Staff\staff_report.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reports\Staff\staff_report.Designer.cs">
-      <DependentUpon>staff_report.cs</DependentUpon>
     </Compile>
     <Compile Include="Splash-login\splash_screen.cs">
       <SubType>Form</SubType>
@@ -248,11 +288,58 @@
     <Compile Include="Dashboards\Trainer_Dashboard.Designer.cs">
       <DependentUpon>Trainer_Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="staff_r.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>staff_r.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="staff_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staff_report.Designer.cs">
+      <DependentUpon>staff_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="trainee.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>trainee.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="trainee_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="trainee_report.Designer.cs">
+      <DependentUpon>trainee_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workout_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="workout_report.Designer.cs">
+      <DependentUpon>workout_report.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="bill.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>bill.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bill_report.resx">
+      <DependentUpon>bill_report.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboards\Admin_Dashbord.resx">
       <DependentUpon>Admin_Dashbord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboards\Trainee_Dashboard.resx">
       <DependentUpon>Trainee_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="group_report.resx">
+      <DependentUpon>group_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="machien.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>machien.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="machine_report.resx">
+      <DependentUpon>machine_report.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manage\Group-manage\gr_m_admin.resx">
       <DependentUpon>gr_m_admin.cs</DependentUpon>
@@ -299,6 +386,13 @@
     <EmbeddedResource Include="Manage\Workout-manage\wrkot_m_trainer.resx">
       <DependentUpon>wrkot_m_trainer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="membership.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>membership.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="membership_report.resx">
+      <DependentUpon>membership_report.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="profiles\admin_profile.resx">
       <DependentUpon>admin_profile.cs</DependentUpon>
     </EmbeddedResource>
@@ -310,6 +404,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="profiles\trainer_profile.resx">
       <DependentUpon>trainer_profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="program_report.resx">
+      <DependentUpon>program_report.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -324,18 +421,28 @@
     <EmbeddedResource Include="Dashboards\Reciption_Dashbord.resx">
       <DependentUpon>Reciption_Dashbord.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Staff\staff.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>staff.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Staff\staff_report.resx">
-      <DependentUpon>staff_report.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Splash-login\splash_screen.resx">
       <DependentUpon>splash_screen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboards\Trainer_Dashboard.resx">
       <DependentUpon>Trainer_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staff_r.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>staff_r.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staff_report.resx">
+      <DependentUpon>staff_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trainee.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>trainee.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trainee_report.resx">
+      <DependentUpon>trainee_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workout_report.resx">
+      <DependentUpon>workout_report.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

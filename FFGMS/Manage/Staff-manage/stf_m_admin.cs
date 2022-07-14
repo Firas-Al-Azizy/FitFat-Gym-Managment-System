@@ -10,16 +10,17 @@ using System.Windows.Forms;
 using FFGMS.db_con;
 using System.Data.SqlClient;
 using System.IO;
-using FFGMS.Reports.Staff;
+
+//using FFGMS.Reports.Staff;
 
 namespace FFGMS.Manage.Staff_manage
 {
     public partial class stf_m_admin : Form
     {
 
-        SqlConnection con = new SqlConnection(@"server=DESKTOP-HPA6H4U\SQLEXPRESS;
-        database=db_ffgms ; integrated security=true");
-        
+        SqlConnection con = new SqlConnection(@"server=DESKTOP-46DG448\SQLEXPRESS;
+        database=db_ffgms_new ; integrated security=true");
+
         public stf_m_admin()
         {
             InitializeComponent();
@@ -241,8 +242,8 @@ namespace FFGMS.Manage.Staff_manage
             }
             catch (Exception ex)
             {
-
-                MessageBox.Show("image in db is in a wrong format " + "\n Error code 00039", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                img_picb.Image = null;
+                //MessageBox.Show("image in db is in a wrong format " + "\n Error code 00039", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             panel5.Visible = false;
             update_btn.Enabled = true;
@@ -289,6 +290,7 @@ namespace FFGMS.Manage.Staff_manage
             picture = conv_picture();
            
             cls_emp s = new cls_emp();
+            s.emp_id = Convert.ToInt16(this.data_view.CurrentRow.Cells[0].Value.ToString());
             s.emp_name = name_txb.Text;
             s.emp_age = age_txb.Text;
             if (radio_male.Checked == true)

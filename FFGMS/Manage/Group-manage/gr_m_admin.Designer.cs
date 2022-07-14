@@ -32,6 +32,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.gr_tab_admin = new MetroFramework.Controls.MetroTabControl();
             this.gr_add_admin = new MetroFramework.Controls.MetroTabPage();
             this.add_pnl = new System.Windows.Forms.Panel();
@@ -39,11 +40,17 @@
             this.gr_name_lbl = new System.Windows.Forms.Label();
             this.name_txb = new MetroFramework.Controls.MetroTextBox();
             this.tr_name_lbl = new System.Windows.Forms.Label();
-            this.email_txb = new MetroFramework.Controls.MetroTextBox();
             this.from_lbl = new System.Windows.Forms.Label();
             this.age_txb = new MetroFramework.Controls.MetroTextBox();
             this.to_lbl = new System.Windows.Forms.Label();
             this.pho_txb = new MetroFramework.Controls.MetroTextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btn_grbx = new Guna.UI.WinForms.GunaGroupBox();
+            this.erase_btn = new Guna.UI.WinForms.GunaButton();
+            this.add_btn = new Guna.UI.WinForms.GunaButton();
+            this.update_btn = new Guna.UI.WinForms.GunaButton();
+            this.trrnr_combx = new MetroFramework.Controls.MetroComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.gr_view_admin = new MetroFramework.Controls.MetroTabPage();
@@ -57,27 +64,25 @@
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
             this.data_view = new Guna.UI.WinForms.GunaDataGridView();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.btn_grbx = new Guna.UI.WinForms.GunaGroupBox();
-            this.erase_btn = new Guna.UI.WinForms.GunaButton();
-            this.add_btn = new Guna.UI.WinForms.GunaButton();
-            this.update_btn = new Guna.UI.WinForms.GunaButton();
             this.gr_tab_admin.SuspendLayout();
             this.gr_add_admin.SuspendLayout();
             this.add_pnl.SuspendLayout();
             this.table_pnl.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.btn_grbx.SuspendLayout();
             this.gr_view_admin.SuspendLayout();
             this.view_pnl.SuspendLayout();
             this.view_menu.SuspendLayout();
             this.search_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.search_picbx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.data_view)).BeginInit();
-            this.panel3.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.btn_grbx.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.TargetControl = this;
             // 
             // gr_tab_admin
             // 
@@ -93,7 +98,7 @@
             this.gr_tab_admin.Size = new System.Drawing.Size(737, 439);
             this.gr_tab_admin.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.gr_tab_admin.Style = MetroFramework.MetroColorStyle.Teal;
-            this.gr_tab_admin.TabIndex = 0;
+            this.gr_tab_admin.TabIndex = 1;
             this.gr_tab_admin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.gr_tab_admin.Theme = MetroFramework.MetroThemeStyle.Light;
             this.gr_tab_admin.UseSelectable = true;
@@ -126,6 +131,7 @@
             this.add_pnl.Controls.Add(this.panel1);
             this.add_pnl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.add_pnl.Location = new System.Drawing.Point(0, 0);
+            this.add_pnl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.add_pnl.Name = "add_pnl";
             this.add_pnl.Size = new System.Drawing.Size(729, 391);
             this.add_pnl.TabIndex = 2;
@@ -138,17 +144,17 @@
             this.table_pnl.ColumnCount = 4;
             this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.08861F));
             this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.91139F));
-            this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 142F));
-            this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 246F));
+            this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 141F));
+            this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 248F));
             this.table_pnl.Controls.Add(this.gr_name_lbl, 0, 0);
             this.table_pnl.Controls.Add(this.name_txb, 1, 0);
             this.table_pnl.Controls.Add(this.tr_name_lbl, 2, 0);
-            this.table_pnl.Controls.Add(this.email_txb, 3, 0);
             this.table_pnl.Controls.Add(this.from_lbl, 0, 2);
             this.table_pnl.Controls.Add(this.age_txb, 1, 2);
             this.table_pnl.Controls.Add(this.to_lbl, 2, 2);
             this.table_pnl.Controls.Add(this.pho_txb, 3, 2);
             this.table_pnl.Controls.Add(this.panel3, 3, 4);
+            this.table_pnl.Controls.Add(this.trrnr_combx, 3, 0);
             this.table_pnl.Dock = System.Windows.Forms.DockStyle.Top;
             this.table_pnl.Location = new System.Drawing.Point(0, 98);
             this.table_pnl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -160,9 +166,8 @@
             this.table_pnl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.table_pnl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
             this.table_pnl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.table_pnl.Size = new System.Drawing.Size(729, 162);
+            this.table_pnl.Size = new System.Drawing.Size(729, 174);
             this.table_pnl.TabIndex = 68;
-            this.table_pnl.Paint += new System.Windows.Forms.PaintEventHandler(this.table_pnl_Paint);
             // 
             // gr_name_lbl
             // 
@@ -173,7 +178,7 @@
             this.gr_name_lbl.ForeColor = System.Drawing.Color.DarkCyan;
             this.gr_name_lbl.Location = new System.Drawing.Point(3, 0);
             this.gr_name_lbl.Name = "gr_name_lbl";
-            this.gr_name_lbl.Size = new System.Drawing.Size(137, 35);
+            this.gr_name_lbl.Size = new System.Drawing.Size(137, 41);
             this.gr_name_lbl.TabIndex = 43;
             this.gr_name_lbl.Text = "Group Name:";
             // 
@@ -183,10 +188,10 @@
             // 
             // 
             this.name_txb.CustomButton.Image = null;
-            this.name_txb.CustomButton.Location = new System.Drawing.Point(161, 1);
+            this.name_txb.CustomButton.Location = new System.Drawing.Point(154, 1);
             this.name_txb.CustomButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.name_txb.CustomButton.Name = "";
-            this.name_txb.CustomButton.Size = new System.Drawing.Size(29, 29);
+            this.name_txb.CustomButton.Size = new System.Drawing.Size(35, 35);
             this.name_txb.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.name_txb.CustomButton.TabIndex = 1;
             this.name_txb.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -204,7 +209,7 @@
             this.name_txb.SelectionLength = 0;
             this.name_txb.SelectionStart = 0;
             this.name_txb.ShortcutsEnabled = true;
-            this.name_txb.Size = new System.Drawing.Size(191, 31);
+            this.name_txb.Size = new System.Drawing.Size(190, 37);
             this.name_txb.TabIndex = 44;
             this.name_txb.UseSelectable = true;
             this.name_txb.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -217,44 +222,11 @@
             this.tr_name_lbl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tr_name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tr_name_lbl.ForeColor = System.Drawing.Color.DarkCyan;
-            this.tr_name_lbl.Location = new System.Drawing.Point(343, 0);
+            this.tr_name_lbl.Location = new System.Drawing.Point(342, 0);
             this.tr_name_lbl.Name = "tr_name_lbl";
-            this.tr_name_lbl.Size = new System.Drawing.Size(136, 35);
+            this.tr_name_lbl.Size = new System.Drawing.Size(135, 41);
             this.tr_name_lbl.TabIndex = 47;
             this.tr_name_lbl.Text = "Trainer Name:";
-            // 
-            // email_txb
-            // 
-            // 
-            // 
-            // 
-            this.email_txb.CustomButton.Image = null;
-            this.email_txb.CustomButton.Location = new System.Drawing.Point(211, 1);
-            this.email_txb.CustomButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.email_txb.CustomButton.Name = "";
-            this.email_txb.CustomButton.Size = new System.Drawing.Size(29, 29);
-            this.email_txb.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.email_txb.CustomButton.TabIndex = 1;
-            this.email_txb.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.email_txb.CustomButton.UseSelectable = true;
-            this.email_txb.CustomButton.Visible = false;
-            this.email_txb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.email_txb.Lines = new string[0];
-            this.email_txb.Location = new System.Drawing.Point(485, 2);
-            this.email_txb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.email_txb.MaxLength = 32767;
-            this.email_txb.Name = "email_txb";
-            this.email_txb.PasswordChar = '\0';
-            this.email_txb.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.email_txb.SelectedText = "";
-            this.email_txb.SelectionLength = 0;
-            this.email_txb.SelectionStart = 0;
-            this.email_txb.ShortcutsEnabled = true;
-            this.email_txb.Size = new System.Drawing.Size(241, 31);
-            this.email_txb.TabIndex = 48;
-            this.email_txb.UseSelectable = true;
-            this.email_txb.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.email_txb.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // from_lbl
             // 
@@ -263,7 +235,7 @@
             this.from_lbl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.from_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.from_lbl.ForeColor = System.Drawing.Color.DarkCyan;
-            this.from_lbl.Location = new System.Drawing.Point(3, 70);
+            this.from_lbl.Location = new System.Drawing.Point(3, 82);
             this.from_lbl.Name = "from_lbl";
             this.from_lbl.Size = new System.Drawing.Size(137, 34);
             this.from_lbl.TabIndex = 45;
@@ -275,7 +247,7 @@
             // 
             // 
             this.age_txb.CustomButton.Image = null;
-            this.age_txb.CustomButton.Location = new System.Drawing.Point(163, 2);
+            this.age_txb.CustomButton.Location = new System.Drawing.Point(162, 2);
             this.age_txb.CustomButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.age_txb.CustomButton.Name = "";
             this.age_txb.CustomButton.Size = new System.Drawing.Size(25, 25);
@@ -286,7 +258,7 @@
             this.age_txb.CustomButton.Visible = false;
             this.age_txb.Dock = System.Windows.Forms.DockStyle.Fill;
             this.age_txb.Lines = new string[0];
-            this.age_txb.Location = new System.Drawing.Point(146, 72);
+            this.age_txb.Location = new System.Drawing.Point(146, 84);
             this.age_txb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.age_txb.MaxLength = 32767;
             this.age_txb.Name = "age_txb";
@@ -296,7 +268,7 @@
             this.age_txb.SelectionLength = 0;
             this.age_txb.SelectionStart = 0;
             this.age_txb.ShortcutsEnabled = true;
-            this.age_txb.Size = new System.Drawing.Size(191, 30);
+            this.age_txb.Size = new System.Drawing.Size(190, 30);
             this.age_txb.TabIndex = 66;
             this.age_txb.UseSelectable = true;
             this.age_txb.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -309,9 +281,9 @@
             this.to_lbl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.to_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.to_lbl.ForeColor = System.Drawing.Color.DarkCyan;
-            this.to_lbl.Location = new System.Drawing.Point(343, 70);
+            this.to_lbl.Location = new System.Drawing.Point(342, 82);
             this.to_lbl.Name = "to_lbl";
-            this.to_lbl.Size = new System.Drawing.Size(136, 34);
+            this.to_lbl.Size = new System.Drawing.Size(135, 34);
             this.to_lbl.TabIndex = 56;
             this.to_lbl.Text = "To:";
             // 
@@ -321,10 +293,10 @@
             // 
             // 
             this.pho_txb.CustomButton.Image = null;
-            this.pho_txb.CustomButton.Location = new System.Drawing.Point(213, 2);
+            this.pho_txb.CustomButton.Location = new System.Drawing.Point(287, 2);
             this.pho_txb.CustomButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.pho_txb.CustomButton.Name = "";
-            this.pho_txb.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.pho_txb.CustomButton.Size = new System.Drawing.Size(33, 31);
             this.pho_txb.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.pho_txb.CustomButton.TabIndex = 1;
             this.pho_txb.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -332,7 +304,7 @@
             this.pho_txb.CustomButton.Visible = false;
             this.pho_txb.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pho_txb.Lines = new string[0];
-            this.pho_txb.Location = new System.Drawing.Point(485, 72);
+            this.pho_txb.Location = new System.Drawing.Point(483, 84);
             this.pho_txb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pho_txb.MaxLength = 32767;
             this.pho_txb.Name = "pho_txb";
@@ -342,11 +314,144 @@
             this.pho_txb.SelectionLength = 0;
             this.pho_txb.SelectionStart = 0;
             this.pho_txb.ShortcutsEnabled = true;
-            this.pho_txb.Size = new System.Drawing.Size(241, 30);
+            this.pho_txb.Size = new System.Drawing.Size(243, 30);
             this.pho_txb.TabIndex = 57;
             this.pho_txb.UseSelectable = true;
             this.pho_txb.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.pho_txb.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.panel5);
+            this.panel3.Controls.Add(this.update_btn);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(484, 140);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(241, 30);
+            this.panel3.TabIndex = 70;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.btn_grbx);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(241, 30);
+            this.panel5.TabIndex = 6;
+            // 
+            // btn_grbx
+            // 
+            this.btn_grbx.BackColor = System.Drawing.Color.Transparent;
+            this.btn_grbx.BaseColor = System.Drawing.Color.White;
+            this.btn_grbx.BorderColor = System.Drawing.Color.Transparent;
+            this.btn_grbx.Controls.Add(this.erase_btn);
+            this.btn_grbx.Controls.Add(this.add_btn);
+            this.btn_grbx.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_grbx.LineColor = System.Drawing.Color.Transparent;
+            this.btn_grbx.Location = new System.Drawing.Point(0, 0);
+            this.btn_grbx.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_grbx.Name = "btn_grbx";
+            this.btn_grbx.Size = new System.Drawing.Size(241, 30);
+            this.btn_grbx.TabIndex = 65;
+            this.btn_grbx.TextLocation = new System.Drawing.Point(10, 8);
+            // 
+            // erase_btn
+            // 
+            this.erase_btn.AnimationHoverSpeed = 0.07F;
+            this.erase_btn.AnimationSpeed = 0.03F;
+            this.erase_btn.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
+            this.erase_btn.BorderColor = System.Drawing.Color.Black;
+            this.erase_btn.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.erase_btn.Dock = System.Windows.Forms.DockStyle.Left;
+            this.erase_btn.FocusedColor = System.Drawing.Color.Empty;
+            this.erase_btn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.erase_btn.ForeColor = System.Drawing.Color.White;
+            this.erase_btn.Image = global::FFGMS.Properties.Resources.icons8_erase_32;
+            this.erase_btn.ImageSize = new System.Drawing.Size(15, 15);
+            this.erase_btn.Location = new System.Drawing.Point(0, 0);
+            this.erase_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.erase_btn.Name = "erase_btn";
+            this.erase_btn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.erase_btn.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.erase_btn.OnHoverForeColor = System.Drawing.Color.White;
+            this.erase_btn.OnHoverImage = null;
+            this.erase_btn.OnPressedColor = System.Drawing.Color.Black;
+            this.erase_btn.Size = new System.Drawing.Size(115, 30);
+            this.erase_btn.TabIndex = 1;
+            this.erase_btn.Text = "Erase";
+            // 
+            // add_btn
+            // 
+            this.add_btn.AnimationHoverSpeed = 0.07F;
+            this.add_btn.AnimationSpeed = 0.03F;
+            this.add_btn.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
+            this.add_btn.BorderColor = System.Drawing.Color.Black;
+            this.add_btn.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.add_btn.Dock = System.Windows.Forms.DockStyle.Right;
+            this.add_btn.FocusedColor = System.Drawing.Color.Empty;
+            this.add_btn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_btn.ForeColor = System.Drawing.Color.White;
+            this.add_btn.Image = global::FFGMS.Properties.Resources.icons8_plus_32;
+            this.add_btn.ImageSize = new System.Drawing.Size(15, 15);
+            this.add_btn.Location = new System.Drawing.Point(128, 0);
+            this.add_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.add_btn.Name = "add_btn";
+            this.add_btn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.add_btn.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.add_btn.OnHoverForeColor = System.Drawing.Color.White;
+            this.add_btn.OnHoverImage = null;
+            this.add_btn.OnPressedColor = System.Drawing.Color.Black;
+            this.add_btn.Size = new System.Drawing.Size(113, 30);
+            this.add_btn.TabIndex = 0;
+            this.add_btn.Text = "Add";
+            this.add_btn.Click += new System.EventHandler(this.add_btn_Click);
+            // 
+            // update_btn
+            // 
+            this.update_btn.AnimationHoverSpeed = 0.07F;
+            this.update_btn.AnimationSpeed = 0.03F;
+            this.update_btn.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
+            this.update_btn.BorderColor = System.Drawing.Color.Black;
+            this.update_btn.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.update_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.update_btn.Enabled = false;
+            this.update_btn.FocusedColor = System.Drawing.Color.Empty;
+            this.update_btn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.update_btn.ForeColor = System.Drawing.Color.White;
+            this.update_btn.Image = global::FFGMS.Properties.Resources.icons8_swap_32;
+            this.update_btn.ImageSize = new System.Drawing.Size(15, 15);
+            this.update_btn.Location = new System.Drawing.Point(0, 0);
+            this.update_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.update_btn.Name = "update_btn";
+            this.update_btn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.update_btn.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.update_btn.OnHoverForeColor = System.Drawing.Color.White;
+            this.update_btn.OnHoverImage = null;
+            this.update_btn.OnPressedColor = System.Drawing.Color.Black;
+            this.update_btn.Size = new System.Drawing.Size(241, 30);
+            this.update_btn.TabIndex = 4;
+            this.update_btn.Text = "Change";
+            this.update_btn.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // trrnr_combx
+            // 
+            this.trrnr_combx.BackColor = System.Drawing.Color.Transparent;
+            this.trrnr_combx.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.trrnr_combx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
+            this.trrnr_combx.FormattingEnabled = true;
+            this.trrnr_combx.ItemHeight = 24;
+            this.trrnr_combx.Items.AddRange(new object[] {
+            "Admin",
+            "Reciptioniest",
+            "Trainer"});
+            this.trrnr_combx.Location = new System.Drawing.Point(483, 2);
+            this.trrnr_combx.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.trrnr_combx.Name = "trrnr_combx";
+            this.trrnr_combx.Size = new System.Drawing.Size(243, 30);
+            this.trrnr_combx.TabIndex = 104;
+            this.trrnr_combx.UseSelectable = true;
             // 
             // panel2
             // 
@@ -396,6 +501,7 @@
             this.view_pnl.Controls.Add(this.data_view, 0, 1);
             this.view_pnl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.view_pnl.Location = new System.Drawing.Point(0, 0);
+            this.view_pnl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.view_pnl.Name = "view_pnl";
             this.view_pnl.RowCount = 3;
             this.view_pnl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.42857F));
@@ -412,19 +518,20 @@
             this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.91667F));
             this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
             this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 116F));
-            this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 268F));
+            this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 271F));
             this.view_menu.Controls.Add(this.search_panel, 4, 0);
             this.view_menu.Controls.Add(this.gunaButton3, 0, 0);
             this.view_menu.Controls.Add(this.gunaButton4, 0, 0);
             this.view_menu.Controls.Add(this.gunaButton1, 0, 0);
             this.view_menu.Controls.Add(this.gunaButton2, 0, 0);
             this.view_menu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.view_menu.Location = new System.Drawing.Point(3, 3);
+            this.view_menu.Location = new System.Drawing.Point(3, 2);
+            this.view_menu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.view_menu.Name = "view_menu";
             this.view_menu.RowCount = 1;
             this.view_menu.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.view_menu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
-            this.view_menu.Size = new System.Drawing.Size(723, 36);
+            this.view_menu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.view_menu.Size = new System.Drawing.Size(723, 38);
             this.view_menu.TabIndex = 4;
             // 
             // search_panel
@@ -433,9 +540,10 @@
             this.search_panel.Controls.Add(this.search_txb);
             this.search_panel.Controls.Add(this.search_picbx);
             this.search_panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.search_panel.Location = new System.Drawing.Point(457, 3);
+            this.search_panel.Location = new System.Drawing.Point(454, 2);
+            this.search_panel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.search_panel.Name = "search_panel";
-            this.search_panel.Size = new System.Drawing.Size(263, 33);
+            this.search_panel.Size = new System.Drawing.Size(266, 33);
             this.search_panel.TabIndex = 4;
             // 
             // search_txb
@@ -444,9 +552,10 @@
             // 
             // 
             this.search_txb.CustomButton.Image = null;
-            this.search_txb.CustomButton.Location = new System.Drawing.Point(190, 1);
+            this.search_txb.CustomButton.Location = new System.Drawing.Point(252, 1);
+            this.search_txb.CustomButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.search_txb.CustomButton.Name = "";
-            this.search_txb.CustomButton.Size = new System.Drawing.Size(31, 31);
+            this.search_txb.CustomButton.Size = new System.Drawing.Size(41, 38);
             this.search_txb.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.search_txb.CustomButton.TabIndex = 1;
             this.search_txb.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -454,7 +563,8 @@
             this.search_txb.CustomButton.Visible = false;
             this.search_txb.Dock = System.Windows.Forms.DockStyle.Right;
             this.search_txb.Lines = new string[0];
-            this.search_txb.Location = new System.Drawing.Point(41, 0);
+            this.search_txb.Location = new System.Drawing.Point(45, 0);
+            this.search_txb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.search_txb.MaxLength = 32767;
             this.search_txb.Name = "search_txb";
             this.search_txb.PasswordChar = '\0';
@@ -463,7 +573,7 @@
             this.search_txb.SelectionLength = 0;
             this.search_txb.SelectionStart = 0;
             this.search_txb.ShortcutsEnabled = true;
-            this.search_txb.Size = new System.Drawing.Size(222, 33);
+            this.search_txb.Size = new System.Drawing.Size(221, 33);
             this.search_txb.TabIndex = 6;
             this.search_txb.UseSelectable = true;
             this.search_txb.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -475,6 +585,7 @@
             this.search_picbx.Dock = System.Windows.Forms.DockStyle.Left;
             this.search_picbx.Image = global::FFGMS.Properties.Resources.search_64px;
             this.search_picbx.Location = new System.Drawing.Point(0, 0);
+            this.search_picbx.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.search_picbx.Name = "search_picbx";
             this.search_picbx.Size = new System.Drawing.Size(39, 33);
             this.search_picbx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -494,7 +605,8 @@
             this.gunaButton3.ForeColor = System.Drawing.Color.White;
             this.gunaButton3.Image = global::FFGMS.Properties.Resources.icons8_print_32;
             this.gunaButton3.ImageSize = new System.Drawing.Size(15, 15);
-            this.gunaButton3.Location = new System.Drawing.Point(341, 3);
+            this.gunaButton3.Location = new System.Drawing.Point(338, 2);
+            this.gunaButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaButton3.Name = "gunaButton3";
             this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton3.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -519,7 +631,8 @@
             this.gunaButton4.ForeColor = System.Drawing.Color.White;
             this.gunaButton4.Image = global::FFGMS.Properties.Resources.icons8_delete_32;
             this.gunaButton4.ImageSize = new System.Drawing.Size(15, 15);
-            this.gunaButton4.Location = new System.Drawing.Point(221, 3);
+            this.gunaButton4.Location = new System.Drawing.Point(218, 2);
+            this.gunaButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaButton4.Name = "gunaButton4";
             this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton4.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -544,14 +657,15 @@
             this.gunaButton1.ForeColor = System.Drawing.Color.White;
             this.gunaButton1.Image = global::FFGMS.Properties.Resources.icons8_swap_32;
             this.gunaButton1.ImageSize = new System.Drawing.Size(15, 15);
-            this.gunaButton1.Location = new System.Drawing.Point(106, 3);
+            this.gunaButton1.Location = new System.Drawing.Point(104, 2);
+            this.gunaButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaButton1.Name = "gunaButton1";
             this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton1.OnHoverImage = null;
             this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton1.Size = new System.Drawing.Size(109, 33);
+            this.gunaButton1.Size = new System.Drawing.Size(108, 33);
             this.gunaButton1.TabIndex = 3;
             this.gunaButton1.Text = "Change";
             this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -569,17 +683,19 @@
             this.gunaButton2.ForeColor = System.Drawing.Color.White;
             this.gunaButton2.Image = global::FFGMS.Properties.Resources.icons8_view_module_32;
             this.gunaButton2.ImageSize = new System.Drawing.Size(15, 15);
-            this.gunaButton2.Location = new System.Drawing.Point(3, 3);
+            this.gunaButton2.Location = new System.Drawing.Point(3, 2);
+            this.gunaButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaButton2.Name = "gunaButton2";
             this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaButton2.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton2.OnHoverImage = null;
             this.gunaButton2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton2.Size = new System.Drawing.Size(97, 33);
+            this.gunaButton2.Size = new System.Drawing.Size(95, 33);
             this.gunaButton2.TabIndex = 2;
             this.gunaButton2.Text = "View";
             this.gunaButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.gunaButton2.Click += new System.EventHandler(this.gunaButton2_Click_1);
             // 
             // data_view
             // 
@@ -610,12 +726,13 @@
             this.data_view.Dock = System.Windows.Forms.DockStyle.Fill;
             this.data_view.EnableHeadersVisualStyles = false;
             this.data_view.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.data_view.Location = new System.Drawing.Point(3, 45);
+            this.data_view.Location = new System.Drawing.Point(3, 44);
+            this.data_view.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.data_view.Name = "data_view";
             this.data_view.RowHeadersVisible = false;
             this.data_view.RowTemplate.Height = 24;
             this.data_view.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.data_view.Size = new System.Drawing.Size(723, 322);
+            this.data_view.Size = new System.Drawing.Size(723, 324);
             this.data_view.TabIndex = 5;
             this.data_view.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.data_view.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -640,125 +757,6 @@
             this.data_view.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.data_view.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 5;
-            this.bunifuElipse1.TargetControl = this;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.panel5);
-            this.panel3.Controls.Add(this.update_btn);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(486, 128);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(239, 30);
-            this.panel3.TabIndex = 70;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.btn_grbx);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(239, 30);
-            this.panel5.TabIndex = 6;
-            // 
-            // btn_grbx
-            // 
-            this.btn_grbx.BackColor = System.Drawing.Color.Transparent;
-            this.btn_grbx.BaseColor = System.Drawing.Color.White;
-            this.btn_grbx.BorderColor = System.Drawing.Color.Transparent;
-            this.btn_grbx.Controls.Add(this.erase_btn);
-            this.btn_grbx.Controls.Add(this.add_btn);
-            this.btn_grbx.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_grbx.LineColor = System.Drawing.Color.Transparent;
-            this.btn_grbx.Location = new System.Drawing.Point(0, 0);
-            this.btn_grbx.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_grbx.Name = "btn_grbx";
-            this.btn_grbx.Size = new System.Drawing.Size(239, 30);
-            this.btn_grbx.TabIndex = 65;
-            this.btn_grbx.TextLocation = new System.Drawing.Point(10, 8);
-            // 
-            // erase_btn
-            // 
-            this.erase_btn.AnimationHoverSpeed = 0.07F;
-            this.erase_btn.AnimationSpeed = 0.03F;
-            this.erase_btn.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
-            this.erase_btn.BorderColor = System.Drawing.Color.Black;
-            this.erase_btn.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.erase_btn.Dock = System.Windows.Forms.DockStyle.Left;
-            this.erase_btn.FocusedColor = System.Drawing.Color.Empty;
-            this.erase_btn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.erase_btn.ForeColor = System.Drawing.Color.White;
-            this.erase_btn.Image = global::FFGMS.Properties.Resources.icons8_erase_32;
-            this.erase_btn.ImageSize = new System.Drawing.Size(15, 15);
-            this.erase_btn.Location = new System.Drawing.Point(0, 0);
-            this.erase_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.erase_btn.Name = "erase_btn";
-            this.erase_btn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.erase_btn.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.erase_btn.OnHoverForeColor = System.Drawing.Color.White;
-            this.erase_btn.OnHoverImage = null;
-            this.erase_btn.OnPressedColor = System.Drawing.Color.Black;
-            this.erase_btn.Size = new System.Drawing.Size(115, 30);
-            this.erase_btn.TabIndex = 1;
-            this.erase_btn.Text = "Erase";
-            // 
-            // add_btn
-            // 
-            this.add_btn.AnimationHoverSpeed = 0.07F;
-            this.add_btn.AnimationSpeed = 0.03F;
-            this.add_btn.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
-            this.add_btn.BorderColor = System.Drawing.Color.Black;
-            this.add_btn.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.add_btn.Dock = System.Windows.Forms.DockStyle.Right;
-            this.add_btn.FocusedColor = System.Drawing.Color.Empty;
-            this.add_btn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.add_btn.ForeColor = System.Drawing.Color.White;
-            this.add_btn.Image = global::FFGMS.Properties.Resources.icons8_plus_32;
-            this.add_btn.ImageSize = new System.Drawing.Size(15, 15);
-            this.add_btn.Location = new System.Drawing.Point(126, 0);
-            this.add_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.add_btn.Name = "add_btn";
-            this.add_btn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.add_btn.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.add_btn.OnHoverForeColor = System.Drawing.Color.White;
-            this.add_btn.OnHoverImage = null;
-            this.add_btn.OnPressedColor = System.Drawing.Color.Black;
-            this.add_btn.Size = new System.Drawing.Size(113, 30);
-            this.add_btn.TabIndex = 0;
-            this.add_btn.Text = "Add";
-            // 
-            // update_btn
-            // 
-            this.update_btn.AnimationHoverSpeed = 0.07F;
-            this.update_btn.AnimationSpeed = 0.03F;
-            this.update_btn.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
-            this.update_btn.BorderColor = System.Drawing.Color.Black;
-            this.update_btn.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.update_btn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.update_btn.Enabled = false;
-            this.update_btn.FocusedColor = System.Drawing.Color.Empty;
-            this.update_btn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.update_btn.ForeColor = System.Drawing.Color.White;
-            this.update_btn.Image = global::FFGMS.Properties.Resources.icons8_swap_32;
-            this.update_btn.ImageSize = new System.Drawing.Size(15, 15);
-            this.update_btn.Location = new System.Drawing.Point(0, 0);
-            this.update_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.update_btn.Name = "update_btn";
-            this.update_btn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.update_btn.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.update_btn.OnHoverForeColor = System.Drawing.Color.White;
-            this.update_btn.OnHoverImage = null;
-            this.update_btn.OnPressedColor = System.Drawing.Color.Black;
-            this.update_btn.Size = new System.Drawing.Size(239, 30);
-            this.update_btn.TabIndex = 4;
-            this.update_btn.Text = "Change";
-            this.update_btn.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // gr_m_admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -769,48 +767,35 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "gr_m_admin";
             this.Text = "gr_m_admin";
+            this.Load += new System.EventHandler(this.gr_m_admin_Load);
             this.gr_tab_admin.ResumeLayout(false);
             this.gr_add_admin.ResumeLayout(false);
             this.add_pnl.ResumeLayout(false);
             this.add_pnl.PerformLayout();
             this.table_pnl.ResumeLayout(false);
             this.table_pnl.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.btn_grbx.ResumeLayout(false);
             this.gr_view_admin.ResumeLayout(false);
             this.view_pnl.ResumeLayout(false);
             this.view_menu.ResumeLayout(false);
             this.search_panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.search_picbx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.data_view)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.btn_grbx.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private MetroFramework.Controls.MetroTabPage gr_add_admin;
-        private MetroFramework.Controls.MetroTabPage gr_view_admin;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private MetroFramework.Controls.MetroTabControl gr_tab_admin;
-        private System.Windows.Forms.TableLayoutPanel view_pnl;
-        private System.Windows.Forms.TableLayoutPanel view_menu;
-        private System.Windows.Forms.Panel search_panel;
-        private MetroFramework.Controls.MetroTextBox search_txb;
-        private System.Windows.Forms.PictureBox search_picbx;
-        private Guna.UI.WinForms.GunaButton gunaButton1;
-        private Guna.UI.WinForms.GunaButton gunaButton2;
-        private Guna.UI.WinForms.GunaDataGridView data_view;
-        private Guna.UI.WinForms.GunaButton gunaButton3;
-        private Guna.UI.WinForms.GunaButton gunaButton4;
+        private MetroFramework.Controls.MetroTabPage gr_add_admin;
         private System.Windows.Forms.Panel add_pnl;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TableLayoutPanel table_pnl;
         private System.Windows.Forms.Label gr_name_lbl;
         private MetroFramework.Controls.MetroTextBox name_txb;
         private System.Windows.Forms.Label tr_name_lbl;
-        private MetroFramework.Controls.MetroTextBox email_txb;
         private System.Windows.Forms.Label from_lbl;
         private MetroFramework.Controls.MetroTextBox age_txb;
         private System.Windows.Forms.Label to_lbl;
@@ -821,5 +806,19 @@
         private Guna.UI.WinForms.GunaButton erase_btn;
         private Guna.UI.WinForms.GunaButton add_btn;
         private Guna.UI.WinForms.GunaButton update_btn;
+        private MetroFramework.Controls.MetroComboBox trrnr_combx;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel1;
+        private MetroFramework.Controls.MetroTabPage gr_view_admin;
+        private System.Windows.Forms.TableLayoutPanel view_pnl;
+        private System.Windows.Forms.TableLayoutPanel view_menu;
+        private System.Windows.Forms.Panel search_panel;
+        private MetroFramework.Controls.MetroTextBox search_txb;
+        private System.Windows.Forms.PictureBox search_picbx;
+        private Guna.UI.WinForms.GunaButton gunaButton3;
+        private Guna.UI.WinForms.GunaButton gunaButton4;
+        private Guna.UI.WinForms.GunaButton gunaButton1;
+        private Guna.UI.WinForms.GunaButton gunaButton2;
+        private Guna.UI.WinForms.GunaDataGridView data_view;
     }
 }

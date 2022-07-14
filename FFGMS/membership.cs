@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FFGMS.Reports.Staff {
+namespace FFGMS {
     using System;
     using System.ComponentModel;
     using CrystalDecisions.Shared;
@@ -16,14 +16,14 @@ namespace FFGMS.Reports.Staff {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class staff : ReportClass {
+    public class membership : ReportClass {
         
-        public staff() {
+        public membership() {
         }
         
         public override string ResourceName {
             get {
-                return "staff.rpt";
+                return "membership.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace FFGMS.Reports.Staff {
         
         public override string FullResourceName {
             get {
-                return "FFGMS.Reports.Staff.staff.rpt";
+                return "FFGMS.membership.rpt";
             }
             set {
                 // Do nothing
@@ -66,7 +66,7 @@ namespace FFGMS.Reports.Staff {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section3 {
+        public CrystalDecisions.CrystalReports.Engine.Section GroupHeaderSection1 {
             get {
                 return this.ReportDefinition.Sections[2];
             }
@@ -74,7 +74,7 @@ namespace FFGMS.Reports.Staff {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
+        public CrystalDecisions.CrystalReports.Engine.Section Section3 {
             get {
                 return this.ReportDefinition.Sections[3];
             }
@@ -82,17 +82,33 @@ namespace FFGMS.Reports.Staff {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section5 {
+        public CrystalDecisions.CrystalReports.Engine.Section GroupFooterSection1 {
             get {
                 return this.ReportDefinition.Sections[4];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
+            get {
+                return this.ReportDefinition.Sections[5];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.CrystalReports.Engine.Section Section5 {
+            get {
+                return this.ReportDefinition.Sections[6];
             }
         }
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class Cachedstaff : Component, ICachedReport {
+    public class Cachedmembership : Component, ICachedReport {
         
-        public Cachedstaff() {
+        public Cachedmembership() {
         }
         
         [Browsable(false)]
@@ -129,7 +145,7 @@ namespace FFGMS.Reports.Staff {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            staff rpt = new staff();
+            membership rpt = new membership();
             rpt.Site = this.Site;
             return rpt;
         }

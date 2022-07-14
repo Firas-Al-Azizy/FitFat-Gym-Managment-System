@@ -53,15 +53,16 @@
             this.sel_img_btn = new Guna.UI.WinForms.GunaButton();
             this.img_picb = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.mac_name_lbl = new System.Windows.Forms.Label();
-            this.age_txb = new MetroFramework.Controls.MetroTextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.name_txb = new MetroFramework.Controls.MetroTextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btn_grbx = new Guna.UI.WinForms.GunaGroupBox();
             this.erase_btn = new Guna.UI.WinForms.GunaButton();
             this.add_btn = new Guna.UI.WinForms.GunaButton();
             this.update_btn = new Guna.UI.WinForms.GunaButton();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.mach_view_admin.SuspendLayout();
             this.view_pnl.SuspendLayout();
             this.view_menu.SuspendLayout();
@@ -89,6 +90,7 @@
             this.mach_view_admin.HorizontalScrollbarHighlightOnWheel = false;
             this.mach_view_admin.HorizontalScrollbarSize = 10;
             this.mach_view_admin.Location = new System.Drawing.Point(4, 44);
+            this.mach_view_admin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mach_view_admin.Name = "mach_view_admin";
             this.mach_view_admin.Size = new System.Drawing.Size(729, 391);
             this.mach_view_admin.TabIndex = 1;
@@ -96,7 +98,7 @@
             this.mach_view_admin.UseStyleColors = true;
             this.mach_view_admin.VerticalScrollbarBarColor = true;
             this.mach_view_admin.VerticalScrollbarHighlightOnWheel = false;
-            this.mach_view_admin.VerticalScrollbarSize = 10;
+            this.mach_view_admin.VerticalScrollbarSize = 11;
             // 
             // view_pnl
             // 
@@ -107,6 +109,7 @@
             this.view_pnl.Controls.Add(this.data_view, 0, 1);
             this.view_pnl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.view_pnl.Location = new System.Drawing.Point(0, 0);
+            this.view_pnl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.view_pnl.Name = "view_pnl";
             this.view_pnl.RowCount = 3;
             this.view_pnl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.42857F));
@@ -123,19 +126,20 @@
             this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.91667F));
             this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
             this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 116F));
-            this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 268F));
+            this.view_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 272F));
             this.view_menu.Controls.Add(this.search_panel, 4, 0);
             this.view_menu.Controls.Add(this.gunaButton3, 0, 0);
             this.view_menu.Controls.Add(this.gunaButton4, 0, 0);
             this.view_menu.Controls.Add(this.gunaButton1, 0, 0);
             this.view_menu.Controls.Add(this.gunaButton2, 0, 0);
             this.view_menu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.view_menu.Location = new System.Drawing.Point(3, 3);
+            this.view_menu.Location = new System.Drawing.Point(3, 2);
+            this.view_menu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.view_menu.Name = "view_menu";
             this.view_menu.RowCount = 1;
             this.view_menu.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.view_menu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
-            this.view_menu.Size = new System.Drawing.Size(723, 36);
+            this.view_menu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.view_menu.Size = new System.Drawing.Size(723, 38);
             this.view_menu.TabIndex = 4;
             // 
             // search_panel
@@ -144,9 +148,10 @@
             this.search_panel.Controls.Add(this.search_txb);
             this.search_panel.Controls.Add(this.search_picbx);
             this.search_panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.search_panel.Location = new System.Drawing.Point(457, 3);
+            this.search_panel.Location = new System.Drawing.Point(453, 2);
+            this.search_panel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.search_panel.Name = "search_panel";
-            this.search_panel.Size = new System.Drawing.Size(263, 33);
+            this.search_panel.Size = new System.Drawing.Size(267, 33);
             this.search_panel.TabIndex = 4;
             // 
             // search_txb
@@ -155,9 +160,10 @@
             // 
             // 
             this.search_txb.CustomButton.Image = null;
-            this.search_txb.CustomButton.Location = new System.Drawing.Point(190, 1);
+            this.search_txb.CustomButton.Location = new System.Drawing.Point(252, 1);
+            this.search_txb.CustomButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.search_txb.CustomButton.Name = "";
-            this.search_txb.CustomButton.Size = new System.Drawing.Size(31, 31);
+            this.search_txb.CustomButton.Size = new System.Drawing.Size(41, 38);
             this.search_txb.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.search_txb.CustomButton.TabIndex = 1;
             this.search_txb.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -165,7 +171,8 @@
             this.search_txb.CustomButton.Visible = false;
             this.search_txb.Dock = System.Windows.Forms.DockStyle.Right;
             this.search_txb.Lines = new string[0];
-            this.search_txb.Location = new System.Drawing.Point(41, 0);
+            this.search_txb.Location = new System.Drawing.Point(46, 0);
+            this.search_txb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.search_txb.MaxLength = 32767;
             this.search_txb.Name = "search_txb";
             this.search_txb.PasswordChar = '\0';
@@ -174,7 +181,7 @@
             this.search_txb.SelectionLength = 0;
             this.search_txb.SelectionStart = 0;
             this.search_txb.ShortcutsEnabled = true;
-            this.search_txb.Size = new System.Drawing.Size(222, 33);
+            this.search_txb.Size = new System.Drawing.Size(221, 33);
             this.search_txb.TabIndex = 6;
             this.search_txb.UseSelectable = true;
             this.search_txb.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -186,11 +193,13 @@
             this.search_picbx.Dock = System.Windows.Forms.DockStyle.Left;
             this.search_picbx.Image = global::FFGMS.Properties.Resources.search_64px;
             this.search_picbx.Location = new System.Drawing.Point(0, 0);
+            this.search_picbx.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.search_picbx.Name = "search_picbx";
             this.search_picbx.Size = new System.Drawing.Size(39, 33);
             this.search_picbx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.search_picbx.TabIndex = 4;
             this.search_picbx.TabStop = false;
+            this.search_picbx.Click += new System.EventHandler(this.search_picbx_Click);
             // 
             // gunaButton3
             // 
@@ -205,7 +214,8 @@
             this.gunaButton3.ForeColor = System.Drawing.Color.White;
             this.gunaButton3.Image = global::FFGMS.Properties.Resources.icons8_print_32;
             this.gunaButton3.ImageSize = new System.Drawing.Size(15, 15);
-            this.gunaButton3.Location = new System.Drawing.Point(341, 3);
+            this.gunaButton3.Location = new System.Drawing.Point(337, 2);
+            this.gunaButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaButton3.Name = "gunaButton3";
             this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton3.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -216,6 +226,7 @@
             this.gunaButton3.TabIndex = 5;
             this.gunaButton3.Text = "Print";
             this.gunaButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.gunaButton3.Click += new System.EventHandler(this.gunaButton3_Click);
             // 
             // gunaButton4
             // 
@@ -225,12 +236,14 @@
             this.gunaButton4.BorderColor = System.Drawing.Color.Black;
             this.gunaButton4.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaButton4.Enabled = false;
             this.gunaButton4.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaButton4.ForeColor = System.Drawing.Color.White;
             this.gunaButton4.Image = global::FFGMS.Properties.Resources.icons8_delete_32;
             this.gunaButton4.ImageSize = new System.Drawing.Size(15, 15);
-            this.gunaButton4.Location = new System.Drawing.Point(221, 3);
+            this.gunaButton4.Location = new System.Drawing.Point(217, 2);
+            this.gunaButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaButton4.Name = "gunaButton4";
             this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton4.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -241,6 +254,7 @@
             this.gunaButton4.TabIndex = 4;
             this.gunaButton4.Text = "Delete";
             this.gunaButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.gunaButton4.Click += new System.EventHandler(this.gunaButton4_Click);
             // 
             // gunaButton1
             // 
@@ -250,22 +264,25 @@
             this.gunaButton1.BorderColor = System.Drawing.Color.Black;
             this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaButton1.Enabled = false;
             this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaButton1.ForeColor = System.Drawing.Color.White;
             this.gunaButton1.Image = global::FFGMS.Properties.Resources.icons8_swap_32;
             this.gunaButton1.ImageSize = new System.Drawing.Size(15, 15);
-            this.gunaButton1.Location = new System.Drawing.Point(106, 3);
+            this.gunaButton1.Location = new System.Drawing.Point(104, 2);
+            this.gunaButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaButton1.Name = "gunaButton1";
             this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton1.OnHoverImage = null;
             this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton1.Size = new System.Drawing.Size(109, 33);
+            this.gunaButton1.Size = new System.Drawing.Size(107, 33);
             this.gunaButton1.TabIndex = 3;
             this.gunaButton1.Text = "Change";
             this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click);
             // 
             // gunaButton2
             // 
@@ -280,17 +297,19 @@
             this.gunaButton2.ForeColor = System.Drawing.Color.White;
             this.gunaButton2.Image = global::FFGMS.Properties.Resources.icons8_view_module_32;
             this.gunaButton2.ImageSize = new System.Drawing.Size(15, 15);
-            this.gunaButton2.Location = new System.Drawing.Point(3, 3);
+            this.gunaButton2.Location = new System.Drawing.Point(3, 2);
+            this.gunaButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaButton2.Name = "gunaButton2";
             this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaButton2.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton2.OnHoverImage = null;
             this.gunaButton2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton2.Size = new System.Drawing.Size(97, 33);
+            this.gunaButton2.Size = new System.Drawing.Size(95, 33);
             this.gunaButton2.TabIndex = 2;
             this.gunaButton2.Text = "View";
             this.gunaButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.gunaButton2.Click += new System.EventHandler(this.gunaButton2_Click);
             // 
             // data_view
             // 
@@ -321,12 +340,13 @@
             this.data_view.Dock = System.Windows.Forms.DockStyle.Fill;
             this.data_view.EnableHeadersVisualStyles = false;
             this.data_view.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.data_view.Location = new System.Drawing.Point(3, 45);
+            this.data_view.Location = new System.Drawing.Point(3, 44);
+            this.data_view.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.data_view.Name = "data_view";
             this.data_view.RowHeadersVisible = false;
             this.data_view.RowTemplate.Height = 24;
             this.data_view.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.data_view.Size = new System.Drawing.Size(723, 322);
+            this.data_view.Size = new System.Drawing.Size(723, 324);
             this.data_view.TabIndex = 5;
             this.data_view.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.data_view.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -359,8 +379,9 @@
             this.mach_tab_admin.FontWeight = MetroFramework.MetroTabControlWeight.Bold;
             this.mach_tab_admin.ItemSize = new System.Drawing.Size(266, 40);
             this.mach_tab_admin.Location = new System.Drawing.Point(0, 0);
+            this.mach_tab_admin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mach_tab_admin.Name = "mach_tab_admin";
-            this.mach_tab_admin.SelectedIndex = 0;
+            this.mach_tab_admin.SelectedIndex = 1;
             this.mach_tab_admin.Size = new System.Drawing.Size(737, 439);
             this.mach_tab_admin.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.mach_tab_admin.Style = MetroFramework.MetroColorStyle.Teal;
@@ -378,6 +399,7 @@
             this.mach_add_admin.HorizontalScrollbarHighlightOnWheel = false;
             this.mach_add_admin.HorizontalScrollbarSize = 10;
             this.mach_add_admin.Location = new System.Drawing.Point(4, 44);
+            this.mach_add_admin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mach_add_admin.Name = "mach_add_admin";
             this.mach_add_admin.Size = new System.Drawing.Size(729, 391);
             this.mach_add_admin.Style = MetroFramework.MetroColorStyle.Black;
@@ -386,7 +408,7 @@
             this.mach_add_admin.UseStyleColors = true;
             this.mach_add_admin.VerticalScrollbarBarColor = true;
             this.mach_add_admin.VerticalScrollbarHighlightOnWheel = false;
-            this.mach_add_admin.VerticalScrollbarSize = 10;
+            this.mach_add_admin.VerticalScrollbarSize = 11;
             // 
             // add_pnl
             // 
@@ -396,6 +418,7 @@
             this.add_pnl.Controls.Add(this.panel1);
             this.add_pnl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.add_pnl.Location = new System.Drawing.Point(0, 0);
+            this.add_pnl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.add_pnl.Name = "add_pnl";
             this.add_pnl.Size = new System.Drawing.Size(729, 391);
             this.add_pnl.TabIndex = 3;
@@ -409,12 +432,12 @@
             this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.79642F));
             this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.20358F));
             this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 244F));
-            this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 9F));
+            this.table_pnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 13F));
             this.table_pnl.Controls.Add(this.empty_lbl, 2, 0);
             this.table_pnl.Controls.Add(this.from_lbl, 0, 2);
             this.table_pnl.Controls.Add(this.panel3, 1, 2);
             this.table_pnl.Controls.Add(this.mac_name_lbl, 0, 3);
-            this.table_pnl.Controls.Add(this.age_txb, 1, 3);
+            this.table_pnl.Controls.Add(this.name_txb, 1, 3);
             this.table_pnl.Controls.Add(this.panel5, 2, 5);
             this.table_pnl.Dock = System.Windows.Forms.DockStyle.Top;
             this.table_pnl.Location = new System.Drawing.Point(0, 98);
@@ -439,7 +462,7 @@
             this.empty_lbl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.empty_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.empty_lbl.ForeColor = System.Drawing.Color.DarkCyan;
-            this.empty_lbl.Location = new System.Drawing.Point(478, 0);
+            this.empty_lbl.Location = new System.Drawing.Point(474, 0);
             this.empty_lbl.Name = "empty_lbl";
             this.empty_lbl.Size = new System.Drawing.Size(238, 17);
             this.empty_lbl.TabIndex = 47;
@@ -453,7 +476,7 @@
             this.from_lbl.ForeColor = System.Drawing.Color.DarkCyan;
             this.from_lbl.Location = new System.Drawing.Point(3, 25);
             this.from_lbl.Name = "from_lbl";
-            this.from_lbl.Size = new System.Drawing.Size(245, 118);
+            this.from_lbl.Size = new System.Drawing.Size(243, 118);
             this.from_lbl.TabIndex = 45;
             this.from_lbl.Text = "Image:";
             this.from_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -463,17 +486,17 @@
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.img_picb);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(254, 27);
+            this.panel3.Location = new System.Drawing.Point(252, 27);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(218, 114);
+            this.panel3.Size = new System.Drawing.Size(216, 114);
             this.panel3.TabIndex = 69;
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.sel_img_btn);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(183, 0);
+            this.panel4.Location = new System.Drawing.Point(181, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(35, 114);
@@ -504,17 +527,18 @@
             this.sel_img_btn.Size = new System.Drawing.Size(35, 23);
             this.sel_img_btn.TabIndex = 1;
             this.sel_img_btn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.sel_img_btn.Click += new System.EventHandler(this.sel_img_btn_Click);
             // 
             // img_picb
             // 
             this.img_picb.BackColor = System.Drawing.Color.Transparent;
             this.img_picb.BaseColor = System.Drawing.Color.White;
             this.img_picb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.img_picb.Image = global::FFGMS.Properties.Resources.icons8_prelum_100_2;
+            this.img_picb.Image = global::FFGMS.Properties.Resources.icons8_rowing_machine_100_3;
             this.img_picb.Location = new System.Drawing.Point(0, 0);
             this.img_picb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.img_picb.Name = "img_picb";
-            this.img_picb.Size = new System.Drawing.Size(218, 114);
+            this.img_picb.Size = new System.Drawing.Size(216, 114);
             this.img_picb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_picb.TabIndex = 61;
             this.img_picb.TabStop = false;
@@ -529,71 +553,51 @@
             this.mac_name_lbl.ForeColor = System.Drawing.Color.DarkCyan;
             this.mac_name_lbl.Location = new System.Drawing.Point(3, 143);
             this.mac_name_lbl.Name = "mac_name_lbl";
-            this.mac_name_lbl.Size = new System.Drawing.Size(245, 37);
+            this.mac_name_lbl.Size = new System.Drawing.Size(243, 37);
             this.mac_name_lbl.TabIndex = 43;
             this.mac_name_lbl.Text = "Machine Name:";
             this.mac_name_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // age_txb
+            // name_txb
             // 
             // 
             // 
             // 
-            this.age_txb.CustomButton.Image = null;
-            this.age_txb.CustomButton.Location = new System.Drawing.Point(186, 1);
-            this.age_txb.CustomButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.age_txb.CustomButton.Name = "";
-            this.age_txb.CustomButton.Size = new System.Drawing.Size(31, 31);
-            this.age_txb.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.age_txb.CustomButton.TabIndex = 1;
-            this.age_txb.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.age_txb.CustomButton.UseSelectable = true;
-            this.age_txb.CustomButton.Visible = false;
-            this.age_txb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.age_txb.Lines = new string[0];
-            this.age_txb.Location = new System.Drawing.Point(254, 145);
-            this.age_txb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.age_txb.MaxLength = 32767;
-            this.age_txb.Name = "age_txb";
-            this.age_txb.PasswordChar = '\0';
-            this.age_txb.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.age_txb.SelectedText = "";
-            this.age_txb.SelectionLength = 0;
-            this.age_txb.SelectionStart = 0;
-            this.age_txb.ShortcutsEnabled = true;
-            this.age_txb.Size = new System.Drawing.Size(218, 33);
-            this.age_txb.TabIndex = 66;
-            this.age_txb.UseSelectable = true;
-            this.age_txb.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.age_txb.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 49);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(729, 49);
-            this.panel2.TabIndex = 4;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(729, 49);
-            this.panel1.TabIndex = 3;
+            this.name_txb.CustomButton.Image = null;
+            this.name_txb.CustomButton.Location = new System.Drawing.Point(184, 1);
+            this.name_txb.CustomButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.name_txb.CustomButton.Name = "";
+            this.name_txb.CustomButton.Size = new System.Drawing.Size(31, 31);
+            this.name_txb.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.name_txb.CustomButton.TabIndex = 1;
+            this.name_txb.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.name_txb.CustomButton.UseSelectable = true;
+            this.name_txb.CustomButton.Visible = false;
+            this.name_txb.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.name_txb.Lines = new string[0];
+            this.name_txb.Location = new System.Drawing.Point(252, 145);
+            this.name_txb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.name_txb.MaxLength = 32767;
+            this.name_txb.Name = "name_txb";
+            this.name_txb.PasswordChar = '\0';
+            this.name_txb.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.name_txb.SelectedText = "";
+            this.name_txb.SelectionLength = 0;
+            this.name_txb.SelectionStart = 0;
+            this.name_txb.ShortcutsEnabled = true;
+            this.name_txb.Size = new System.Drawing.Size(216, 33);
+            this.name_txb.TabIndex = 66;
+            this.name_txb.UseSelectable = true;
+            this.name_txb.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.name_txb.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // panel5
             // 
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Controls.Add(this.update_btn);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(479, 196);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4);
+            this.panel5.Location = new System.Drawing.Point(475, 196);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(236, 26);
             this.panel5.TabIndex = 71;
@@ -603,7 +607,7 @@
             this.panel6.Controls.Add(this.btn_grbx);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(236, 26);
             this.panel6.TabIndex = 6;
@@ -648,6 +652,7 @@
             this.erase_btn.Size = new System.Drawing.Size(115, 26);
             this.erase_btn.TabIndex = 1;
             this.erase_btn.Text = "Erase";
+            this.erase_btn.Click += new System.EventHandler(this.erase_btn_Click);
             // 
             // add_btn
             // 
@@ -673,6 +678,7 @@
             this.add_btn.Size = new System.Drawing.Size(113, 26);
             this.add_btn.TabIndex = 0;
             this.add_btn.Text = "Add";
+            this.add_btn.Click += new System.EventHandler(this.add_btn_Click);
             // 
             // update_btn
             // 
@@ -700,6 +706,31 @@
             this.update_btn.TabIndex = 4;
             this.update_btn.Text = "Change";
             this.update_btn.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.update_btn.Click += new System.EventHandler(this.update_btn_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 49);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(729, 49);
+            this.panel2.TabIndex = 4;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(729, 49);
+            this.panel1.TabIndex = 3;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // mach_m_admincs
             // 
@@ -708,6 +739,7 @@
             this.ClientSize = new System.Drawing.Size(737, 439);
             this.Controls.Add(this.mach_tab_admin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "mach_m_admincs";
             this.Text = "mach_m_admincs";
             this.Load += new System.EventHandler(this.mach_m_admincs_Load);
@@ -752,7 +784,7 @@
         private System.Windows.Forms.TableLayoutPanel table_pnl;
         private System.Windows.Forms.Label empty_lbl;
         private System.Windows.Forms.Label from_lbl;
-        private MetroFramework.Controls.MetroTextBox age_txb;
+        private MetroFramework.Controls.MetroTextBox name_txb;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label mac_name_lbl;
@@ -761,10 +793,11 @@
         private Guna.UI.WinForms.GunaButton sel_img_btn;
         private Guna.UI.WinForms.GunaCirclePictureBox img_picb;
         private System.Windows.Forms.Panel panel5;
+        private Guna.UI.WinForms.GunaButton update_btn;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Panel panel6;
         private Guna.UI.WinForms.GunaGroupBox btn_grbx;
         private Guna.UI.WinForms.GunaButton erase_btn;
         private Guna.UI.WinForms.GunaButton add_btn;
-        private Guna.UI.WinForms.GunaButton update_btn;
     }
 }

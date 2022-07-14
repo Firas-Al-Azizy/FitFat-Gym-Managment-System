@@ -1,6 +1,6 @@
-﻿namespace FFGMS.Reports.Staff
+﻿namespace FFGMS
 {
-    partial class staff_report
+    partial class group_report
     {
         /// <summary>
         /// Required designer variable.
@@ -29,30 +29,27 @@
         private void InitializeComponent()
         {
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.staff1 = new FFGMS.Reports.Staff.staff();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
             // 
-            this.crystalReportViewer1.ActiveViewIndex = 0;
+            this.crystalReportViewer1.ActiveViewIndex = -1;
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = this.staff1;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1261, 411);
-            this.crystalReportViewer1.TabIndex = 0;
-            this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.ParameterPanel;
+            this.crystalReportViewer1.Size = new System.Drawing.Size(282, 253);
+            this.crystalReportViewer1.TabIndex = 1;
             // 
-            // staff_report
+            // group_report
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1261, 411);
+            this.ClientSize = new System.Drawing.Size(282, 253);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Name = "staff_report";
-            this.Text = "staff_report";
+            this.Name = "group_report";
+            this.Text = "group_report";
             this.ResumeLayout(false);
 
         }
@@ -60,6 +57,5 @@
         #endregion
 
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
-        private staff staff1;
     }
 }

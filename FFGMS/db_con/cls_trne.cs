@@ -9,25 +9,24 @@ using FFGMS.Manage.Staff_manage;
 
 namespace FFGMS.db_con
 {
-    class cls_emp
+    class cls_trne
     {
-        public int emp_id { get; set; }
-        public string emp_name { get; set; }
-        public string emp_age { get; set; }
-        public string emp_gender { get; set; }
-        public string emp_email { get; set; }
-        public string emp_phone { get; set; }
-        public string emp_address { get; set; }
-        public string emp_salary { get; set; }
-        public string emp_userName { get; set; }
-        public string emp_pass { get; set; }
-        public byte[] emp_img { get; set; }
-        public string emp_pos { get; set; }
-        //public  DataTable dt { get; set; }
+        public int tra_id { get; set; }
+        public string tra_name { get; set; }
+        public string tra_age { get; set; }
+        public string tra_gender { get; set; }
+        public string tra_email { get; set; }
+        public string tra_phone { get; set; }
+        public string tra_height { get; set; }
+        public string tra_weight { get; set; }
+        public string tra_address { get; set; }
+        public string tra_userName { get; set; }
+        public byte[] tra_img { get; set; }
+        public int mem_id { get; set; }
+        public int tg_id { get; set; }
+        public int pro_id { get; set; }
 
-
-
-        public static int InsertData(cls_emp o)
+        public static int InsertData(cls_trne o)
         {
             var EffectedRows = 0;
 
@@ -38,62 +37,73 @@ namespace FFGMS.db_con
                 {
                     {
                         var withBlock = SqlCmd;
-                        withBlock.CommandText = "[Pkgemp.insert]";
+                        withBlock.CommandText = "[Pkgtra.insert]";
                         withBlock.CommandType = CommandType.StoredProcedure;
                     }
-                    p = new SqlParameter("@Pemp_name", SqlDbType.NVarChar)
+                    p = new SqlParameter("@Ptra_name", SqlDbType.NVarChar)
                     {
-                        Value = o.emp_name
+                        Value = o.tra_name
                     };
                     SqlCmd.Parameters.Add(p);
-                    p = new SqlParameter("@Pemp_age", SqlDbType.NVarChar)
+                    p = new SqlParameter("@Ptra_age", SqlDbType.NVarChar)
                     {
-                        Value = o.emp_age
+                        Value = o.tra_age
                     };
                     SqlCmd.Parameters.Add(p);
-                    p = new SqlParameter("@Pemp_gender", SqlDbType.NVarChar)
+                    p = new SqlParameter("@Ptra_gender", SqlDbType.NVarChar)
                     {
-                        Value = o.emp_gender
+                        Value = o.tra_gender
                     };
                     SqlCmd.Parameters.Add(p);
-                    p = new SqlParameter("@Pemp_email", SqlDbType.NVarChar)
+                    p = new SqlParameter("@Ptra_email", SqlDbType.NVarChar)
                     {
-                        Value = o.emp_email
+                        Value = o.tra_email
                     };
                     SqlCmd.Parameters.Add(p);
-                    p = new SqlParameter("@Pemp_phone", SqlDbType.NVarChar)
+                    p = new SqlParameter("@Ptra_phone", SqlDbType.NVarChar)
                     {
-                        Value = o.emp_phone
+                        Value = o.tra_phone
                     };
                     SqlCmd.Parameters.Add(p);
-                    p = new SqlParameter("@Pemp_address", SqlDbType.NVarChar)
+                    p = new SqlParameter("@Ptra_height", SqlDbType.NVarChar)
                     {
-                        Value = o.emp_address
+                        Value = o.tra_height
                     };
                     SqlCmd.Parameters.Add(p);
-                    p = new SqlParameter("@Pemp_salary", SqlDbType.NVarChar)
+                    p = new SqlParameter("@Ptra_weight", SqlDbType.NVarChar)
                     {
-                        Value = o.emp_salary
+                        Value = o.tra_weight
                     };
                     SqlCmd.Parameters.Add(p);
-                    p = new SqlParameter("@Pemp_userName", SqlDbType.NVarChar)
+                    p = new SqlParameter("@Ptra_address", SqlDbType.NVarChar)
                     {
-                        Value = o.emp_userName
+                        Value = o.tra_address
                     };
                     SqlCmd.Parameters.Add(p);
-                    p = new SqlParameter("@Pemp_pass", SqlDbType.NVarChar)
+                
+                    p = new SqlParameter("@Ptra_userName", SqlDbType.NVarChar)
                     {
-                        Value = o.emp_pass
+                        Value = o.tra_userName
                     };
                     SqlCmd.Parameters.Add(p);
-                    p = new SqlParameter("@Pemp_img", SqlDbType.Image)
+                    p = new SqlParameter("@Ptra_img", SqlDbType.Image)
                     {
-                        Value = o.emp_img
+                        Value = o.tra_img
                     };
                     SqlCmd.Parameters.Add(p);
-                    p = new SqlParameter("@Pemp_pos", SqlDbType.NVarChar)
+                    p = new SqlParameter("@Pmem_id", SqlDbType.Int)
                     {
-                        Value = o.emp_pos
+                        Value = o.mem_id
+                    };
+                    SqlCmd.Parameters.Add(p);
+                    p = new SqlParameter("@Ptg_id", SqlDbType.Int)
+                    {
+                        Value = o.tg_id
+                    };
+                    SqlCmd.Parameters.Add(p);
+                    p = new SqlParameter("@Ppro_id", SqlDbType.Int)
+                    {
+                        Value = o.pro_id
                     };
                     SqlCmd.Parameters.Add(p);
 
@@ -110,7 +120,7 @@ namespace FFGMS.db_con
             return EffectedRows;
 
         }
-        public static int updateData(cls_emp o)
+        public static int updateData(cls_trne o)
         {
             var EffectedRows = 0;
 
@@ -121,67 +131,78 @@ namespace FFGMS.db_con
                 {
                     {
                         var withBlock = SqlCmd;
-                        withBlock.CommandText = "[Pkgemp.update]";
+                        withBlock.CommandText = "[Pkgtra.update]";
                         withBlock.CommandType = CommandType.StoredProcedure;
                     }
-                    p = new SqlParameter("@Pemp_name", SqlDbType.NVarChar)
+                    p = new SqlParameter("@Ptra_name", SqlDbType.NVarChar)
                     {
-                        Value = o.emp_name
+                        Value = o.tra_name
                     };
                     SqlCmd.Parameters.Add(p);
-                    p = new SqlParameter("@Pemp_age", SqlDbType.NVarChar)
+                    p = new SqlParameter("@Ptra_age", SqlDbType.NVarChar)
                     {
-                        Value = o.emp_age
+                        Value = o.tra_age
                     };
                     SqlCmd.Parameters.Add(p);
-                    p = new SqlParameter("@Pemp_gender", SqlDbType.NVarChar)
+                    p = new SqlParameter("@Ptra_gender", SqlDbType.NVarChar)
                     {
-                        Value = o.emp_gender
+                        Value = o.tra_gender
                     };
                     SqlCmd.Parameters.Add(p);
-                    p = new SqlParameter("@Pemp_email", SqlDbType.NVarChar)
+                    p = new SqlParameter("@Ptra_email", SqlDbType.NVarChar)
                     {
-                        Value = o.emp_email
+                        Value = o.tra_email
                     };
                     SqlCmd.Parameters.Add(p);
-                    p = new SqlParameter("@Pemp_phone", SqlDbType.NVarChar)
+                    p = new SqlParameter("@Ptra_phone", SqlDbType.NVarChar)
                     {
-                        Value = o.emp_phone
+                        Value = o.tra_phone
                     };
                     SqlCmd.Parameters.Add(p);
-                    p = new SqlParameter("@Pemp_address", SqlDbType.NVarChar)
+                    p = new SqlParameter("@Ptra_height", SqlDbType.NVarChar)
                     {
-                        Value = o.emp_address
+                        Value = o.tra_height
                     };
                     SqlCmd.Parameters.Add(p);
-                    p = new SqlParameter("@Pemp_salary", SqlDbType.NVarChar)
+                    p = new SqlParameter("@Ptra_weight", SqlDbType.NVarChar)
                     {
-                        Value = o.emp_salary
+                        Value = o.tra_weight
                     };
                     SqlCmd.Parameters.Add(p);
-                    p = new SqlParameter("@Pemp_userName", SqlDbType.NVarChar)
+                    p = new SqlParameter("@Ptra_address", SqlDbType.NVarChar)
                     {
-                        Value = o.emp_userName
+                        Value = o.tra_address
                     };
                     SqlCmd.Parameters.Add(p);
-                    p = new SqlParameter("@Pemp_pass", SqlDbType.NVarChar)
+
+                    p = new SqlParameter("@Ptra_userName", SqlDbType.NVarChar)
                     {
-                        Value = o.emp_pass
+                        Value = o.tra_userName
                     };
                     SqlCmd.Parameters.Add(p);
-                    p = new SqlParameter("@Pemp_img", SqlDbType.Image)
+                    p = new SqlParameter("@Ptra_img", SqlDbType.Image)
                     {
-                        Value = o.emp_img
+                        Value = o.tra_img
                     };
                     SqlCmd.Parameters.Add(p);
-                    p = new SqlParameter("@Pemp_pos", SqlDbType.NVarChar)
+                    p = new SqlParameter("@Pmem_id", SqlDbType.Int)
                     {
-                        Value = o.emp_pos
+                        Value = o.mem_id
                     };
                     SqlCmd.Parameters.Add(p);
-                    p = new SqlParameter("@Pemp_id", SqlDbType.Int)
+                    p = new SqlParameter("@Ptg_id", SqlDbType.Int)
                     {
-                        Value = o.emp_id
+                        Value = o.tg_id
+                    };
+                    SqlCmd.Parameters.Add(p);
+                    p = new SqlParameter("@Ppro_id", SqlDbType.Int)
+                    {
+                        Value = o.pro_id
+                    };
+                    SqlCmd.Parameters.Add(p);
+                    p = new SqlParameter("@Ptra_id", SqlDbType.Int)
+                    {
+                        Value = o.tra_id
                     };
                     SqlCmd.Parameters.Add(p);
 
@@ -210,7 +231,7 @@ namespace FFGMS.db_con
                 {
                     {
                         var withBlock = SqlCmd;
-                        withBlock.CommandText = "[Pkgemp.SelectAll]";
+                        withBlock.CommandText = "[Pkgtra.SelectAll]";
                         withBlock.CommandType = CommandType.StoredProcedure;
                     }
 
@@ -228,7 +249,7 @@ namespace FFGMS.db_con
 
         }
 
-        public static DataTable searchdata(cls_emp o)
+        public static DataTable searchdata(cls_trne o)
         {
             DataTable dt = new DataTable();
 
@@ -239,12 +260,12 @@ namespace FFGMS.db_con
                 {
                     {
                         var withBlock = SqlCmd;
-                        withBlock.CommandText = "[Pkgemp.selectbyName]";
+                        withBlock.CommandText = "[Pkgtra.search]";
                         withBlock.CommandType = CommandType.StoredProcedure;
                     }
-                    p = new SqlParameter("@Pemp_name", SqlDbType.NVarChar)
+                    p = new SqlParameter("@Ptra_name", SqlDbType.NVarChar)
                     {
-                        Value = o.emp_name
+                        Value = o.tra_name
                     };
 
 
@@ -261,6 +282,6 @@ namespace FFGMS.db_con
             return dt;
 
         }
+        
     }
-    
 }
